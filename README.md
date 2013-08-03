@@ -26,6 +26,6 @@ Internet utilities: uTorrent, Putty, HyperTerminal, Nirsoft utilities for scanin
 Office programms: DJVU-Reader, SumatraPDF, xCHM, Shtirlitz4, Notepad++, AkelPad, SoftMakerOffice (wim - pack).
 Pictures: FastStoneMaxView, PicPick, XNView.
 Keyboard tools: PuntoSwitcher, FreeVirtualKeyboard, SpecChar, MKey, 
-Advanced: GImageX, MemoryCleaner, Resolution, ShellExView, DesktopOK, DependencyWalker, ASPack, ResHacker, CCleaner, AutoIt3 (wim - pack), Linux-partitions drivers.
+Advanced: GImageX, MemoryCleaner, Resolution, ShellExView, DesktopOK, DependencyWalker, ASPack, ResHacker, CCleaner, AutoIt3 (wim - pack), Linux-partitions drivers and programms.
 
-Most of .exe and .dll files are compressed with ASPack to reduce their size.
+Most of .exe and .dll files are compressed with ASPack to reduce their size. Patched kernel to use 4 Gb RAM.
