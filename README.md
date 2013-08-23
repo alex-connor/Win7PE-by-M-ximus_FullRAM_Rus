@@ -1,4 +1,4 @@
-Win7PE-by-M-ximus
+Win7PE by M@ximus
 =================
 
 My own live cd distribution based on Windows 7 Ultimate x86.
@@ -21,7 +21,7 @@ Processes: ProcessMonitor, ProcessExplorer, SystemExplorer
 Remote access: RAdmin, Ammy Admin, VNC-Viewer, TightVNC, UltraVNC, TeamViewer (wim - pack), Skype (wim - pack).
 Burning CD/DVD + ISO mounting: ImgBurn, UltraISO, UUDiscStudio, ImDisk.
 Wi-Fi: WirelessNetView, WNetWatcher, PENetwork.
-Browsers: Mozilla Firefox, Opera (old versions of LiveCD, in new versions do not works)
+Browsers: Mozilla Firefox, Opera (old versions of LiveCD, in new versions do not works, so I deleted it)
 Internet utilities: uTorrent, Putty, HyperTerminal, Nirsoft utilities for scaning history, downloads, cookies, passwords and cache of  Mozilla Firefox, Opera, Safari, Chrome and Internet Explorer browsers.
 Office programms: DJVU-Reader, SumatraPDF, xCHM, Shtirlitz4, Notepad++, AkelPad, SoftMakerOffice (wim - pack).
 Pictures: FastStoneMaxView, PicPick, XNView.
