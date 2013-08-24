@@ -1,0 +1,579 @@
+                   +--------------------------------------+
+                   |           Partition Saving           |
+                   |                                      |
+                   |   http://www.partition-saving.com    |
+                   | Copyright (c) 1999-2012 D. Guibouret |
+                   +--------------------------------------+
+
+                                     FAQ
+                          Last update: May 5th 2012
+
+Index:
+------
+
+Q  1- Can I split a backup file into several smaller files that will each fit
+onto a CD (700 Mbytes), even if use compression?
+
+Q  2- Can Partition Saving copy only the occupied sectors of a partition?
+
+Q  3- Do you plan to provide such an option in the future?
+
+Q  4- If I want to restore a partition, do I need to use an identical disc
+having the same format as the original?
+
+Q  5- Sometimes it takes a long time to switch from the maximum file size
+window to the save window. Why?
+
+Q  6- Using compression takes a long time. Would not it be quicker to save an
+uncompressed image file and use an archive utility to compress it later?
+
+Q  7- Can I save NTFS partitions?
+
+Q  8- Will Partition Saving preserve the long filenames on Windows partitions?
+
+Q  9- Is Partition Saving compatible with Windows NT, 2000 or XP?
+
+Q 10- How do I create a boot floppy?
+
+Q 11- Why does it take such a long time to create a backup file?
+
+Q 12- I cannot manage to create backup file on CD.
+
+Q 13- Are files created using a prior version compatible with the current one?
+
+Q 14- What can be done in case of error?
+
+Q 15- Drive letter seems to not be correct. How can I know which is the
+partition I want to save?
+
+Q 16- When I run program, nothing appears.
+
+Q 17- What can be done when I get the error message "A sector containing
+parameters for filesystem cannot be read"?
+
+Q 18- Can I save my partition on an USB storage device?
+
+Q 19- Can I perform incremental backup?
+
+Q 20- Can I extract only some files from backup?
+
+Q 21- Will my SATA/RAID/... disk be recognised?
+
+Q 22- Displayed partition table is empty or has only one partition when I know
+there are several, what is wrong?
+
+Q 23- How can I reach the "mount partition/use automatic naming" window
+without mouse?
+
+Q 24- I cannot create files on NTFS partition.
+
+Q 25- My computer does not have a floppy drive. How can I start with DOS?
+
+Q 26- Why do I get a message telling me a file cannot be created/written?
+
+Q 27- Why not allowing creation of file of more than 2047Mb (to fill up a
+DVD)?
+
+Q 28- I can no more create backup file on saved partition even with choosing
+to save it on itself?
+
+Q 29- With Windows version, I do not see my system partition or program tells
+me it cannot protect access to support?
+
+Q 30- Can I change drive letter of my Windows installation from X: to C:?
+
+Q 31- Can Partition-Saving be used with 512e disks (4K sectors disks emulating
+512 bytes sectors)?
+
+------
+
+1     Can I split a backup file into several smaller files that will each fit
+      onto a CD (700 Mbytes), even if use compression?
+      ------
+      Yes. The total size of the file is as it is written (even after
+      compression is used).
+      Be aware that for this program 1Mb is equal to 1024*1024 bytes
+      (everybody does not agree on Mb size, it is sometimes 1000*1000 or
+      1000*1024 bytes).
+
+2     Can Partition Saving copy only the occupied sectors of a partition?
+
+3     Do you plan to provide such an option in the future?
+      ------
+      Since V2.20 you can save occupied sectors only for FAT12, FAT16, FAT32
+      and ext2 partitions (also for NTFS partition since V2.30).
+      I depend on OS information to determine which sections of a partition
+      are occupied. Since I do not have this information for other partition
+      types, occupied sectors only cannot be done for those.
+      If you want to save place when saving partitions different from FAT,
+      ext2 and NTFS one, you can use a program that set all bytes of
+      unoccupied sectors of a partition to the same value such as with
+      compression this will reduce amount of space needed. If you do not have
+      such a program, you can use the advice from Mr Lumir Mik: write a
+      program that creates a file and fills it with the same value. Then erase
+      this file.
+
+4     If I want to restore a partition, do I need to use an identical disc
+      having the same format as the original?
+      ------
+      Yes if you have saved all sectors of the partition (that was the only
+      option for versions prior to V2.20). Furthermore you can only restore a
+      partition on an identical one and to the same disk location. It is a
+      significant limitation but data can be dependent on the location of the
+      partition on the hard disk. The limitation relating to the type of the
+      partition can be resolved by writing the partition table when restoring,
+      but it is a feature that I have not incorporated yet.
+      Since version 2.20, if you saved only occupied sectors of a FAT or ext2
+      partition (or NTFS for V2.30), you can restore it on a partition with a
+      different format if certain size constraints are regarded. Nevertheless,
+      the disk must have the same sector size as the saved partition, and the
+      partition type must be the same (or must be compatible since V2.30).
+
+5     Sometimes it takes a long time to switch from the maximum file size
+      window to the save window. Why?
+      ------
+      This happens when you save your partition over an existing file. If this
+      file is large (e.g. result of a previous backup), it takes DOS some time
+      to delete it. Note that from version 2.10, the file is deleted between
+      the file name window and the maximum file size one (or before the save
+      window in the case of batch mode).
+
+6     Using compression takes a long time. Would not it be quicker to save an
+      uncompressed image file and use an archive utility to compress it later?
+      ------
+      It depends on the level of compression that you use with your archiver.
+      If you use the maximum level you will waste time since you have to
+      access the drive two more times. If you reduce the level of compression,
+      you will save time but use more space. Note that starting from version
+      2.10, you can choose a level of compression that will allow you to make
+      a compromise between time required to save and disk space needed (for
+      V2.00, the only level of compression was maximum).
+
+7     Can I save NTFS partitions?
+      ------
+      Yes, you can. From version 2.30, you can even save occupied sectors
+      only. However since Microsoft have never published specifications on
+      NTFS structure, this was done with using some incomplete information and
+      some rare features that appear in only a few instances are not
+      supported.
+      DOS being not able to access NTFS partitions, you need to have a FAT
+      partition that can be read/write by DOS (either another partition on
+      hard drive, or using network mount, ZIP disk, ...) or use the internal
+      NTFS partition mounting in order to create backup files. Some programs
+      allow DOS to use NTFS partitions (see http://www.cgsecurity.org or
+      http://www.sysinternals.com, but be aware that last one is not
+      compatible with Partition Saving) but in this case you should not use
+      the saving a partition on itself feature.
+
+8     Will Partition Saving preserve the long filenames on Windows partitions?
+      ------
+      Yes, it is one of the main goal of the program. Indeed, it is not
+      possible to save/restore all files under Windows as some are protected
+      because they are in use. Consequently they must be saved under DOS (or
+      another OS that allows access to Windows partitions). But since DOS
+      cannot recognize long filenames, either saving or restoring must be done
+      at level where file notion does not exist, by physically saving the
+      partition. Moreover this preserves the relative order of sectors, which
+      may have an influence on the operation of some programs.
+
+9     Is Partition Saving compatible with Windows NT, 2000 or XP?
+      ------
+      Yes, but you need to boot from a DOS floppy disk or CDROM and have
+      access to a FAT partition (please read also question 7). From version
+      3.00 you can also create saving files on NTFS partition, but for this
+      you have first to create files from Windows with the dedicated option
+      then boot to DOS to perform saving.
+
+10    How do I create a boot floppy?
+      ------
+      You can use the bootable floppy disk based on FreeDOS that contains
+      Partition Saving (see spartbdk documentation). You can also create your
+      own floppy disk with MS-DOS.
+      For Windows 9x, click: Start->Settings->Control Panel->Add/Remove
+      Programs, choose the "Startup disk" tab. Insert an empty floppy disk
+      into drive, and click on the "Create Disk" button.
+      If this method is not available for Windows XP, you can choose the
+      "Format" option by right-clicking on floppy drive in Windows Explorer
+      and choose the "Copy system files" option. However in the case the
+      floppy disk is not configured, you have to configure the floppy disk
+      manually. For this purpose you have to create two text files CONFIG.SYS
+      and AUTOEXEC.BAT on the floppy disk. In CONFIG.sys you have to install:
+
+        - The CDROM driver file if you wish to use the CDROM drive. Its name
+          is usually ATAPICD.SYS, CDROM.SYS or <your CDROM mark>.SYS (there
+          are also some generic drivers that come with Windows). For the
+          driver to be loader, you have to write "DEVICE=<file name>
+          /D:<name>" where <file name> is the CDROM driver filename and <name>
+          is any name of you choice that is less than 8 characters (ex:
+          CD0001).
+        - The driver file for the monitor. The one delivered by Windows is
+          called DISPLAY.SYS. For it to be loaded you must write
+          "DEVICE=DISPLAY.SYS CON=(EGA,,1)" (I doubt whether anybody does not
+          have an EGA compatible monitor).
+        - Finally you must configure the country (this is not needed for
+          English people). To do that to must use COUNTRY.SYS file and write
+          to CONFIG.SYS "COUNTRY=<number1>,<number2>,COUNTRY.SYS". The first
+          number is the country code (033 for France) and the second one is
+          the codepage that will be used (850 for France).
+
+      In the second file (AUTOEXEC.BAT) you have to put:
+
+        - The program providing access to the CDROM. This is provided by
+          Windows and is called MSCDEX.EXE. To use it, you have to write
+          "MSCDEX.EXE /D:<name>" where <name> is the same <name> written for
+          the CDROM driver line in CONFIG.SYS.
+        - The program that configures the codepage you use (it will allow you
+          to configure your keyboard) (this is not needed for English people).
+          For this purpose you need two lines, one to prepare the codepage and
+          the second to select it: "MODE CON CODEPAGE PREPARE=((<number>)
+          EGA.CPI)" is the first line and "MODE CON CODEPAGE SELECT=<number>"
+          is the second one. Each <number> must be the same and must be equal
+          to second number in the "COUNTRY" line of the CONFIG.SYS file
+          (therefore 850 for France).
+        - Finally the instruction to configure your keyboard correctly (e.g.
+          for French people it will access AZERTY mode in place of QWERTY). To
+          do this you have to write "KEYB FR,,KEYBOARD.SYS" FR that is the
+          country code (for France, so you have to insert a different code for
+          other languages, or omitting this line can work).
+
+      To make sure all this works, you have to check that all files are on the
+      floppy disk (CDROM driver, DISPLAY.SYS, COUNTRY.SYS, MSCDEX.EXE,
+      EGA.CPI, KEYB.COM, MODE.COM, KEYBOARD.SYS). This is a minimal generic
+      configuration (e.g. you can add mouse by adding a MOUSE.COM or MOUSE.EXE
+      line (depends of file name) into AUTOEXEC.BAT file (and checking for the
+      existence of this file on the floppy). For some countries instead of
+      using KEYBOARD.SYS you may have to use KEYBRD2.SYS for certain
+      keyboards).
+      For others versions of Windows, or if what is described above does not
+      work, search the Windows help files (search for something like "boot
+      disk").
+      You can also use the ready-made floppy disk published with
+      Partition-Saving that is based on FreeDOS or any other ready-made floppy
+      disk you can find.
+      Note: if you have a Windows 9X boot disk, you can use it to save a
+      Windows XP partition (you have to use at least a Windows 95 OSR2 boot
+      disk if you want to access a FAT32 partition).
+      Once the boot disk is created, copy the savepart.exe on it (use another
+      floppy disk if there is insufficient free space, or a DOS accessible
+      partition on hard drive). Then restart your computer with keeping floppy
+      disk into drive. This floppy will boot. Once you have "A:\>" prompt,
+      type <program directory>\savepart.exe (where <program directory> is
+      where you put the savepart.exe (ex: C:\savepart\savepart.exe)) or change
+      disk if you have written it to a separate floppy and run it.
+      In case your computer does not boot from the floppy drive but still
+      boots from the hard disk, you have to change boot sequence in the BIOS
+      (consult BIOS documentation to learn how to do this).
+
+11    Why does it take such a long time to create a backup file?
+      ------
+      Time required to write an image depends on 4 factors:
+
+        - partition contents.
+        - choosing to save only occupied sectors or all sectors.
+        - compression level used.
+        - whether you write the backup file to a hard-drive other than the one
+          that contains the source partition.
+
+      You also can speed up saving/restoring time by using -nvd and -nvf
+      options. These options can really improve performances, but in case your
+      disk begins to be damaged, some errors can be not found and that will
+      result in a bad save or restoration. These options are on as a default
+      beginning from version 3.80.
+      Note: I get a 30% speed improvment using these options, but it seems it
+      is very dependant on motherboard and disk, as some users report me
+      getting a great speed improvment (up to 90%) when using these options.
+
+      You can also use partition mounting instead of DOS access because it
+      goes faster, but it needs you reboot computer at end of execution.
+
+      Some people use also successfully DOS UDMA drivers, but you have first
+      to find them and read how to use them.
+
+      Regarding the compression level, here are some figures I obtained doing
+      some trials (these depend on the computer and partition contents, but
+      they are provided to give some idea), a standard figure of 100 has been
+      adopted for uncompressed files:
+       +-------------------+-----------------------------------+-----------+
+       |                   | Time required VS. CPU speed (MHz) |           |
+       | Compression level +---------+-------+--------+--------+ File size |
+       |                   |   33    |  700  |  1700  |  Ave.  |           |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         0         |     100 |   100 |    100 |    100 |    100.00 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         1         |     371 |   127 |     82 |    194 |     54.15 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         2         |     384 |   130 |     83 |    199 |     53.53 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         3         |     419 |   137 |     84 |    213 |     53.06 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         4         |     449 |   142 |     85 |    225 |     52.33 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         5         |     525 |   156 |     88 |    256 |     51.86 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         6         |     644 |   179 |     94 |    306 |     51.64 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         7         |     729 |   194 |     99 |    341 |     51.57 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         8         |    1065 |   255 |    118 |    479 |     51.53 |
+       +-------------------+---------+-------+--------+--------+-----------+
+       |         9         |    1595 |   348 |    150 |    697 |     51.51 |
+       +-------------------+---------+-------+--------+--------+-----------+
+      As you can see the higher the deflating level, the greatest the time
+      required. Also very little space is gained beyond the first setting (in
+      some rare case (not shown here), you can even loose space). So choosing
+      the maximum compression level is not the best option (even more for a
+      slow processor).
+      Worthy of note is in case where you have a powerful processor, it takes
+      less time to compress the data (low level) than to write it
+      uncompressed.
+      Remark: restoration time is not really dependent upon compression level
+      (disregarding the case of zero compression).
+
+12    I cannot manage to create the backup file on CD.
+      ------
+      CD burner manufacturers rarely provide DOS driver for their hardware. So
+      you must first save backup files to your hard drive. Then when you boot
+      into an OS from where you can burn CDs, you can create a CD with these
+      files on. Be aware to not use a too high burning speed because some
+      people get problems to read CD from DOS because of a too high burning
+      speed.
+
+13    Are files created using a prior version compatible with the current one?
+      ------
+      This information is in the changes.txt file. As a general rule, files
+      created with an older version can be used by a more recent version. The
+      converse is often true, but not in the case of a new type of filesystem.
+
+14    What can be done in case of error?
+      ------
+      As a general rule you can contact me by mail
+      <damien.guibouret@partition-saving.com> and I will try to answer you as
+      soon as possible. I will need all details on what happens (what you want
+      to do, what options you choose, ...). Moreover if error message has a
+      "Call tree:" or "Call frame traceback:" appears, you have to send me
+      following values (at least the 10 first). It will allow me to find
+      easily where error occurs. In answer, I can ask you more details (as
+      downloading diskinfo/partinfo/fileinfo program) or to do some tries to
+      better understand what happens.
+
+15    Drive letter seems not to be correct. How can I know which is the
+      partition I want to save?
+      ------
+      This problem can occur by example when you have NTFS partitions. As DOS
+      is not able to recognize them, a drive letter will not be assigned to it
+      and those assigned to FAT partitions are shifted. The simplest way to
+      know which drive a partition is, is to give to each partition a
+      different name. As this name is displayed, you just have to choose the
+      one that has the name of those to save. But for FAT partition, partition
+      name can be stored into two places, and depending on those that is
+      taken, it can seem to be wrong. In the same way if a FAT partition has
+      "NO NAME" as name, it is because it has no name (and not because it has
+      the name "NO NAME"). In this case, another way to know which partition
+      to choose, is to look at the size of the partition.
+      From version 3.80, a new method allows finding the partitions to use:
+      -fp and -ff options do program searches for a partition with relying on
+      some marking file you created on it from your usual OS. You only need to
+      be sure this file does not appear at the same place on two drives.
+
+16    When I run program, nothing appears.
+      ------
+      This can be a problem with screen display. Try using program with -bui
+      option (savepart -bui). If nothing appears again, try -cui option
+      (savepart -cui). If there is still nothing on screen, problem is
+      certainly not with screen display and so it is better to contact me.
+
+17    What can be done when I get the error message "A sector containing
+      parameters for filesystem cannot be read"?
+      ------
+      This message is displayed when program has found incoherency into
+      filesystem or when a filesystem sector is damaged. One thing that can be
+      done is to try to repair it with corresponding program ("scandisk <drive
+      letter>:" for Windows 9x/ME, "chkdsk /f <drive letter>:" for Windows
+      NT/(2000 ?), "chkdsk /p <drive letter>:" for Windows XP/(2000 ?), "fsck
+      <device name>" for Linux). If error is due to a bad sector you have to
+      do surface test to try to correct it. Once it is done, you can try
+      saving partition again. If it still does not work and that is not due to
+      a bad sector you can contact me.
+
+18    Can I save my partition on an USB storage device?
+      ------
+      Yes, you can as there was now some USB drivers for DOS. So you can
+      download one, add it into CONFIG.SYS file and use the newly created
+      drive to write saving file on. To find an USB driver for DOS and get
+      more help on it, you can search on Internet or take a look at
+      http://www.stefan2000.com/darkehorse/PC/DOS/Drivers/USB/ (the one I try
+      without any problem is the Motto Hairu one, but I did not try the
+      CD-writer feature as I do not have an USB one). Please notice that some
+      people get an error message telling that file cannot be created or
+      written. In this case, if it is not because file already exists and has
+      read-only flag, you have to use the "-nvf" option for program to work
+      (note: in case you access your USB storage device through mount, you
+      have to use the "-nvd" option).
+      From version 3.80, -nvf and -nvd becomes default options, so you should
+      no more encounter this problem.
+
+19    Can I perform incremental backup?
+      ------
+      Incremental backup is not available and will certainly never be.
+      Partition Saving saves sectors and not files. So to know if a sector
+      shall be saved again, it would have to compare each sector one by one,
+      that can be very long and do that a lot of sectors are saved again in
+      case of operation that modify a lot of sectors (as defragmenting).
+
+20    Can I extract only some files from backup?
+      ------
+      From version 3.30, this can be done with using "Explore a backup" option
+      and can also be used with files created with previous versions. This
+      needs that all backup files can be read simultaneously.
+      Before this version, this was available but only with FAT partition with
+      using driver mechanism. As it can be run only from DOS, this allows only
+      extracting short name files.
+
+21    Will my SATA/RAID/... disk be recognised?
+      ------
+      I cannot answer you, as I cannot test all disks and controller types. As
+      a generalisation, if it is natively supported into your BIOS, you will
+      certainly not have problem. You can perhaps need to get some DOS drivers
+      for it to work. The simplest way is to try: if disk appears into disk
+      list with a correct size, then displayed partition table is correct and
+      for a known type partition, saving occupied sectors only is available,
+      there will certainly be no problem. For information I got some people
+      telling me that they have no problem with their SATA or RAID disk
+      (thanks to them for information).
+      A good way to know if your disk is supported by your BIOS: if you can
+      boot on it, there shall be no problem (less a potential size problem if
+      your BIOS cannot access more than 128 Gb).
+      From 3.50 version, you can use the Windows version of Partition Saving
+      if you cannot access your disk from DOS and you have the Windows
+      drivers.
+
+22    Displayed partition table is empty or has only one partition when I know
+      there are several, what is wrong?
+      ------
+      If partition table is empty, this can be because program found an
+      incoherence in it (some partitions overlap, end after disk end, ...).
+      You can download partinfo.zip to display it and see what is wrong.
+      If you get only one partition when several are defined, this can be
+      because of dynamic disk usage (new partitioning scheme that is not
+      supported in DOS version) or because of using some security program as
+      Norton GoBack. In first case, you can use the Windows version with using
+      Windows devices (do not save the whole disk as dynamic disk allows
+      putting information on several disks and so some data will be missing).
+      In second case, you have to deactivate the corresponding program (refer
+      to this program documentation to know how to perform it).
+
+23    How can I reach the "mount partition/use automatic naming" window
+      without mouse?
+      ------
+      This window can be reached with using Alt+Tab (twice in case window
+      giving free space on drives is displayed) or Ctrl+Tab keys. To come back
+      to window to enter filename, you have to use one of these keys
+      combinations again.
+      Note: from version 3.20, mount partition button is into the window
+      requesting for filename, so changing window is no more needed to reach
+      it.
+
+24    I cannot create files on NTFS partition.
+      ------
+      This is standard program behaviour: from DOS it is not able to create
+      files on a NTFS partition. You have to create files from Windows with
+      the corresponding program option (or with creating empty files with
+      Windows explorer), then boot back to DOS to be able to use these files
+      as backup files with mounting the corresponding partition.
+
+25    My computer does not have a floppy drive. How can I start with DOS?
+      ------
+      You have to create a bootable CD. For this:
+
+        - either you have another computer with a floppy drive that allows you
+          creating this CD. In this case, you have to create the bootable
+          floppy disk as described into question 10, then with your burning CD
+          software you have to create a bootable CD: it will request you this
+          floppy disk when it needs it to perform an image and burn it onto
+          CD.
+        - or you do not have any other computer. In this case you have to use
+          an existing image of a bootable floppy disk or CD that you can use
+          with your burning software. You can either use image provided with
+          Partition Saving bootdisk (see chapter 2.b of spartbdk
+          documentation), or some burning programs provide their own bootdisk
+          image or others images can be found on Internet.
+
+      Another way is to not use the DOS version, but a Windows version with
+      creating a WinPE or BartPE CD.
+      A last way is to use a bootable USB disk or key if your computer allows
+      booting from it.
+
+26    Why do I get a message telling me a file cannot be created/written?
+      ------
+      There can be several reasons for this error:
+
+        - Support cannot be written (write protected disk).
+        - File or directory is write protected.
+        - Mount is read-only: when you mount a partition, you get a message
+          giving the mount number and if it is writable with or without file
+          creation or if it is read-only.
+          If mount is read-only, it can be because it was badly unmounted last
+          time it was used. In this case you have to check the filesystem
+          (with scandisk, chkdsk, e2fsck, ...). It shall be noticed that in
+          all cases, mounting a NTFS partition does not allow creating files
+          (only changing size of existing ones).
+        - You try to write an USB support. Some BIOS and drivers does not
+          allow using file writting check, in this case you have to use the
+          "-nvf" option (or "-nvd" if you access it through mount) when
+          running program (savepart -nvf).
+
+27    Why not allowing creation of file of more than 2047Mb (to fill up a
+      DVD)?
+      ------
+      This limitation comes from a filesystem that does not allow having
+      bigger file and it will remain to ensure compatibility. For the specific
+      case of a DVD, you can fill it up with choosing a file size compatible
+      with the DVD maximum size. As an example, with creating files of 1550Mb,
+      you can fill a DVD with three files per DVD.
+
+28    I can no more create backup file on saved partition even with choosing
+      to save it on itself?
+      ------
+      This was modified with V3.50. From this version when saving a partition
+      on itself you have to use the mount mechanism to access saved partition,
+      you can no more use DOS drive. When choosing option to save partition on
+      itself, it is automatically mounted (if you do not mount another
+      partition before, it is 0: drive).
+
+29    With Windows version, I do not see my system partition or program tells
+      me it cannot protect access to support?
+      ------
+      With Windows version, program needs to disallow other programs to access
+      to saved partition, else it can lead to some incoherence into backup.
+      But this cannot be done if some files are already opened on this saved
+      partition. This is always the case for system partition. So either it
+      does not appear into list of partition to select or its use is not
+      authorised.
+      In order to save your system partition, you have to do it either from
+      another Windows installation, or with a WinPE or BartPE CD, or from
+      Windows Vista recovery console.
+
+30    Can I change drive letter of my Windows installation from X: to C:?
+      ------
+      Once Windows is installed with a given drive letter, you can no more
+      change this drive letter (unless reinstalling it). Option provided by
+      Partition-Saving is to treat case where you save your Windows system and
+      restore it on another partition than this origin partition. It allows
+      you to change drive letter of this new partition for it to get the same
+      drive letter than the origin one such as Windows appears to not have
+      been moved.
+
+31    Can Partition-Saving be used with 512e disks (4 KB sectors disks
+      emulating 512 bytes sectors)?
+      ------
+      There is no problem using Partition-Saving with these disks. It is
+      recommended that partitions get 4 KB aligned to improve performance, but
+      as Partition-Saving does not create partitions, this is not a problem
+      for it but for program used to create partitions. The only case where
+      Partition-Saving "creates" partitions is when restoring partitions
+      table, but as in this case aim is to get the same partitions table than
+      origin one, it will not try to modify it.
+
+------
+All trademarks and registered trademarks are property of their respective
+holders.

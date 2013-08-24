@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ShareMedia-ControlPanel-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Share Media Control Panel_ru-RU" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-ShareMedia-ControlPanel-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Share Media Control Panel" displayName="Share Media Control Panel" name="Microsoft-Windows-ShareMedia-ControlPanel-Update">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="Microsoft-Windows-ShareMedia-ControlPanel-Update"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ShareMedia-ControlPanel-Deployment-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

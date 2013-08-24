@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.add_drive_body {
+	background: url(img/make_image_wnd.png) no-repeat;
+	width:361px;
+	height:465px;
+	padding:8px;
+	margin:0px;
+}
+.add_drive_title {
+	background:url(img/dt_icon.png) no-repeat;
+	padding-left:20px;
+	margin:0 0 0 2px;
+	height:16px;
+	font-size:14px;
+	color:#333333;
+}
+.titleText {
+	color:#ffffff;
+	float:left;
+	position:relative;
+	white-space:nowrap;
+	z-index:1000;
+}
+.blick {
+	color:#333333;
+	left:-1px;
+	position:absolute;
+	top:-1px;
+}
+.closeDiv {
+	float:right;
+	width:19px;
+	height:18px;
+	margin:0 3px 0 0;
+}
+.close {
+	background:url(img/close.png) no-repeat;
+	width:19px;
+	height:18px;
+	cursor:pointer;
+}
+.hover .close {
+	background-position: 0 -18px;
+}
+</style>
+<script type="text/javascript">
+function addClass(element, value) {
+	if (!element.className) {
+		element.className = value;
+	} else {
+		var newClassName = element.className;
+		newClassName += " ";
+		newClassName += value;
+		element.className = newClassName;
+	}
+}
+function hasClass (element, value) {
+	if (typeof element == 'undefined' || element==null ) { return false; }
+	if(element.className) {
+		str = element.className.split( " " );
+		for( i = 0; i < str.length; i++ ){
+			if(str[i]==value) return true;
+		}
+	}
+	return false;
+}
+function removeClass(element, value) {
+	if (element.className) {
+		var newClassName = "";
+		str = element.className.split( " " );
+		for( i = 0; i < str.length; i++ ){
+			if( str[i] != value && str[i]!="" ) newClassName += ( i==0 ? "" : " " ) + str[i];
+		}
+		element.className = newClassName;
+	}
+	return 0;
+}
+</script>
+<title>Add drive</title>
+</head>
+<body class="add_drive_body">
+<div class="add_drive_title">
+	<span class="titleText">
+	Add virtual drive
+		<span class="blick">Add virtual drive</span>
+	</span>
+	<div class = "closeDiv" onMouseOver="addClass(this, 'hover')" onMouseOut="removeClass(this, 'hover')" onClick="System.Gadget.Flyout.show = false;"><img src="img/1.gif" class="close" /></div>
+</div>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td>
+		<div onclick = "System.Gadget.Flyout.onHide = function(name, title, path, shortcut){ return function(){ System.Gadget.document.parentWindow.Gadget.Test(); System.Gadget.document.parentWindow.unBlockContentOnHide(); System.Gadget.document.parentWindow.returnGadgetOnHide();}}('C:', 'Empty drive', 'C:', 'img/unmounted.png'); System.Gadget.Flyout.show = false; ">Add drive</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

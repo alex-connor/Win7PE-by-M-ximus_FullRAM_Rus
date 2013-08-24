@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-OpticalMediaDisc-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="OpticalMediaDisc" releaseType="Feature Pack">
+    <parent integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-MediaPlayback-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Video DVD creation wizard" displayName="DVD Maker" name="OpticalMediaDisc">
+      <customInformation SoftBlockLink="http://go.microsoft.com/fwlink?LinkID=140093"/>
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="MediaPlayback"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="true"/>
+      </selectable>
+      <component>
+        <assemblyIdentity language="neutral" name="Microsoft-Windows-OpticalMediaDisc-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

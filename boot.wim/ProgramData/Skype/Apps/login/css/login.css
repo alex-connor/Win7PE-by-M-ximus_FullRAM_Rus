@@ -1,0 +1,82 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;text-decoration:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+html{width:100%;height:100%;overflow:auto;}
+body{background-color:#fff;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;cursor:default;}
+#background{position:absolute;left:0;top:0;width:720px;height:472px;background:#fff url(../images/background.png) 0 0 no-repeat;}
+body.rtl #background{background-position:0 -472px;}
+#form{display:none;width:672px;height:368px;padding:104px 24px 0;}
+#facebookConnect{padding-top:1px;height:31px;font-size:18px;line-height:16px;font-weight:bold;color:#fff;}
+#content{position:relative;height:1px;}
+#linkToYourExistingSkypeAccount{padding-top:3px;height:29px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#usernameLabel{display:block;padding-top:3px;height:21px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#selectUsernameLabel{display:block;padding-top:7px;height:25px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#usernameCombobox{width:312px;position:relative;z-index:1;}
+#passwordLabelContainer{position:relative;width:312px;height:22px;padding-top:10px;}
+#passwordLabel{font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#problemsSigningIn{position:absolute;right:0;top:11px;text-align:right;font-size:11px;line-height:16px;color:#fff;}
+body.rtl #problemsSigningIn{text-align:left;}
+#passwordField{width:312px;height:32px;margin-bottom:0;background:url(../images/inputfields.png) 0 -64px no-repeat;}
+#password{width:298px;margin:4px 7px 0;border:none;background-color:transparent;}
+.disabledField{color:#b2b2b2;}
+#autoLoginContainer{padding-top:9px;padding-left:1px;margin-bottom:-1px;}
+#signInContainer{padding-top:16px;}
+#createAccountInlineContainer{padding-left:6px;font-size:13px;color:#b2e7fa;}
+#startAgainLink{padding-left:6px;font-size:13px;font-weight:bold;color:#fff;}
+#createAccountInline{font-weight:bold;color:#fff;}
+#separator{position:absolute;left:336px;top:0;width:1px;height:192px;background-color:#009ad3;}
+#createAccountPanel{position:absolute;left:359px;top:3px;width:313px;}
+#createAccountLabel,#facebookLoginLabel{margin-bottom:5px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#createAccountWithFacebook{margin-bottom:21px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#facebookLoginDescription{padding-top:3px;padding-left:2px;margin-bottom:13px;font-size:11px;line-height:16px;color:#b2e7fa;}
+#loader{display:none;position:absolute;left:464px;top:39px;width:90px;height:90px;}
+.button{display:inline-block;cursor:default;height:32px;background:url(../images/buttons.png) right -32px no-repeat;zoom:1;*display:inline;}
+.button span{display:inline-block;height:32px;padding-left:32px;margin-right:32px;background:url(../images/buttons.png) left -32px no-repeat;font-size:13px;font-weight:bold;color:#666;display:inline-block;zoom:1;*display:inline;}
+.button-disabled{background-position:right 0;}
+.button-disabled span{background-position:left 0;color:#338aab;}
+.button-down{background-position:right -64px;}
+.button-down span{background-position:left -64px;}
+.facebookButton{display:inline-block;cursor:default;height:32px;background:url(../images/buttons.png) right -96px no-repeat;zoom:1;*display:inline;}
+.facebookButton span{display:inline-block;height:32px;padding-left:48px;margin-right:32px;background:url(../images/buttons.png) left -96px no-repeat;font-size:13px;font-weight:bold;color:#fff;display:inline-block;zoom:1;*display:inline;}
+.facebookButton-down{background-position:right -128px;}
+.facebookButton-down span{background-position:left -128px;}
+#capsLock{display:none;position:absolute;left:320px;top:80px;width:320px;}
+#capsLockBody{padding:7px 8px 3px 39px;background:url(../images/capsLock.png) 0 -15px no-repeat;font-size:13px;line-height:16px;color:#636363;}
+body.rtl #capsLockBody{padding:8px 39px 3px 8px;background-position:-320px -15px;}
+#capsLockBottom{width:320px;height:15px;background:url(../images/capsLock.png) 0 0 no-repeat;font-size:1px;}
+body.rtl #capsLockBottom{background-position:-320px 0;}
+.checkbox{padding-left:20px;cursor:default;background:url(../images/checkbox.png) left 0 no-repeat;font-size:11px;line-height:13px;color:#b2e7fa;padding-bottom:1px;}
+body.rtl .checkbox{padding-right:20px;background-position:right 0;}
+.checkbox-checked{background-position:left -14px;}
+body.rtl .checkbox-checked{background-position:right -14px;}
+.combobox{position:relative;width:312px;height:32px;background:url(../images/inputfields.png) 0 0 no-repeat;}
+body.rtl .combobox{background-position:0 -32px;}
+.combobox input{width:264px;margin:4px 7px 0;_margin-top:3px;border:none;background-color:transparent;font-size:18px;color:#333;}
+.dropdownButton{position:absolute;right:0;top:0;width:33px;height:32px;}
+.dropdownButtonEnabled{cursor:pointer;}
+.dropdownButtonDisabled{cursor:default;}
+.dropdown{display:none;position:absolute;left:0;top:32px;width:312px;padding-bottom:1px;background:url(../images/dropdown.png) left bottom no-repeat;}
+.dropdown li{display:block;width:296px;height:24px;margin:0 1px;padding:0 7px;cursor:default;font-size:13px;line-height:24px;color:#333;}
+.dropdown li.first{height:22px;line-height:22px;padding-bottom:2px;}
+.dropdown li.selected{color:#fff;}
+#connection{position:absolute;left:142px;top:28px;width:485px;height:44px;background:url(../images/connection.png) 0 9px no-repeat;padding-left:93px;}
+body.rtl #connection{background-position:right 9px;}
+#pictureFrame{position:absolute;left:109px;top:0;width:42px;height:42px;border:1px solid #1f9fce;}
+#picture{width:40px;height:40px;border:1px solid #fff;}
+#facebookIcon{position:absolute;left:137px;top:28px;z-index:1;}
+#loggedInAs{position:absolute;left:161px;top:5px;font-size:13px;line-height:16px;font-weight:bold;color:#b2e7fa;}
+#name{position:absolute;left:161px;top:21px;font-size:13px;line-height:16px;font-weight:bold;color:#fff;}
+#message{display:none;position:relative;padding-top:5px;margin-bottom:6px;background:url(../images/messageTop.png) center top no-repeat;}
+#messagePlaceholder{height:16px;}
+#messageIcon{position:absolute;left:8px;top:8px;width:16px;height:16px;background-image:url(../images/icons.png);background-repeat:no-repeat;font-size:1px;}
+#messageIcon.warning{background-position:0 -16px;}
+#messageIcon.error{background-position:0 0;}
+#messageBody{padding-top:4px;padding-bottom:5px;padding-left:32px;background-color:#e5f7fd;font-size:13px;color:#636363;}
+body.rtl #messageBody{padding-left:0;padding-right:32px;}
+#messageBottom{height:15px;background:url(../images/messageBottom.png) center top no-repeat;font-size:1px;}
+#messageBody a{color:#06f;}
+#messageBody a:hover{color:#3a9eeb;}

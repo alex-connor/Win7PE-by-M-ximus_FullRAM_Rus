@@ -1,0 +1,292 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>"OpenOffice.org HTML Viewer" plugin for Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<center>
+<h1>
+<font color="#000099">"OpenOffice.org HTML Viewer"<br> plugin for Total Commander</font>
+</h1>
+</center>
+
+<h1>Contents</h1>
+
+<ul>
+<li> <a href="#Intro">Introduction</a>
+<li> <a href="#Install">Installation</a>
+<li> <a href="#DOCX">DOCX Support</a>
+<li> <a href="#IniFile">Configuration</a>
+<li> <a href="#Versions">Versions History</a>
+<li> <a href="#Copy">Copyrights & Links</a>
+</ul>
+
+<!------------------------------------------------------------------>
+<a name="Intro">
+<h1>Introduction</h1>
+
+This plugin allows to view OpenOffice.org, MS Word 2007 and some other XML-based documents
+in <a href="http://www.ghisler.com" target="_blank">Total Commander</a>
+and <a href="http://www.uvviewsoft.com" target="_blank">Universal Viewer</a>.
+Documents are converted to XHTML form, so you can see them with most of formatting.
+Not all document styles may be supported because of underlying XSL
+stylesheets work -- I hope, we will have full-featured XSL stylesheets someday that
+will support more formats and more document styles.
+
+<p>
+Currently supported formats:
+
+<ul>
+<li> <a href="http://www.openoffice.org" target="_blank">OpenOffice.org</a> 1.x Writer/Calc/Draw (SXW STW SXC STC SXD STD)
+<li> OpenOffice.org 2.x Writer (ODT OTT)
+<li> <a href="http://office.microsoft.com" target="_blank">MS Word 2007</a> (DOCX DOTX)
+<li> <a href="http://www.fictionbook.org" target="_blank">FictionBook</a> (FB2)
+</ul>
+
+<p>
+In Thumbnails view mode of Total Commander plugin allows to show documents thumbnails
+(currently only for OOo 2.x and if thumbs are embedded into document).
+
+<p>
+<table width="70%" align="center" style="background-color:#A33; color:#FFF;">
+<tr>
+  <td>
+    <center><h3>WARNING</h3></center>
+    <p>
+    Currently plugin cannot work properly in TC Lister (F3) mode (most of keys
+    in Lister don't work while plugin is active). But it works OK in TC Quick View
+    mode. So plugin work is disabled in Lister mode, to enable it create the
+    <b>"OOoViewer.ini"</b> file in the plugin folder, and enable the option in it:
+
+    <pre>
+    [Options]
+    AllowWorkInLister=1</pre>
+
+    This note is not valid for the
+    <a href="http://atorg.net.ru/universal_viewer/" target="_blank"><font color="#00FFFF">Universal Viewer (ATViewer)</font></a>.
+    Plugin works OK with Universal Viewer, since keys handling in the UV is different.
+  </td>
+</tr>
+</table>
+
+
+<!------------------------------------------------------------------>
+<a name="Install">
+<h1>Installation</h1>
+
+With Total Commander 6.50 or newer, just open the archive and TC will install the plugin automatically.
+If you already have plugin installed, you may first need to uninstall the previous
+version so plugin's detection string will be updated.
+
+
+<!------------------------------------------------------------------>
+<a name="DOCX">
+<h1>DOCX Support</h1>
+
+<p>
+To view DOCX documents you need to install one of the following:
+
+<ul>
+<li> <a href="https://sourceforge.net/project/showfiles.php?group_id=169337&package_id=196237" target="_blank">Translator from Clever Age</a>
+(ODF Translator Command Line).
+Note that it requires the
+<a href="http://www.microsoft.com/downloads/details.aspx?familyid=0856eacb-4362-4b0d-8edd-aab15c5e04f5&displaylang=en" target="_blank">.NET Framework 2.0</a> to work.
+
+<p>
+<li> <a href="http://download.novell.com/SummaryFree.jsp?buildid=ESrjfdE4U58~" target="_blank">Translator from Novell</a>
+(OpenOffice OpenXML Translator).
+It doesn't require .NET, and it works a little faster than the one from Clever Age.
+Get the <b>odfconverter*.oxt</b> file, it is the ordinary ZIP file.
+</ul>
+
+<p>
+Unzip the Translator package into any subfolder of the plugin folder.
+The <b>OdfConverter.exe</b> file should appear.
+If you didn't unzip the Translator where needed, you'll see the error message box
+on opening DOCX files. If you installed the Translator right, you'll see the
+conversion progress window on opening DOCX.
+
+<p>
+You can also download
+<a href="http://atorg.net.ru/files/wlx_OOoViewer_full.zip" target="_blank">the plugin and ODF Translator in one package</a>.
+
+
+<!------------------------------------------------------------------>
+<a name="IniFile">
+<h1>Configuration</h1>
+
+You can edit the following options in the "OOoViewer.ini" file, located in the plugin folder:
+
+<p>
+<table border="1">
+<tr>
+ <th>Key
+ </th>
+ <th>Meaning
+ </th>
+</tr>
+<tr>
+ <th colspan="2">
+ [Options] section
+ </th>
+</tr>
+<tr>
+ <td>AllowWorkInLister
+ </td>
+ <td>Enables plugin work in TC Lister (F3 mode).<br>
+   Default is 0 (disabled, only TC QuickView is enabled).
+ </td>
+</tr>
+<tr>
+ <td>ShowImages
+ </td>
+ <td>Enables showing images for FB2 documents. Plugin will start slower.<br>
+   Default is 1 (enabled).
+ </td>
+</tr>
+<tr>
+ <td>TempExtension
+ </td>
+ <td>Enables using extension in the temp folder's name.
+   When enabled, folder name for "example.odt" file will look like "C:\Temp\example.odt.tmp",
+   overwise it will look like "C:\Temp\example".<br>
+   Default is 1.<br>
+   Note that it must be set to 0 if you use Novell ODF Converter.
+ </td>
+</tr>
+</table>
+
+
+<!------------------------------------------------------------------>
+<a name="Versions">
+<h1>Versions History</h1>
+
+<ul>
+<li> 1.6.9 (08 Nov 2007):
+     <ul>
+     <li> Added: Each file now has its separate temporary directory, no more conflicts between several files.
+     <li> Added: "TempExtension" ini key.
+     <li> Fixed: FB2 images were not removed on exit.
+     <li> Fixed: IE cache isn't used now.
+     <li> Fixed: Memory leak on using WebBrowser (thanks Starina).
+     <li> Fixed: View of FB2 in Win-1251 encoding (thanks Nick).
+     </ul>
+<p>
+<li> 1.6.5 (02 Oct 2007):
+     <ul>
+     <li>Added: Support for FB2.
+     <li>Added: Support for images inside FB2.
+       To disable images, write to the OOoViewer.ini:<br>
+       [Options] <br>
+       ShowImages=0
+     <li>Fixed: Plugin didn't receive focus on pressing Tab in TC QuickView mode.
+     </ul>
+<p>
+<li> 1.5.3 (25 Jun 2007):
+     <ul>
+     <li>Added: Support for DOCX, DOTX.
+     <li>Changed: Temporary files are created in the "%TEMP%\OOoUtils" folder.
+     <li>Changed: Readme rewritten.
+     <li>Fixed: View error with Russian plugin filepath.
+     <li>Fixed: Conversion error of Russian filenames with Novell translator.
+     </ul>
+<p>
+<li> 1.1.5 (18 Jun 2007):
+     <ul>
+     <li>Added: Support for TC commands: Search (TC 7.0), Copy, Select All, Print.
+     <li>Added: Extensions in the detect-string: SXC STC SXD STD
+     <li>Changed: Disabled work in TC Lister mode, see WARNING above.
+     <li>Fixed: Wrong detection of Lister window
+     </ul>
+<p>
+<li> 1.0.2 (09 Oct 2006):
+     <ul>
+     <li>Added: Support for OOo 1.x
+     </ul>
+<p>
+<li> 1.0.0 (07 Oct 2006):
+     <ul>
+     <li>Initial version supported OOo 2.x
+     </ul>
+</ul>
+
+
+<!------------------------------------------------------------------>
+<a name="Copy">
+<h1>Copyrights & Links</h1>
+
+<ul>
+<li>
+  PNGImage Library:<br>
+  Copyright &copy; Gustavo Daud<br>
+  <a href="http://pngdelphi.sourceforge.net" target="_blank">Homepage</a>
+
+<p>
+<li>
+  ODF Translator Command Line:<br>
+  Copyright &copy; 2006, Clever Age<br>
+  <a href="http://odf-converter.sourceforge.net/" target="_blank">Homepage</a> <br>
+  The ODF Translator license:
+
+<p>
+<table width="70%" align="center" style="background-color:#777; color:#FFF;">
+<tr>
+  <td>
+    <pre>
+
+* Copyright (c) 2006, Clever Age
+* All rights reserved.
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are met:
+*
+*     * Redistributions of source code must retain the above copyright
+*       notice, this list of conditions and the following disclaimer.
+*     * Redistributions in binary form must reproduce the above copyright
+*       notice, this list of conditions and the following disclaimer in the
+*       documentation and/or other materials provided with the distribution.
+*     * Neither the name of Clever Age, nor the names of its contributors may
+*       be used to endorse or promote products derived from this software
+*       without specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY
+* EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+* DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+* (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+* ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+* (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+  </td>
+</tr>
+</table>
+
+<p>
+<li>
+  XSL stylesheet that converts ODT to XHTML:<br>
+  Copyright &copy; 2005-2006 J. David Eisenberg<br>
+  <a href="http://books.evc-cit.info/odf_utils/odt_to_xhtml.html" target="_blank">Homepage</a>
+
+<p>
+<li>
+  XSL stylesheets that convert FB2 to XHTML:<br>
+  From the FB2Any package by Dmitry Gribov<br>
+  <a href="http://www.fictionbook.org" target="_blank">Homepage</a>,
+  <a href="http://www.gribuser.ru/xml/fictionbook/2.0/software/FB2Any.exe" target="_blank">Latest version</a>
+
+<p>
+<li>
+  "OpenOffice.org HTML Viewer" plugin:<br>
+  Copyright &copy; 2006-2007 Alexey Torgashin<br>
+  <a href="http://www.totalcmd.net/plugring/OOoHtmlViewer.html" target="_blank">Homepage</a> <br>
+  <a href="http://www.uvviewsoft.com/support.htm" target="_blank">Support</a> <br>
+  Source code is available <a href="http://atorg.net.ru/files/util_OOProg_src.rar" target="_blank">at this location</a>. <br>
+  License: <a href="http://www.mozilla.org/MPL/" target="_blank">Mozilla Public License</a> Version 1.1.
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Session version="1.0" id="13108_2704934626" client="DISM Package Manager Provider" options="0" currentPhase="1" lastSuccessfulState="Installed" pendingFollower="true" retry="false">
+    <Tasks>
+        <Phase seq="1">
+            <package id="WinPE-Setup-Client-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" name="WinPE-Setup-Client_ru-RU" targetState="Installed" options="4"/>
+        </Phase>
+    </Tasks>
+    <Actions>
+        <Phase seq="1" rebootRequired="true">
+            <Resolve package="WinPE-Setup-Client-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Setup-Client"/>
+            <Stage package="WinPE-Setup-Client-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Setup-Client"/>
+            <Install package="WinPE-Setup-Client-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Setup-Client"/>
+        </Phase>
+    </Actions>
+</Session>

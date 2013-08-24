@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-themecpl" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly dependencyType="prerequisite">
+      <assemblyIdentity name="Microsoft-Windows-themecpl.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="themecpl.dll" destinationPath="$(runtime.system32)\" sourceName="themecpl.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">mNpyJl3XJfPmjcaMn4MN7yP59x06BI4jUh9bZFCtulE=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="themecpl.ptxml" destinationPath="$(runtime.system32)\wdi\perftrack\" sourceName="themecpl.ptxml" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">njUt9wtvcpzpKNQ1PlOAlZTLnzCIVJkgcrbjbW4Cdc0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{84CCE1D2-97AD-4448-AF0F-A79164073A60}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Personalization Control Panel Element Provider" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{84CCE1D2-97AD-4448-AF0F-A79164073A60}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\themecpl.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\knownfolders\0" owner="false">
+      <registryValue name="GROUPBY" valueType="REG_SZ" value="System.ItemFolderNameDisplay" operationHint="replace" owner="true" />
+      <registryValue name="NAME" valueType="REG_EXPAND_SZ" value="@%SYSTEMROOT%\System32\themecpl.dll,-74" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\knownfolders\0\Windows Wallpapers\MergeFolders" owner="false">
+      <registryValue name="%SystemRoot%\web\wallpaper" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Architecture" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Characters" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Landscapes" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Nature" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Scenes" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="%SystemRoot%\web\wallpaper\Windows" valueType="REG_EXPAND_SZ" value="" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\AutoLogger\SQMLogger\{61F044AF-9104-4CA5-81EE-CB6C51BB01AB}" owner="false">
+      <registryValue name="LoggerName" valueType="REG_SZ" value="SQMLogger" operationHint="replace" owner="true" />
+      <registryValue name="Enabled" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <registryValue name="EnableLevel" valueType="REG_DWORD" value="0x00000004" operationHint="replace" owner="true" />
+      <registryValue name="MatchAnyKeyword" valueType="REG_QWORD" value="0000000000000800" operationHint="replace" owner="true" />
+      <registryValue name="EnableProperty" valueType="REG_DWORD" value="0x00000002" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_WRITE_ADMIN_SYSTEM_SERVICE" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WDI\Scenarios\{fd5aa730-b53f-4b39-84e5-cb4303621d74}\Instrumentation\{61f044af-9104-4ca5-81ee-cb6c51bb01ab};*" owner="false">
+      <registryValue name="Keyword" valueType="REG_QWORD" value="0000000000000100" operationHint="replace" owner="true" />
+      <registryValue name="Level" valueType="REG_DWORD" value="0x00000004" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_KEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_REGKEY_WRITE_ADMIN_SYSTEM_SERVICE" sddl="D:P(A;OICI;KA;;;BA)(A;OICI;KA;;;SY)(A;OICI;KA;;;LS)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="EventProviderName" value="Microsoft-Windows-ThemeCPL" />
+      </stringTable>
+    </resources>
+  </localization>
+  <instrumentation>
+    <events xmlns="http://schemas.microsoft.com/win/2004/08/events">
+      <provider guid="{61F044AF-9104-4CA5-81EE-CB6C51BB01AB}" message="$(string.EventProviderName)" messageFileName="%SystemRoot%\System32\themecpl.dll" name="Microsoft-Windows-ThemeCPL" resourceFileName="%SystemRoot%\System32\themecpl.dll" symbol="ThemeCPL_Provider">
+        <channels>
+          <channel chid="defch" name="Microsoft-Windows-ThemeCPL/Diagnostic" type="Analytic" />
+        </channels>
+        <tasks>
+          <task name="ThemeCPL_Personalization_Page_Ready" value="1" />
+          <task name="ThemeCPL_WallpaperPage_Ready" value="2" />
+          <task name="ThemeCPL_StaticWallpaper_Set" value="3" />
+          <task name="ThemeCPL_DesktopSlideshow_Set" value="4" />
+          <task name="Personalization_HubPageInit" value="5" />
+          <task name="Personalization_ThemeSwitch" value="6" />
+          <task name="ThemeCPL_ColorCPLAdvancedPropertiesLink" value="7" />
+          <task name="ThemeCPL_WallpaperPageInit" value="9" />
+          <task name="ThemeCPL_WallpaperSet" value="10" />
+          <task name="Personalization_DesktopBackgroundLinkClicked" value="11" />
+          <task name="Personalization_WindowColorLinkClicked" value="12" />
+          <task name="Personalization_SoundsLinkClicked" value="13" />
+          <task name="Personalization_ScreenSaverLinkClicked" value="14" />
+          <task name="Personalization_OnlineThemesLinkClicked" value="15" />
+          <task name="ColorCPL_SetDWMColor" value="16" />
+        </tasks>
+        <templates>
+          <template tid="SqmCount">
+            <data inType="win:GUID" name="SqmSessionGuid" />
+            <data inType="win:UInt32" name="SqmID" />
+            <data inType="win:UInt32" name="SqmType" />
+            <data inType="win:UInt32" name="SqmDWORDDatapointValue" />
+          </template>
+        </templates>
+        <keywords>
+          <keyword mask="0x00010000" name="ThemeCPL" />
+        </keywords>
+        <events>
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeCPL_Personalization_Page_Ready" task="ThemeCPL_Personalization_Page_Ready" value="0" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeCPL_WallpaperPage_Ready" task="ThemeCPL_WallpaperPage_Ready" value="1" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeCPL_StaticWallpaper_Set" task="ThemeCPL_StaticWallpaper_Set" value="2" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeCPL_DesktopSlideshow_Set" task="ThemeCPL_DesktopSlideshow_Set" value="3" />
+          <event channel="defch" keywords="win:ResponseTime win:SQM" level="win:Informational" opcode="win:Start" symbol="Personalization_HubPageInit_Start" task="Personalization_HubPageInit" template="SqmCount" value="4" />
+          <event channel="defch" keywords="win:ResponseTime" level="win:Informational" opcode="win:Stop" symbol="Personalization_HubPageInit_Stop" task="Personalization_HubPageInit" value="5" />
+          <event channel="defch" keywords="ThemeCPL" level="win:Informational" opcode="win:Start" symbol="Personalization_ThemeSwitch_Start" task="Personalization_ThemeSwitch" value="6" />
+          <event channel="defch" keywords="ThemeCPL" level="win:Informational" opcode="win:Stop" symbol="Personalization_ThemeSwitch_Stop" task="Personalization_ThemeSwitch" value="7" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="ThemeCPL_ColorCPLAdvancedPropertiesLink_Info" task="ThemeCPL_ColorCPLAdvancedPropertiesLink" template="SqmCount" value="8" />
+          <event channel="defch" keywords="win:ResponseTime" level="win:Informational" opcode="win:Start" symbol="ThemeCPL_WallpaperPageInit_Start" task="ThemeCPL_WallpaperPageInit" value="9" />
+          <event channel="defch" keywords="win:ResponseTime" level="win:Informational" opcode="win:Stop" symbol="ThemeCPL_WallpaperPageInit_Stop" task="ThemeCPL_WallpaperPageInit" value="10" />
+          <event channel="defch" level="win:Informational" opcode="win:Start" symbol="ThemeCPL_WallpaperSet_Start" task="ThemeCPL_WallpaperSet" value="11" />
+          <event channel="defch" level="win:Informational" opcode="win:Stop" symbol="ThemeCPL_WallpaperSet_Stop" task="ThemeCPL_WallpaperSet" value="12" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="Personalization_DesktopBackgroundLinkClicked_Info" task="Personalization_DesktopBackgroundLinkClicked" template="SqmCount" value="13" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="Personalization_WindowColorLinkClicked_Info" task="Personalization_WindowColorLinkClicked" template="SqmCount" value="14" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="Personalization_SoundsLinkClicked_Info" task="Personalization_SoundsLinkClicked" template="SqmCount" value="15" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="Personalization_ScreenSaverLinkClicked_Info" task="Personalization_ScreenSaverLinkClicked" template="SqmCount" value="16" />
+          <event channel="defch" keywords="win:SQM" level="win:Informational" opcode="win:Info" symbol="Personalization_OnlineThemesLinkClicked_Info" task="Personalization_OnlineThemesLinkClicked" template="SqmCount" value="17" />
+          <event channel="defch" level="win:Informational" opcode="win:Start" symbol="ColorCPL_SetDWMColor_Start" task="ColorCPL_SetDWMColor" value="18" />
+          <event channel="defch" level="win:Informational" opcode="win:Stop" symbol="ColorCPL_SetDWMColor_Stop" task="ColorCPL_SetDWMColor" value="19" />
+        </events>
+      </provider>
+    </events>
+  </instrumentation>
+  <migration scope="Upgrade,MigWiz,USMT" settingsVersion="0">
+    <supportedComponents>
+      <supportedComponent>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <supportedComponentIdentity xmlns="urn:schemas-microsoft-com:asm.v3" language="neutral" name="Microsoft-Windows-themecpl" processorArchitecture="*" settingsVersionRange="0" />
+      </supportedComponent>
+    </supportedComponents>
+    <migXml xmlns="">
+      <rules context="user">
+        <include>
+          <objectSet>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\KnownFolders\* [*]</pattern>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\InstalledThemes\MCT\* [*]</pattern>
+          </objectSet>
+        </include>
+      </rules>
+    </migXml>
+  </migration>
+</assembly>

@@ -1,0 +1,53 @@
+Xvid-1.2.1-04122008 _Final Release_
+
+Based on CVS from 03.12.2008 18:30h MET
+
+Changelog to Xvid-1.2.1:
+
+Xvid-1.2.1-04122008:
+
+Changes to Xvid-1.2.0:
+
+- Fix for 'nested function' potential compilation error
+- WIN64 fix: Properly treat xmm6/xmm7 registers as non-volatile on WIN64
+- Added test for WIN64 xmm6/xmm7 preservation to xvid_bench 
+
+Changes to Xvid-1.1.3:
+
+vid core
+
+    * Complete AMD64/EM64T 64-bit support
+    * Added support for WIN64 platform
+    * Multi-threaded encoding support
+    * SSE3/SSE4 optimizations
+    * Faster and more precise mpeg intra quantization
+    * Fixed bug in packed pixel format colorspace conversion
+    * Noexec-stack security patch
+    * Fix for bad resync marker length
+    * Improved decoder robustness for broken streams containing B-frames
+    * Fix for potential out-of-bound access to MV bits table
+    * Added SSIM quality-metric plugin 
+
+VFW frontend
+
+    * WIN64 compatibility
+    * Added widgets for SSE3/SSE4
+    * Auto-detection of available processor cores
+    * Minor GUI cosmetics
+
+DShow frontend
+
+    * WIN64 compatibility
+    * Minor GUI cosmetics
+
+
+
+Remember, this binary is for educational testing purposes only!
+You agree to keep me free of any (legal) issues involved with downloading
+and using this binary!
+
+Xvid home: http://www.xvid.org/
+Doom9's forum: http://forum.doom9.org/forumdisplay.php?s=&forumid=52
+
+eMail: none so far... (replace the at with @ and the dot with a .)
+URL: http://www.koepi.info/

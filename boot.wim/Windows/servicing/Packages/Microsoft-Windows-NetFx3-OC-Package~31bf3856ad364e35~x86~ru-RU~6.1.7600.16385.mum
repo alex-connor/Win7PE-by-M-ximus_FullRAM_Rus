@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-NetFx3-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Microsoft .NET Framework 3.0_ru-RU" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-NetFx3-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Microsoft .NET Framework 3.5.1" displayName="Microsoft .NET Framework 3.5.1" name="NetFx3">
+      <applicable disposition="detect">
+        <detectUpdate>
+          <parent name="NetFx3"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-NetFx3-Deployment-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Windows Communication Foundation HTTP Activation" displayName="Windows Communication Foundation HTTP Activation" name="WCF-HTTP-Activation">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="WCF-HTTP-Activation"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="WCF-HTTP-Activation-Deployment-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Windows Communication Foundation Non-HTTP Activation" displayName="Windows Communication Foundation Non-HTTP Activation" name="WCF-NonHTTP-Activation">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="WCF-NonHTTP-Activation"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="WCF-NonHTTP-Activation-Deployment-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

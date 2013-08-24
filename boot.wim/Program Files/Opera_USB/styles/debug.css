@@ -1,0 +1,9 @@
+@import url(opera.css);
+
+button { margin: 0 10px 0 0; }
+
+input[type="number"],
+input[type="text"] {
+	padding: 0.2em;
+	margin: 0 0 0.5em 0;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-Sensors-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="MobilePC-Client-Sensors-Package_ru-RU" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-MobilePC-Client-Sensors-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update name="MobilePC-Client-Sensors">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-Sensors-Deployment-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Sensors ALS Driver" displayName="Sensors ALS Driver" name="Microsoft-Windows-MobilePC-Sensors-ALSDriver-INF">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="sensorsalsdriver.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

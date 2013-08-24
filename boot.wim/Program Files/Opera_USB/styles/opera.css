@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* Shared Stylesheet for internal Opera documents */
+/* Copyright 2010 Opera Software */
+
+@media not print {
+
+html {
+  background: #f8f8f8 url(images/bkgd.png) 0 0 repeat-x;
+  font: 13px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #525c66;
+  min-height: 100%;
+  voice-family: female;
+  overflow-x: hidden;
+}
+
+html * {
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+body:before {
+  content: url(images/opera-icon-red.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+body {
+  max-width: 650px;
+  margin: 25px auto 10px auto;
+  padding: 40px;
+  border-width: 20px;
+  overflow-x: hidden;
+  -o-border-image: url(images/container.png) 20  stretch;
+  text-align: left;
+}
+
+dt {
+	display: block;
+	float: left;
+	width: 24%;
+	margin: 0 0 0.3em 1%
+}
+
+dd { 
+	color: #000;
+	margin: 0 0 0.3em 28%;
+}
+
+dd:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+a {
+	color: #0082d9;
+	border-bottom: 1px solid rgba(0,130,217,0.2);
+	text-decoration: none;
+}
+
+a:hover {
+	border-color: rgba(0,130,217,0.5);
+}
+
+h1 {
+  margin: 0 0 0.2em 0;
+  line-height: 0.9;
+  color: #cc0f16;
+  font-size: 1.8em;
+  color: #ae4444;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+}
+
+h2 {
+  font-size: 120%;
+  margin: 0 0 0.4em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px rgba(255,255,255,0.5);
+}
+
+
+input {
+	vertical-align: middle;
+	box-sizing: border-box; 
+}
+
+cite {
+	font-style: normal;
+	margin: 0;
+	color: #999;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+ins {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+dl,ul,ol  {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+li {
+	margin: 0 0 0.3em 0;
+}
+
+ul li {
+	padding: 0 0 0 20px;
+	list-style-type: none;
+	background: url(images/bullet.png) no-repeat 0 0.3em;
+}
+
+blockquote {
+	border-left: 5px solid #f1f1f1;
+	margin: 0;
+	padding: 0 0 0 1.5em;
+}
+
+address {
+	font-style: normal;
+	color: #666;
+	padding: 0;
+}
+
+
+table {
+	width: 100%;
+	margin: 0 0 15px 0;
+	border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+tr:nth-child(even) {
+  background: rgba(0,0,0,0.025);
+}
+
+td {
+	padding: 0.2em 1em 0.2em 0;
+	vertical-align: top;
+}
+
+th {
+	text-align: left;
+	width: 230px;
+  font-weight: inherit;
+	padding: 4px 6px 4px 0;
+	vertical-align: top;
+}
+
+html[dir="rtl"] * { text-align: right; }
+
+input[type="number"] { padding: 0.1em;}
+
+}
+
+/* Text Sizing */
+
+@media tv, handheld {html {font-size: 150%;}}
+@media screen and (max-width: 250px), projection and (max-width: 250px), tv and (max-width: 250px), handheld and (max-width: 250px) {
+  html {font-size: 11px}
+  h1 {font-size: 1.4em}
+  h2 {font-size: 1.1em}
+}
+
+/* make table cells full width when panel is too narrow */
+@media screen and (max-width: 400px), projection and (max-width: 400px), tv and (max-width: 400px) {
+
+  body {
+    background-image: none;
+    padding: 10px;
+    margin: 0;
+	}
+
+	th, td, tr, table {
+		display: block;
+		width: 98%;
+	}
+	
+	td, th { padding: 0 6px 0 0}
+	tr { margin: 8px 0;}
+		
+	dt { float: none; width: 100%; }
+	dd { margin: 0; }
+}

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Media-Format-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Windows Media Format Runtime" releaseType="Feature Pack">
+    <parent integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="wpdmtp.inf" displayName="wpdmtp.inf" name="INF_wpdmtp" restart="required">
+      <driver inf="wpdmtp.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="wpdmtp.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="wpdmtphw.inf" displayName="wpdmtphw.inf" name="INF_wpdmtphw" restart="required">
+      <driver inf="wpdmtphw.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="wpdmtphw.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="wpdfs.inf" displayName="wpdfs.inf" name="INF_wpdfs" restart="required">
+      <driver inf="WpdFs.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="wpdfs.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="wpdcomp.inf" displayName="wpdcomp.inf" name="INF_wpdcomp" restart="required">
+      <driver inf="wpdcomp.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="wpdcomp.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="bthmtpenum.inf" displayName="bthmtpenum.inf" name="INF_bthmtpenum" restart="required">
+      <driver inf="bthmtpenum.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="bthmtpenum.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="Windows Media Format Runtime" displayName="Windows Media Format Runtime" name="WindowsMediaFormatRuntime" restart="required">
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Media-Format-Runtime-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

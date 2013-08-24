@@ -1,0 +1,452 @@
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %Msft%
+LayoutFile  = layout.inf
+DriverVer=10/01/2002,5.5.4.0
+
+[Manufacturer]
+%Addtron%   = Addtron
+%AMB%       = AMBICOM
+%Cabletron% = Cabletron
+%Compex%    = Compex
+%DLINK%     = DLINK
+%Intel%     = Intel
+%Kingston%  = Kingston
+%Linksys%   = Linksys
+%Netgear%   = Netgear
+%TDK%       = TDK
+%Toshiba%   = Toshiba
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Intel]
+%21040.DeviceDesc%      = 21040.ndi,    PCI\VEN_1011&DEV_0002                 ;Intel 21040-Based PCI Ethernet Adapter (Generic)
+%21041.DeviceDesc%      = 21041.ndi,    PCI\VEN_1011&DEV_0014                 ;Intel 21041-Based PCI Ethernet Adapter (Generic)
+%21140.DeviceDesc%      = 21140.ndi,    PCI\VEN_1011&DEV_0009                 ;Intel 21140-Based PCI Fast Ethernet Adapter (Generic)
+%21143.DeviceDesc%      = 21143.ndi,    PCI\VEN_1011&DEV_0019                 ;Intel 21143-Based PCI Fast Ethernet Adapter (Generic)
+
+[Addtron]
+%AEF380.DeviceDesc%     = 21140.ndi,    PCI\VEN_1011&DEV_0009&SUBSYS_91001282 ;Addtron AEF-380TXD PCI Fast Ethernet Adapter (21140-AF)
+
+[AMBICOM]
+%AMB8100.DeviceDesc%    = 21143.ndi, PCI\VEN_1011&DEV_0019&SUBSYS_00011395
+
+[Cabletron]
+%DE500B.DeviceDesc%     = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_500B1011 ;Cabletron DE500B PCI Fast Ethernet Adapter (21143-PC)
+
+[Compex]
+%CompexFL.DeviceDesc%   = 21140.ndi,    PCI\VEN_1011&DEV_0009&SUBSYS_050311F6 ;Compex FreedomLINE PCI Fast Ethernet Adapter (21143-PD)
+
+[DLINK]
+%DL530.DeviceDesc%      = 21041.ndi,    PCI\VEN_1011&DEV_0014&SUBSYS_01001186 ;D-Link DE-530+ PCI Ethernet Adapter
+%DLDFE500B.DeviceDesc%  = 21140.ndi,    PCI\VEN_1011&DEV_0009&SUBSYS_11001186 ;D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev B/C)
+%DLDFE500D.DeviceDesc%  = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_11011186 ;D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev D)
+%DLDFE500E.DeviceDesc%  = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_11021186 ;D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev E)
+
+[Kingston]
+%KNE100TX.DeviceDesc%   = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_00012646 ;Kingston EtheRx KNE100TX PCI Fast Ethernet Adapter (21143-PD)
+
+[Linksys]
+%LinksysCB.DeviceDesc%  = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_AB0113D1 ;Linksys CardBus
+
+[Netgear]
+%FA510.DeviceDesc%      = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_21001385  ; DeviceID
+
+[TDK]
+%TDKFLYR.DeviceDesc%    = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_001912AF ;TDK Netflyer Cardbus Fast Ethernet Adapter
+
+[Toshiba]
+%ToshibaPCI.DeviceDesc% = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_02031179 ;Toshiba Fast Ethernet PCI LAN Card (21142-PA)
+%ToshibaCB.DeviceDesc%  = 21143.ndi,    PCI\VEN_1011&DEV_0019&SUBSYS_02041179 ;Toshiba CardBus
+
+;-------------------------------------------------------------------------------
+; Intel  21040
+;
+[21040.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 21040.reg, 2104x.reg, 21x4.reg, 21x4.pci.reg, 21040.con.reg
+;CpyFiles       = dc21x4.Copyfiles
+
+[21040.ndi.Services]
+AddService      = DC21x4, 2, dc21x4.Service, dc21x4.EventLog
+
+;-------------------------------------------------------------------------------
+; Intel  21041
+;
+[21041.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 21041.reg, 2104x.reg, 21x4.reg, 21x4.pci.reg, 21041.con.reg
+;CpyFiles       = dc21x4.Copyfiles
+
+[21041.ndi.Services]
+AddService      = DC21x4, 2, dc21x4.Service, dc21x4.EventLog
+
+;-------------------------------------------------------------------------------
+; Intel  21140  x86
+;
+[21140.ndi.NTX86]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 21140.reg, 2114x.reg, 21x4.reg, 21x4.pci.reg, 21140.con.reg, 2114x.Params.x86only
+;CpyFiles       = dc21x4.Copyfiles
+
+[21140.ndi.NTX86.Services]
+AddService      = DC21x4, 2, dc21x4.Service, dc21x4.EventLog
+
+;-------------------------------------------------------------------------------
+; Intel  21143 x86
+;
+[21143.ndi]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = 21143.reg, 2114x.reg, 21x4.reg, 21x4.pci.reg, 2114x.con.reg, 2114x.Params.x86only
+;CpyFiles       = dc21x4.Copyfiles
+
+[21143.ndi.Services]
+AddService      = DC21x4, 2, dc21x4.Service, dc21x4.EventLog
+
+;-----------------------------------------------------------------------------
+; 21040 specific
+;
+[21040.reg]
+HKR, ,                                      AdapterCFID,    0, "00021011"
+
+;-----------------------------------------------------------------------------
+; 21041 specific
+;
+[21041.reg]
+HKR, ,                                      AdapterCFID,    0, "00141011"
+HKR, Ndi\params\SnoozeMode,                 ParamDesc,      0, %SnoozeMode%
+HKR, Ndi\params\SnoozeMode,                 default,        0, "0"
+HKR, Ndi\params\SnoozeMode,                 type,           0, "enum"
+HKR, Ndi\params\SnoozeMode\enum,            "0",            0, %Disabled%
+HKR, Ndi\params\SnoozeMode\enum,            "1",            0, %Enabled%
+
+;-----------------------------------------------------------------------------
+; 21140 specific
+;
+[21140.reg]
+HKR, ,                                      AdapterCFID,    0, "00091011"
+HKR, Ndi\params\InterruptMitigation,        ParamDesc,      0, %InterruptMitigation%
+HKR, Ndi\params\InterruptMitigation,        default,        0, "0"
+HKR, Ndi\params\InterruptMitigation,        type,           0, "enum"
+HKR, Ndi\params\InterruptMitigation\enum,   "0",            0, %Disabled%
+HKR, Ndi\params\InterruptMitigation\enum,   "1",            0, %Enabled%
+
+;-----------------------------------------------------------------------------
+; 21143 specific
+;
+[21143.reg]
+HKR, ,                                      AdapterCFID,    0, "00191011"
+
+;-----------------------------------------------------------------------------
+; 21x4 common driver parameters
+;
+[21x4.reg]
+HKR, Ndi,                                   Service,        0, "DC21x4"
+HKR, Ndi\Interfaces,                        LowerRange,     0, "ethernet"
+HKR, Ndi\Interfaces,                        UpperRange,     0, "ndis5"
+HKR, ,                                      MediaType,      0, "1"
+
+; Network Address
+HKR, NDI\params\NetworkAddress,             ParamDesc,      0, %NetworkAddress%
+HKR, NDI\params\NetworkAddress,             type,           0, "edit"
+HKR, NDI\params\NetworkAddress,             LimitText,      0, "12"
+HKR, NDI\params\NetworkAddress,             UpperCase,      0, "1"
+HKR, NDI\params\NetworkAddress,             default,        0, " "
+HKR, NDI\params\NetworkAddress,             optional,       0, "1"
+
+; Process Transmit First
+HKR,Ndi\params\ProcessTransmitFirst,        ParamDesc,      0, %ProcessTransmitFirst%
+HKR,Ndi\params\ProcessTransmitFirst,        default,        0, "0"
+HKR,Ndi\params\ProcessTransmitFirst,        type,           0, "enum"
+HKR,Ndi\params\ProcessTransmitFirst\enum,   "0",            0, %Disabled%
+HKR,Ndi\params\ProcessTransmitFirst\enum,   "1",            0, %Enabled%
+
+;-----------------------------------------------------------------------------
+; PCI common parameters
+;
+[21x4.pci.reg]
+HKR, Ndi\params\UnderrunRetry,              ParamDesc,      0, %UnderrunRetry%
+HKR, Ndi\params\UnderrunRetry,              default,        0, "2"
+HKR, Ndi\params\UnderrunRetry,              type,           0, "enum"
+HKR, Ndi\params\UnderrunRetry\enum,         "2",            0, " 2"
+HKR, Ndi\params\UnderrunRetry\enum,         "4",            0, " 4"
+HKR, Ndi\params\UnderrunRetry\enum,         "6",            0, " 6"
+HKR, Ndi\params\UnderrunRetry\enum,         "8",            0, " 8"
+
+HKR, Ndi\params\ExtraReceiveBuffers,        ParamDesc,      0, %ExtraReceiveBuffers%
+HKR, Ndi\params\ExtraReceiveBuffers,        default,        0, "10"
+HKR, Ndi\params\ExtraReceiveBuffers,        type,           0, "enum"
+HKR, Ndi\params\ExtraReceiveBuffers\enum,   "0",            0, "  0"
+HKR, Ndi\params\ExtraReceiveBuffers\enum,   "10",           0, " 16"
+HKR, Ndi\params\ExtraReceiveBuffers\enum,   "20",           0, " 32"
+HKR, Ndi\params\ExtraReceiveBuffers\enum,   "40",           0, " 64"
+HKR, Ndi\params\ExtraReceiveBuffers\enum,   "80",           0, "128"
+
+HKR, Ndi\params\ExtraReceivePackets,        ParamDesc,      0, %ExtraReceivePackets%
+HKR, Ndi\params\ExtraReceivePackets,        default,        0, "64"
+HKR, Ndi\params\ExtraReceivePackets,        type,           0, "enum"
+HKR, Ndi\params\ExtraReceivePackets\enum,   "10",           0, "16"
+HKR, Ndi\params\ExtraReceivePackets\enum,   "20",           0, "32"
+HKR, Ndi\params\ExtraReceivePackets\enum,   "40",           0, "64"
+HKR, Ndi\params\ExtraReceivePackets\enum,   "64",           0, "100"
+HKR, Ndi\params\ExtraReceivePackets\enum,   "128",          0, "200"
+
+;-----------------------------------------------------------------------------
+; 2104x common parameters
+;
+[2104x.reg]
+HKR, Ndi\params\BurstLength,                ParamDesc,      0, %BurstLength%
+HKR, Ndi\params\BurstLength,                default,        0, "10"
+HKR, Ndi\params\BurstLength,                type,           0, "enum"
+HKR, Ndi\params\BurstLength\enum,           "1",            0, "1 DWORD"
+HKR, Ndi\params\BurstLength\enum,           "2",            0, "2 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "4",            0, "4 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "8",            0, "8 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "10",           0, "16 DWORDS"
+
+HKR, Ndi\params\TransmitThreshold,          ParamDesc,      0, %TransmitThreshold%
+HKR, Ndi\params\TransmitThreshold,          default,        0, "60"
+HKR, Ndi\params\TransmitThreshold,          type,           0, "enum"
+HKR, Ndi\params\TransmitThreshold\enum,     "48",           0, "  72 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "60",           0, "  96 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "80",           0, " 128 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "A0",           0, " 160 bytes"
+
+HKR, ,                                      AdapterType,    0, "5"
+HKR, Ndi\params\ReceiveBuffers,             ParamDesc,      0, %ReceiveBuffers%
+HKR, Ndi\params\ReceiveBuffers,             default,        0, "30"
+HKR, Ndi\params\ReceiveBuffers,             type,           0, "enum"
+HKR, Ndi\params\ReceiveBuffers\enum,        "8",            0, " 8"
+HKR, Ndi\params\ReceiveBuffers\enum,        "10",           0, "16"
+HKR, Ndi\params\ReceiveBuffers\enum,        "20",           0, "32"
+HKR, Ndi\params\ReceiveBuffers\enum,        "30",           0, "48"
+HKR, Ndi\params\ReceiveBuffers\enum,        "40",           0, "64"
+
+;-----------------------------------------------------------------------------
+; 2114x common parameters
+;
+[2114x.Params.x86only]
+HKR, Ndi\params\BurstLength,                ParamDesc,      0, %BurstLength%
+HKR, Ndi\params\BurstLength,                default,        0, "10"
+HKR, Ndi\params\BurstLength,                type,           0, "enum"
+HKR, Ndi\params\BurstLength\enum,           "1",            0, "1 DWORD"
+HKR, Ndi\params\BurstLength\enum,           "2",            0, "2 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "4",            0, "4 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "8",            0, "8 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "10",           0, "16 DWORDS"
+HKR, Ndi\params\BurstLength\enum,           "20",           0, "32 DWORDS"
+
+HKR, ,                                      AdapterType,    0, "5"
+HKR, Ndi\params\ReceiveBuffers,             ParamDesc,      0, %ReceiveBuffers%
+HKR, Ndi\params\ReceiveBuffers,             default,        0, "30"
+HKR, Ndi\params\ReceiveBuffers,             type,           0, "enum"
+HKR, Ndi\params\ReceiveBuffers\enum,        "8",            0, " 8"
+HKR, Ndi\params\ReceiveBuffers\enum,        "10",           0, "16"
+HKR, Ndi\params\ReceiveBuffers\enum,        "20",           0, "32"
+HKR, Ndi\params\ReceiveBuffers\enum,        "30",           0, "48"
+HKR, Ndi\params\ReceiveBuffers\enum,        "40",           0, "64"
+
+[2114x.reg]
+HKR, Ndi\params\TransmitThreshold100,       ParamDesc,      0, %TransmitThreshold100%
+HKR, Ndi\params\TransmitThreshold100,       default,        0, "200"
+HKR, Ndi\params\TransmitThreshold100,       type,           0, "enum"
+HKR, Ndi\params\TransmitThreshold100\enum,  "80",           0, " 128 bytes"
+HKR, Ndi\params\TransmitThreshold100\enum,  "100",          0, " 256 bytes"
+HKR, Ndi\params\TransmitThreshold100\enum,  "200",          0, " 512 bytes"
+HKR, Ndi\params\TransmitThreshold100\enum,  "400",          0, "1024 bytes"
+
+HKR, Ndi\params\TransmitThreshold,          ParamDesc,      0, %TransmitThreshold%
+HKR, Ndi\params\TransmitThreshold,          default,        0, "60"
+HKR, Ndi\params\TransmitThreshold,          type,           0, "enum"
+HKR, Ndi\params\TransmitThreshold\enum,     "48",           0, "  72 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "60",           0, "  96 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "80",           0, " 128 bytes"
+HKR, Ndi\params\TransmitThreshold\enum,     "A0",           0, " 160 bytes"
+
+HKR, Ndi\params\UnderrunThreshold,          ParamDesc,      0, %UnderrunThreshold%
+HKR, Ndi\params\UnderrunThreshold,          default,        0, "0A"
+HKR, Ndi\params\UnderrunThreshold,          type,           0, "enum"
+HKR, Ndi\params\UnderrunThreshold\enum,     "0A",           0, " 10"
+HKR, Ndi\params\UnderrunThreshold\enum,     "14",           0, " 20"
+HKR, Ndi\params\UnderrunThreshold\enum,     "32",           0, " 50"
+HKR, Ndi\params\UnderrunThreshold\enum,     "64",           0, "100"
+
+HKR, Ndi\params\StoreAndForward,            ParamDesc,      0, %StoreAndForward%
+HKR, Ndi\params\StoreAndForward,            default,        0, "0"
+HKR, Ndi\params\StoreAndForward,            type,           0, "enum"
+HKR, Ndi\params\StoreAndForward\enum,       "0",            0, %Disabled%
+HKR, Ndi\params\StoreAndForward\enum,       "1",            0, %Enabled%
+
+HKR, Ndi\params\MemoryReadMultiple,         ParamDesc,      0, %MemoryReadMultiple%
+HKR, Ndi\params\MemoryReadMultiple,         default,        0, "0"
+HKR, Ndi\params\MemoryReadMultiple,         type,           0, "enum"
+HKR, Ndi\params\MemoryReadMultiple\enum,    "0",            0, %Disabled%
+HKR, Ndi\params\MemoryReadMultiple\enum,    "1",            0, %Enabled%
+
+;-----------------------------------------------------------------------------
+; 21040 common conection type parameter
+;
+[21040.con.reg]
+HKR, Ndi\params\ConnectionType,             ParamDesc,      0, %ConnectionType%
+HKR, Ndi\params\ConnectionType,             default,        0, "0"
+HKR, Ndi\params\ConnectionType,             type,           0, "enum"
+HKR, Ndi\params\ConnectionType\enum,        "0",            0, %AutoDetect%
+HKR, Ndi\params\ConnectionType\enum,        "2",            0, %10BaseT%
+HKR, Ndi\params\ConnectionType\enum,        "3",            0, %10BaseTFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "1",            0, %10Base2(BNC)%
+HKR, Ndi\params\ConnectionType\enum,        "5",            0, %10Base5(AUI)%
+
+;-----------------------------------------------------------------------------
+; 21041 common conection type parameter
+;
+[21041.con.reg]
+;ConnectionType
+HKR, Ndi\params\ConnectionType,             ParamDesc,      0, %ConnectionType%
+HKR, Ndi\params\ConnectionType,             default,        0, "0"
+HKR, Ndi\params\ConnectionType,             type,           0, "enum"
+HKR, Ndi\params\ConnectionType\enum,        "0",            0, %AutoSense%
+HKR, Ndi\params\ConnectionType\enum,        "2",            0, %10BaseT%
+HKR, Ndi\params\ConnectionType\enum,        "3",            0, %10BaseTFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "1",            0, %10Base2(BNC)%
+HKR, Ndi\params\ConnectionType\enum,        "5",            0, %10Base5(AUI)%
+
+;-----------------------------------------------------------------------------
+; 21140 common conection type parameter
+;
+[21140.con.reg]
+HKR, Ndi\params\ConnectionType,             ParamDesc,      0, %ConnectionType%
+HKR, Ndi\params\ConnectionType,             default,        0, "0"
+HKR, Ndi\params\ConnectionType,             type,           0, "enum"
+HKR, Ndi\params\ConnectionType\enum,        "0",            0, %AutoSense%
+HKR, Ndi\params\ConnectionType\enum,        "8",            0, %100BaseTx%
+HKR, Ndi\params\ConnectionType\enum,        "9",            0, %100BaseTxFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "0A",           0, %100BaseT4%
+HKR, Ndi\params\ConnectionType\enum,        "0B",           0, %100BaseFx%
+HKR, Ndi\params\ConnectionType\enum,        "0C",           0, %100BaseFxFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "2",            0, %10BaseT%
+HKR, Ndi\params\ConnectionType\enum,        "3",            0, %10BaseTFull_Duplex%
+
+;-----------------------------------------------------------------------------
+; 2114x common conection type parameter
+; where x != 0
+;
+[2114x.con.reg]
+HKR, Ndi\params\ConnectionType,             ParamDesc,      0, %ConnectionType%
+HKR, Ndi\params\ConnectionType,             default,        0, "0"
+HKR, Ndi\params\ConnectionType,             type,           0, "enum"
+HKR, Ndi\params\ConnectionType\enum,        "0",            0, %AutoSense%
+HKR, Ndi\params\ConnectionType\enum,        "8",            0, %100BaseTx%
+HKR, Ndi\params\ConnectionType\enum,        "9",            0, %100BaseTxFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "0A",           0, %100BaseT4%
+HKR, Ndi\params\ConnectionType\enum,        "0B",           0, %100BaseFx%
+HKR, Ndi\params\ConnectionType\enum,        "0C",           0, %100BaseFxFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "2",            0, %10BaseT%
+HKR, Ndi\params\ConnectionType\enum,        "3",            0, %10BaseTFull_Duplex%
+HKR, Ndi\params\ConnectionType\enum,        "1",            0, %10Base2(BNC)%
+HKR, Ndi\params\ConnectionType\enum,        "5",            0, %10Base5(AUI)%
+
+;-----------------------------------------------------------------------------
+; Common dc21x4-Based Service and Driver
+;
+[dc21x4.Service]
+DisplayName     = %dc21x4.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 3 ;%SERVICE_DEMAND_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\dc21x4.sys
+LoadOrderGroup  = NDIS
+
+[dc21x4.Copyfiles]
+dc21x4.sys,,,2
+
+[dc21x4.EventLog]
+AddReg = dc21x4.AddEventLog.reg
+
+[dc21x4.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+DefaultDestDir   = 12
+dc21x4.Copyfiles = 12
+
+;-------------------------------------------------------------------------------
+; Localizable Strings
+;
+[Strings]
+Msft                    = "Microsoft"
+Addtron                 = "Addtron"
+AMB                     = "AmbiCom"
+Cabletron               = "Cabletron"
+Compex                  = "Compex"
+DLINK                   = "D-Link"
+Intel                   = "Intel"
+Kingston                = "Kingston"
+Linksys                 = "Linksys"
+Netgear                 = "Netgear"
+TDK                     = "TDK"
+Toshiba                 = "Toshiba"
+
+SnoozeMode              = "Snooze Mode"
+Disabled                = "Disabled"
+Enabled                 = "Enabled"
+InterruptMitigation     = "Interrupt Mitigation"
+ReceiveBuffers          = "Receive Buffers"
+ProcessTransmitFirst    = "Process Transmit First"
+UnderrunRetry           = "Underrun Max Retries"
+ExtraReceiveBuffers     = "Extra Receive Buffers"
+ExtraReceivePackets     = "Extra Receive Packets"
+BurstLength             = "Burst Length"
+TransmitThreshold       = "Transmit Threshold"
+TransmitThreshold100    = "Transmit Threshold 100Mbps"
+UnderrunThreshold       = "Underrun Threshold"
+StoreAndForward         = "Store And Forward"
+MemoryReadMultiple      = "Memory Read Multiple"
+ConnectionType          = "Connection Type"
+AutoDetect              = "Auto Detect"
+10BaseT                 = "10BaseT (Twisted Pair)"
+10BaseTFull_Duplex      = "10BaseT Full Duplex"
+10Base2(BNC)            = "10Base2 (BNC)"
+10Base5(AUI)            = "10Base5 (AUI)"
+AutoSense               = "AutoSense"
+100BaseTx               = "100BaseTx"
+100BaseTxFull_Duplex    = "100BaseTx Full Duplex"
+100BaseT4               = "100BaseT4"
+100BaseFx               = "100BaseFx"
+100BaseFxFull_Duplex    = "100BaseFx Full Duplex"
+NetworkAddress          = "Network Address"
+
+21040.DeviceDesc        = "Intel 21040-Based PCI Ethernet Adapter (Generic)"
+21041.DeviceDesc        = "Intel 21041-Based PCI Ethernet Adapter (Generic)"
+21140.DeviceDesc        = "Intel 21140-Based PCI Fast Ethernet Adapter (Generic)"
+21143.DeviceDesc        = "Intel 21143-Based PCI Fast Ethernet Adapter (Generic)"
+
+AEF380.DeviceDesc       = "Addtron AEF-380TXD PCI Fast Ethernet Adapter (21140-AF)"
+AMB8100.DeviceDesc      = "AmbiCom 10/100 Ethernet CardBus PC Card"
+DE500B.DeviceDesc       = "Cabletron DE500B PCI Fast Ethernet Adapter (21143-PC)"
+CompexFL.DeviceDesc     = "Compex FreedomLINE PCI Fast Ethernet Adapter (21143-PD)"
+DL530.DeviceDesc        = "D-Link DE-530+ PCI Ethernet Adapter"
+DLDFE500B.DeviceDesc    = "D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev B/C)"
+DLDFE500D.DeviceDesc    = "D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev D)"
+DLDFE500E.DeviceDesc    = "D-Link DFE-500TX PCI Fast Ethernet Adapter (Rev E)"
+KNE100TX.DeviceDesc     = "Kingston EtheRx KNE100TX PCI Fast Ethernet Adapter (21143-PD)"
+LinksysCB.DeviceDesc    = "Linksys EtherFast 10/100 CardBus PC Card"
+FA510.DeviceDesc        = "NETGEAR FA510 Fast Ethernet CardBus Card"
+TDKFLYR.DeviceDesc      = "TDK Netflyer Cardbus Fast Ethernet Adapter"
+ToshibaCB.DeviceDesc    = "Toshiba Fast Ethernet Cardbus LAN Card"
+ToshibaPCI.DeviceDesc   = "Toshiba Fast Ethernet PCI LAN Card (21142-PA)"
+
+dc21x4.Service.DispName = "DC21x4 Based Network Adapter Driver"
+

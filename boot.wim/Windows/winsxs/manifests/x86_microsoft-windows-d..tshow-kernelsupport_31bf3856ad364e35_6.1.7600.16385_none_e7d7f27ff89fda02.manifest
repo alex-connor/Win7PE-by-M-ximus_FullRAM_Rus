@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-DirectShow-KernelSupport" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-DirectShow-KernelSupport.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="ksproxy.ax" destinationPath="$(runtime.system32)\" sourceName="ksproxy.ax" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">EBsIWre1Ts40xBEzH/TuFB/ec82HV/VKRhF3toYzYJ8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="ksuser.dll" destinationPath="$(runtime.system32)\" sourceName="ksuser.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">bOl8bwrYvhg96TWnqrfUaCHo3p5VpL/1SstJ0FaCapQ=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{17CCA71B-ECD7-11D0-B908-00A0C9223196}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Generic WDM Filter Proxy" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{17CCA71B-ECD7-11D0-B908-00A0C9223196}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{73647561-0000-0010-8000-00AA00389B71}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="WDM Streaming Standard Data Type Handler" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{73647561-0000-0010-8000-00aa00389b71}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{1A8766A0-62CE-11CF-A5D6-28DB04C10000}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="WDM Streaming Standard Interface Handler" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{1A8766A0-62CE-11CF-A5D6-28DB04C10000}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{877E4351-6FEA-11D0-B863-00AA00A216A1}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Plug In Distributor: IKsClock" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{877E4351-6FEA-11d0-B863-00AA00A216A1}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E05592E4-C0B5-11D0-A439-00A0C9223196}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Plug In Distributor: IKsQualityForwarder" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E05592E4-C0B5-11D0-A439-00A0C9223196}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{BC29A660-30E3-11D0-9E69-00C04FD7C15B}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="WDM Streaming VPE Property Set Interface Handler" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{BC29A660-30E3-11d0-9E69-00C04FD7C15B}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EC529B00-1A1F-11D1-BAD9-00609744111A}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="WDM Streaming VPE VBI Property Set Interface Handler" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EC529B00-1A1F-11D1-BAD9-00609744111A}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B9F8AC3E-0F71-11D2-B72C-00C04FB6BD3D}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Ks IBasicAudio Interface Handler" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B9F8AC3E-0F71-11D2-B72C-00C04FB6BD3D}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\ksproxy.ax" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{65E8773D-8F56-11D0-A3B9-00A0C9223196}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{65E8773D-8F56-11D0-A3B9-00A0C9223196}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Capture Devices" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{CF1DDA2C-9743-11D0-A3EE-00A0C9223196}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{CF1DDA2C-9743-11D0-A3EE-00A0C9223196}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Communication Transforms" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{2EB07EA0-7E70-11D0-A5D6-28DB04C10000}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{2EB07EA0-7E70-11D0-A5D6-28DB04C10000}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Data Transforms" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{CF1DDA2D-9743-11D0-A3EE-00A0C9223196}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{CF1DDA2D-9743-11D0-A3EE-00A0C9223196}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Interface Transforms" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{AD809C00-7B88-11D0-A5D6-28DB04C10000}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{AD809C00-7B88-11D0-A5D6-28DB04C10000}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Mixer Devices" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{FBF6F530-07B9-11D2-A71E-0000F8004788}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{FBF6F530-07B9-11D2-A71E-0000F8004788}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming System Devices" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{65e8773e-8f56-11d0-a3b9-00a0c9223196}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{65e8773e-8f56-11d0-a3b9-00a0c9223196}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Rendering Devices" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{2721AE20-7E70-11D0-A5D6-28DB04C10000}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{2721AE20-7E70-11D0-A5D6-28DB04C10000}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Stream Decompression Devices" operationHint="replace" owner="true" />
+      <registryValue name="Merit" valueType="REG_BINARY" value="00006400" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance\{0A4252A0-7E70-11D0-A5D6-28DB04C10000}" owner="false">
+      <registryValue name="CLSID" valueType="REG_SZ" value="{0A4252A0-7E70-11D0-A5D6-28DB04C10000}" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="WDM Streaming Tee/Splitter Devices" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{877E4352-6FEA-11d0-B863-00AA00A216A1}\Distributor" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{877E4351-6FEA-11d0-B863-00AA00A216A1}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{97EBAACB-95BD-11D0-A3EA-00A0C9223196}\Distributor" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{E05592E4-C0B5-11D0-A439-00A0C9223196}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_KEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="Buffer.DeviceIo_Complete" value="DeviceIo_Complete: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.DeviceIo_Start" value="DeviceIo_Start: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.InputPin_Receive" value="InputPin_Receive: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.ProcessInput_Complete" value="ProcessInput_Complete: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.ProcessInput_Start" value="ProcessInput_Start: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.ProcessOutput_Complete" value="ProcessOutput_Complete: Pointer = %1, Timestamp = %2" />
+        <string id="Buffer.ProcessOutput_Start" value="ProcessOutput_Start: Pointer = %1, Timestamp = %2" />
+        <string id="KSProxy.Buffer" value="KSProxy Buffer" />
+        <string id="KSProxy.Info" value="KSProxy Info" />
+        <string id="OpcodeEnter" value="Enter" />
+        <string id="OpcodeExit" value="Exit" />
+        <string id="PluginCreation_Complete" value="PluginCreation_Complete" />
+        <string id="PluginCreation_Start" value="PluginCreation_Start" />
+        <string id="SetFormat_Enter" value="SetFormat_Enter" />
+        <string id="SetFormat_Exit" value="SetFormat_Exit" />
+        <string id="SetMediaType_Enter" value="SetMediaType_Enter" />
+        <string id="SetMediaType_Exit" value="SetMediaType_Exit" />
+      </stringTable>
+    </resources>
+  </localization>
+  <instrumentation>
+    <events xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events">
+      <provider guid="{3CC2D4AF-DA5E-4ed4-BCBE-3CF995940483}" messageFileName="ksproxy.ax" name="Microsoft-Windows-DirectShow-KernelSupport" resourceFileName="ksproxy.ax" symbol="Microsoft_Windows_DirectShow_KernelSupport">
+        <channels>
+          <importChannel chid="chidApplication" name="Application" />
+          <channel chid="ksch" name="Microsoft-Windows-DirectShow-KernelSupport/Performance" type="Analytic" />
+        </channels>
+        <tasks>
+          <task message="$(string.KSProxy.Info)" name="KSProxy_Info" symbol="KSProxy_Info" value="1" />
+          <task message="$(string.KSProxy.Buffer)" name="KSProxy_Buffer" symbol="KSProxy_Buffer" value="2" />
+        </tasks>
+        <templates>
+          <template tid="TimeStamp">
+            <data inType="win:Pointer" name="Buffer" />
+            <data inType="win:Int64" name="TimeStamp" />
+          </template>
+        </templates>
+        <opcodes>
+          <opcode message="$(string.OpcodeEnter)" name="Enter" symbol="Enter" value="10" />
+          <opcode message="$(string.OpcodeExit)" name="Exit" symbol="Exit" value="11" />
+        </opcodes>
+        <events>
+          <event channel="ksch" level="win:Informational" message="$(string.PluginCreation_Start)" opcode="Enter" symbol="PluginCreation_Start" task="KSProxy_Info" value="1" version="0" />
+          <event channel="ksch" level="win:Informational" message="$(string.PluginCreation_Complete)" opcode="Exit" symbol="PluginCreation_Complete" task="KSProxy_Info" value="2" version="0" />
+          <event channel="ksch" level="win:Informational" message="$(string.SetMediaType_Enter)" opcode="Enter" symbol="SetMediaType_Enter" task="KSProxy_Info" value="3" version="0" />
+          <event channel="ksch" level="win:Informational" message="$(string.SetMediaType_Exit)" opcode="Exit" symbol="SetMediaType_Exit" task="KSProxy_Info" value="4" version="0" />
+          <event channel="ksch" level="win:Informational" message="$(string.SetFormat_Enter)" opcode="Enter" symbol="SetFormat_Enter" task="KSProxy_Info" value="5" version="0" />
+          <event channel="ksch" level="win:Informational" message="$(string.SetFormat_Exit)" opcode="Exit" symbol="SetFormat_Exit" task="KSProxy_Info" value="6" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.InputPin_Receive)" symbol="InputPin_Receive" task="KSProxy_Buffer" template="TimeStamp" value="7" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.ProcessInput_Start)" symbol="ProcessInput_Start" task="KSProxy_Buffer" template="TimeStamp" value="8" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.ProcessInput_Complete)" symbol="ProcessInput_Complete" task="KSProxy_Buffer" template="TimeStamp" value="9" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.ProcessOutput_Start)" symbol="ProcessOutput_Start" task="KSProxy_Buffer" template="TimeStamp" value="10" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.ProcessOutput_Complete)" symbol="ProcessOutput_Complete" task="KSProxy_Buffer" template="TimeStamp" value="11" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.DeviceIo_Start)" symbol="DeviceIo_Start" task="KSProxy_Buffer" template="TimeStamp" value="12" version="0" />
+          <event channel="ksch" level="win:Verbose" message="$(string.Buffer.DeviceIo_Complete)" symbol="DeviceIo_Complete" task="KSProxy_Buffer" template="TimeStamp" value="13" version="0" />
+        </events>
+      </provider>
+    </events>
+  </instrumentation>
+</assembly>

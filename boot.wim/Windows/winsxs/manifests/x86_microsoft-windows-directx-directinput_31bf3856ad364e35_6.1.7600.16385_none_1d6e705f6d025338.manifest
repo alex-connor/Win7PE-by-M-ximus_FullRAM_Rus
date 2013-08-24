@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-DirectX-DirectInput" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-DirectX-DirectInput.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="dinput.dll" destinationPath="$(runtime.system32)\" sourceName="dinput.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">6Zn/wxrFWXTWTLwChxaB9iOXWvX/n5jtf7NV3vPOCC8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="dinput8.dll" destinationPath="$(runtime.system32)\" sourceName="dinput8.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">xudBnqctFwP3IpJ0OpmfSmzwxnNLoe6Sxq8YuosaOiM=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="gcdef.dll" destinationPath="$(runtime.system32)\" sourceName="gcdef.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">bv12bbHljAlfo3IW5a4jCQxOLRrnnxOhyEYDbFIMojI=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="pid.dll" destinationPath="$(runtime.system32)\" sourceName="pid.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">imoVhbcwsIzULC9euoV5yFbgy8dOkZo/8TlvLwI3bVA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_044F&amp;PID_A012" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="4100001008000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_044F&amp;PID_B202" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16032000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_000E" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_001A" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="0000081008000000" operationHint="replace" owner="true" />
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_001B" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="0300081008000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_0026" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="2000001009000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_0034" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="0000081008000000" operationHint="replace" owner="true" />
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_0038" owner="false">
+      <registryValue name="OEMData" valueType="REG_BINARY" value="0300081008000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_045E&amp;PID_003B" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="19040001" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C029" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C202" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C208" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C209" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C20A" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15024000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C291" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_046D&amp;PID_C293" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_3001" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="00002000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_3004" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="00002000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_3005" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="00002000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_4003" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_4005" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_047D&amp;PID_4008" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15030000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_05FD&amp;PID_0253" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_05FD&amp;PID_3002" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06A3&amp;PID_0101" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06A3&amp;PID_0102" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06A3&amp;PID_0104" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06F8&amp;PID_0004" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="00002000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06F8&amp;PID_A300" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="15020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\OEM\VID_06F8&amp;PID_A303" owner="false">
+      <registryValue name="Flags2" valueType="REG_BINARY" value="16020000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility\UA.EXE35A5BA4600111400" owner="false">
+      <registryValue name="ReAcquire" valueType="REG_BINARY" value="01000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility\MCM.EXE35B406BB000FD200" owner="false">
+      <registryValue name="NoSubClass" valueType="REG_BINARY" value="01000000" operationHint="replace" owner="true" />
+      <registryValue name="NoPollUnacquire" valueType="REG_BINARY" value="01000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility\MCM2.ICD390B85990018102D" owner="false">
+      <registryValue name="NoPollUnacquire" valueType="REG_BINARY" value="01000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility\CLIENT.EXE35FEFABD00088200" owner="false">
+      <registryValue name="MaxDeviceNameLength" valueType="REG_BINARY" value="06000000" operationHint="replace" owner="true" />
+      <registryValue name="ReAcquire" valueType="REG_BINARY" value="01000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\DirectInput\Compatibility\CLIENT.EXE36DFF4810008E200" owner="false">
+      <registryValue name="MaxDeviceNameLength" valueType="REG_BINARY" value="06000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\" owner="false" />
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\MediaProperties\PrivateProperties\Joystick\Winmm\" owner="false">
+      <registryValue name="wheel" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E1-B259-11CF-BFC7-444553540000}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft DirectInputDevice" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E1-B259-11CF-BFC7-444553540000}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\dinput.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E0-B259-11CF-BFC7-444553540000}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft DirectInput" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E0-B259-11CF-BFC7-444553540000}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\dinput.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{92187326-72B4-11d0-A1AC-0000F8026977}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Game Controllers CPL Shell Extension Default Property Sheets" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{92187326-72B4-11d0-A1AC-0000F8026977}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\gcdef.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E4-B259-11CF-BFC7-444553540000}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft DirectInput8" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E4-B259-11CF-BFC7-444553540000}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\dinput8.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E5-B259-11CF-BFC7-444553540000}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft DirectInput8" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{25E609E5-B259-11CF-BFC7-444553540000}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\dinput8.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EEC6993A-B3FD-11D2-A916-00C04FB98638}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft USB PID Class Driver" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EEC6993A-B3FD-11D2-A916-00C04FB98638}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\pid.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_KEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="A COM object which supports input devices, including keyboard, mouse and gaming devices." />
+        <string id="displayName" value="DirectInput" />
+      </stringTable>
+    </resources>
+  </localization>
+</assembly>

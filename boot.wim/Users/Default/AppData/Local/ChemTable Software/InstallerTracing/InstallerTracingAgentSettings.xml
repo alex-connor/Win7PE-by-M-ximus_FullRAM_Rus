@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<Root><IncludedMasks>*instal*.exe|*setup*.exe|*trial.exe|*demo.exe|</IncludedMasks><ExcludedMasks>*uninst*|*\Program Files\*|*\Windows\*|</ExcludedMasks></Root>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Personalization-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Personalization-Package" releaseType="Feature Pack">
+    <parent integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Personalization Control Panel" displayName="Personalization" name="Personalization">
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Personalization-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

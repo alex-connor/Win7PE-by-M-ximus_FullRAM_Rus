@@ -1,0 +1,42 @@
+Copyright Notice
+
+The product, Resolution Changer SX2 (in whole or in part, including all files, data, and documentation, from here on referred to as "Software") is © Copyright 1998-2001 SoftTech InterCorp LLC, all rights reserved, and is protected by United States copyright laws, international treaties and all other applicable national or international laws.  The sole owner of this product is SoftTech InterCorp LLC.
+
+License Agreement
+
+GRANT.  Subject to the provisions contained herein, SoftTech InterCorp LLC, (herein "STIC") hereby grants you a License to use Resolution Changer SX2 free of charge.
+
+TITLE.  Title, ownership rights, and intellectual property rights in and to the Software and Documentation shall remain in STIC and/or its suppliers.  This Agreement does not include the right to copy or sublicense the Software and is personal to you and therefore may not be assigned (by operation of law or otherwise) or transferred without the prior written consent of STIC.  You acknowledge that the Software in source code form remains a confidential trade secret of STIC and/or its suppliers and therefore you agree not to attempt to decipher, decompile, disassemble or reverse engineer the Software or allow others to do so, except to the extent applicable laws specifically prohibit such restriction.  You further agree not to modify or create derivative works of the Software.
+
+CONTENT.  Title, ownership rights, and intellectual property rights in and to the content accessed through the Software is the property of the applicable content owner and may be protected by applicable copyright or other law.  This License gives you no rights to such content.
+
+DISCLAIMER OF WARRANTY.  The Software is provided on an "AS IS" basis, without warranty of any kind, including without limitation the warranties of merchantability, fitness for a particular purpose and non-infringement.  The entire risk as to the quality and performance of the Software is borne by you.
+
+Should the Software prove defective, you and not STIC assume the entire cost of any service and repair.
+
+This disclaimer of warranty constitutes an essential part of the agreement.  SOME STATES DO NOT ALLOW EXCLUSIONS OF AN IMPLIED WARRANTY, SO THIS DISCLAIMER MAY NOT APPLY TO YOU AND YOU MAY HAVE OTHER LEGAL RIGHTS THAT VARY FROM STATE TO STATE OR BY JURISDICTION.
+
+LIMITATION OF LIABILITY.  UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, TORT, CONTRACT, OR OTHERWISE, SHALL STIC OR ITS SUPPLIERS OR RESELLERS BE LIABLE TO YOU OR ANY OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES.  IN NO EVENT WILL STIC BE LIABLE FOR ANY DAMAGES IN EXCESS OF STIC 'S LIST PRICE FOR A LICENSE TO THE SOFTWARE, EVEN IF STIC SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY.  THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION AND EXCLUSION MAY NOT APPLY TO YOU.
+
+TERMINATION.  Either party may terminate this Agreement immediately in the event of default by the other party. Upon any termination of this Agreement, you shall immediately discontinue the use of the Software and shall within ten (10) days return to STIC all copies of the Software and Documentation. You may also terminate this Agreement at any time by destroying the Software and Documentation and all copies thereof. Your obligations to pay accrued charges and fees shall survive any termination of this Agreement.
+
+MISCELLANEOUS.  This Agreement represents the complete and exclusive statement of the agreements concerning this license between the parties and supersedes all prior agreements and representations between them. It may be amended only by a writing executed by both parties.  THE ACCEPTANCE OF ANY PURCHASE ORDER PLACED BY YOU IS EXPRESSLY MADE CONDITIONAL ON YOUR ASSENT TO THE TERMS SET FORTH HEREIN, AND STIC AGREES TO FURNISH THE SOFTWARE ONLY UPON THESE TERMS AND NOT THOSE CONTAINED IN YOUR PURCHASE ORDER.  If any provision of this Agreement is held to be unenforceable for any reason, such provision shall be reformed only to the extent necessary to make it enforceable, and such decision shall not affect the enforceability (i) of such provision under other circumstances or (ii) of the remaining provisions hereof under all circumstances. Headings shall not be considered in interpreting this Agreement.  This Agreement shall be governed by and construed under United States law. This Agreement will not be governed by the United Nations Convention of Contracts for the International Sale of Goods, the application of which is hereby expressly excluded.
+
+Restrictions
+
+You may not use, copy, modify, translate, or transfer the product or any copy except as expressly defined in this agreement. You may not attempt to unlock or bypass any copy-protection or authentication algorithm utilized by this product. You may not remove or modify any copyright notice, nor any "about" dialog or the method by which it may be invoked.
+
+Limited Distribution License
+
+Permission is granted to individuals charging no fees, and to BBSes User Groups, Mail-Order Disk Vendors, CD-ROM publishers, and BBS File-Distribution Networks, Networks regardless of fees, to distribute Resolution Changer SX2, provided they convey a complete and unaltered copy of this product, and provided they claim no ownership of these products.
+
+Contractor / manufacturer is 
+
+	SoftTech InterCorp LLC.
+
+Contact:
+
+	SoftTech InterCorp LLC
+	http://www.stintercorp.com/
+	info@stintercorp.com
+

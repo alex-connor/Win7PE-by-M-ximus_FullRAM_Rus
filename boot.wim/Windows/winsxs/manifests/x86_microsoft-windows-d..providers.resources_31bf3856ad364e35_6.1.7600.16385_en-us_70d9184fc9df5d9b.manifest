@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-Deployment-Image-Servicing-Management-WinProviders.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="en-US" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <file name="OSProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="OSProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">LE9xFew0FeC+QBm7n01heX61we7pNDHVhmydsulRw4k=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="DmiProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="DmiProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">j4eNZUfmfFA4SMLLW/f1X6PxxrtfnCtlYrV758BeiW4=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CbsProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="CbsProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">fr1qZlfAxZ5+eY8YJDBSVaxTMktR4gaJGeP11OmmqeU=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="UnattendProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="UnattendProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">CpmFJN6ZcN2gE1sNL+wsfAkeGs2pJjPEepLJZNDVZcE=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="SmiProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="SmiProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">LNGdMQWWiMVr3p/+ycnPt08t48SnLiC8/N/icPtp4To=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="IntlProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="IntlProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">2vcN304k/86FzJaL2DNw4zE/LX1+qFLuelAGlia0Als=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="WimProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="WimProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">9pvgTjyGww4jWEFlixJ/lXl98wO39mZLKRDZKEkqBmY=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CompatProvider.dll.mui" destinationPath="$(Runtime.System32)\Dism\en-US\" sourceName="CompatProvider.dll.mui" sourcePath=".\" importPath="$(build.nttree)\loc\en-us\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">hX9JzxxfY9+iCVVu9p2rLKlrGlFM0aHzeyL+5lwpPOI=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description0" value="Deployment Image Servicing And Management Windows Providers messages" />
+        <string id="displayName0" value="Deployment Image Servicing And Management Windows Providers messages" />
+      </stringTable>
+    </resources>
+  </localization>
+  <rescache xmlns="urn:schemas-microsoft-com:rescache.v1" />
+</assembly>

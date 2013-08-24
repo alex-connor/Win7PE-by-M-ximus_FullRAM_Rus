@@ -1,0 +1,234 @@
+; Language: English (language template)
+; Author: Chun Sejin & deus-ex
+; Version: 1.0.3 (May 23 2008)
+
+MENU	101
+	POPUP	"&File"
+		MENUITEM	"&Open...",40036
+		MENUITEM	"&Reopen",40048
+		MENUITEM	"&Close",40066
+		POPUP	"Open &with"
+			MENUITEM	"",40093
+			MENUITEM	"",40094
+			MENUITEM	"",40095
+			MENUITEM	"",40096
+			MENUITEM	SEPARATOR
+			MENUITEM	"&Configure...",40092
+		END_POPUP
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Save",40067
+		MENUITEM	"Save &as...",40002
+		MENUITEM	SEPARATOR
+		MENUITEM	"Pr&int...",40075
+		MENUITEM	SEPARATOR
+		MENUITEM	"Select &TWAIN source...",40101
+		MENUITEM	"Ac&quire TWAIN source...",40102
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Next",40030
+		MENUITEM	"&Previous",40031
+		MENUITEM	"&First",40099
+		MENUITEM	"&Last",40100
+		MENUITEM	SEPARATOR
+		MENUITEM	"Cop&y...",40077
+		MENUITEM	"&Move...",40078
+		MENUITEM	"&Delete...",40049
+		MENUITEM	"R&ename...",40082
+		MENUITEM	"Properties...",40098
+		MENUITEM	SEPARATOR
+		MENUITEM	"E&xit",40033
+	END_POPUP
+
+	POPUP	"&Edit"
+		MENUITEM	"&Undo",40109
+		MENUITEM	"&Redo",40110
+		MENUITEM	"Command &history...",40111
+		MENUITEM	SEPARATOR
+		MENUITEM	"Cu&t",40103
+		MENUITEM	"&Copy",40001
+		MENUITEM	"&Paste",40050
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Empty clipboard",40068
+		MENUITEM	SEPARATOR
+		MENUITEM	"Select &all",40089
+	END_POPUP
+
+	POPUP	"&Image"
+		MENUITEM	"&Information...",40006
+		MENUITEM	"E&XIF information",40051
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Vertical flip",40007
+		MENUITEM	"&Horizontal flip",40008
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Grayscale",40009
+		MENUITEM	"&Negative",40010
+		MENUITEM	SEPARATOR
+		MENUITEM	"Change color &depth...",40011
+		MENUITEM	"Resi&ze...",40074
+		MENUITEM	SEPARATOR
+		POPUP	"&Swap colors"
+			MENUITEM	"RGB -> BGR",40012
+			MENUITEM	"RGB -> RBG",40013
+			MENUITEM	"RGB -> GRB",40014
+			MENUITEM	"RGB -> BRG",40015
+			MENUITEM	"RGB -> GBR",40016
+		END_POPUP
+		POPUP	"&Rotate"
+			MENUITEM	"&Left",40017
+			MENUITEM	"&Right",40018
+			MENUITEM	"&180 degrees",40019
+			MENUITEM	SEPARATOR
+			MENUITEM	"&Free...",40046
+		END_POPUP
+		POPUP	"Set as &wallpaper"
+			MENUITEM	"&Centered",40020
+			MENUITEM	"&Tiled",40021
+			MENUITEM	"&Stretched",40022
+		END_POPUP
+		POPUP	"&Filter"
+			MENUITEM	"&Browse...",40039
+		END_POPUP
+		POPUP	"&Palette"
+			MENUITEM	"&Edit...",40023
+			MENUITEM	"&Import...",40065
+			MENUITEM	"E&xport...",40038
+		END_POPUP
+		POPUP	"&Transparency"
+			MENUITEM	"&Set...",40062
+			MENUITEM	"&Remove",40063
+		END_POPUP
+	END_POPUP
+
+	POPUP	"&Animation"
+		MENUITEM	"Pa&use",40026
+		MENUITEM	"&Next frame",40027
+		MENUITEM	"&Previous frame",40081
+		MENUITEM	SEPARATOR
+		MENUITEM	"Extract current &frame...",40003
+		MENUITEM	"Extract &all frames...",40004
+	END_POPUP
+
+	POPUP	"&View"
+		POPUP	"&Fit image"
+			MENUITEM	"&Don't fit image",40115
+			MENUITEM	"&Reduce image if larger than window",40116
+			MENUITEM	"&Always fit image to window size",40117
+		END_POPUP
+		POPUP	"&Multiple page image"
+			MENUITEM	"&Next page",40041
+			MENUITEM	"&Previous page",40042
+			MENUITEM	SEPARATOR
+			MENUITEM	"&First page",40043
+			MENUITEM	"&Last page",40044
+		END_POPUP
+		POPUP	"M&ouse mode"
+			MENUITEM	"&Next mode",40090
+			MENUITEM	"&Previous mode",40091
+		END_POPUP
+		MENUITEM	SEPARATOR
+		MENUITEM	"Too&lbar",40064
+		MENUITEM	"&Status bar",40029
+		MENUITEM	SEPARATOR
+		MENUITEM	"F&ull screen",40045
+		MENUITEM	"Tiled &view",40032
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Transparency",40028
+		MENUITEM	"&Antialiasing",40079
+		MENUITEM	SEPARATOR
+		MENUITEM	"Zoom &in",40034
+		MENUITEM	"Zoom &out",40035
+		MENUITEM	"&Zoom to 100%",40047
+		MENUITEM	"Zoom loc&k",40088
+		MENUITEM	SEPARATOR
+		MENUITEM	"Fit bigger image to &window size",40037
+	END_POPUP
+
+	POPUP	"&Options"
+		MENUITEM	"&Preferences...",40024
+		MENUITEM	"&Language...",40107
+		MENUITEM	"&File associations...",40108
+	END_POPUP
+
+	POPUP	"&Tools"
+		MENUITEM	"&Thumbnail view...",40070
+		MENUITEM	"Create &Multiple page image...",40083
+		MENUITEM	"&Batch conversion...",40104
+		MENUITEM	"&Capture screen...",40114
+		MENUITEM	"&Slideshow...",40005
+	END_POPUP
+
+	POPUP	"&Window"
+		MENUITEM	"&Minimize",40072
+		MENUITEM	"Ma&ximize",40073
+		MENUITEM	SEPARATOR
+		MENUITEM	"Always on &top",40069
+		MENUITEM	"&Save position",40080
+	END_POPUP
+
+	POPUP	"&Help"
+		MENUITEM	"&Index",40076
+		MENUITEM	SEPARATOR
+		MENUITEM	"Configured &shortcuts",40112
+		MENUITEM	"S&upported file formats",40071
+		MENUITEM	"Installed Imagine &plugins",40040
+		MENUITEM	"&Command line parameters",40106
+		MENUITEM	"&Version history",40118
+		MENUITEM	SEPARATOR
+		MENUITEM	"&License",40105
+		MENUITEM	"&Registration...",40113
+		MENUITEM	SEPARATOR
+		MENUITEM	"&About...",40025
+	END_POPUP
+END_MENU
+
+MENU	132
+	POPUP	"&File"
+		MENUITEM	"&Open",40036
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Delete...",40049
+		MENUITEM	"&Rename...",40082
+		MENUITEM	"&Properties...",40098
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Close",40066
+	END_POPUP
+
+	POPUP	"&Edit"
+		MENUITEM	"&Copy",40001
+		MENUITEM	"&Paste",40050
+		MENUITEM	SEPARATOR
+		MENUITEM	"Select &all",40089
+	END_POPUP
+
+	POPUP	"&View"
+		MENUITEM	"&Transparency",40028
+		MENUITEM	SEPARATOR
+		MENUITEM	"&Folders",40097
+		MENUITEM	"T&oolbar",40064
+		MENUITEM	"&Status bar",40029
+		MENUITEM	"&Path history bar",40086
+		MENUITEM	SEPARATOR
+		MENUITEM	"S&upported files only",40087
+		MENUITEM	SEPARATOR
+		POPUP	"&Move to"
+			MENUITEM	"&Parent folder",40084
+		END_POPUP
+		MENUITEM	"&Reread",40085
+	END_POPUP
+
+	POPUP	"&Options"
+		MENUITEM	"&Preferences...",40024
+	END_POPUP
+
+	POPUP	"&Window"
+		MENUITEM	"&Minimize",40072
+		MENUITEM	"Ma&ximize",40073
+		MENUITEM	SEPARATOR
+		MENUITEM	"Always on &top",40069
+		MENUITEM	"&Save position",40080
+	END_POPUP
+
+	POPUP	"&Help"
+		MENUITEM	"&Index",40076
+		MENUITEM	SEPARATOR
+		MENUITEM	"&About...",40025
+	END_POPUP
+END_MENU

@@ -1,0 +1,133 @@
+[Authoring]
+Author=deus-ex
+CopyRight=©2007 deus-ex
+Version=1.4
+DateEdit=August 02 20007
+License=Freeware
+OtherInfo=hey, waz up? 8)
+ContactInfo=yo-mamma@da-hood
+
+[Lang]
+Name=English -
+HelpFile=MultiArc.hlp
+
+1=OK
+2=Cancel
+3=Warning!
+7=Configure MultiArc
+
+; About page
+100=About
+101=This program component uses some ideas by Eugene Roshal (Author of FAR) and\n             contains code written by Christian Ghisler and Mateusz Brsostek.\n\n          Many people were involved in the testing and improving processes.
+
+; addons page
+200=Addons
+201=Type:
+202=No description available
+203=Not set
+204=Path:
+205=Status:
+206=Change ...
+207=Registered for
+208=Not registered
+209=Search for archiver utility
+210=Executable Files(*.exe;*.cmd;*.bat;*.com)|*.exe;*.cmd;*.bat;*.com
+211=Configuration Files(*.ini)|*.ini
+212=%S-parameter handling 
+213=When to ask:
+214=never
+215=for next command
+216=always
+217=Exclude LIST calls
+218=Current TC INI:
+219=Search for TC main configuration file wincmd.ini
+220=All Files(*.*)|*.*
+221=Changes were made to the configuration during this session. Abandon those changes?
+222=Finishing MultiArc configuration
+223=Error running shell command
+224=Import Addon ...
+225=Search for Addon to import
+226=MultiArc Addon files(*.addon)|*.addon
+227=Shell command "open" for file type "inifile" failed. please check registry settings.
+228=Changes were made to the configuration. To avoid problems during manual editing of multiarc.ini this changes have to by saved. Save changes?
+229=Edit multiarc.ini
+230=Remove type
+231=Remove configuration information for archive type "%1!s!"?
+233=Edit multiarc.ini ...
+
+;Settings page
+300=Settings
+301=Show console:
+302=exclude LIST calls
+303=Minimize to tray
+304=Automatically close/minimize
+305=seconds delay before opening
+306=lines for console height
+307=never
+308=if (%C) is defined 
+309=always
+
+; Language page
+400=Language
+401=Language:
+402=Version:
+403=From:
+404=Parameters:
+405=Value:
+406=Language file information
+407=(default)
+408=Author
+409=Copyright
+410=Licence
+411=Other Info
+412=Contact
+
+;ArchiveDescription.cpp
+500=Global settings
+501="Batch unpacking" feature is activated for this archive type, but no corresponding "ExtractWithPath=" command line is defined. "Batch unpacking" feature will be deactivated. Please correct the settings.
+502=Please restart TotalCommander to apply changes.
+503=Saving MultiArc configuration ...
+
+; Capabilities dialog
+600 =Archiver capabilities
+601 =Extension:
+602 =Can create new archive
+603 =Can modify existing archive
+604 =Archive can contain multiple files
+605 =Detect archive type by content
+606 =Can delete files from archive
+607 =Supports text search in archive
+608 =Hide archive icon
+609 =Archive typ registered
+
+;Wait dialog
+700=Multiarc.ini is currently beeing edited ...
+701=An external application is currently editing the file multiarc.ini. To be able to continue configuring MultiArc   it has to be closed.
+702=Terminate editing ...
+703=All changes to multiarc.ini made in the external application will be lost!\n\n		Terminate anyway?
+704=Terminate external application
+
+;ASK_Type Dialog
+800=MultiArc needs info
+801=Select the archive type\n you want to use:
+
+; SParameter Dialog
+901=Please enter parameter #%d for "%s":
+
+; Actions 
+902=Add
+903=Delete
+904=Move
+905=Test
+
+;ArchiverManager
+1000=Import addon
+1001=Import addon for archive type '%1!s!'?
+1002=Entry for archive type '%1!s!' already exists.\nUpdate entry with this addon?
+1004=File <%1!s!> contains no sections.
+
+;ArchiverEngine.cpp
+1100=Format string for this command is not defined. Current command can't be executed. Please check multiarc.ini settings for this archive type.
+1102=Multiple file/filelist entries are specified for this command. Only the first one will be used. To avoid this message the extra file/filelist entries have to be removed from the format string.
+1103=Executing command ' %1!s! ' returned errorlevel %2!d!. Possibly an error occurred. Archive listing wasn't retrieved.
+1104=Executed command ' %1!s! ' returned errorlevel %2!d!, which exceeds this command defined normal level. Probably an error occurred. Please check configuration.

@@ -1,0 +1,229 @@
+	<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html"; charset="windows-1251">
+<TITLE>Справка Password Cracker</TITLE>
+<STYLE>
+BODY {font-family:arial;font-size:12}
+TD {font-family:arial;font-size:12}
+TD {font-family:tahoma}
+HR {color:gray}
+P {text-align:justify;text-indent:15}
+DT {font-weight:bold;font-family:tahoma;}
+H3 {font-family:tahoma;font-size:14;color:green}
+H1 {font-family:Times}
+DL {text-align:justify}
+LI {text-align:justify}
+#hint {color:gray;font-family:verdana,tahoma;font-size:11}
+KBD {letter-spacing: 2; text-transform: capitalize; font-family: tahoma}
+I  {letter-spacing: 1; font-style: normal}
+#footnote {background-repeat:no-repeat;background-color:whitesmoke;color:darkblue;margin-left:60;text-indent:45; font-family: Verdana, Tahoma, Arial, Verdana, Helvetica, sans-serif; font-size:8pt; padding-left: 10; padding-right: 10; padding-top: 10; padding-bottom: 10; border-color: darkblue; border-style: double; border-width: 1}
+
+</STYLE>
+<HEAD>
+<BODY>
+
+<TABLE width="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR>
+<TD valign=middle>
+<H1>Password&nbsp;Cracker</H1>
+</TD>
+<TD align=right>
+Авторские права &copy; 2002-2008<BR>Мазов Гоша aka Carc<br>
+<A HREF="http://www.amlpages.com"  TITLE="'Инструменты, которыми мы пользуемся, оказывают тонкое и глубокое влияние на наши способы мышления, а, следовательно, и на нашу способность мыслить.' (© Э.Дейкстра)">www.amlpages.com</A>
+<br>
+<A HREF="http://www.amlpages.com/Rus/download.htm" TITLE="Самые последние версии Password&nbsp;Cracker и другого ПО">Обновления</A>
+<BR>
+<A HREF="http://www.icq.com">ICQ</A>: &lt;86905722&gt;
+<BR>
+RSS-feed: <A HREF="http://www.amlpages.com/Rus/news_ru.xml">news_ru.xml</A>
+<BR>
+<A HREF="http://www.amlpages.com/Rus/support.htm">Обратная связь</A>
+</TD>
+</TR>
+</TABLE>
+
+<Hr>
+<TABLE BORDER=0 WIDTH="98%" ALIGN=CENTER>
+<TR><TD WIDTH=200>
+Новости на <A HREF="http://www.amlpages.com/Rus/index.htm">www.amlpages.com</A>:
+</TD>
+<TD>
+<FONT ID=hint>
+<MARQUEE>
+<SCRIPT SRC="http://www.amlpages.com/Rus/scripts/hotnews.js"></SCRIPT>
+</MARQUEE>
+</FONT>
+</TD></TR></TABLE>
+<Hr>
+<P>
+<UL>
+<LI> <A HREF="ReadMe_En.htm" TITLE="English Version">English</A>
+<LI> <A HREF="#install"> Установка  </A>
+<LI> <A HREF="#options">Настройки</A>
+<LI> <A HREF="#know_problems">Известные проблемы</A>
+<LI> <A HREF="#ie_check">Проверка Internet Explorer</A>
+<LI> <A HREF="#loc">Локализация  пользовательского интерфейса</A>
+<LI> <A HREF="#other_soft">Другие программы автора</A>
+<LI> <A HREF="#back_link">Обратная связь</A>
+</UL>
+
+Password&nbsp;Cracker - программа для восстановления <I>забытых</I> паролей, скрывающихся за астерисками (символами вида "***").
+<BR><BR>
+Для восстановления пароля запустите Password&nbsp;Cracker и наведите курсор мыши на строку с паролем. Пароль будет отображен в окне Password&nbsp;Cracker и\или будет показан непосредственно в окне "восстанавливаемой" программы.
+</P>
+
+<H3><A NAME="install"></A> Установка Password Cracker </H3>
+<P>
+Password Cracker работает под управлением Windows NT4\95\98\ME\2000\XP\Vista.
+Password Cracker не требует установки для своей работы. Распакуйте все файлы из zip-архива, и запустите файл pwdcrack.exe.
+</P>
+
+<H3><A NAME="options"></A>Настройки</H3>
+<P>
+<DL>
+<DT>Восстанавливать в Internet Explorer</DT>
+<DD>
+Восстанавливать пароль в окнах Internet&nbsp;Explorer. Для восстановления пароля активизируйте на веб странице элемент ввода пароля (т.е. просто кликните по нему мышкой). Восстановленный пароль отображается только в окне Password&nbsp;Cracker.
+<BR>
+<I>Примечание: для восстановления пароля необходим установленный Internet&nbsp;Explorer&nbsp;5.0 или старше.</I>
+</DD>
+</DL>
+
+<DL>
+<DT>Восстанавливать во всех окнах</DT>
+<DD>
+Password&nbsp;Cracker проверяет может ли элемент управления под курсором содержать пароль. И восстанавливает пароль <I>только</I> в тех элементах управления, которые по мнению программы оный пароль содержать могут, прочие же элементы управления игнорируются. При включенной опции Password&nbsp;Cracker будет пытаться восстановить пароль во <I>всех</I> элементах управления, вне зависимости может ли там содержаться пароль или нет.
+</DD>
+</DL>
+
+<DL>
+<DT>Поверх всех</DT>
+<DD>
+Всегда располагать окно Password&nbsp;Cracker поверх всех окон.
+</DD>
+</DL>
+</P>
+
+
+<H3><A NAME="know_problems"></A>Известные проблемы</H3>
+<P>
+Некоторые из антивирусов идентифицируют файл <KBD>pchook.dll</KBD> как вирус или "троянский конь", хотя на самом деле это не так.
+<BR>
+Такая точка зрения аргументируется тем, что программа может быть использована злоумышленниками для получения пароля. Чисто теоретически, конечно, можно использовать Password&nbsp;Cracker в подобных целях, если Вы и есть этот самый пресловутый злоумышленник. Антивирусы, как правило, блокируют доступ к файлу <KBD>pchook.dll</KBD>, а без этого файла Password&nbsp;Cracker работать <I>не</I> будет. 
+
+<br><br>
+Автор многократно обращался в одну из известных Российских антивирусных компаний, и дважды, выслушав мои аргументы, они исключали <KBD>pchook.dll</KBD> из вирусных списков. Некоторое время назад я с удивлением снова обнаружил <A ID=filename>pchook.dll</KBD> в их вирусном списке - видимо процесс включения\исключения итеративен по своей природе :). Я намеренно не привожу название компании, чтобы не создавать им рекламы, тем более такой сомнительной.
+<br>
+Что можно посоветовать:
+<OL>
+<LI>Попробуйте отключить антивирус.
+
+<LI>Большинство антивирусных компаний предлагают проверку Ваших файлов на вирусы в online. Проверьте Password&nbsp;Cracker. И если будет что-либо обнаружено, внимательно прочитайте что именно. Частенько антивирусы сообщают кратко "Вирус..." или "Инфицирован...", а в более развернутом описании уже можно встретить фразы более нейтрального тона, что мол "вообще-то и не очень вирус, но сугубо теоретически если б у дедушки были бы ..., тогда можно использовать..." и так далее, и в том же духе. 
+<BR><I>Пожалуйста</I>, прочитайте <I>внимательно</I> и убедитесь сами, чем же именно якобы опасен незабвенный файл <KBD>pchook.dll</KBD>.
+
+<LI> И наконец, можно не "забывать" пароли, тогда надобности в Password&nbsp;Cracker попросту не возникнет, и можно смело, безо всякой оглядки выполнять абсолютно все рекомендации подобного антивирусного программного обеспечения. Возможно такой способ не всем подходит, но тем не менее "и такой вариант возможен" (&copy;).
+</OL>
+
+С подробным описанием приведенных выше проблем можно ознакомиться в <A HREF="http://www.viruslist.com/ru/riskware?chapter=178753013">Вирусной энциклопедии</A>.
+</P>
+<P ID=footnote>
+Все-таки не лишним будет заметить, что далеко не все антивирусы страдают таким параноидальным отношением к <A ID=filename><KBD>pchook.dll</KBD>. К примеру, <A HREF="http://www.free-av.com">Avira AntiVir</A> и <A HREF="http://www.avast.com">Avast</A> (между прочим, абсолютно <I>бесплатные</I> для персонального использования) совершенно лояльно относятся к этому файлу.
+
+</P>
+
+
+<H3><A NAME="ie_check"></A>Проверка Internet Explorer</H3>
+<P>
+Простенький тест для проверки восстановления паролей <I>именно в Internet&nbsp;Explorer</I>.
+<OL>
+<LI> Откройте эту страницу в Internet Explorer.
+<LI> Измените пароль в поле ввода "Пароль для проверки", расположенном ниже, на любую понравившуюся Вам строку.
+<LI> Запустите Password&nbsp;Cracker.
+<LI> Установите галочку "Восстанавливать в Internet Explorer" в настройках Password&nbsp;Cracker (меню кнопки "Настройки").
+<LI> Активизируйте элемент ввода пароля, расположенный ниже (просто кликните по нему мышкой). 
+</OL>
+Пароль, набранный в элементе ввода расположенном ниже, должен отобразиться в поле "Пароль" окна Password&nbsp;Cracker. Если программе удастся, то восстановленный пароль также будет отображаться во всплывающей подсказке к полю ввода пароля.
+<BR>
+<FORM>
+<B>Пароль для проверки</B>:
+<INPUT TYPE="Password" VALUE='Тестовый пароль' TITLE="После восстановления пароль, набранный в этом поле должен быть отображен в окне Password&nbsp;Cracker и по возможности в тексте этой всплывающей подсказки">
+</FORM>
+</P>
+
+<H3><A NAME="loc"></A>Локализация Password&nbsp;Cracker</H3>
+<P>
+Password&nbsp;Cracker поддерживает внешнюю локализацию пользовательского интерфейса (перевода на иностранный язык). Для выбора другого языка интерфейса достаточно нажать на кнопку "Options" и выбрать любой язык из подменю "Language" ("Язык" в русской версии).
+</P>
+<P>
+Английский язык поддерживается непосредственно Password&nbsp;Cracker, все остальные языки пользовательского интерфейса располагаются в папке программы в файлах с расширением <KBD>*.lng</KBD>. Например, русский перевод расположен в файле <KBD>Russian.lng</KBD>.
+<BR>
+Вы может скопировать <KBD>Russian.lng</KBD> в файл с другим названием, и перевести все названия в этом файле, находящиеся справа от знака "=" (равно). Редактировать lng-файлы можно в любом текстовом редакторе, например в обычном Блокнот из дистрибутива Windows.
+Пожалуйста, если Вас не затруднит, пришлите мне Ваш файл перевода по электронной почте <A HREF="mailto:carc@rambler.ru?subject=PWDCRACK_Translation">carc@rambler.ru</A>, и я с моими благодарностями и <I>Вашими</I> копирайтами (&copy;) включу Ваш файл перевода в официальный дистрибутив Password&nbsp;Cracker. </P>
+<P>
+По Вашему желанию в "спасибках" за перевод может быть указана какая-либо гиперссылка на Вас (Ваш сайт, Ваш блог, Ваша аська... что угодно!).
+</P>
+
+<P ID=hint> 
+Отдельное спасибо за перевод на украинский язык <A TITLE="Создания языковых пакетов к различным программам">-=Do$=-</A> (ICQ: 234-117-456).
+</P>
+
+
+<H3><A NAME="other_soft"></A>Другие программы автора</H3>
+<P>
+<DL><DT> Aml Pages </DT>
+<DD>
+Aml Pages это продвинутый органайзер записей – оперативный блокнот, записная книжка на каждый день, повседневный помощник в работе с самой разнообразной информацией. Aml Pages поможет Вам вести дневник или каталог, писать в блоги и форумы, сохранять веб страницы и важные документы, быстро и удобно сохранять важную информацию, не отвлекаясь от Вашего основного занятия.
+<BR>
+Подробнее: <A TARGET=_blank HREF="http://www.amlpages.com/Rus/features.htm">здесь</A>
+<BR>
+Скачать: <A TITLE="Скачать русскую версию" HREF="http://www.amlpages.com/Source/amlpages_ru.zip">http://www.amlpages.com/Source/amlpages_ru.zip</A>
+</DD>
+</DL>
+
+<DL><DT> Aml Maple </DT>
+<DD>
+Небольшая "вкусная" утилитка, показывающая текущую раскладку клавиатуры (язык ввода) в курсоре над рабочим окном. Также меняет цвет каретки ("текстового курсора") в зависимости от языка ввода.
+<BR>
+Подробнее: <A TARGET=_blank HREF="http://www.amlpages.com/Rus/download.htm#amlmaple">здесь</A>
+<BR>
+Скачать: <A TITLE="Скачать мультиязычную версию" HREF="http://www.amlpages.com/Source/AmlMaple.zip">http://www.amlpages.com/Source/AmlMaple.zip</A>
+</DD>
+</DL>
+
+<DL><DT> iAml One Click </DT>
+<DD>
+Популярный плагин для Internet Explorer и Aml Pages. Сохраняет данные в документы Aml Pages, прямо из окна браузера + всякие мелкие "рюшечки" вроде копирования выделенного кода HTML вместе со стилями CSS в буфер обмена, в новое окно и.т.д.
+<BR>
+Подробнее: <A TARGET=_blank HREF="http://www.amlpages.com/Rus/plugins.htm#iAmlOneClick">здесь</A>
+<BR>
+Скачать: <A TITLE="Скачать русскую версию" HREF="http://www.amlpages.com/Source/iAmlOneClick.zip">http://www.amlpages.com/Source/iAmlOneClick.zip</A>
+</DD>
+</DL>
+
+</P>
+
+<H3><A NAME="back_link"></A>Обратная связь</H3>
+<P>
+<UL>
+<LI>Веб сайт: <A TITLE="Веб сайт Password&nbsp;Cracker" HREF="http://www.amlpages.com">www.amlpages.com</A>
+<LI>Форум: <A TITLE="Форум: обсуждение, общение, ответы на вопросы " HREF="http://carc.borda.ru">http://carc.borda.ru</A>
+<LI>ICQ: &lt;<A HREF="http://icq.rambler.ru">86905722</A>&gt;
+<LI>Техническая поддержка: <A HREF="http://www.amlpages.com/Rus/support.htm" TITLE='Перейти к форме для отправки сообщений автору Password&nbsp;Cracker'>отправить сообщение</A>
+
+<LI>Новостная RSS-лента: <A HREF="http://www.amlpages.com/Rus/news_ru.xml"> http://www.amlpages.com/Rus/news_ru.xml </A>
+
+</UL>
+</P>
+
+<P>
+<B>См. также:</B>
+<BR>
+<A TITLE="Проект Aml Pages" HREF="http://www.amlpages.com">Aml&nbsp;Pages</A>
+|
+<A TITLE="Утилитка для отображения раскладки клавиатуры (текущего языка) в курсоре над активным окном" HREF="http://www.amlpages.com">Aml&nbsp;Maple</A>
+|
+<A TITLE="Небезызвестный IE-плагин" HREF="http://www.amlpages.com">iAml&nbsp;One&nbsp;Click</A>
+|
+<A TITLE="Плагин Total Commander для чтения документов Aml Pages" HREF="http://www.amlpages.com">Aml&nbsp;View</A>
+</BODY>
+</HTML>

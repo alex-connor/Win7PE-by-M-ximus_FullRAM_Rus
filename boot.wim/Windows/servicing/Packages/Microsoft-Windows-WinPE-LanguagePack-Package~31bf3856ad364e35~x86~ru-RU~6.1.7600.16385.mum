@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WinPE-LanguagePack-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="WinPE Language Pack" releaseType="Language Pack">
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-WinPE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="ru-RU language pack for Windows" displayName="WinPE Language Pack" name="WinPE Language Pack">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WinPE-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Resource SDP package for WinPE Drivers for ru-RU" displayName="Resource SDP package for WinPE Drivers" name="WinpeDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Winpe-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for common Drivers for ru-RU" displayName="Resource SDP package for common Drivers" name="CommonDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Common-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for client wired network Drivers for ru-RU" displayName="Resource SDP package for client wired network Drivers" name="ClientWiredNetworkDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for server wired network Drivers for ru-RU" displayName="Resource SDP package for server wired network Drivers" name="ServerWiredNetworkDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Server-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+  </package>
+</assembly>

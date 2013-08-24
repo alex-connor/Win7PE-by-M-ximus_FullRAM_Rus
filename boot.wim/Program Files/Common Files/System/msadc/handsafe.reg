@@ -1,0 +1,15 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo]
+"handlerRequired"=dword:00000001
+"DefaultHandler"="MSDFMAP.Handler"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo\safeHandlerList]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo\safeHandlerList\MSDFMAP.Handler]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo\safeHandlerList\MSDFMAP_VB.Handler]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo\safeHandlerList\MSDFMAP_VC.Handler]

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Telnet-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Telnet Client" releaseType="Feature Pack">
+    <parent integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-ServerCore-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Connect to remote computers by using the Telnet protocol" displayName="Telnet Client" name="TelnetClient">
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Telnet-Client-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

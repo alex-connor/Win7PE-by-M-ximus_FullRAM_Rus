@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-themeservice" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-themeservice.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="themeservice.dll" destinationPath="$(runtime.system32)\" sourceName="themeservice.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor pageHash="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">tXyFCRIJovrRntSQuPp/yY8SkR+cnKzprx5UB4DOZwA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <memberships>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories.Services" version="6.1.7600.16385" publicKeyToken="31bf3856ad364e35" typeName="Service" />
+      <categoryInstance>
+        <serviceData name="Themes" displayName="@%SystemRoot%\System32\themeservice.dll,-8192" errorControl="normal" group="ProfSvc_Group" imagePath="%SystemRoot%\System32\svchost.exe -k netsvcs" start="disabled" type="win32ShareProcess" description="@%SystemRoot%\System32\themeservice.dll,-8193" objectName="LocalSystem" requiredPrivileges="SeAssignPrimaryTokenPrivilege,SeDebugPrivilege,SeImpersonatePrivilege">
+          <failureActions resetPeriod="86400">
+            <actions>
+              <action type="restartService" delay="60000" />
+              <action type="restartService" delay="60000" />
+              <action type="none" />
+            </actions>
+          </failureActions>
+        </serviceData>
+      </categoryInstance>
+    </categoryMembership>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="BootRecovery" />
+    </categoryMembership>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="SvcHost" />
+      <categoryInstance subcategory="netsvcs">
+        <serviceGroup xmlns="urn:schemas-microsoft-com:asm.v3" position="last" serviceName="Themes" />
+      </categoryInstance>
+    </categoryMembership>
+  </memberships>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Themes\Parameters" owner="false">
+      <registryValue name="ServiceDll" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeservice.dll" operationHint="replace" owner="true" />
+      <registryValue name="ServiceMain" valueType="REG_SZ" value="ThemeServiceMain" operationHint="replace" owner="true" />
+      <registryValue name="ServiceDllUnloadOnStop" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="Manifest for themeservice.dll" />
+        <string id="displayName" value="themeservice.dll" />
+      </stringTable>
+    </resources>
+  </localization>
+  <configuration xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <configurationSchema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Microsoft-Windows-themeservice" targetNamespace="Microsoft-Windows-themeservice">
+        <xsd:element name="Start" type="xsd:unsignedInt" wcm:default="4" wcm:description="Start type of the service" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Themes')" wcm:legacyName="Start" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" />
+      </xsd:schema>
+    </configurationSchema>
+  </configuration>
+</assembly>

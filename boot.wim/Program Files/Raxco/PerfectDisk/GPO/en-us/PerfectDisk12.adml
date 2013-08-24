@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName></displayName>
+  <description></description>
+  <resources>
+    <stringTable>
+      <string id="PerfectDisk12">PerfectDisk 12</string>
+      <string id="BootFileOptimization">Boot File Optimization Settings</string>
+      <string id="BootFileOptimizationExplain">If NOT CONFIGURED, the setting established locally will be followed. 
+
+If ENABLED, the setting defined here will be followed.  If either (XP/VISTA) only Option is selected for a Win2000 computer, PerfectDisk will manage the boot files (option 1).  
+
+If DISABLED, neither PerfectDisk nor the system will defragment the files needed to boot your computer.  Raxco recommends letting PerfectDisk Manage Boot files only.</string>
+      <string id="BootFileOptimizationDropListLabel">Boot File Optimization</string>
+      <string id="LetPDManageSystemFilesOnly">0</string>
+      <string id="LetPDManageAllFiles">1</string>
+      <string id="LetSystemManage">2</string>
+      <string id="LetPDManageSystemFilesOnly_Tip">0 - Let PerfectDisk manage the files needed to boot your computer.</string>
+      <string id="LetPDManageSystemFilesOnly_Tip1">    (recommended)</string>
+      <string id="LetPDManageAllFiles_Tip">1 - Let PerfectDisk manage all files defined in the layout.ini file;
+
+boot files plus applications commonly launched after booting. (XP/VISTA Only)</string>
+      <string id="LetPDManageAllFiles_Tip1">    boot files plus applications commonly launched after booting. (XP/VISTA Only)</string>
+      <string id="LetSystemManage_Tip">2 - Let the System place the Layout.ini files. (XP/VISTA Only)</string>
+      <string id="DefragThreshold">Defragmentation Threshold</string>
+      <string id="DefragThresholdExplain">If NOT CONFIGURED or DISABLED, the setting established locally will be followed.  
+
+If ENABLED, the value set will apply to all drives.   Defragmentation will only occur is the threshold is exceeded.</string>
+      <string id="DefragThresholdTextLabel">Threshold (0-100)</string>
+      <string id="SMARTPlacementLayout">The data layout used by SMARTPlacement.</string>
+      <string id="SMARTPlacementLayout2">Layout:</string>
+      <string id="SMARTPlacementLayoutExplain">This is organized in a list alternating between the data type and the free space
+ in between them. The first number is the data type, second is free space gap,
+ third is the next data type, etc...
+ Free space gaps is in megabytes
+ The data types are:
+ 0 = Boot
+ 1 = Directory
+ 2 = Rarely Modified
+ 3 = Occasionally Modified
+ 4 = Recently Modified</string>
+      <string id="DefaultSMARTPlacementLayout">0,32,1,0,2,0,3,0,4</string>
+      <string id="AgressiveFreeSpaceConsolidation">Aggressively consolidate free space</string>
+      <string id="AgressiveFreeSpaceConsolidationExplain">If NOT CONFIGURED, the setting established locally will be followed.  
+
+If ENABLED, PerfectDisk will aggressively pack free space.  
+
+If DISABLED, PerfectDisk will use more relaxed free space packing algorithm.</string>
+      <string id="LogToPDLog">Log to PerfectDisk's Log</string>
+      <string id="LogToPDLogExplain">If NOT CONFIGURED, the setting established locally will be followed.  
+
+If ENABLED, PerfectDisk will log to its own log.  
+
+If DISABLED, PerfectDisk will not log to its own log.</string>
+      <string id="LogToEventLog">Log to Application Event Log</string>
+      <string id="LogToEventLogExplain">If NOT CONFIGURED, the setting established locally will be followed.  
+
+If ENABLED, PerfectDisk will log to the Application Event Log.  
+
+If DISABLED, PerfectDisk will not log to the Application Event Log.</string>
+      <string id="RunMissedSchedules">Run Missed Schedules when computer restarts</string>
+      <string id="RunMissedSchedulesExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, missed schedules will be run when computer starts.  
+
+If DISABLED, missed schedules will be reschedued when the computer restarts.</string>
+      <string id="ScheduleStartupDelay">Schedule Startup Delay</string>
+      <string id="ScheduleStartupDelayExplain">This is the number of minutes PerfectDisk should wait after the computer has started before running any schedules. Default is 5 minutes.</string>
+      <string id="ScheduleStartupDelayTextLabel">Number of minutes to delay schedules after computer startup</string>
+      <string id="AutoAdjustThresholds">Automatically adjust StealthPatrol schedule thresholds</string>
+      <string id="AutoAdjustThresholdsExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, StealthPatrol schedule thresholds will be adjusted automatically, therefore ignoring any thresholds set here except as a potential starting point.  
+
+If DISABLED, StealthPatrol schedule thresholds will remain constant.</string>
+      <string id="SteathPatrolThresholds">StealthPatrol schedule thresholds for a physical (non-virtual) computer</string>
+      <string id="SteathPatrolThresholdsExplain">If NOT CONFIGURED or DISABLED, the setting established locally will be followed.  
+
+If ENABLED, the values set will apply to StealthPatrol thresholds.</string>
+      <string id="KernelTimeThreshold">Kernel mode CPU threshold for StealthPatrol schedule (in %)</string>
+      <string id="UserTimeThreshold">User mode CPU threshold for StealthPatrol schedule (in %)</string>
+      <string id="IoThreshold">IO activity threshold for StealthPatrol schedule (in bytes/second)</string>
+      <string id="VmHostSteathPatrolThresholds">StealthPatrol schedule thresholds for a virtual computer, running in ESX or Hyper-V environment</string>
+      <string id="VmHostSteathPatrolThresholdsExplain">If NOT CONFIGURED or DISABLED, the setting established locally will be followed.  
+
+If ENABLED, the values set will apply to StealthPatrol thresholds.</string>
+      <string id="VmHostKernelTimeThreshold">Kernel mode CPU threshold for StealthPatrol schedule (in %)</string>
+      <string id="VmHostUserTimeThreshold">User mode CPU threshold for StealthPatrol schedule (in %)</string>
+      <string id="VmHostIoThreshold">IO activity threshold for StealthPatrol schedule (in bytes/second)</string>
+      <string id="WakeComputerFromHibernation">Wake computer from standby/hibernation to run a schedule</string>
+      <string id="WakeComputerFromHibernationExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will attempt to wake standby/hibernating computer to run a schedule.  
+
+If DISABLED, PerfectDisk will not attempt to wake computer from standby/hibernation.</string>
+      <string id="StopDefragIfBattery">Stop Defragmentation schedules if computer switches to battery power</string>
+      <string id="StopDefragIfBatteryExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will stop running defragmentation schedules if computer switches to battery power.  
+
+If DISABLED, PerfectDisk will allow defragmentation schedules to continue running if computer switches to battery power.</string>
+      <string id="DoNotStartDefragIfBattery">Do Not start defragmentation pass when on battery power</string>
+      <string id="DoNotStartDefragIfBatteryExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will not start defragmentation schedules if computer is on battery power.  
+
+If DISABLED, PerfectDisk will allow defragmentation schedules to start if computer is on battery power.</string>
+      <string id="DefragRemovableHardDrives">Allow PerfectDisk to defragment removable hard drives</string>
+      <string id="DefragRemovableHardDrivesExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will allow defragmenting removable hard drives(USB or Firewire - connected hard drives).  
+
+If DISABLED, PerfectDisk will not allow defragmenting removable hard drives(USB or Firewire - connected hard drives).</string>
+      <string id="DefragFlash">Allow PerfectDisk to defragment Flash drives</string>
+      <string id="DefragFlashExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will allow defragmenting Flash drives.  
+
+If DISABLED, PerfectDisk will not allow defragmenting Flash drives.</string>
+      <string id="DefragSSD">Allow PerfectDisk to defragment SSD drives</string>
+      <string id="DefragSSDExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will allow defragmenting SSD drives.  
+
+If DISABLED, PerfectDisk will not allow defragmenting SSD drives.</string>
+      <string id="CPUPriority">What priority should the defragmenter have on the local computer</string>
+      <string id="CPUPriorityExplain">If NOT CONFIGURED or DISABLED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk will adjust the defragmentation engine CPU priority to your selection.</string>
+      <string id="Idle">Idle</string>
+      <string id="Normal">Normal</string>
+      <string id="AboveNormal">Above Normal</string>
+      <string id="IOThrottling">Throttle defragmentation I/O</string>
+      <string id="IOThrottlingExplain">If NOT CONFIGURED, PerfectDisk will follow whatever is set on the local computer.  
+
+If DISABLED, disk I/O will be allocated between PerfectDisk and other processes by the operating system. 
+
+If ENABLED, PerfectDisk's defrag engine will slow down its disk I/O to allow other processes to access the disk.</string>
+      <string id="SMARTPollingPeriodLabel">Minutes</string>
+      <string id="SMARTDisabled">Disable S.M.A.R.T.</string>
+      <string id="SMARTDisabledExplain">Disable S.M.A.R.T. capability in PerfectDisk</string>
+      <string id="SMARTPollingPeriod">S.M.A.R.T. Polling Period</string>
+      <string id="SMARTPollingPeriodExplain">The number of seconds between checks of S.M.A.R.T. status.</string>
+      <string id="VSSCompatability">Volume Shadow Copy Service (VSS) compatibility</string>
+      <string id="NoDefragmentVSS">Do not defragment/stop if any shadow copies exist</string>
+      <string id="DefragmentCompatableVSS">Defragment in VSS compatible mode to minimize snapshot/restore point purges to the percentage below of the disk</string>
+      <string id="DefragmentNormalVSS">Defragment normally</string>
+      <string id="VSSCompatabilityPercent">Percent of the disk maximum to move per defrag for VSS compatible mode</string>
+      <string id="VSSCompatabilityExplain">Configure how PerfectDisk defragments a drive if the drive has show copies/restore points</string>
+      <string id="ExcludeFiles">Exclude files from the defragmentation pass (comma delimited)</string>
+      <string id="ExcludeFilesExplain">If NOT CONFIGURED or DISABLED, PerfectDisk will follow whatever is set on the local computer.  
+
+If ENABLED, PerfectDisk's defrag engine will exclude specified files from the defragmentation pass.</string>
+      <string id="ExcludeFilesLabel">Files:</string>
+      <string id="ManageViaTCPIP">Setup management from PerfectDisk Enterprise Console via TCP/IP</string>
+      <string id="ManageViaTCPIPExplain">If NOT CONFIGURED or DISABLED, the setting established locally will be followed.
+
+If ENABLED, the TCP/IP via specified port may be used in addition to DCOM for management from PerfectDisk Enterprise Console.</string>
+      <string id="ManageOnPortTextLabel">TCP/IP port (10-65535)</string>
+      <string id="EnableDefaultSchedule1">Group Schedule 1</string>
+      <string id="EnableDefaultSchedule2">Group Schedule 2</string>
+      <string id="EnableDefaultSchedule3">Group Schedule 3</string>
+      <string id="EnableDefaultSchedule4">Group Schedule 4</string>
+      <string id="EnableDefaultOneTimeSchedule1">Group OneTime Schedule 1</string>
+      <string id="EnableDefaultOneTimeSchedule2">Group OneTime Schedule 2</string>
+      <string id="EnableDefaultAnalyzeSchedule1">Group Analyze Schedule</string>
+      <string id="EnableDefaultScheduleExplain">If NOT CONFIGURED, no Group Policy schedule will be generated 
+
+ and if one was generated by previous settings, it will be removed.
+
+ if DISABLED the current Group Policy Schedule will be disabled  
+
+If ENABLED, the schedule defined here will apply to all computers.</string>
+      <string id="AllDrives">All Drives</string>
+      <string id="IncludeNonpersist">Include Non persistent drives</string>
+      <string id="DriveLetters">Drive Letters (comma delimited)</string>
+      <string id="RunDrivesInSeries">Run drive in series, parallel or auto detect defragmentation sequence</string>
+      <string id="DriveDefragSettings">Defragmentation algorithm
+
+</string>
+      <string id="DriveUsingSmartPlacement">SMARTPlacement</string>
+      <string id="DriveUsingDefragOnly">Defrag without SmartPlacement</string>
+      <string id="DriveUsingCFS">Consolidate Free Space Only</string>
+      <string id="Parallel">Parallel</string>
+      <string id="Series">Series</string>
+      <string id="AutoDetect">AutoDetect</string>
+      <string id="RunOnlineDefrag">Defragment Entire Drive (Online)</string>
+      <string id="RunOfflineDefrag">Defragment System Files (Offline)</string>
+      <string id="OverrideOfflineDir">Defragment Directories Offline</string>
+      <string id="OverrideOfflineSys">Defragment MFT/Metadata Offline</string>
+      <string id="OverrideOfflinePage">Defragment Pagefile Offline</string>
+      <string id="ScheduleType">Schedule Type</string>
+      <string id="Once">Once</string>
+      <string id="Daily">Daily</string>
+      <string id="Weekly">Weekly</string>
+      <string id="DayOfWeek">Day Of The Week</string>
+      <string id="DayOfWeekText">What Days do you want this schedule to run on </string>
+      <string id="Random">Random</string>
+      <string id="Sunday">Sunday</string>
+      <string id="Monday">Monday</string>
+      <string id="Tuesday">Tuesday</string>
+      <string id="Wednesday">Wednesday</string>
+      <string id="Thursday">Thursday</string>
+      <string id="Friday">Friday</string>
+      <string id="Saturday">Saturday</string>
+      <string id="StartDate">Start Date (MM/DD/YYYY)</string>
+      <string id="StartTime">Start Time (HH:MM:SS)</string>
+      <string id="MaxDuration">Maximum Duration (hours)</string>
+      <string id="Frequency">Run schedule every X weeks</string>
+      <string id="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</string>
+      <string id="Periodicity1">Set analyze schedule periodicity in days</string>
+      <string id="Periodicity2">:</string>
+      <string id="AutoUpdateCheck">Configure AutoUpdate</string>
+      <string id="AutoUpdateCheckExplain">If NOT CONFIGURED, the setting established locally will be followed.  
+
+If ENABLED, the setting configured here will be followed.  
+
+If DISABLED, AutoUpdate will never run.</string>
+      <string id="AUProtocol">Auto Update Protocol</string>
+      <string id="ftp">ftp</string>
+      <string id="http">http</string>
+      <string id="AUURL">Auto Update URL</string>
+      <string id="DefaultHttp">http://update.raxco.com/pub/download/PD120/English/x86</string>
+      <string id="DefaultFtp">ftp://update3.raxco.com/pub/download/PD120/English/x86</string>
+      <string id="InstallOption">Install Option</string>
+      <string id="notify">Notify When Update Available</string>
+      <string id="install">Automatically Install Update</string>
+      <string id="TimeToRun">The hour of the day to check for AutoUpdate</string>
+      <string id="AutoUpdateWeeklyFrequency"> Check for AutoUpdate Every X weeks</string>
+      <string id="PDLicenseKey">PerfectDisk 12 License Key</string>
+      <string id="PDLicenseKeyExplain">If ENABLED this will set the PerfectDisk 12 License Key to all computers. 
+
+NOT CONFIGURED, or DISABLED, no changes of the license will be made.</string>
+      <string id="LicenseKey">PerfectDisk 12 License Key (XXX-XXXXXXX-XXXXXX-XXXX)</string>
+      <string id="AllowRegister">Show PerfectDisk 12 Register Dialog</string>
+      <string id="AllowRegisterExplain">If NOT CONFIGURED or ENABLED PerfectDisk will show Register Dialog when it starts. 
+
+Once DISABLED, Register Dialog will never be shown.</string>
+      <string id="AllowWelcomeWizard">Show PerfectDisk 12 Welcome Wizard</string>
+      <string id="AllowWelcomeWizardExplain">If NOT CONFIGURED or ENABLED PerfectDisk will show Welcome Wizard when it starts. 
+
+Once DISABLED, Welcome Wizard will never be shown.</string>
+      <string id="AllowZeroFreeSpace">Allow the Engine to run a Zero Free space pass</string>
+      <string id="AllowZeroFreeSpaceExplain">If NOT CONFIGURED or ENABLED PerfectDisk will Allow the zeroing of free space which is the writing of zero's to unused clusters/free space. 
+
+Once DISABLED, Zeroing of free space will not be allow by any schedule or manual action.</string>
+      <string id="AllowLaunch">Allow access to PerfectDisk</string>
+      <string id="AllowLaunchExplain">If NOT CONFIGURED any user can open PerfectDisk's user interface. 
+
+If ENABLED, the user will be able to open PerfectDisk User Interface and have Network Access.  
+
+If DISABLED, the user cannot launch PerfectDisk.</string>
+      <string id="DisableTabs">Disable access to specific tabs in PerfectDisk</string>
+      <string id="DisableTabsExplain">Disable tabs in PerfectDisk that the user should not access. Consists of a bitmask in decimal form configured with the following values:
+
+Defrag = 0x0001
+Schedules = 0x0002
+Exchange = 0x0020
+Virtual = 0x0040
+Dashboard = 0x0080
+Automatic = 0x0100
+S.M.A.R.T. = 0x0200</string>
+      <string id="DisableTabsTextLabel">Decimal number of the bitmask used to define which tabs to hide</string>
+      <string id="AllowFreeSpace">Allow to see and use Free Space management page</string>
+      <string id="AllowFreeSpaceExplain">If ENABLED or NOT CONFIGURED any user can see and use Free Space management page. 
+
+If DISABLED, the Free Space management page will be removed from PerfectDisk's user interface.</string>
+      <string id="AllowTrayIcon">Allow to see PerfectDisk's tray icon</string>
+      <string id="AllowTrayIconExplain">If ENABLED or NOT CONFIGURED any user can see PerfectDisk's tray icon. 
+
+If DISABLED, the PerfectDisk's tray icon will be not shown in the system tray.</string>
+      <string id="AllowAdvanceConfiguration">Allow PerfectDisk Settings</string>
+      <string id="AllowAdvanceConfigurationExplain">If NOT CONFIGURED or ENABLED, the user can access the PerfectDisk Settings window. The PerfectDisk Settings window allows changing PerfectDisk's Log setting, Auto Update settings, Power Options, and more.  
+
+If DISABLED, the access will be blocked.</string>
+      <string id="AllowAnalyze">Allow Analyzing drives</string>
+      <string id="AllowAnalyzeExplain">If ENABLED or NOT CONFIGURED, the user can use PerfectDisk's analyze feature.  
+
+If DISABLED, the Analyze function will be blocked.</string>
+      <string id="AllowOnlineDefrag">Allow starting an online defragmentation pass</string>
+      <string id="AllowOnlineDefragExplain">If ENABLED or NOT CONFIGURED, the user can start a defragmentation pass.  
+
+If DISABLED, the user cannot start a defragmentation pass.</string>
+      <string id="AllowOfflineDefrag">Allow starting a System File (offline) defragmentation pass</string>
+      <string id="AllowOfflineDefragExplain">If ENABLED or NOT CONFIGURED, the user can start a System File (offline) defragmentation pass.  
+
+If DISABLED, the user cannot start an offline defragmentation pass.</string>
+      <string id="AllowStop">Allow Stopping a defragmentation pass</string>
+      <string id="AllowStopExplain">If ENABLED or NOT CONFIGURED, the user will be able to stop a defragmentation pass started manually or by a schedule.  
+
+If DISABLED, the user cannot stop a defragmentation pass that is running.</string>
+      <string id="AllowModifyDriveProps">Allow modification of Drive Properties</string>
+      <string id="AllowModifyDrivePropsExplain">If ENABLED or NOT CONFIGURED, the user can access the Drive Properties Notebook and configure the SMARTPlacement and System File (offline) settings.  
+
+If DISABLED, the user will not have access to the Drive Properties Notebook.</string>
+      <string id="AllowModifySched">Allow changing schedules</string>
+      <string id="AllowModifySchedExplain">If ENABLED or NOT CONFIGURED, the user will be allowed to change local schedules.  
+
+If DISABLED, the user cannot  the user cannot create, edit, rename, delete, disable or enable any schedule.</string>
+      <string id="AllowScheduleBoottimeDefrag">Allow scheduling a boot time defrag pass</string>
+      <string id="AllowScheduleBoottimeDefragExplain">If ENABLED or NOT CONFIGURED, the user can start a boot time (system file) defragmentation pass on his computer.  
+
+If DISABLED, the user cannot start a boot time defragmentation pass.</string>
+      <string id="AllowRunSchedule">Allow starting a scheduled defragmentation pass</string>
+      <string id="AllowRunScheduleExplain">If ENABLED or NOT CONFIGURED, the user can start a schedule defragmentation pass using the Run Schedule feature.  
+
+If DISABLED, the user cannot manually start a defragmentation Schedule.</string>
+      <string id="AllowCheckUpdate">Allow the user to check for updates</string>
+      <string id="AllowCheckUpdateExplain">If ENABLED or NOT CONFIGURED, the user can check for updates from the raxco web site.  
+
+If DISABLED, the user cannot manually check for updates.</string>
+      <string id="PreCommand">Command To Run Before Schedule</string>
+      <string id="PreCommandDuration">Maximum number of seconds Pre Command Should take</string>
+      <string id="PostCommand">Command To Run After Schedule</string>
+      <string id="PostCommandDuration">Maximum number of seconds Post Command Should take</string>
+      <string id="OptiWriteEnable">Configure Optiwrite</string>
+      <string id="OptiWriteOptimizationExplain">Configure Optiwrite</string>
+      <string id="OptiWriteOption">Run Optiwrite On:</string>
+      <string id="OptiWriteFilterAll">All Drives</string>
+      <string id="OptiWritePick">Selected Drives Below</string>
+      <string id="OptiwriteDriveLetters">Drive Letters (comma delimited)</string>
+      <string id="OptiwriteExcludeListText">Extensions to Exclude( semicolon delimited ie rgs;pdb;txt  )</string>
+      <string id="AutoScreenSaverEnable">Automatic Mode Configuration</string>
+      <string id="AutoScreenSaverExplain">Automatic Mode Configuration</string>
+      <string id="AutoScreenSaverOption">Pick Automatic Defrag method</string>
+      <string id="AutoScreenSaverSSOnly">All Drives Screen Saver</string>
+      <string id="AutoScreenSaverAutoOnly">All Drives Stealth Patrol</string>
+      <string id="AutoScreenSaverPick">Select drives for each in 2 fields below, no overlap</string>
+      <string id="AutoScreenSaverSSDriveLetters">Drive Letters (comma delimited) Screen Saver:</string>
+      <string id="AutoScreenSaverAutoDriveLetters">Drive Letters (comma delimited) StealthPatrol:</string>
+      <string id="AutoScreenSaverImportantProcesses">Important processes (comma delimited). When these processes are running Automatic mode defrag will be stopped</string>
+      <string id="AutoScreenSaverExclusionPeriods">select when you do not want Automatic mode defrag running, format is a comma separate list of Hour(0-23) and Day(Su,M,T,W,Th,F,Sa) ( format example M1,T5-W3,F4)</string>
+      <string id="AutoScreenSaverSSHours">Minimum number of hours between Screen Saver optimizations</string>
+      <string id="WipeFreeSpace">Zero Free space after defrag?</string>
+      <string id="DefaultWipe">Use DriveDefaults</string>
+      <string id="IncludeWipe">Include selected drives</string>
+      <string id="ExcludeWipe">do not wipe selected drives</string>
+      <string id="ADMXMigrator_UnresolvedString">ADMX Migrator encountered a string that is not present in the source ADM string table.</string>
+      <string id="ADMXMigrator_NoSupportedOn">ADMX Migrator encountered a policy that does not have a supportedOn value.</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="BootFileOptimization">
+        <dropdownList refId="BootFileOptimizationDropListLabel" noSort="true">Boot File Optimization</dropdownList>
+        <text>0 - Let PerfectDisk manage the files needed to boot your computer.</text>
+        <text>    (recommended)</text>
+        <text>1 - Let PerfectDisk manage all files defined in the layout.ini file;
+
+boot files plus applications commonly launched after booting. (XP/VISTA Only)</text>
+        <text>    boot files plus applications commonly launched after booting. (XP/VISTA Only)</text>
+        <text>2 - Let the System place the Layout.ini files. (XP/VISTA Only)</text>
+      </presentation>
+      <presentation id="DefragThreshold">
+        <decimalTextBox refId="DefragThresholdTextLabel" defaultValue="0" spinStep="1">Threshold (0-100)</decimalTextBox>
+      </presentation>
+      <presentation id="SMARTPlacementLayout">
+        <textBox refId="SMARTPlacementLayout2">
+          <label>Layout:</label>
+        </textBox>
+      </presentation>
+      <presentation id="AgressiveFreeSpaceConsolidation" />
+      <presentation id="LogToPDLog" />
+      <presentation id="LogToEventLog" />
+      <presentation id="AutoUpdateCheck">
+        <textBox refId="AUURL">
+          <label>Auto Update URL</label>
+        </textBox>
+        <dropdownList refId="InstallOption" noSort="true" defaultItem="1">Install Option</dropdownList>
+        <dropdownList refId="DayOfWeek" noSort="true">Day Of The Week</dropdownList>
+        <decimalTextBox refId="TimeToRun" defaultValue="23" spinStep="1">The hour of the day to check for AutoUpdate</decimalTextBox>
+        <decimalTextBox refId="AutoUpdateWeeklyFrequency" defaultValue="1" spinStep="1"> Check for AutoUpdate Every X weeks</decimalTextBox>
+      </presentation>
+      <presentation id="RunMissedSchedules" />
+      <presentation id="ScheduleStartupDelay">
+        <decimalTextBox refId="ScheduleStartupDelayTextLabel" defaultValue="0" spinStep="1">Number of minutes to delay schedules after computer startup</decimalTextBox>
+      </presentation>
+      <presentation id="AutoAdjustThresholds" />
+      <presentation id="SteathPatrolThresholds">
+        <decimalTextBox refId="KernelTimeThreshold" defaultValue="10" spinStep="1">Kernel mode CPU threshold for StealthPatrol schedule (in %)</decimalTextBox>
+        <decimalTextBox refId="UserTimeThreshold" defaultValue="10" spinStep="1">User mode CPU threshold for StealthPatrol schedule (in %)</decimalTextBox>
+        <decimalTextBox refId="IoThreshold" defaultValue="80000" spinStep="0">IO activity threshold for StealthPatrol schedule (in bytes/second)</decimalTextBox>
+      </presentation>
+      <presentation id="VmHostSteathPatrolThresholds">
+        <decimalTextBox refId="VmHostKernelTimeThreshold" defaultValue="10" spinStep="1">Kernel mode CPU threshold for StealthPatrol schedule (in %)</decimalTextBox>
+        <decimalTextBox refId="VmHostUserTimeThreshold" defaultValue="10" spinStep="1">User mode CPU threshold for StealthPatrol schedule (in %)</decimalTextBox>
+        <decimalTextBox refId="VmHostIoThreshold" defaultValue="80000" spinStep="0">IO activity threshold for StealthPatrol schedule (in bytes/second)</decimalTextBox>
+      </presentation>
+      <presentation id="WakeComputerFromHibernation" />
+      <presentation id="StopDefragIfBattery" />
+      <presentation id="DoNotStartDefragIfBattery" />
+      <presentation id="DefragRemovableHardDrives" />
+      <presentation id="DefragFlash" />
+      <presentation id="DefragSSD" />
+      <presentation id="CPUPriority">
+        <dropdownList refId="CPUPriority" noSort="true" defaultItem="1">What priority should the defragmenter have on the local computer</dropdownList>
+      </presentation>
+      <presentation id="IOThrottling" />
+      <presentation id="VSSCompatability">
+        <dropdownList refId="VSSCompatability" noSort="true" defaultItem="1">Volume Shadow Copy Service (VSS) compatibility</dropdownList>
+        <decimalTextBox refId="VSSCompatabilityPercent" defaultValue="30" spinStep="1">Percent of the disk maximum to move per defrag for VSS compatible mode</decimalTextBox>
+      </presentation>
+      <presentation id="ExcludeFiles">
+        <textBox refId="ExcludeFilesLabel">
+          <label>Files:</label>
+        </textBox>
+      </presentation>
+      <presentation id="ManageViaTCPIP">
+        <decimalTextBox refId="ManageOnPortTextLabel" defaultValue="5000" spinStep="1">TCP/IP port (10-65535)</decimalTextBox>
+      </presentation>
+      <presentation id="SMARTDisabled" />
+      <presentation id="SMARTPollingPeriod">
+        <decimalTextBox refId="SMARTPollingPeriodLabel" defaultValue="180" spinStep="1">Minutes</decimalTextBox>
+      </presentation>
+      <presentation id="EnableDefaultSchedule1">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <text>What Days do you want this schedule to run on </text>
+        <checkBox refId="Sunday" defaultChecked="true">Sunday</checkBox>
+        <checkBox refId="Monday" defaultChecked="true">Monday</checkBox>
+        <checkBox refId="Tuesday" defaultChecked="true">Tuesday</checkBox>
+        <checkBox refId="Wednesday" defaultChecked="true">Wednesday</checkBox>
+        <checkBox refId="Thursday" defaultChecked="true">Thursday</checkBox>
+        <checkBox refId="Friday" defaultChecked="true">Friday</checkBox>
+        <checkBox refId="Saturday" defaultChecked="true">Saturday</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <decimalTextBox refId="Frequency" defaultValue="1" spinStep="1">Run schedule every X weeks</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultSchedule2">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <text>What Days do you want this schedule to run on </text>
+        <checkBox refId="Sunday" defaultChecked="true">Sunday</checkBox>
+        <checkBox refId="Monday" defaultChecked="true">Monday</checkBox>
+        <checkBox refId="Tuesday" defaultChecked="true">Tuesday</checkBox>
+        <checkBox refId="Wednesday" defaultChecked="true">Wednesday</checkBox>
+        <checkBox refId="Thursday" defaultChecked="true">Thursday</checkBox>
+        <checkBox refId="Friday" defaultChecked="true">Friday</checkBox>
+        <checkBox refId="Saturday" defaultChecked="true">Saturday</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <decimalTextBox refId="Frequency" defaultValue="1" spinStep="1">Run schedule every X weeks</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultSchedule3">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <text>What Days do you want this schedule to run on </text>
+        <checkBox refId="Sunday" defaultChecked="true">Sunday</checkBox>
+        <checkBox refId="Monday" defaultChecked="true">Monday</checkBox>
+        <checkBox refId="Tuesday" defaultChecked="true">Tuesday</checkBox>
+        <checkBox refId="Wednesday" defaultChecked="true">Wednesday</checkBox>
+        <checkBox refId="Thursday" defaultChecked="true">Thursday</checkBox>
+        <checkBox refId="Friday" defaultChecked="true">Friday</checkBox>
+        <checkBox refId="Saturday" defaultChecked="true">Saturday</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <decimalTextBox refId="Frequency" defaultValue="1" spinStep="1">Run schedule every X weeks</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultSchedule4">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <text>What Days do you want this schedule to run on </text>
+        <checkBox refId="Sunday" defaultChecked="true">Sunday</checkBox>
+        <checkBox refId="Monday" defaultChecked="true">Monday</checkBox>
+        <checkBox refId="Tuesday" defaultChecked="true">Tuesday</checkBox>
+        <checkBox refId="Wednesday" defaultChecked="true">Wednesday</checkBox>
+        <checkBox refId="Thursday" defaultChecked="true">Thursday</checkBox>
+        <checkBox refId="Friday" defaultChecked="true">Friday</checkBox>
+        <checkBox refId="Saturday" defaultChecked="true">Saturday</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <decimalTextBox refId="Frequency" defaultValue="1" spinStep="1">Run schedule every X weeks</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultOneTimeSchedule1">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultOneTimeSchedule2">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <dropdownList refId="WipeFreeSpace" noSort="true">Zero Free space after defrag?</dropdownList>
+        <dropdownList refId="RunDrivesInSeries" noSort="true" defaultItem="2">Run drive in series, parallel or auto detect defragmentation sequence</dropdownList>
+        <dropdownList refId="DriveDefragSettings" noSort="true">Defragmentation algorithm
+
+</dropdownList>
+        <checkBox refId="RunOnlineDefrag" defaultChecked="true">Defragment Entire Drive (Online)</checkBox>
+        <checkBox refId="OverrideOfflineDir" defaultChecked="true">Defragment Directories Offline</checkBox>
+        <checkBox refId="OverrideOfflineSys" defaultChecked="true">Defragment MFT/Metadata Offline</checkBox>
+        <checkBox refId="OverrideOfflinePage" defaultChecked="true">Defragment Pagefile Offline</checkBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+        <checkBox refId="ShutdownAfterCompletion">Shutdown Computer After Scheduled Defrag Completes</checkBox>
+      </presentation>
+      <presentation id="EnableDefaultAnalyzeSchedule1">
+        <checkBox refId="AllDrives" defaultChecked="true">All Drives</checkBox>
+        <checkBox refId="IncludeNonpersist">Include Non persistent drives</checkBox>
+        <textBox refId="DriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <text>Set analyze schedule periodicity in days</text>
+        <decimalTextBox refId="Periodicity2" defaultValue="7" spinStep="1">:</decimalTextBox>
+        <textBox refId="StartDate">
+          <label>Start Date (MM/DD/YYYY)</label>
+        </textBox>
+        <textBox refId="StartTime">
+          <label>Start Time (HH:MM:SS)</label>
+        </textBox>
+        <decimalTextBox refId="MaxDuration" defaultValue="0" spinStep="1">Maximum Duration (hours)</decimalTextBox>
+      </presentation>
+      <presentation id="PDLicenseKey">
+        <textBox refId="LicenseKey">
+          <label>PerfectDisk 12 License Key (XXX-XXXXXXX-XXXXXX-XXXX)</label>
+        </textBox>
+      </presentation>
+      <presentation id="AllowWelcomeWizard" />
+      <presentation id="AllowZeroFreeSpace" />
+      <presentation id="OptiWriteEnable">
+        <dropdownList refId="OptiWriteOption" noSort="true" defaultItem="1">Run Optiwrite On:</dropdownList>
+        <textBox refId="OptiwriteDriveLetters">
+          <label>Drive Letters (comma delimited)</label>
+        </textBox>
+        <textBox refId="OptiwriteExcludeListText">
+          <label>Extensions to Exclude( semicolon delimited ie rgs;pdb;txt  )</label>
+        </textBox>
+      </presentation>
+      <presentation id="AutoScreenSaverEnable">
+        <dropdownList refId="AutoScreenSaverOption" noSort="true" defaultItem="1">Pick Automatic Defrag method</dropdownList>
+        <textBox refId="AutoScreenSaverSSDriveLetters">
+          <label>Drive Letters (comma delimited) Screen Saver:</label>
+        </textBox>
+        <textBox refId="AutoScreenSaverAutoDriveLetters">
+          <label>Drive Letters (comma delimited) StealthPatrol:</label>
+        </textBox>
+        <textBox refId="AutoScreenSaverImportantProcesses">
+          <label>Important processes (comma delimited). When these processes are running Automatic mode defrag will be stopped</label>
+        </textBox>
+        <textBox refId="AutoScreenSaverExclusionPeriods">
+          <label>select when you do not want Automatic mode defrag running, format is a comma separate list of Hour(0-23) and Day(Su,M,T,W,Th,F,Sa) ( format example M1,T5-W3,F4)</label>
+        </textBox>
+        <decimalTextBox refId="AutoScreenSaverSSHours" defaultValue="24" spinStep="1">Minimum number of hours between Screen Saver optimizations</decimalTextBox>
+      </presentation>
+      <presentation id="AllowLaunch" />
+      <presentation id="DisableTabs">
+        <decimalTextBox refId="DisableTabsTextLabel" defaultValue="0" spinStep="1">Decimal number of the bitmask used to define which tabs to hide</decimalTextBox>
+      </presentation>
+      <presentation id="AllowFreeSpace" />
+      <presentation id="AllowTrayIcon" />
+      <presentation id="AllowAdvanceConfiguration" />
+      <presentation id="AllowAnalyze" />
+      <presentation id="AllowOnlineDefrag" />
+      <presentation id="AllowOfflineDefrag" />
+      <presentation id="AllowModifyDriveProps" />
+      <presentation id="AllowModifySched" />
+      <presentation id="AllowRunSchedule" />
+      <presentation id="AllowCheckUpdate" />
+      <presentation id="AllowRegister" />
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

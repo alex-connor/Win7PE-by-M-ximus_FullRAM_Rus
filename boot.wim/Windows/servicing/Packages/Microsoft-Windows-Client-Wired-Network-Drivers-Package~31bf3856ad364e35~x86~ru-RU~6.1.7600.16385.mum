@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Client-Wired-Network-Drivers_ru-RU" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Client-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="nete1e32.inf" displayName="nete1e32.inf" name="INF_nete1e32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="nete1e32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="net1k32.inf" displayName="net1k32.inf" name="INF_net1k32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="net1k32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="net1q32.inf" displayName="net1q32.inf" name="INF_net1q32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="net1q32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Broadcom x86 NetXtreme II GigE (NDIS VBD Client)" displayName="Broadcom x86 NetXtreme II GigE (NDIS VBD Client)" name="bxnd60x">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netbxndx.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Broadcom x86 NetXtreme II GigE VBD" displayName="Broadcom x86 NetXtreme II GigE VBD" name="bxvbdx">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netbvbdx.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Broadcom x86 NetXtreme II 10 GigE VBD" displayName="Broadcom x86 NetXtreme II 10 GigE VBD" name="evbdx">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netevbdx.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netvg62.inf" displayName="netvg62.inf" name="INF_netvg62">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netvg62.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netvfx86.inf" displayName="netvfx86.inf" name="INF_netvfx86">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netvfx86.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netrtl32.inf" displayName="netrtl32.inf" name="INF_netrtl32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netrtl32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netrtx32.inf" displayName="netrtx32.inf" name="INF_netrtx32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netrtx32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netnvm32.inf" displayName="netnvm32.inf" name="INF_netnvm32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netnvm32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netnvmx.inf" displayName="netnvmx.inf" name="INF_netnvmx">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netnvmx.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="net1y32.inf" displayName="net1y32.inf" name="INF_net1y32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="net1y32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netmyk01.inf" displayName="netmyk01.inf" name="INF_netmyk01">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netmyk01.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="nete1g32.inf" displayName="nete1g32.inf" name="INF_nete1g32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="nete1g32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netefe32.inf" displayName="netefe32.inf" name="INF_netefe32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netefe32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="net44x32.inf" displayName="net44x32.inf" name="INF_net44x32">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="net44x32.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netb57vx.inf" displayName="netb57vx.inf" name="INF_netb57vx">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netb57vx.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="netk57x.inf" displayName="netk57x.inf" name="INF_netk57x">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="netk57x.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

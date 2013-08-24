@@ -1,0 +1,6 @@
+<!-- Nu2Menu entry for sala's Password Renew -->
+<NU2MENU>
+	<MENU ID="Programs">	   		
+		<MITEM TYPE="ITEM" DISABLED="@Not(@FileExists(@GetProgramDrive()\Programs\salapasswd\PasswdRenew.exe))" CMD="RUN" FUNC="@GetProgramDrive()\Programs\salapasswd\PasswdRenew.exe">Password Renew</MITEM>
+	</MENU>
+</NU2MENU>

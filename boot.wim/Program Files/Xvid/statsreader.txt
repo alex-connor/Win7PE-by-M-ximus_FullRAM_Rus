@@ -1,0 +1,29 @@
+StatsReader v2.1 HowTo:
+
+New in 2.0: if setting target size to "0" you can use StatsReader
+to add keyframes in desired locations. Make sure to use a different
+filename for the target file and set that file up in xvid as first
+pass statsfile. Since the frametypes are gathered from the first
+pass file, setting them only in a 2nd pass file won't work.
+[Note that you need a special XviD dev-api-3 build for this when
+using bframes (with suxendrol's controlled mode), without bframes
+or in the stable build this should work out of the box.]
+
+New in 2.0a: merging stats files. If you somehow accidently abort
+a first pass and simply want to continue, you can now do a 2nd first
+pass (using another name for the target stats of course) and
+start at the next frame to the last frame from the first file.
+When you're done, simply open the first file as usual, then hit
+"merge". Open the 2nd file. Then another dialog pops up asking
+for a new target stats-file, choose a new name.
+This isn't perfect as on that cut the bitrate will go nuts for a
+second, but it produces still a valid output.
+I found it to be useful ;-)
+
+New in 2.1:
+Statsreader can now read dev-api-4 sats-files. There is no support for
+external scaling anymore in dev-api-4, so there's no need for all the
+functions of StatsReader for these xvid versions. It still helps
+getting some insights into the first pass though.
+Still missing: support to write dev-api-4-statsfiles for the "add
+keyframe" feature.

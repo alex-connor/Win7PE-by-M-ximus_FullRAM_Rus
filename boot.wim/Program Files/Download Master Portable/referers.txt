@@ -1,0 +1,30 @@
+//Файл конфигурации для выдачи поля REFERER в HTTP запросе.
+//Бывает необходимо выдать для определенного сайта заданный реферер 
+//без которого закачка невозможна. Здесь можно указать имя сайта и шаблон 
+//для него на основе которого будет сформирован и отправлен REFERER.
+
+//Задавать в следующей форме:
+//sitename pattern
+//sitename - строка которая должна встретится в ссылке (URL-е) на закачки
+//pattern - собственно шаблон по которому будет сформирован REFERER
+//для pattern возможно использование переменных - $URL$, $SERVER$, $FOLDER$, $FILENAME$, $EXT$, none.
+
+//Например для ссылки http://www.westbyte.com/dm/download/dmaster.exe
+//$URL$ = http://www.westbyte.com/dm/download/dmaster.exe
+//$SERVER$ = www.westbyte.com
+//$FOLDER$ = dm/download
+//$FILENAME$ = dmaster
+//$EXT$ = exe
+//none = реферер выдаваться не будет
+//----------------------------------------------------------
+
+dl.pleera.net http://pleera.net/viewer/$FOLDER$.shtml
+sourceforge.net http://sourceforge.net
+simtel.net none
+mp3.com none
+i-drive.com http://$SERVER$/$FOLDER$/index.html
+idrive.com http://$SERVER$/$FOLDER$/index.html
+geocities.com http://$SERVER$/$FOLDER$/index.html
+tripod.com $URL$
+angelfire.com $URL$
+.ex.ua http://www.ex.ua

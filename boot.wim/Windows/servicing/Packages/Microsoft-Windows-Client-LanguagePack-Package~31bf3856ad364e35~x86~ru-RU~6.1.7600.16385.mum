@@ -1,0 +1,777 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-LanguagePack-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Language Pack" releaseType="Language Pack">
+    <mum2:customInformation xmlns:mum2="urn:schemas-microsoft-com:asm.v3" LPTargetSPLevel="0" LPType="Client"/>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-ProfessionalEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-ProfessionalNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-ProfessionalEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-EnterpriseEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-EnterpriseNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-EnterpriseEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomeBasicEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomeBasicNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomeBasicEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomePremiumEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomePremiumNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-HomePremiumEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-StarterEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-StarterNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-StarterEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-UltimateEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-UltimateNEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <parent buildCompare="EQ" disposition="detect" distributionCompare="EQ" integrate="separate" revisionCompare="EQ" serviceCompare="EQ">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-UltimateEEdition" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Language pack for ru-RU" displayName="Windows Language Pack" name="WindowsLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WindowsFoundation-LanguagePack-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for client Drivers for ru-RU" displayName="Resource SDP package for client Drivers" name="ClientDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for common Drivers for ru-RU" displayName="Resource SDP package for common Drivers" name="CommonDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Common-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for common modem Drivers for ru-RU" displayName="Resource SDP package for common modem Drivers" name="CommonModemDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Common-Modem-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for client wired network Drivers for ru-RU" displayName="Resource SDP package for client wired network Drivers" name="ClientWiredNetworkDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Resource SDP package for printer Drivers for ru-RU" displayName="Resource SDP package for printer Drivers" name="PrinterDrivers-ResourcePackage_update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Printer-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-Ultimate-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-Ultimate-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-UltimateN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-UltimateN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-UltimateE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-UltimateE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-Starter-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-Starter-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-StarterN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-StarterN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-StarterE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-StarterE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-Professional-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-Professional-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-ProfessionalN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-ProfessionalN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-ProfessionalE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-ProfessionalE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-Enterprise-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-Enterprise-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-EnterpriseN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-EnterpriseN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-EnterpriseE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-EnterpriseE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomeBasic-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomeBasic-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomeBasicN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomeBasicN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomeBasicE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomeBasicE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomePremium-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomePremium-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomePremiumN-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomePremiumN-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Branding-HomePremiumE-Client-LangPackage">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Branding-HomePremiumE-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-CommandLineTools" displayName="Microsoft-Windows-TerminalServices-CommandLineTools Language Pack" name="Microsoft-Windows-TerminalServices-CommandLineTools-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-CommandLineTools-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-WMIProvider" displayName="Microsoft-Windows-TerminalServices-WMIProvider Language Pack" name="Microsoft-Windows-TerminalServices-WMIProvider-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-WMIProvider-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-Publishing-WMIProvider" displayName="Microsoft-Windows-TerminalServices-Publishing-WMIProvider Language Pack" name="Microsoft-Windows-TerminalServices-Publishing-WMIProvider-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-Publishing-WMIProvider-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-MiscRedirection-Package" displayName="Microsoft-Windows-TerminalServices-MiscRedirection Language Pack" name="Microsoft-Windows-TerminalServices-MiscRedirection-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-MiscRedirection-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-RemoteApplications-Client-Package" displayName="Microsoft-Windows-TerminalServices-RemoteApplications-Client Language Pack" name="Microsoft-Windows-TerminalServices-RemoteApplications-Client-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-RemoteApplications-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Microsoft-Windows-TerminalServices-UsbRedirector" displayName="Microsoft-Windows-TerminalServices-UsbRedirector Language Pack" name="Microsoft-Windows-TerminalServices-UsbRedirector-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TerminalServices-UsbRedirector-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Client-Features-Deployment" displayName="Microsoft-Windows-Client-Features-Deployment Language Pack" name="Microsoft-Windows-Client-Features-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Client-Features-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Windows CodecPack Basic Package language pack for ru-RU" displayName="Microsoft Windows CodecPack Basic Package Language Pack" name="Microsoft-Windows-CodecPack-Basic-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-CodecPack-Basic-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update description="Windows Media Player language pack for ru-RU" displayName="Windows Media Player Language Pack" name="Microsoft-Windows-MediaPlayer-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MediaPlayer-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Media Playback OC language pack for ru-RU" displayName="Windows Media Playback OC Language Pack" name="Microsoft-Windows-MediaPlayback-OC-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MediaPlayback-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Media Player Troubleshooters language pack for ru-RU" displayName="Windows Media Player Troubleshooters Language Pack" name="Microsoft-Windows-WindowsMediaPlayer-Troubleshooters-Language-Pack-Update">
+      <package contained="false" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WindowsMediaPlayer-Troubleshooters-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Media Format Language pack for ru-RU" displayName="Windows Media Format Language Pack" name="Microsoft-Windows-Media-Format-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Media-Format-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Media Foundation Language pack for ru-RU" displayName="Media Foundation Language pack" name="Microsoft-Media-Foundation-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Media-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-NetFx3-OC-Package language Pack for ru-RU" displayName="Microsoft-Windows-NetFx3-OC-Package Language Pack" name="Microsoft-Windows-NetFx3-OC-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-NetFx3-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-Printing-XPSServices-Package language Pack for ru-RU" displayName="Microsoft-Windows-Printing-XPSServices-Package Language Pack" name="Microsoft-Windows-Printing-XPSServices-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Printing-XPSServices-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Business Scanning Management Language Pack for ru-RU" displayName="Windows Business Scanning Management Language Pack" name="EnterpriseScanManagementLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-BusinessScanning-Feature-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Share Media Control Panel language pack for ru-RU" displayName="Share Media Control Panel Language Pack" name="Microsoft-Windows-ShareMedia-ControlPanel-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ShareMedia-ControlPanel-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Media Player Network Sharing Service language pack for ru-RU" displayName="Windows Media Player Network Sharing Service Language Pack" name="Microsoft-Windows-WMPNetworkSharingService-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WMPNetworkSharingService-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Print Language Pack for ru-RU" displayName="Print Foundation Language Pack" name="PrintFoundationLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Printing-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Print Language Pack for ru-RU" displayName="Print Foundation Language Pack" name="PrintFoundationStarterLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Printing-Foundation-Starter-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft HomeGroup language pack for ru-RU" displayName="Microsoft HomeGroup Language Pack" name="Microsoft-Windows-Shell-HomeGroup-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Shell-HomeGroup-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Xps Language Pack for ru-RU" displayName="Xps Foundation Language Pack" name="XpsFoundationLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Xps-Foundation-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Xps Language Pack for ru-RU" displayName="Xps Foundation Language Pack" name="XpsFoundationLanguageNEditionPack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Xps-Foundation-NEdition-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-IIS-Deployment Language Pack" name="Microsoft-Windows-IIS-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-IIS-WebServer-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-IIS-AddOn-Deployment Language Pack" name="Microsoft-Windows-IIS-AddOn-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-IIS-WebServer-AddOn-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-IIS-AddOn-2-Deployment Language Pack" name="Microsoft-Windows-IIS-AddOn-2-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-IIS-WebServer-AddOn-2-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-Smtpsvc-Admin-Deployment Language Pack" name="Microsoft-Windows-Smtpsvc-Admin-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Smtpsvc-Admin-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-Smtpsvc-Service-Deployment Language Pack" name="Microsoft-Windows-Smtpsvc-Service-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Smtpsvc-Service-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-RemoteAssistance-Package-Client Language Pack for ru-RU" displayName="Microsoft-Windows-RemoteAssistance-Package-Client Language Pack" name="Microsoft-Windows-RemoteAssistance-Package-Client">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-RemoteAssistance-Package-Client" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-PeerNetworkingFull-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-PeerToPeer-Full-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Tablet PC features" displayName="TabletPC-OC-LanguagePack" name="TabletPC-OC-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TabletPC-OC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Mobile PC Basic features" displayName="MobilePC-Client-Basic-LanguagePack" name="MobilePC-Client-Basic-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-Basic-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Mobile PC SideShow features" displayName="Mobile-client-SideShow-LanguagePack" name="MobilePC-Client-SideShow-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-SideShow-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Mobile PC LocationBasic features" displayName="MobilePC-Client-LocationBasic-Package-LanguagePack" name="MobilePC-Client-LocationBasic-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-LocationBasic-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Mobile PC Sensors features" displayName="MobilePC-Client-Sensors-Package-LanguagePack" name="MobilePC-Client-Sensors-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-Sensors-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Mobile PC Premium features" displayName="MobilePC-Client-Premium-LanguagePack" name="MobilePC-Client-Premium-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MobilePC-Client-Premium-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="MediaCenter Language Pack for ru-RU" displayName="MediaCenter Language Pack" name="MediaCenterLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MediaCenter-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="RasRIP for ru-RU" displayName="RasRIP Language Pack" name="RasRIPLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-RasRip-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="RasCMAK for ru-RU" displayName="RasCMAK Language Pack" name="RasCMAKLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-RasCMAK-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for SecureStartup-Deployment" displayName="Microsoft-Windows-SecureStartup Language Pack" name="Microsoft-Windows-SecureStartup-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SecureStartup-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for SecureStartup-Basic-Deployment" displayName="Microsoft-Windows-SecureStartup-Basic Language Pack" name="Microsoft-Windows-SecureStartup-Basic-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SecureStartup-Basic-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Client For NFS Package language pack for ru-RU" displayName="Microsoft Client For NFS Package" name="Microsoft-Windows-NFS-ClientSKU-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-NFS-ClientSKU-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Simple TCPIP services" displayName="SimpleTCP-LanguagePack" name="SimpleTCP-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SimpleTCP-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="GPUPipeline language pack for ru-RU" displayName="GPUPipeline Language Pack" name="Microsoft-Windows-GPUPipeline-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-GPUPipeline-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Clips In The Library language pack for ru-RU" displayName="Clips In The Library Language Pack" name="Microsoft-Windows-ClipsInTheLibrary-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ClipsInTheLibrary-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Optical Media Disc language pack for ru-RU" displayName="Optical Media Disc Language Pack" name="Microsoft-Windows-OpticalMediaDisc-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-OpticalMediaDisc-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Sound Recorder language pack for ru-RU" displayName="Sound Recorder Language Pack" name="Microsoft-Windows-SoundRecorder-Language-Pack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SoundRecorder-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Photo Basic Language Pack for ru-RU" displayName="Photo Basic Language Pack" name="Microsoft-Windows-PhotoBasicExperience-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-PhotoBasicPackage" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Photo Premium Language Pack for ru-RU" displayName="Photo Premium Language Pack" name="Microsoft-Windows-PhotoPremiumExperience-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-PhotoPremiumPackage" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Windows Backup Language Pack for ru-RU" displayName="Microsoft Windows Backup Language Pack" name="Microsoft-Windows-Backup-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Backup-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Windows System Restore Language Pack for ru-RU" displayName="Microsoft Windows System Restore Language Pack" name="Microsoft-Windows-SystemRestore-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SystemRestore-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Windows Create Recovery Disc Language Pack for ru-RU" displayName="Microsoft Windows Create Recovery Disc Language Pack" name="Microsoft-Windows-RecDisc-SDP-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-RecDisc-SDP-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Block Level Backup Language Pack for ru-RU" displayName="Windows Block Level Backup Language Pack" name="Microsoft-Windows-BLB-Client-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-BLB-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-MSMQ-Client-Package Language Pack" name="Microsoft-Windows-MSMQ-Client-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MSMQ-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-MSMQ-Client-Home-Basic-Package Language Pack" name="Microsoft-Windows-MSMQ-Client-Home-Basic-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MSMQ-Client-Home-Basic-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Microsoft-Windows-MSMQ-Client-Home-Premium-Package Language Pack" name="Microsoft-Windows-MSMQ-Client-Home-Premium-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-MSMQ-Client-Home-Premium-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update name="Microsoft-Windows-Help-Customization-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-Customization-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Basic N User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHBN-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHBN-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHBN-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Basic User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHB-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHB-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHB-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Basic E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHBE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHBE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHBE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Premium User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHP-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHP-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHP-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Premium N User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHPN-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHPN-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHPN-Package-Lang" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Home Premium E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAHPE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAHPE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAHPE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Enterprise User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Enterprise E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPEE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPEE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPEE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Enterprise N User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPEN-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPEN-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPEN-Package-Lang" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Standard User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPS-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPS-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPS-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Standard N User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPSN-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPSN-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPSN-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Pro Standard E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAPSE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAPSE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAPSE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Starter User Assistance" displayName="Microsoft-Windows-Help-CoreClientUASE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUASE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUASE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for StarterN User Assistance" displayName="Microsoft-Windows-Help-CoreClientUASNE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUASNE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUASNE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Starter E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUASEE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUASEE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUASEE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Ultimate User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAUE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAUE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAUE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Ultimate N User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAUEN-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAUEN-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAUEN-Package-Lang" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Ultimate E User Assistance" displayName="Microsoft-Windows-Help-CoreClientUAUEE-LanguagePack-Package" name="Microsoft-Windows-Help-CoreClientUAUEE-LanguagePack-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Help-CoreClientUAUEE-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Shell Inbox Games Language Pack for ru-RU" displayName="Shell Inbox Games Language Pack" name="Microsoft-Windows-Shell-InboxGames-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Shell-InboxGames-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Shell Premium Inbox Games Language Pack for ru-RU" displayName="Shell Premium Inbox Games Language Pack" name="Microsoft-Windows-Shell-PremiumInboxGames-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Shell-PremiumInboxGames-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Shell Multiplayer Inbox Games Language Pack for ru-RU" displayName="Shell Multiplayer Inbox Games Language Pack" name="Microsoft-Windows-Shell-MultiplayerInboxGames-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Shell-MultiplayerInboxGames-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Gadget Platform Language Pack for ru-RU" displayName="Windows Gadget Platform Language Pack" name="Microsoft-Windows-Gadget-Platform-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Gadget-Platform-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Parental Controls Language Pack for ru-RU" displayName="Parental Controls Language Pack" name="Microsoft-Windows-ParentalControls-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ParentalControls-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientProfessional">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientProfessional" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientProfessionalN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientProfessionalN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientEnterprise">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientEnterprise" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientEnterpriseN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientEnterpriseN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientHomeBasic">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientHomeBasic" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientHomeBasicN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientHomeBasicN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientHomePremium">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientHomePremium" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientHomePremiumN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientHomePremiumN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientStarter">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientStarter" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientStarterN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientStarterN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientUltimate">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientUltimate" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Server-Help-Package.ClientUltimateN">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Server-Help-Package.ClientUltimateN" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </package>
+    </update>
+    <update name="Microsoft-Windows-SUA-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SUA-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Anytime Upgrade Language Pack for ru-RU" displayName="Windows Anytime Upgrade" name="Microsoft-Windows-Anytime-Upgrade-Deployment-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Anytime-Upgrade-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Anytime Upgrade Results Language Pack for ru-RU" displayName="Windows Anytime Upgrade Results" name="Microsoft-Windows-Anytime-Upgrade-Results-Deployment-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Anytime-Upgrade-Results-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-GroupPolicy-ClientTools-Package language pack for ru-RU" displayName="Microsoft-Windows-GroupPolicy-ClientTools-Package Language Pack" name="Microsoft-Windows-GroupPolicy-ClientTools-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-GroupPolicy-ClientTools-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-GroupPolicy-ClientExtensions-Package language pack for ru-RU" displayName="Microsoft-Windows-GroupPolicy-ClientExtensions-Package Language Pack" name="Microsoft-Windows-GroupPolicy-ClientExtensions-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-GroupPolicy-ClientExtensions-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Print Premium Tools Language Pack for ru-RU" displayName="Print Premium Tools" name="PrintPremiumTools">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Printing-PremiumTools-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-SNMP-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SNMP-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-Telnet-Client-Package LanguagePack for ru-RU" displayName="Microsoft-Windows-Telnet-Client-Package LanguagePack" name="Microsoft-Windows-Telnet-Client-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Telnet-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft-Windows-Telnet-Server-Package LanguagePack for ru-RU" displayName="Microsoft-Windows-Telnet-Server-Package LanguagePack" name="Microsoft-Windows-Telnet-Server-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Telnet-Server-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-OfflineFiles-Package-LangPack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-OfflineFiles-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="TFTP for ru-RU" displayName="TFTP Language Pack" name="TFTPLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-TFTP-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for Disk-Diagnosis-Deployment" displayName="Microsoft-Windows-Disk-Diagnosis-Deployment Language Pack" name="Microsoft-Windows-Disk-Diagnosis-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Disk-Diagnosis-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="WMI SNMP Provider language pack for ru-RU" displayName="WMI SNMP Provider Language Pack" name="Microsoft-Windows-WMI-SNMP-Provider-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WMI-SNMP-Provider-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Microsoft Windows Links language pack for ru-RU" displayName="Microsoft Windows Links Language Pack" name="Microsoft-Windows-Links-Package-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Links-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="RDC for ru-RU" displayName="RDC Language Pack" name="RDCLanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-RDC-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="PeerDist Language Pack for ru-RU" displayName="PeerDist Language Pack" name="Microsoft-Windows-PeerDist-Client-Package-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-PeerDist-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-Indexing-Service-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Indexing-Service-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Internet Explorer language pack for ru-RU" displayName="Internet Explorer Language Pack" name="Microsoft-Windows-InternetExplorer-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-InternetExplorer-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="8.0.7600.16385"/>
+      </package>
+    </update>
+    <update description="Internet Explorer Optional Component language pack for ru-RU" displayName="Internet Explorer Optional Component Language Pack" name="Microsoft-Windows-InternetExplorer-Optional-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-InternetExplorer-Optional-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="8.0.7600.16385"/>
+      </package>
+    </update>
+    <update description="Internet Explorer Troubleshooters language pack for ru-RU" displayName="Internet Explorer Troubleshooters Language Pack" name="Microsoft-Windows-IE-Troubleshooters-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-IE-Troubleshooters-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Windows Color System Basic Language Pack for ru-RU" displayName="Windows Color System Basic Language Pack" name="Microsoft-Windows-ICM-LanguagePack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-ICM-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for ru-RU" displayName="Microsoft-Windows-StorageService-Package-LanguagePack" name="Microsoft-Windows-StorageService-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-StorageService-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU language pack for VirtualPC-USB-RPM-Deployment" displayName="Microsoft-Windows-VirtualPC USB-RPM Language Pack" name="Microsoft-Windows-VirtualPC-USB-RPM-Language-Pack-Update">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-VirtualPC-USB-RPM-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for WinOcr" displayName="Microsoft-Windows-WinOcr-LanguagePack" name="Microsoft-Windows-WinOcr-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-WinOcr-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Sticky Notes feature" displayName="StickyNotes-LanguagePack" name="StickyNotes-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-StickyNotes-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="ru-RU Language Pack for Snipping Tool feature" displayName="SnippingTool-LanguagePack" name="SnippingTool-LanguagePack">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SnippingTool-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+    <update description="Language pack for ru-RU" displayName="Language Pack" name="Microsoft-Windows-SearchEngine-Client-Package">
+      <package contained="true" integrate="hidden">
+        <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-SearchEngine-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+      </package>
+    </update>
+  </package>
+</assembly>

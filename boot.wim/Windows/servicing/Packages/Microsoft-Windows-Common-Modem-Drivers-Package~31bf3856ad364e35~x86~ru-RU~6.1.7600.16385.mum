@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="ru-RU" name="Microsoft-Windows-Common-Modem-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Common-Modem-Drivers_ru-RU" releaseType="Language Pack">
+    <parent disposition="detect" integrate="separate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Common-Modem-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="brmfcmdm.inf" displayName="brmfcmdm.inf" name="INF_brmfcmdm">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="brmfcmdm.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr002.inf" displayName="mdmbr002.inf" name="INF_mdmbr002">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr002.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr004.inf" displayName="mdmbr004.inf" name="INF_mdmbr004">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr004.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr005.inf" displayName="mdmbr005.inf" name="INF_mdmbr005">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr005.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr006.inf" displayName="mdmbr006.inf" name="INF_mdmbr006">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr006.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr007.inf" displayName="mdmbr007.inf" name="INF_mdmbr007">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr007.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr008.inf" displayName="mdmbr008.inf" name="INF_mdmbr008">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr008.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmbr00a.inf" displayName="mdmbr00a.inf" name="INF_mdmbr00a">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmbr00a.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmgen.inf" displayName="mdmgen.inf" name="INF_mdmgen">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmgen.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmhayes.inf" displayName="mdmhayes.inf" name="INF_mdmhayes">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmhayes.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmmoto1.inf" displayName="mdmmoto1.inf" name="INF_mdmmoto1">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmmoto1.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmusrk1.inf" displayName="mdmusrk1.inf" name="INF_mdmusrk1">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmusrk1.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmvv.inf" displayName="mdmvv.inf" name="INF_mdmvv">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmvv.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmagrm.inf" displayName="mdmagrm.inf" name="INF_mdmagrm">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmagrm.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmagrs.inf" displayName="mdmagrs.inf" name="INF_mdmagrs">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmagrs.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmmotsm.inf" displayName="mdmmotsm.inf" name="INF_mdmmotsm">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmmotsm.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmcxav3.inf" displayName="mdmcxav3.inf" name="INF_mdmcxav3">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmcxav3.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmcxhv3.inf" displayName="mdmcxhv3.inf" name="INF_mdmcxhv3">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmcxhv3.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="mdmcxpv3.inf" displayName="mdmcxpv3.inf" name="INF_mdmcxpv3">
+      <component>
+        <assemblyIdentity buildType="release" language="ru-RU" name="mdmcxpv3.inf-LanguagePack" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

@@ -1,0 +1,10 @@
+ntpwedit - Copyright (c) 2005-2007 Vadim Druzhin (cdslow@mail.ru)
+
+* 11.06.2007 Vadim Druzhin <cdslow@mail.ru>
+  Version 0.3
+  + based on new chntpw version 0.99.4 070409 (decade)
+  + license changed to GPL
+
+* 10.01.2006 Vadim Druzhin <cdslow@mail.ru>
+  Version 0.2
+  = First public release

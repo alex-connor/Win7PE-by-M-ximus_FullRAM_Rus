@@ -1,0 +1,492 @@
+***************************************
+  THIS FILE IS HOPELESSLY OUTDATED!!
+I'm sorry, but writing a documentation
+is an arduous task and not as much fun
+as programming. This text should still
+offer some insight to those new to BIN
+editing, so I keep it in the ZIP.
+
+Take a look at...
+
+Drive2Survives "BINedit Resourse" at
+http://mtm2.com/~d2s/binedit/
+
+or
+
+Phineus's "BINedit Manual" at
+http://mtm2.com/~mtmg/
+
+... for a more in depth view of BINedit.
+***************************************
+
+Special thanks to Tom Berezansky for
+updating the text!
+
+=============
+BINedit beta
+=============
+
+--------------
+0. What's new?
+--------------
+see Old_changelog.txt (Oliver Pieper)
+see New_changelog.txt (Richard Borchard III)
+-------------------
+1. What is BINedit?
+-------------------
+BINs are the three-dimensional models used in the Microsoft/
+Terminal Reality games MTM, Hellbender, CART, MTM2 and Evo1. This
+program was developed with MTM (and MTM2) in mind, but should
+work with the other programs, too.
+
+BINedit is a utility for editing the BIN files (aka boxes,
+models, or props). 
+
+Unlike my normal beta programs which tend to be quite stable,
+this one is REALLY BETA! I do my best to release only fairly stable
+versions, but I won't take any responsibility for lost BINs and
+similar stuff 8-)
+
+Please report any bugs you find or send me some general suggestions.
+
+Improved versions will be released in irregular intervals
+
+Because the program is still under development, this readme file
+will not yet discuss the functions in greater detail.
+
+BINedit is POSTCARDWARE. If you use it and have not sent me a postcard
+yet, please do so. See POSTCARD.TXT for details.
+
+-------------------------
+2. How to install BINedit
+-------------------------
+BINedit will only work if you did use the "First Time Setup"
+feature of TRI's TrackEd (or some similar procedure that
+extracts BIN files and the appropriate textures to your
+hard drive).
+
+Simply copy the files
+  BINedit.EXE
+  opengl32.dll
+  glu32.dll
+to a directory of your choice.
+
+The Program should be ready to run.
+
+*****************************************************************
+WHEN YOU ARE USING BINEDIT v0.907 (or higher) FOR THE FIRST TIME:
+-----------------------------------------------------------------
+The first thing you have to do is use the "Preferences"
+command in the "File" menu and select the default color
+table (for MTM it is the file "METALCR2.ACT" in the ART
+subfolder of the MTM folder), the default BIN model directory
+(for MTM it is the MODELS subfolder of the MTM folder), and
+the default .RAW and .ACT folder (for MTM it is the ART
+subfolder of the MTM folder).
+*****************************************************************
+
+BE SURE TO USE A SCREEN MODE WITH AT LEAST 64K COLORS!
+256 COLORS ARE NOT ENOUGH!
+
+---------------------
+3. How to use BINedit
+---------------------
+
+////////////////////////////////////////////
+// The basics of BIN editing:
+
+A BIN file describes a three-dimensional model for MTM
+(and Hellbender, and CART, and MTM2, and...).
+The basic structure of a BIN consists of 3D points.
+I will usually call them vertices (singular: vertex).
+A vertex is not visible in MTM.
+
+  1 +              + 2
+
+
+
+
+  3 +         + 4
+
+Three or four of these vertices can be used to form
+a visible surface. I will call these polygons
+faces. A face has only one visible side.
+The faces is visible from the side where the vertices
+seem to be defined clockwise.
+
+  1 +--------------+ 2
+    !             /
+    !            /
+    !           /
+    !          /
+  3 +---------+ 4
+
+This face will only be visible from your side of the
+screen, if it is defined as 1,2,4,3 or 2,4,3,1 or
+4,3,1,2 or 3,1,2,4. Reverse the order, and the face
+is only visible from within your monitor 8-).
+
+Each face uses a RAW file (a MTM texture file) for
+the rendering of its surface. Several faces can
+share the same texture.
+
+  1 +--------------+ 2
+    !xyxyxyxyxyxyx/
+    !yxyxyxyxyxyx/
+    !xyxyxyxyxyx/
+    !yxyxyxyxyx/
+  3 +---------+ 4
+
+
+////////////////////////////////////////////
+// Keyboard commands of BINedit
+
+Keypad + 	: zoom 3d view in  (SHIFT to zoom faster)
+Keypad - 	: zoom 3d view out (SHIFT to zoom faster)
+Cursor Keys	: rotate 3d view (SHIFT to rotate faster)
+
+TAB/SHIFT TAB	: cycle through vertices (forward/backward)
+Space/SHIFT Space	: cycle through faces (forward/backward)
+
+CTRL-X	: delete current face
+
+X/SHIFT X	: move selected vertex in positive/negative x direction
+Y/SHIFT Y	: move selected vertex in positive/negative y direction
+Z/SHIFT Z	: move selected vertex in positive/negative z direction
+
+N		: cycle through vertices of selected face
+SHIFT N	: select first vertex of selected face
+
+F		: Tag (mark) selected face (still without real function)
+		Planned: Perform certain operations on tagged faces only.
+
+I		: information on model/selected vertex/selected face
+
+T		: toggle display of current vertex' texture
+		(the colors are not correct)
+		The red outline shows which part of the texture is
+		used for the face. Press N repeatedly to see which
+		vertex corresponds to which point of the red shape.
+		Point and click with mouse to move current vertex to
+		new texture coordinates, or use X/SHIFT X and
+		Y/SHIFT Y.
+
+SHIFT T	: Select new texture for current face. Select the new
+		texture from the texture pool.
+
+V		: Tag current vertex. Some trasformations can be restricted
+              to tagged vertices only, like the TRANSLATE command.
+
+CTRL-V : Set vertex Coorfinates
+
+CTRL-A : Select all Faces
+
+////////////////////////////////////////////
+// Menu commands of BINedit
+
+FILE
+	New				- Clear current BIN
+	Open				- guess...
+	Save As Model...		- save the current BIN as normal model
+					NOTE: For future storage of additional BIN infos, BINedit will create a file
+					<binname>.BIN.info for every saved BIN!
+	Save As Backdrop...	- save current bin as a backdrop model. This will only work if the model
+					  was already a backdrop when it was loaded.
+					NOTE: For future storage of additional BIN infos, BINedit will create a file
+					<binname>.BIN.info for every saved BIN!
+	Save as Hellbender Bin...	- Save the current file as a hellbender model
+	Insert...			- Load new model into current one. Use this function to combine two BINs
+	Import Truck...		- Import a truck(.trk) into BinEdit. You may need to extract files from the Game and Truck pod files in the System directory to view the trucks.
+	Import Wavefront...	- Insert a file in Wavefront/Digital Arts format (See Appendix A)
+	Export Wavefront...	- Export a model to Wavefront/Digital Arts format (See Appendix A)
+	Export as VRML...	- Export the current file as a usable VRML file. If you have the right software you can view the VRML file as well.
+	Play			- auto-rotate current model
+	Preferences...		- displays a dialog were you can set some basic file and path names
+
+VIEW
+	Zoom To Fit			- will zoom the model view to fit the 3d window.
+	Change Background Color	- Select the color of the background of all the views.
+	Wireframe, solid untextured, and textured	- Changes 3D view.
+	Follow Current Face	- When checked the 3D view will center to the selected face.
+	Show only 3D view	- guess...
+	Show Axes		- When checked the location of the Axes is shown in the 3D view.
+	Show Vertices in 3D view	- When checked it shows the vertices in the 3D view.
+	High Quality 3D textures	- When checked if you are in textured mode the 3D textures are brought into a higher quality.
+	Toggle Vertex Status	- Toggle the small window with vertex info on and off.
+	Toggle Browse Window	- Toggles the browse window for selecting bin files. Double click on one to open it.
+
+MODEL
+	Rotate x,y,z	- rotate model around selected axis
+	Center x,y,z	- Centers the model on the selected axis
+	Center all	- Centers the model on all axises
+	Resize		- resize model (values are in feet, one foot equals 256 editor units)
+					Old size is displayed in left column. Enter new size in right column.
+					To keep the proportions, check the "keep proportions" box before changing
+					a value on the right hand side. The other values will be calculated automatically.
+	Translate		- move the model (values are in editor units, 256 editor units equal one foot)
+	Normalize Texture	- select ONE new texture for ALL faces.
+	Write textures to textfile	- will write the names of all textures that are used by the model to
+						a text file. Useful when creating response files.
+
+VERTEX
+	Set Coordinates	- change the coordinates of the current vertex
+	Add			- Add a new vertex. A dialog box will prompt you for the coordinates.
+	Delete Current	- Delete current vertex (if it is not used by any face).
+	Delete all unused	- Delete all vertices that are not used by any face.
+	Merge close vertices	- Merges vertice within certain distances that you specify.
+	Select all vertices	- Selects all vertices.
+	Deselect all vertices	- Deselects any selected vertices.
+	Jump to Vertex #...	- Jumps to the vertex # you specify.
+
+FACE
+	Add			- Add a new faces. Write down the vertex numbers of its corners before
+					entering the dialog box. The faces will get the first texture
+					in the texture pool. To change texture, select the face and
+					press SHIFT T to select a new texture from the pool.
+	Delete current 	- delete the current (selected) face.
+	Flip Face	- Flips the direction of the face.
+	Flip and rotate texture	- as the name says. Flip doesn't work for triangles.
+	Select all faces	- Selects all faces
+	Deselect all faces	- Deselects all selected faces
+	Select by facing	- Selects the faces which are facing along the selected axis or it's negative, or up to a certain degree away.
+	Properties		- view/change properties of current face (vertex numbers, texture type and texture image)
+	Jump to face #...	- Jumps to the face # you specify.
+
+TEXTURES
+	Load				- load one or more new textures into the editor's texture pool.
+					  Only loaded textures can be used for faces.
+	Define Animation...	- define a new texture animation. You will have to specify a name, the number of
+					  frames per second and the textures for the frames. The new animation <name> will
+					  appear as "ANIM:<name>" in the texture selection dialog.
+
+GROUPS
+	When you press F or V, the current "F"ace or "V"ertex will be marked as selected.
+      With "Define ???? Group" you can assign a name to the current selection of faces
+      or vertices. With "Restore ... Group" you can either restore a previously saved
+      selection group, or - by selecting the unnamed group - clear the selection.
+
+	Vertex selections are in use only in "MODEL/TRANSLATE".
+
+	The selections will be saved to and restored from the .BIN model's .INFO file.
+	
+
+//////////////////////////////////////
+// Mini-tutorial: the hay pyramid...
+
+Ok, let's build a hay pyramid to get a feeling for the
+program 8-)
+
+Start BINedit. Do not load an object! (Or use the FILE/NEW function)
+
+Our pyramid needs a square base and four triangular sides.
+To add a face, we need vertices first.
+
+Let's start with the base. We need four vertices.
+For simplicity's sake, we will insert them at
+a y-coordinate of 0. 
+
+Add the first vertex at  x= 1000, y=0, z= 1000
+Add the second vertex at x= 1000, y=0, z=-1000
+Add the third vertex at  x=-1000, y=0, z=-1000
+Add the fourth vertex at x=-1000, y=0, z= 1000
+
+Press the keypad "+" key a few times to see the vertices
+in the 3d view.
+
+Viewed from the top (from the positive y-axis), they would look like this:
+
+                /\  z-axis
+                !
+                !
+        3 +     !     + 0
+                !
+                ! 
+----------------+---------------------------> x-axis
+                !
+                !
+        2 +     !     + 1
+                !
+                !
+
+Press TAB a few times to see the 3d cursor cycle through
+the vertices.
+
+Before we can add the base face, we need to load the texture.
+Select the menu option TEXTURES/LOAD... and load HAYSTACK.RAW.
+
+Now we can add the face. It should be visible from beneath the
+pyramid (negative y-axis), which means that the vertices of the
+face will have to be defined clockwise when looking from the
+negative y-axis. My sketch of the vertices is from the positive
+y-axis, we need to use a counter-clockwise order:
+
+3, 2, 1, 0 will do. Select the menu option FACES/ADD and
+enter the values in the edit fields. The new face will appear
+in the 3d view (well, it will, if you rotate the model
+with the cursor keys until you can see the pyramid from
+below). Since there is only the haystack texture in
+the texture pool, it will already be assigned to the face.
+We can test it by changing the FACES/PROPERTIES to "textured".
+The 3d view will now display the face with its texture.
+
+The pyramid still needs the four sides. First, we have to add
+the last vertex, the one at the top of the pyramid.
+
+Add the vertex (it's # 4) at 0, 1000, 0. This is 1000 units
+above the center of the base face:
+
+                /\  z-axis
+                !
+                !
+        3 +     !     + 0
+                !
+                ! (4)
+----------------+---------------------------> x-axis
+                !
+                !
+        2 +     !     + 1
+                !
+                !
+
+Now we can add the four sides. Defined in clockwise order,
+they are 
+	4, 0, 1	(face nr. 1)
+	4, 1, 2	(face nr. 2)
+	4, 2, 3 (face nr. 3)
+	4, 3, 0	(face nr. 4)
+			(the base is face nr. 0)
+
+To add triangles, leave the last vertex value at -1.
+
+That's it! We've just built a (simple) MTM BIN model...
+
+Select FILE/SAVE AS to save the creation (I called
+it haypyra.bin). You will be warned that the model
+is not centered along the y-axis and asked if BINedit
+should center it vertically. Unless you are editing
+a truck shape which is usually floating above the
+ground, the left button ('Ja' is German for 'Yes')
+is the correct one. The pyramid will be lowered
+a bit.
+
+Now fire up the track editor and use the new BIN!
+
+////////////////////////////////
+// Modifying the pyramid
+
+The pyramid is about 8 feet wide and about 4 feet
+high. To change its dimensions, use the menu
+option MODEL/RESIZE.
+
+To move a single vertex, select it with TAB/SHIFT TAB
+and use the X/SHIFT X, Y/SHIFT Y, Z/SHIFT Z keys
+to move it in 100 unit steps. Or use the menu
+option VERTICES/SET COORDINATES.
+
+Now let's change the texture of two opposite faces.
+First we need to add the new texture to the texture pool.
+Select TEXTURES/LOAD and load the GOLFGRAS.RAW texture.
+
+Press SPACE or SHIFT SPACE until one of the side faces
+is selected (tinted purple). Now press SHIFT T.
+You will see a list with all textures in the pool. Select
+golfgras.raw. Now select the opposite face and do the same.
+
+Voila! Now we have a pyramid with two different textures.
+
+Experiment!
+
+------------------------------------------------
+4. Known Bugs and Limitations (it's still BETA!)
+------------------------------------------------
+- too many to mention!
+- some few BIN files are not yet supported
+  (may have been fixed with 0.904. Please report
+   any BIN that still does not work).
+
+---------------------
+5. BINedit homepage
+---------------------
+http://www.viaregio.de/pieper/mtm_binedit.shtml
+
+------------------------
+6. The author of BINedit
+------------------------
+Oliver Pieper
+Student of Computer Science at the 
+Philipps-University of Marburg, Germany.
+
+email: pieper@ViaRegio.de
+WWW: www.ViaRegio.de/pieper
+
+
+**********************************************
+* APPENDIX A - Wavefront/Digital Arts format *
+**********************************************
+
+Wavefront/Digital Arts is a very simple format that stores three dimensional
+models as ASCII files. BINEdit implements only two Wavefront/Digital Arts commands:
+
+v #x #y #z
+	define a vertex at coordinates #x, #y, #z
+	Examples:
+		v 0.34445 -12 133.4
+		v 1 1 1
+
+f #1 #2 #3
+f #1 #2 #3 #4
+	define a face using the vertices #1 #2 #3 (triangle) or #1 #2 #3 #4 (rectangle)
+	NOTE 1: Wavefront numbers the vertices 1, 2, 3... but BINedit starts with vertex 0.
+	NOTE 2: Wavefront supports faces with any number of vertices, BINedit only 3 or 4.
+	Examples:
+		f 12 33 4
+		f 1 2 3 4
+		f 0 1 2 3 is invalid (vertex 0)
+
+I use this format to define my model shapes "off line". Its easier than using the menu
+commands to add each vertex and face. I've included the BARREL.OBJ that I've used
+to define the orange barrels for Derailed. View/Edit it with Notepad.
+
+To convert other formats (Autocad DXF, 3D Studio 3DS, ...) to Wavefront OBJs I use
+
+Pixel 3D
+1996 (c) Forward Design
+http://www.wavetech.net/~pixelboy
+
+The shareware version is limited to a certain number of program starts.
+Make certain that Pixel 3D has access to your Windows directory. It needs
+to modify the file C:\WINDOWS\WINSYS.DLL every time it is started.
+Strange DLL, by the way. It is definitely no Windows system DLL.
+
+
+
+*********************
+COPYRIGHT INFORMATION
+*********************
+
+Resale of this product is strictly prohibited unless given explicit permission
+by the author. Distribution on CD-ROM is strictly prohibited unless given explicit
+permission by the author. All material contained with the ZIP file is considered
+copyrighted by the authors.
+
+©1997 Oliver Pieper
+©2003 Richard Borchard III
+
+**********************
+DISCLAIMER - AGREEMENT
+**********************
+
+LIMITED WARRANTY
+
+THIS SOFTWARE AND MANUAL ARE PROVIDED ON AN "AS IS" BASIS.  THE AUTHOR
+DISCLAIMS ALL WARRANTIES RELATING TO THIS SOFTWARE, WHETHER EXPRESSED
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. NEITHER THE AUTHOR
+NOR ANYONE ELSE WHO HAS BEEN INVOLVED IN THE CREATION, PRODUCTION, OR
+DELIVERY OF THIS SOFTWARE SHALL BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL,
+OR INCIDENTAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE SUCH
+SOFTWARE, EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES OR CLAIMS.  THE PERSON USING THE SOFTWARE BEARS ALL RISK AS TO
+THE QUALITY AND PERFORMANCE OF THE SOFTWARE.
+
+(sounds professional, doesn't it? 8-) )

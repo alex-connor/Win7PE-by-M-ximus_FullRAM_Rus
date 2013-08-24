@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Server-Wired-Network-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Server-Wired-Network-Drivers" releaseType="Feature Pack">
+    <update description="Empty" displayName="Empty" name="Empty"/>
+    <update description="Broadcom x86 NetXtreme II GigE (NDIS VBD Client)" displayName="Broadcom x86 NetXtreme II GigE (NDIS VBD Client)" name="bxnd60x" restart="required">
+      <driver inf="netbxndx.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netbxndx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="Broadcom x86 NetXtreme II GigE VBD" displayName="Broadcom x86 NetXtreme II GigE VBD" name="bxvbdx" restart="required">
+      <driver inf="netbvbdx.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netbvbdx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="Broadcom x86 NetXtreme II 10 GigE VBD" displayName="Broadcom x86 NetXtreme II 10 GigE VBD" name="evbdx" restart="required">
+      <driver inf="netevbdx.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netevbdx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="nete1e32.inf" displayName="nete1e32.inf" name="INF_nete1e32" restart="required">
+      <driver inf="nete1e32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="nete1e32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="net1k32.inf" displayName="net1k32.inf" name="INF_net1k32" restart="required">
+      <driver inf="net1k32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="net1k32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="net1q32.inf" displayName="net1q32.inf" name="INF_net1q32" restart="required">
+      <driver inf="net1q32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="net1q32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netvg62.inf" displayName="netvg62.inf" name="INF_netvg62" restart="required">
+      <driver inf="netvg62.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netvg62.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netvfx86.inf" displayName="netvfx86.inf" name="INF_netvfx86" restart="required">
+      <driver inf="netvfx86.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netvfx86.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netrtl32.inf" displayName="netrtl32.inf" name="INF_netrtl32" restart="required">
+      <driver inf="netrtl32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netrtl32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netrtx32.inf" displayName="netrtx32.inf" name="INF_netrtx32" restart="required">
+      <driver inf="netrtx32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netrtx32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netnvm32.inf" displayName="netnvm32.inf" name="INF_netnvm32" restart="required">
+      <driver inf="netnvm32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netnvm32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netnvmx.inf" displayName="netnvmx.inf" name="INF_netnvmx" restart="required">
+      <driver inf="netnvmx.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netnvmx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="net1y32.inf" displayName="net1y32.inf" name="INF_net1y32" restart="required">
+      <driver inf="net1y32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="net1y32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netmyk01.inf" displayName="netmyk01.inf" name="INF_netmyk01" restart="required">
+      <driver inf="netmyk01.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netmyk01.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="nete1g32.inf" displayName="nete1g32.inf" name="INF_nete1g32" restart="required">
+      <driver inf="nete1g32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="nete1g32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="net44x32.inf" displayName="net44x32.inf" name="INF_net44x32" restart="required">
+      <driver inf="net44x32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="net44x32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netb57vx.inf" displayName="netb57vx.inf" name="INF_netb57vx" restart="required">
+      <driver inf="netb57vx.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netb57vx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netk57x.inf" displayName="netk57x.inf" name="INF_netk57x" restart="required">
+      <driver inf="netk57x.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netk57x.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+  </package>
+</assembly>

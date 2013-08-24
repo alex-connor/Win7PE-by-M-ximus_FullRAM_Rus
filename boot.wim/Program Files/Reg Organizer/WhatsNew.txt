@@ -1,0 +1,66 @@
+
+                       What's New in the Latest Version
+                       --------------------------------
+
+
+  Reg Organizer 5.45
+  ------------------
+
+ * Increased usability:
+
+	1) Registry editor: When saving a key to a file, the default file name 
+	   which corresponds to the name of the key is offered.
+
+	2) Dynamic resizing of the elements in the program's windows. In the
+	   earlier versions, the size of the elements changed only after a user 
+	   released the mouse button. Now elements change their size 
+	   dynamically as if moving the mouse cursor with the button pressed.
+
+ * Application Uninstaller tool:	
+
+	1) Application traces searching algorithm has been improved. Now when
+	   uninstalling an application via Reg Organizer, it detects more 
+	   data left by the uninstalled application in the system.
+
+	2) An ability to install updates to the applications installed with 
+	   tracing.
+
+	3) Now you can install applications with tracing directly from the 
+	   Windows Explorer's context menu.
+
+	4) The support for simultaneous removal of two or more applications 
+	   has been added. The list of applications in the Application 
+	   Uninstaller tool window now supports multiple selection.
+
+	5) While an application is being uninstalled with its built-in 
+	   uninstall tool, an ability to start searching for the application's 
+	   traces without waiting for the uninstall process to finish has
+	   been added. This works best when the default uninstaller of
+	   a program works incorrectly or halts.
+
+	6) The System Restore Point creation during the uninstall now
+	   may be disabled in the program's Settings.
+
+ * Windows 8 Release Preview support.
+
+ * Bugs fixed:
+
+	1) Fixed the error "Failed to get data for" in the Registry Cleanup 
+	   tool while checking the "Shell Commands" registry part.
+
+	2) Registry editor: Column sorting didn't work for the tabs of 
+	   reg-files.
+
+	3) The "Shared Libraries" section of the Manual Registry Cleanup 
+	   tool could display a negative number in the "Hist Applications" 
+	   column. This could happen if the number was too big, for example, 
+	   2147483648.
+
+	4) Portable version: The program could leave two empty folders in the 
+	   data folders of the system.
+
+	5) If the option "Restore registry location of the previous session" 
+	   was turned off, that necessary registry path didn't open if a user
+	   switched to it from the Registry Cleanup or Application Uninstaller 
+	   tools.
+

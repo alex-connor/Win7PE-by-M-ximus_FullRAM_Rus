@@ -1,0 +1,111 @@
+;-------------------------------------------------------------------------
+; vmware-nic.inf
+;
+; Copyright (c) 1993-1999, Microsoft Corporation
+; Copyright 1999-2009 VMware, Inc.  All rights reserved.
+;-------------------------------------------------------------------------
+[version]
+Signature   = "$Windows NT$"
+Class       = Net
+ClassGUID   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = %VMware%
+DriverVer   = 01/20/2009, 2.0.3.6
+CatalogFile = vmware-nic.cat
+
+[SourceDisksNames]
+1 = %DiskDescription%,"",,
+
+[SourceDisksFiles]
+vmxnet.sys = 1
+
+[Manufacturer]
+%VMware%     = VMware, NTx86, NTia64, NTamd64
+
+[ControlFlags]
+; Exclude all devices from Select Device list
+ExcludeFromSelect = *          
+
+[VMware]
+%VMware.DeviceDesc% = vmxnet.ndi, PCI\VEN_1022&DEV_2000&SUBSYS_20001022
+
+; Windows XP and later
+[VMware.NTx86]
+%VMware.DeviceDesc% = vmxnet.ndi, PCI\VEN_1022&DEV_2000&SUBSYS_20001022
+
+; 64-bit Windows
+[VMware.NTamd64]
+%VMware.DeviceDesc% = vmxnet.ndi, PCI\VEN_1022&DEV_2000&SUBSYS_20001022
+
+; Itanium-based systems (not supported)
+[VMware.NTia64]
+
+[vmxnet.ndi.NT]
+Characteristics = 0x84
+BusType         = 5
+AddReg          = vmxnet.reg
+CopyFiles       = vmxnet.CopyFiles
+
+[vmxnet.ndi.NT.Services]
+AddService = vmxnet, 2, vmxnet.Service, common.EventLog
+
+[vmxnet.reg]
+HKR, Ndi,                       Service,    0, "VMXNET"
+HKR, Ndi\Interfaces,            UpperRange, 0, "ndis5"
+HKR, Ndi\Interfaces,            LowerRange, 0, "ethernet"
+
+; TsoEnable
+HKR, Ndi\params\TsoEnable,	ParamDesc,  0, "TsoEnable"
+HKR, Ndi\params\TsoEnable,	default,    0, "1"
+HKR, Ndi\params\TsoEnable,	type,	    0, "int"
+HKR, Ndi\params\TsoEnable,	min,	    0, "0"
+HKR, Ndi\params\TsoEnable,	max,	    0, "1"
+HKR, Ndi\params\TsoEnable,	step,	    0, "1"
+HKR, Ndi\params\TsoEnable,	Base,	    0, "10"
+
+; Network address
+HKR, Ndi\params\NetworkAddress,	ParamDesc,  0, "NetworkAddress"
+HKR, Ndi\params\NetworkAddress,	default,    0, ""
+HKR, Ndi\params\NetworkAddress,	type,	    0, "edit"
+HKR, Ndi\params\NetworkAddress,	limitText,  0, "12"
+HKR, Ndi\params\NetworkAddress,	optional,   0, "1"
+HKR, Ndi\params\NetworkAddress,	UpperCase,  0, "1"
+
+; MTU
+HKR, Ndi\params\MTU,	ParamDesc,  0, "MTU"
+HKR, Ndi\params\MTU,	default,    0, "1500"
+HKR, Ndi\params\MTU,	type,	    0, "long"
+HKR, Ndi\params\MTU,	min,	    0, "60"
+HKR, Ndi\params\MTU,	max,	    0, "9000"
+HKR, Ndi\params\MTU,	step,	    0, "1"
+HKR, Ndi\params\MTU,	Base,	    0, "10"
+
+[vmxnet.Service]
+DisplayName     = %vmxnet.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 3 ;%SERVICE_DEMAND_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\vmxnet.sys
+LoadOrderGroup  = NDIS
+AddReg          = TextModeFlags.reg
+
+[common.EventLog]
+AddReg = common.AddEventLog.reg
+
+[common.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\drivers\vmxnet.sys"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TextModeFlags.reg]
+HKR, , TextModeFlags, 0x00010001, 0x0001
+
+[vmxnet.CopyFiles]
+vmxnet.sys,,,2
+
+[DestinationDirs]
+vmxnet.CopyFiles = 12
+
+[Strings]
+VMware                  = "VMware, Inc."
+vmware.DeviceDesc       = "VMware Accelerated AMD PCNet Adapter"
+vmxnet.Service.DispName = "VMware Ethernet Adapter Driver"
+DiskDescription         = "VMware Ethernet Adapter Disk"

@@ -1,0 +1,129 @@
+
+<html>
+<head>
+<meta http-equiv="MSThemeCompatible" CONTENT="yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+<link href="css/settings.css" rel="stylesheet" type="text/css" />
+<script src="js/json_parse.js" type="text/javascript"></script>
+<script src="js/global_settings.js" type="text/javascript"></script>
+<script src="js/gadjet_scripts.js" type="text/javascript"></script>
+<script src="js/skin_gallery.js" type="text/javascript"></script>
+<script src="js/drive_slotes.js" type="text/javascript"></script>
+<title></title>
+</head>
+<body onLoad="
+skinsGallery.initGallery(); 
+skinsGallery.showCurrentSkin(); 
+onSettingsPageLoad();">
+
+<script type="text/javascript">
+gSettings.pageName = 'settings';
+skinsGallery = new gGallery ('skins_gallery');
+gSettings.loadSettings();
+if(gSettings.gadgetType == 'pro' || gSettings.gadgetType == 'net') {
+  tabs = Array();
+  tabs[tabs.length] = {'id':'tab0', 'status':'selected'};
+  tabs[tabs.length] = {'id':'tab1', 'status':''};
+}
+</script>
+<div style="font-size:0px; z-index:1500; position:relative;">
+<div id="slots_window" style="font-size:12px;">
+	<div class="sWindowTopLeft">
+		<div class="sWindowTopRight">
+			<div class="sWindowTop">
+				<div style="float:right;"><img src="img/1.gif" class="sWindowClose" id="slots_window_close"></div>
+				<div id="window_title" style="float:left; color:#ffffff; padding-left:5px; line-height:20px;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="sWindowLeft">
+		<div class="sWindowRight">
+			<div class="sWindowMiddle" id="out_slot_drives">
+			</div>
+		</div>
+	</div>
+	<div class="sWindowBottomLeft">
+		<div class="sWindowBottomRight">
+			<div class="sWindowBottom" style="font-size:0px;">
+			<img src="img/1.gif" height="4" width="1" />
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div><img src="img/1.gif" height="8" /></div>
+<div>
+		<ul id="tabs">
+			<li id="tab0" class="selected" onMouseOver="addClass(this, 'hover')" onClick="changeSettinsTab('tab0')" onMouseOut="removeClass(this, 'hover')"><div class="tabLeft"><div class="tabRight"><div class="tabMiddle" id="tab0text">Skins</div></div></div></li>
+			<li id="tab1" onMouseOver="addClass(this, 'hover')" onClick="changeSettinsTab('tab1')" onMouseOut="removeClass(this, 'hover')"><div class="tabLeft"><div class="tabRight"><div class="tabMiddle" id="tab1text">Slots</div></div></div></li>
+		</ul>
+		<div class="clear"><div></div></div>
+		<div class="fontSize0" id="pro_top_line" style=" padding-right:4px; background:url(img/settings_corner_top_right.png) bottom right no-repeat; border-left:#c0c0c0 1px solid; margin-left:1px;"><div style=" height:3px; background:url(img/settings_box_top.png) bottom center repeat-x;"></div></div>
+		</div>
+<table cellspacing="0" cellpadding="0" border="0" id="tab0_content">
+	<tr id="lite_top_line" class="displayNone">
+		<td style="width:4px;height:4px;background:url(img/settings_corner_top_left.png)" nowrap></td>
+		<td style="width:100%;background:url(img/settings_box_top.png)"></td>
+		<td style="width:4px;height:4px;background:url(img/settings_corner_top_right.png)" nowrap></td>
+	</tr>
+	<script type="text/javascript">
+			if(gSettings.gadgetType == 'lite') {
+				addClass(document.getElementById('tabs'), 'displayNone');
+				addClass(document.getElementById('pro_top_line'), 'displayNone');
+				removeClass(document.getElementById('lite_top_line'), 'displayNone');
+			}
+	</script>
+	<tr style="background-color:#ffffff">
+		<td style="width:4px;background:url(img/settings_box_left.png) repeat-y" nowrap></td>
+		<td align="center" style="padding:15px 0 7px 0;"><img id="current_skin" /></td>
+		<td style="width:4px;background:url(img/settings_box_right.png) repeat-y" nowrap></td>
+	</tr>
+	<tr style="background-color:#f4f4f4">
+		<td style="width:4px;height:3px;background:url(img/settings_divider_left.png)" nowrap></td>
+		<td style="width:100%;background:url(img/settings_divider.png)"></td>
+		<td style="width:4px;height:3px;background:url(img/settings_divider_right.png)" nowrap></td>
+	</tr>
+	<tr style="background-color:#f4f4f4">
+		<td style="width:4px;background:url(img/settings_box_divider_left.png) repeat-y" nowrap></td>
+		<td align="center" style="padding:4px 0px 4px 0px"><table id="settingsButtonTable" cellspacing="0" cellpadding="0" border="0">
+				<tr>
+					<td class="settingsButtonLeftCell" valign="top"><img class="settingsImageLeft" onMouseOver="addClass(this, 'hover')" onClick="skinsGallery.showPrev()" onMouseOut="removeClass(this, 'hover')" id="skin_prev" src="img/1.gif" style="width:19px;height:19px;border:none;margin-right:11px;" /><img id="skin_prev_disable" class="displayNone buttPrevDisable" src="img/1.gif" style="width:19px;height:19px;border:none;margin-right:11px" /></td>
+					<td style="padding-right:7px;"><span id="current_skin_num"></span>&nbsp;[<span id="max_skin_num"></span>]</td>
+					<td class="settingsButtonRightCell" valign="top"><img class="settingsImageRight" onMouseOver="addClass(this, 'hover')" onMouseOut="removeClass(this, 'hover')" onClick="skinsGallery.showNext()" id="skin_next" src="img/1.gif" style="width:19px;height:19px;border:none;margin-left:11px;" /><img id="skin_next_disable" class="displayNone buttNextDisable" src="img/1.gif" style="width:19px;height:19px;border:none;margin-left:11px" />
+					</td>
+				</tr>
+			</table></td>
+		<td style="width:4px;background:url(img/settings_box_divider_right.png) repeat-y" nowrap></td>
+	</tr>
+	<tr style="background-color:#f4f4f4">
+		<td style="width:4px;height:4px;background:url(img/settings_corner_bottom_left.png)" nowrap></td>
+		<td style="width:100%;background:url(img/settings_box_bottom.png)"></td>
+		<td style="width:4px;height:4px;background:url(img/settings_corner_bottom_right.png)" nowrap></td>
+	</tr>
+</table>
+<table cellspacing="0" cellpadding="0" border="0" id="tab1_content">
+	<tr style="background-color:#ffffff">
+		<td style="width:4px;background:url(img/settings_box_left.png) repeat-y" nowrap></td>
+		<td align="center" style="padding:2px">
+		<div id="slots_div">
+		</div>
+		</td>
+		<td style="width:4px;background:url(img/settings_box_right.png) repeat-y" nowrap></td>
+	</tr>
+	
+	<tr style="background-color:#f4f4f4">
+		<td style="width:4px;height:4px;background:url(img/settings_corner_bottom_left.png)" nowrap></td>
+		<td style="width:100%;background:url(img/settings_box_bottom.png)"></td>
+		<td style="width:4px;height:4px;background:url(img/settings_corner_bottom_right.png)" nowrap></td>
+	</tr>
+</table>
+<script type="text/javascript">
+changeSettingsTabsText();
+</script>
+</body>
+
+</html>
+
+
+
+

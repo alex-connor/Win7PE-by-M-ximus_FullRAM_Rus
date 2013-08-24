@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+
+<assemblyIdentity
+	type="win32"
+	name="sqlceoledb35.raxco"
+	version="1.0.0.0" />
+<file name="sqlceoledb35.dll"  >
+<comClass
+
+        description="Microsoft.SQLSERVER.CE.OLEDB.3.5"
+        clsid="{F49C559D-E9E5-467C-8C18-3326AAE4EBCC}"
+        threadingModel="Both"
+        progid="Microsoft.SQLSERVER.CE.OLEDB.3.5" />
+
+    <comClass
+        description="Microsoft SQL Server Compact OLE DB Provider for Windows Error Lookup"
+        clsid="{90A1998A-EB21-4F61-872F-F4DFDE1065D6}"
+        threadingModel="Both"
+        progid="Microsoft.SQLSERVER.CE.OLEDB.ErrorLookup.3.5" />
+
+
+</file>
+</assembly>

@@ -1,0 +1,22 @@
+
+        FTP decrypting tool for TC ver.1.2 (freeware)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Simple utility which allows you to decrypt all encrypted FTP passwords
+(as well as passwords for firewalls' access) generally stored in Total
+Commander wcx_ftp.ini file.
+
+Just open this ini-file for viewing and browse for following entries:
+password=        - for FTP servers and firewall passwords;
+httppass=        - for firewall password with HTTP access.
+
+Copy  encrypted  password  and then past it into the top text field of
+given  decrypting tool. Now press Enter or click on "Decrypt Password"
+button.  As  result  you'll see the decrypted password (or maybe error
+description in red color if something went wrong) in the bottom of the
+tool. That's all.
+ 
+
+WBR, Alexander Asyabrik aka Shura                           10/22/2006
+
+     Please, visit http://www.databack4u.com/snc/rtkf_eng.html

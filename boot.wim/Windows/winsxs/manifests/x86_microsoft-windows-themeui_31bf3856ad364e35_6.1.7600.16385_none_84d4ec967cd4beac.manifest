@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-themeui" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-themeui.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="themeui.dll" destinationPath="$(runtime.system32)\" sourceName="themeui.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">1kVDKL8BLBdLwZbGTPI5BLXnybZx8rVhAZtovN4C5q0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CURRENT_USER\Control Panel\Appearance\Schemes" owner="false" />
+    <registryKey keyName="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Themes" owner="false">
+      <registryValue name="ThemeChangesDesktopIcons" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <registryValue name="ThemeChangesMousePointers" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <registryValue name="LastHighContrastTheme" valueType="REG_EXPAND_SZ" value="%SystemRoot%\resources\Ease of Access Themes\hcblack.theme" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CURRENT_USER\Control Panel\Desktop" owner="false">
+      <registryValue name="ScreenSaveActive" valueType="REG_SZ" value="1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Themes\Schemes" owner="false">
+      <registryValue name="@themeui.dll,-850" valueType="REG_BINARY" value="02000000460000000100000011000000110000001400000014000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000FC7F2214FC7FB0FE120000000000000000009823EB770F0000000F000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000F077002014000000001080051400F01F1400000014001200000012000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000140088FBE87702020000ACB9F0770000000020000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000000000000000000000000007C6BE87700000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000600000018000000FFFFFFFFF04B21FC00C4F077F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000014000B00000000FF120050000000C0FE12000C10000100000000000000000000FF0000FFFF000000000000000000FFFFFF00FFFFFF00FFFF0000FFFFFF000000FF0000FFFF000000000000800000FFFFFF00000000008080800000FF0000FFFFFF0000000000C0C0C000FFFFFF00FFFFFF00FFFF000000000000C0C0C0008080FF000000FF0000FFFF00" operationHint="replace" owner="true" />
+      <registryValue name="@themeui.dll,-851" valueType="REG_BINARY" value="02000000460000000100000011000000110000001400000014000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000FC7F2214FC7FB0FE120000000000000000009823EB770F0000000F000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000F077002014000000001080051400F01F1400000014001200000012000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000140088FBE87702020000ACB9F0770000000020000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000000000000000000000000007C6BE87700000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000600000018000000FFFFFFFFF04B21FC00C4F077F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000014000B00000000FF120050000000C0FE12000C100001000000000000000000FFFF000000FF000000000000000000FFFFFF0000FF000000FF00000000000000FFFF000000FF00FFFFFF000000FF00FFFFFF000000000080808000C0C0C00000FF0000FFFFFF00C0C0C000FFFFFF00FFFFFF0000000000FFFF0000C0C0C0008080FF0000FFFF000000FF00" operationHint="replace" owner="true" />
+      <registryValue name="@themeui.dll,-852" valueType="REG_BINARY" value="02000000460000000100000011000000110000001400000014000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000FC7F2214FC7FB0FE120000000000000000009823EB770F0000000F000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000F077002014000000001080051400F01F1400000014001200000012000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000140088FBE87702020000ACB9F0770000000020000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000000000000000000000000007C6BE87700000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000600000018000000FFFFFFFFF04B21FC00C4F077F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000014000B00000000FF120050000000C0FE12000C100001000000000000000080008000008000000000000000000000FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF0000008000000000000080008000FFFFFF00000000008080800000FF0000FFFFFF00FFFFFF00C0C0C000FFFFFF00FFFFFF00FFFFFF0000000000C0C0C0008080FF008000800000800000" operationHint="replace" owner="true" />
+      <registryValue name="@themeui.dll,-853" valueType="REG_BINARY" value="02000000460000000100000011000000110000001400000014000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000FC7F2214FC7FB0FE120000000000000000009823EB770F0000000F000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000F077002014000000001080051400F01F1400000014001200000012000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E0073002000530065007200690066000000140088FBE87702020000ACB9F0770000000020000000F5FFFFFF0000000000000000000000009001000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000000000000000000000000007C6BE87700000000F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000000000600000018000000FFFFFFFFF04B21FC00C4F077F5FFFFFF000000000000000000000000BC02000000000000000000004D006900630072006F0073006F00660074002000530061006E007300200053006500720069006600000014000B00000000FF120050000000C0FE12000C100001FFFFFF00FFFFFF0000000000FFFFFF00FFFFFF00FFFFFF00000000000000000000000000FFFFFF0080808000C0C0C0008080800000000000FFFFFF00FFFFFF0080808000008000000000000000000000C0C0C00000000000C0C0C00000000000FFFFFF00C0C0C0000000000000000000FFFFFF00" operationHint="replace" owner="true" />
+      <registryValue name="@themeui.dll,-854" valueType="REG_BINARY" value="02000000F40100000100000010000000100000001200000012000000F5FFFFFF000000000000000000000000BC02000000000000000000005400610068006F006D006100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C0000000F000000F5FFFFFF000000000000000000000000BC02000000000000000000005400610068006F006D006100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001200000012000000F5FFFFFF0000000000000000000000009001000000000000000000005400610068006F006D00610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F5FFFFFF0000000000000000000000009001000000000000000000005400610068006F006D00610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F5FFFFFF0000000000000000000000009001000000000000000000005400610068006F006D00610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F5FFFFFF0000000000000000000000009001000000000000000000005400610068006F006D00610000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000D4D0C8003A6EA5000A246A0080808000D4D0C800FFFFFF00000000000000000000000000FFFFFF00D4D0C800D4D0C800808080000A246A00FFFFFF00D4D0C800808080008080800000000000D4D0C800FFFFFF0040404000D4D0C80000000000FFFFE100B5B5B50000008000A6CAF000C0C0C000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{41E300E0-78B6-11ce-849B-444553540000}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Display Effects CPL Extension" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.ThemeThumbnail" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Thumbnail Preview" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.ThemeThumbnail\CLSID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{49C407EF-78B9-4C82-A40B-2FE02F8E771D}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.ThemeThumbnail\CurVer" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.ThemeThumbnail.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.ThemeThumbnail.1" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Thumbnail Preview" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.ThemeThumbnail.1\CLSID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{49C407EF-78B9-4C82-A40B-2FE02F8E771D}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{49C407EF-78B9-4C82-A40B-2FE02F8E771D}\InProcServer32" owner="false">
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{49C407EF-78B9-4C82-A40B-2FE02F8E771D}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Thumbnail Preview" operationHint="replace" owner="true" />
+      <registryValue name="DisableProcessIsolation" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{49C407EF-78B9-4C82-A40B-2FE02F8E771D}\ProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.ThemeThumbnail.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{49C407EF-78B9-4C82-A40B-2FE02F8E771D}\VersionIndependentProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.ThemeThumbnail" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{41E300E0-78B6-11ce-849B-444553540000}\InProcServer32" owner="false">
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Manager API" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\ProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.Manager.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\Version" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="1.0" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}\VersionIndependentProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.Manager" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9324DA94-50EC-4A14-A770-E90CA03E7C8F}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Manager 2 API" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9324DA94-50EC-4A14-A770-E90CA03E7C8F}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9324DA94-50EC-4A14-A770-E90CA03E7C8F}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.Manager" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Manager API" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.Manager\CLSID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.Manager\CurVer" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Theme.Manager.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.Manager.1" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Manager API" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Theme.Manager.1\CLSID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{2E17C0EF-2851-459b-A3C8-27A41D4BC9F7}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B12AE898-D056-4378-A844-6D393FE37956}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows ThemeUI Pages" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B12AE898-D056-4378-A844-6D393FE37956}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B12AE898-D056-4378-A844-6D393FE37956}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Preview API" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B7BBD408-F09C-4aa8-B65E-A00B8FE0F0B9}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Settings Page" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{4c892621-6757-4fe0-ad8c-a6301be7fba2}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{c79d1575-b8c6-4862-a284-788836518b97}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Display Settings" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{c79d1575-b8c6-4862-a284-788836518b97}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{c79d1575-b8c6-4862-a284-788836518b97}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows ScreenSaver Properties" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{ADB9F5A4-E73E-49b8-99B6-2FA317EF9DBC}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{c04b329e-5823-4415-9c93-ba44688947b0}\InProcServer32" owner="false">
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Themes\VisualStyleDirs" owner="false">
+      <registryValue name="1" valueType="REG_EXPAND_SZ" value="%ResourceDir%\Themes" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Themes" owner="false">
+      <registryValue name="Drop Shadow" valueType="REG_SZ" value="FALSE" operationHint="replace" owner="true" />
+      <registryValue name="Flat Menus" valueType="REG_SZ" value="FALSE" operationHint="replace" owner="true" />
+      <registryValue name="SetupVersion" valueType="REG_SZ" value="10" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components\{2C7339CF-2B09-4501-B3F3-F3508C9228ED}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Themes Setup" operationHint="replace" owner="true" />
+      <registryValue name="LocalizedName" valueType="REG_EXPAND_SZ" value="@%SystemRoot%\system32\themeui.dll,-2682" operationHint="replace" owner="true" />
+      <registryValue name="ComponentID" valueType="REG_SZ" value="Theme Component" operationHint="replace" owner="true" />
+      <registryValue name="IsInstalled" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <registryValue name="Locale" valueType="REG_SZ" value="EN" operationHint="replace" owner="true" />
+      <registryValue name="StubPath" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\regsvr32.exe /s /n /i:/UserInstall %SystemRoot%\system32\themeui.dll" operationHint="replace" owner="true" />
+      <registryValue name="Version" valueType="REG_SZ" value="1,1,1,9" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Controls Folder\Display\shellex\PropertySheetHandlers\PlusPack CPL Extension" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{41E300E0-78B6-11ce-849B-444553540000}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SoftWare\Microsoft\Windows\CurrentVersion\Uninstall\IE40" owner="false" />
+    <registryKey keyName="HKEY_CLASSES_ROOT\.theme" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="themefile" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\.themepack" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="themepackfile" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themefile" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme File" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyTypeName" valueType="REG_SZ" value="@themeui.dll,-2683" operationHint="replace" owner="true" />
+      <registryValue name="Treatment" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true" />
+      <registryValue name="TypeOverlay" valueType="REG_SZ" value="" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themepackfile" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Theme Pack" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyTypeName" valueType="REG_SZ" value="@themeui.dll,-2685" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themefile\shell\open\command" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,Control_RunDLL %SystemRoot%\system32\desk.cpl desk,@Themes /Action:OpenTheme /file:&quot;%1&quot;" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themefile\shellex\{E357FCCD-A995-4576-B01F-234630154E96}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{49C407EF-78B9-4C82-A40B-2FE02F8E771D}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themepackfile\shell\open\command" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,Control_RunDLL %SystemRoot%\system32\desk.cpl desk,@Themes /Action:OpenTheme /file:&quot;%1&quot;" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themefile\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,-701" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\themepackfile\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,-704" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\.msstyles" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="msstylesfile" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\msstylesfile" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Windows Visual Style File" operationHint="replace" owner="true" />
+      <registryValue name="FriendlyTypeName" valueType="REG_SZ" value="@themeui.dll,-2684" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\msstylesfile\shell\open\command" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,Control_RunDLL %SystemRoot%\system32\desk.cpl desk,@Appearance /Action:OpenMSTheme /file:&quot;%1&quot;" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\msstylesfile\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\themeui.dll,-701" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <genericCommands>
+    <genericCommand executableName="$(runtime.system32)\regsvr32.exe" arguments="/s /n /i $(runtime.system32)\themeui.dll" />
+  </genericCommands>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_KEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="Manifest for themeui.dll" />
+        <string id="displayName" value="themeui.dll" />
+        <string id="EventProviderName" value="Microsoft-Windows-ThemeUI" />
+        <string id="themeui_HIGH_CONTRAST_1" value="@themeui.dll,-850" />
+        <string id="themeui_HIGH_CONTRAST_2" value="@themeui.dll,-851" />
+        <string id="themeui_HIGH_CONTRAST_BLACK" value="@themeui.dll,-852" />
+        <string id="themeui_HIGH_CONTRAST_WHITE" value="@themeui.dll,-853" />
+        <string id="themeui_WINDOWS_CLASSIC" value="@themeui.dll,-854" />
+      </stringTable>
+    </resources>
+  </localization>
+  <instrumentation>
+    <events xmlns="http://schemas.microsoft.com/win/2004/08/events">
+      <provider guid="{869FB599-80AA-485D-BCA7-DB18D72B7219}" message="$(string.EventProviderName)" messageFileName="%SystemRoot%\System32\themeui.dll" name="Microsoft-Windows-ThemeUI" resourceFileName="%SystemRoot%\System32\themeui.dll" symbol="Microsoft_Windows_ThemeUI">
+        <channels>
+          <channel chid="defch" name="Microsoft-Windows-ThemeUI/Diagnostic" type="Analytic" />
+        </channels>
+        <tasks>
+          <task name="ThemeLoaded" value="1" />
+          <task name="ThemeLoadFailed" value="2" />
+          <task name="ThemeDisabled" value="3" />
+          <task name="ThemeSelected" value="4" />
+          <task name="ApplyTheme" value="5" />
+          <task name="ThemePack_FilePacked" value="6" />
+          <task name="ThemePack_FileUnpacked" value="7" />
+          <task name="ThemePack_ProgressBarDisplayed" value="8" />
+          <task name="PlayThemeApplySound" value="9" />
+          <task name="ThemePreview" value="10" />
+          <task name="ScreenSaver_DialogInit" value="11" />
+        </tasks>
+        <templates>
+          <template tid="String">
+            <data inType="win:UnicodeString" name="psz" />
+          </template>
+          <template tid="BackgroundParams">
+            <data inType="win:UInt32" name="type" />
+            <data inType="win:UnicodeString" name="pszBackgroundFile" />
+          </template>
+          <template tid="WindowColorParams">
+            <data inType="win:UInt32" name="type" />
+            <data inType="win:UInt32" name="dwColor" />
+          </template>
+        </templates>
+        <events>
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeLoaded_Info" task="ThemeLoaded" template="String" value="0" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeLoadFailed_Info" task="ThemeLoadFailed" template="String" value="1" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeDisabled_Info" task="ThemeDisabled" template="String" value="2" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemeSelected_Info" task="ThemeSelected" template="String" value="3" />
+          <event channel="defch" level="win:Informational" opcode="win:Start" symbol="ApplyTheme_Start" task="ApplyTheme" value="4" />
+          <event channel="defch" level="win:Informational" opcode="win:Stop" symbol="ApplyTheme_Stop" task="ApplyTheme" value="5" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePack_FilePacked_Info" task="ThemePack_FilePacked" template="String" value="6" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePack_FileUnpacked_Info" task="ThemePack_FileUnpacked" template="String" value="7" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePack_ProgressBarDisplayed_Info" task="ThemePack_ProgressBarDisplayed" value="8" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="PlayThemeApplySound_Info" task="PlayThemeApplySound" template="String" value="9" />
+          <event channel="defch" level="win:Informational" opcode="win:Start" symbol="ThemePreview_Start" task="ThemePreview" value="10" />
+          <event channel="defch" level="win:Informational" opcode="win:Stop" symbol="ThemePreview_Stop" task="ThemePreview" value="11" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePreview_BrandImage_Info" task="ThemePreview" value="12" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePreview_Background_Info" task="ThemePreview" template="BackgroundParams" value="13" />
+          <event channel="defch" level="win:Informational" opcode="win:Info" symbol="ThemePreview_WindowColor_Info" task="ThemePreview" template="WindowColorParams" value="14" />
+          <event channel="defch" level="win:Informational" opcode="win:Start" symbol="ScreenSaver_DialogInit_Start" task="ScreenSaver_DialogInit" value="15" />
+          <event channel="defch" level="win:Informational" opcode="win:Stop" symbol="ScreenSaver_DialogInit_Stop" task="ScreenSaver_DialogInit" value="16" />
+        </events>
+      </provider>
+    </events>
+  </instrumentation>
+  <migration scope="Upgrade,MigWiz,USMT" settingsVersion="0">
+    <supportedComponents>
+      <supportedComponent>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <supportedComponentIdentity xmlns="urn:schemas-microsoft-com:asm.v3" buildType="release" language="neutral" name="Microsoft-Windows-themeui" processorArchitecture="*" publicKeyToken="31bf3856ad364e35" settingsVersionRange="0" versionScope="nonSxS" />
+      </supportedComponent>
+      <supportedComponent>
+        <assemblyIdentity name="_" version="1.0.0.0" />
+        <supportedComponentIdentity xmlns="urn:schemas-microsoft-com:asm.v3" language="neutral" name="Microsoft-Windows-themeui-DL" processorArchitecture="*" version="0.0.0.0" />
+      </supportedComponent>
+    </supportedComponents>
+    <migXml xmlns="">
+      <rules context="User">
+        <include>
+          <objectSet>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Themes\* [*]</pattern>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D} [*]</pattern>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103} [*]</pattern>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{208D2C60-3AEA-1069-A2D7-08002B30309D} [*]</pattern>
+            <pattern type="Registry">HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{645FF040-5081-101B-9F08-00AA002F954E} [*]</pattern>
+            <pattern type="Registry">HKCU\Control Panel\Appearance\New Schemes [SelectedStyle]</pattern>
+            <pattern type="Registry">HKCU\Control Panel\Cursors [*]</pattern>
+            <pattern type="Registry">HKCU\Control Panel\Personalization\Desktop Slideshow [*]</pattern>
+            <pattern type="File">%USERPROFILE%\AppData\Local\Microsoft\Windows\Themes\* [*]</pattern>
+            <pattern type="File">%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Themes [slideshow.ini]</pattern>
+          </objectSet>
+        </include>
+      </rules>
+    </migXml>
+    <migrationDisplayID xmlns="urn:schemas-microsoft-com:asm.v3">Appearance_and_Display\Personalized_Settings</migrationDisplayID>
+  </migration>
+</assembly>

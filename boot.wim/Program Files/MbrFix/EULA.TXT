@@ -1,0 +1,39 @@
+User License Agreement for MBRFIX.EXE:
+
+The program is delivered AS-IS, that is without any form of guarantee. You may freely use the program for any legal purpose, and you may freely distribute it as long as this file is distributed along the program file.
+
+Incorrect use of this program may cause loss of all data on your disk-drives. All use of this program is at the risk of the user. Systemintegrasjon AS does not accept any liability for any damage the program might cause.
+
+If you do not accept these terms, you must delete the program, MbrFix.exe, at once!
+
+Developed by Kåre Smith, 21. april 2005
+
+
+User License Agreement for MBRFIX.TXT /CMD GUI:
+
+CAREWARE LICENSE
+This script is released as "CAREWARE", it may be freely distributed, used, modified and whatever, provided that the user, at least once per use, performs ANY of the following:
+
+1 - Smiles at somebody/something
+2 - Hugs or pats on the shoulder a friend/colleague/pet/furry little creature from Alpha Centauri
+3 - Acts nicely towards a friend/foreigner/alien/any other living being
+4 - Kisses his/her girlfriend/wife/boyfriend/husband/any other living being (de gustibus...)
+5 - Feels happy even without apparent reason
+6 - Stops whining for an hour, a day, a week, your choice
+
+Important Note: if you don't like this idea, just ignore it - you can have this anyway.
+That's one way to distinguish the world of ideas from the rest of human history: 
+you can disregard an idea ...
+...and no one knocks on your door at midnight.
+(Unless it's your neighbour in need of a cup of sugar), in which case you MAY act NON-nicely
+
+STANDARD DISCLAIMER
+
+Though every reasonable effort has been made in testing this script, the Author accepts no liability whatsoever. This script may or may not do whatever it is supposed to do, it could even possibly completely destroy your software, hardware and set your house/office to fire.
+No warranty implied, not even that of fitness for any particular purpose apart taking up a little bit of your hard disk space.
+
+This script is distributed as "MBRfix.TXT" by renaming it to "MBRfix.CMD",YOU make it an executable script, thus accepting all of the above.
+
+This script by Jacopo Lazzari (jaclaz@graffiti.net) 09/September/2005
+
+Note: Feedback is welcome, but only mail with word "MBRfix" in the subject will be taken care of.

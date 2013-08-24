@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-DirectShow-DVDSupport" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-DirectShow-DVDSupport.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="qdvd.dll" destinationPath="$(runtime.system32)\" sourceName="qdvd.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">WIH7yxnsmo9YznokaprqguDXWejLbrJWglyAxSUDyqc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CD8743A1-3736-11D0-9E69-00C04FD7C15B}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Overlay Mixer" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CD8743A1-3736-11D0-9E69-00C04FD7C15B}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0025E90-E45B-11D1-ABE9-00A0C905F375}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Overlay Mixer2" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0025E90-E45B-11D1-ABE9-00A0C905F375}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CE292861-FC88-11D0-9E69-00C04FD7C15B}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoPort Object" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CE292861-FC88-11D0-9E69-00C04FD7C15B}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{6E8D4A20-310C-11D0-B79A-00AA003767A7}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Line 21 Decoder" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{6E8D4A20-310C-11D0-B79A-00AA003767A7}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9B8C4620-2C1A-11D0-8493-00A02438AD48}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DVD Navigator" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9B8C4620-2C1A-11D0-8493-00A02438AD48}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FCC152B7-F372-11D0-8E00-00C04FD7C08B}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DVD Graph Builder" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FCC152B7-F372-11D0-8E00-00C04FD7C08B}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{565DCEF2-AFC5-11D2-8853-0000F80883E3}" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{565DCEF2-AFC5-11D2-8853-0000F80883E3}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A73BEEB2-B0B7-11D2-8853-0000F80883E3}" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A73BEEB2-B0B7-11D2-8853-0000F80883E3}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{0E681C52-CD03-11D2-8853-0000F80883E3}" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{0E681C52-CD03-11D2-8853-0000F80883E3}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3FF23902-CD1F-11D2-8853-0000F80883E3}" owner="false">
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3FF23902-CD1F-11D2-8853-0000F80883E3}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{F963C5CF-A659-4A93-9638-CAF3CD277D13}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DVD State" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{F963C5CF-A659-4A93-9638-CAF3CD277D13}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{083863F1-70DE-11D0-BD40-00A0C911CE86}\Instance\{CD8743A1-3736-11D0-9E69-00C04FD7C15B}" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="Overlay Mixer" operationHint="replace" owner="true" />
+      <registryValue name="CLSID" valueType="REG_SZ" value="{CD8743A1-3736-11D0-9E69-00C04FD7C15B}" operationHint="replace" owner="true" />
+      <registryValue name="FilterData" valueType="REG_BINARY" value="02000000000020000000000000000000" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{083863F1-70DE-11D0-BD40-00A0C911CE86}\Instance\{A0025E90-E45B-11D1-ABE9-00A0C905F375}" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="Overlay Mixer2" operationHint="replace" owner="true" />
+      <registryValue name="CLSID" valueType="REG_SZ" value="{A0025E90-E45B-11D1-ABE9-00A0C905F375}" operationHint="replace" owner="true" />
+      <registryValue name="FilterData" valueType="REG_BINARY" value="0200000000002000020000000000000030706933040000000000000001000000000000000000000030747933000000006000000070000000317069330800000000000000010000000000000000000000307479330000000060000000800000007669647300001000800000AA00389B71000000000000000000000000000000007FEB36E44F52CE119F530020AF0BA770" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{083863F1-70DE-11D0-BD40-00A0C911CE86}\Instance\{6E8D4A20-310C-11D0-B79A-00AA003767A7}" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="Line 21 Decoder" operationHint="replace" owner="true" />
+      <registryValue name="CLSID" valueType="REG_SZ" value="{6E8D4A20-310C-11D0-B79A-00AA003767A7}" operationHint="replace" owner="true" />
+      <registryValue name="FilterData" valueType="REG_BINARY" value="02000000000060000200000000000000307069330000000000000000010000000000000000000000307479330000000060000000700000003170693308000000000000000100000000000000000000003074793300000000800000007000000080EA0A67823AD011B79B00AA003767A7000000000000000000000000000000007669647300001000800000AA00389B71" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{083863F1-70DE-11D0-BD40-00A0C911CE86}\Instance\{9B8C4620-2C1A-11D0-8493-00A02438AD48}" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="DVD Navigator" operationHint="replace" owner="true" />
+      <registryValue name="CLSID" valueType="REG_SZ" value="{9B8C4620-2C1A-11D0-8493-00A02438AD48}" operationHint="replace" owner="true" />
+      <registryValue name="FilterData" valueType="REG_BINARY" value="0200000000002000030000000000000030706933090000000000000001000000000000000000000030747933000000008800000098000000317069330900000000000000010000000000000000000000307479330000000088000000A8000000327069330900000000000000010000000000000000000000307479330000000088000000B80000006A910BED4D04D111AA7800C04FC31D6026806DE046DBCF11B4D100805F6CBBEA2D806DE046DBCF11B4D100805F6CBBEA2C806DE046DBCF11B4D100805F6CBBEA" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\VideoRenderCtl.VideoRenderCtl.1" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl Class" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\VideoRenderCtl.VideoRenderCtl.1\CLSID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{888D5481-CABB-11D1-8505-00A0C91F9CA0}" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\VideoRenderCtl.VideoRenderCtl" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl Class" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\VideoRenderCtl.VideoRenderCtl\CurVer" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl.VideoRenderCtl.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl Class" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\Control" owner="false" />
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\Programmable" owner="false" />
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\ProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl.VideoRenderCtl.1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\VersionIndependentProgID" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="VideoRenderCtl.VideoRenderCtl" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="$(runtime.system32)\qdvd.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\ToolboxBitmap32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="qdvd.dll, 1" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\MiscStatus" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="0" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{888D5481-CABB-11D1-8505-00A0C91F9CA0}\MiscStatus\1" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="131473" operationHint="replace" owner="true" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="DirectShow DVD Support" />
+        <string id="displayName" value="DirectShow DVD Support" />
+      </stringTable>
+    </resources>
+  </localization>
+</assembly>

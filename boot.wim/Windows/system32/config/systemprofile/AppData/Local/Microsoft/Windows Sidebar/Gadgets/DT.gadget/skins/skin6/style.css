@@ -1,0 +1,506 @@
+/*Skin1*/
+.skin1 {
+	width: 134px;
+	height: 154px;
+}
+.tab1 {
+	width:134px;
+	height:29px;
+	background-image: none;
+}
+.tab2 {
+	width:134px;
+	height:29px;
+	background: url("tab2.png") no-repeat;
+}
+.tab3 {
+	width:134px;
+	height:29px;
+	background:url("tab3.png") no-repeat;
+}
+.dtTab {
+	width:69px;
+	height:18px;
+	background:url("dt_out.png") no-repeat;
+}
+.dtProGadget .dtTab {
+	width:69px;
+	height:18px;
+	background:url("dt_pro_out.png") no-repeat;
+}
+.hover .dtTab {
+	background:url("dt_over.png") no-repeat;
+}
+.dtProGadget .hover .dtTab {
+	background:url("dt_pro_over.png") no-repeat;
+}
+.selected .dtTab, .selected .hover .dtTab{
+	background:url("dt_selected.png") no-repeat;
+}
+.dtProGadget .selected .dtTab, .dtProGadget .selected .hover .dtTab{
+	background:url("dt_pro_selected.png") no-repeat;
+}
+.linksTab {
+	width:20px;
+	height:18px;
+	background:url("links_out.png") no-repeat 8px 3px;
+}
+.hover .linksTab {
+	background:url("links_over.png") no-repeat 8px 3px;
+}
+.selected .linksTab, .selected .hover .linksTab {
+	background:url("links_selected.png") no-repeat 8px 3px;
+}
+.newsTab {
+	width:20px;
+	height:18px;
+	background:url("news_out.png") no-repeat 0px 1px;
+}
+.newRSS .newsTab {
+	background:url("news_read_out.png") no-repeat 0px 1px;
+}
+.newRSS .hover .newsTab {
+	background:url("news_read_over.png") no-repeat 0px 1px;
+}
+#tabArea li {
+	padding:4px 2px 0 3px;
+	font-size:0px;
+}
+.hover .newsTab {
+	background:url("news_over.png") no-repeat 0px 1px;
+}
+.selected .newsTab, .selected .hover .newsTab {
+	background:url("news_selected.png") no-repeat 0px 1px;
+}
+.settingsTab {
+	width:16px;
+	height:16px;
+	background:url("settings_out.png") no-repeat;
+}
+.hover .settingsTab {
+	background:url("settings_over.png") no-repeat;
+}
+.selected .settingsTab, .selected .hover .settingsTab {
+	background:url("settings_selected.png") no-repeat;
+}
+.displayTop{ background:url(display_top.gif) no-repeat; padding:5px 0;}
+.displayBottom{ background:url(display_bottom.gif) bottom left no-repeat;}
+.displayMiddle{ width:121px; background:url(display_middle.gif) repeat-y;}
+.lines { margin:0 2px; padding: 5px 0 5px 3px; font-size:0px;}
+.control_lines { margin:0 2px; padding: 4px 0 2px 3px; font-size:0px;}
+#content2 .displayMiddle, #content3 .displayMiddle { width:121px; background:url(links_news_display_middle.gif) repeat-y ; padding-bottom:5px; height:100%;}
+#content2 .displayTop, #content3 .displayTop { background: url(links_news_display_top.gif) no-repeat left top; padding:4px 0 0 0; height:100%;}
+.addDrive {
+	background:url(main_controls_icons.png) no-repeat 0 -600px;
+	width:25px;
+	height:25px;
+}
+#add_drive_selected {
+	display:none;
+	background:url(main_controls_icons.png) no-repeat 0 -625px;
+	width:25px;
+	height:25px;
+}
+.dtPro {
+	background:url(main_controls_icons.png) no-repeat 0 -375px;
+	width:25px;
+	height:25px;
+}
+.hover .dtPro {
+	background-position: 0 -400px;
+}
+#dt_pro_selected, #dt_net_selected {
+	display:none;
+	background:url(main_controls_icons.png) no-repeat 0 -400px;
+	width:25px;
+	height:25px;
+}
+#dt_pro_disable img {
+	background:url(main_controls_icons.png) no-repeat 0 -425px;
+	width:25px;
+	height:25px;
+}
+.imgEditor {
+	background:url(main_controls_icons.png) no-repeat 0 -525px;
+	width:25px;
+	height:25px;
+}
+.hover .imgEditor {
+	background-position: 0 -550px;
+}
+#img_editor_selected {
+	display:none;
+	background:url(main_controls_icons.png) no-repeat 0 -550px;
+	width:25px;
+	height:25px;
+}
+#img_editor_disable img {
+	background:url(main_controls_icons.png) no-repeat 0 -575px;
+	width:25px;
+	height:25px;
+}
+.mountNDrive {
+	background:url(main_controls_icons.png) no-repeat 0 -300px;
+	width:25px;
+	height:25px;
+}
+.unmountAll {
+	background:url(main_controls_icons.png) no-repeat 0 -675px;
+	width:25px;
+	height:25px;
+}
+.makeImg {
+	background:url(main_controls_icons.png) no-repeat 0 -450px;
+	width:25px;
+	height:25px;
+}
+.hover .addDrive {
+	background-position: 0 -625px;
+}
+#mount_n_drive_selected {
+	background:url(main_controls_icons.png) no-repeat 0 -325px;
+	width:25px;
+	height:25px;
+	display:none;
+}
+#make_img_selected{
+	background:url(main_controls_icons.png) no-repeat 0 -475px;
+	width:25px;
+	height:25px;
+	display:none;
+}
+.hover .mountNDrive {
+	background-position: 0 -325px;
+}
+.hover .unmountAll {
+	background-position: 0 -700px;
+}
+.hover .makeImg {
+	background-position: 0 -475px;
+}
+.mount {
+	background:url(drive_controls.png) no-repeat;
+	width:35px;
+	height:19px;
+}
+.unmount {
+	background:url(drive_controls.png) no-repeat 0 -38px;
+	width:35px;
+	height:19px;
+}
+.disable .unmount {
+	background-position:0 -152px;
+}
+.properties {
+	background:url(drive_controls.png) no-repeat 0 -76px;
+	width:35px;
+	height:19px;
+}
+.delete {
+	background:url(drive_controls.png) no-repeat 0 -114px;
+	width:35px;
+	height:19px;
+}
+.hover .mount {
+	background-position: 0 -19px;
+}
+.hover .unmount {
+	background-position: 0 -57px;
+}
+html .disable .unmount {
+	background-position:0 -152px;
+}
+.hover .properties {
+	background-position: 0 -95px;
+}
+.hover .delete {
+	background-position: 0 -133px;
+}
+.drive_icon {
+	width:40px;
+	height:40px;
+	text-align:center;
+}
+.hover .drive_icon {
+background:url(shortcut_hover.png) no-repeat;
+}
+.but_up {
+	background:url(up_down_butts.gif) no-repeat 0 -22px;
+	width:29px;
+	height:11px;
+}
+.hover .but_up {
+	background-position: 0 -33px;
+}
+.but_down {
+	background:url(up_down_butts.gif) no-repeat;
+	width:29px;
+	height:11px;
+}
+.but_down_not_active {
+	background:url(up_down_drive_disable.png) no-repeat;
+	width:29px;
+	height:11px;
+}
+.but_up_not_active {
+	background:url(up_down_drive_disable.png) no-repeat 0 -11px;
+	width:29px;
+	height:11px;
+}
+.hover .but_down {
+	background-position: 0 -11px;
+}
+#content .but_up {
+	background:url(up_down_drive.png) no-repeat 0 -22px;
+	width:29px;
+	height:11px;
+}
+#content .hover .but_up {
+	background-position: 0 -33px;
+}
+#content .but_down, {
+	background:url(up_down_drive.png) no-repeat;
+	width:29px;
+	height:11px;
+}
+#content .hover .but_down {
+	background-position: 0 -11px;
+}
+#controls2, #controls3 {
+	background:url('content_bottom.gif') no-repeat;
+	height:16px;
+}
+.addDriveBig {
+	background:url('add_image.png') no-repeat 36px 0;
+	padding-left:10px;
+	height:40px;
+	padding-top:5px;
+	font-size:12px;
+	color:#fff;
+}
+.loadingTxt {
+	padding-left:30px;
+	height:40px;
+	padding-top:10px;
+	font-size:12px;
+	color:#ffffff;
+}
+.hover .addDriveBig {
+	background:url('add_image.png') no-repeat 36px -40px;
+	height:40px;
+}
+#dt_loader {
+	background:url(dt_dadget_loader.png) no-repeat;
+	width:65px;
+	height:65px;
+	position:absolute;
+	display:none;
+	left:32px;
+	top:30px;
+	z-index:1010;
+}
+.loadTextTop {
+	background:url(loader_text_top.png) top left no-repeat;
+}
+.loadTextBottom {
+	background:url(loader_text_bottom.png) bottom left no-repeat;
+	padding-bottom:5px;
+}
+.loadTextMiddle {
+	margin-top:5px;
+	background:url(loader_text_middle.png) top left repeat-y;
+	text-align:center;
+}
+.messageTop {
+	background:url(message_top.png) no-repeat;
+	padding-top:6px;
+	width:115px;
+}
+.messageMiddle {
+	background:url(message_middle.png) repeat-y;
+	width:115px;
+}
+.messageBottom {
+	background:url(message_bottom.png) no-repeat bottom left;
+	width:115px;
+	padding-bottom:6px;
+}
+.messageButLeft {
+	background:url(message_butt.png) no-repeat;
+	height:13px;
+	padding-left:6px;
+	width:40px;
+}
+.messageButRight {
+	background:url(message_butt.png) no-repeat right -26px;
+	height:13px;
+	padding-right:6px;
+}
+.messageButMiddle {
+	background:url(message_butt.png) repeat-x right -13px;
+	height:13px;
+	font-size:10px;
+	color:#ffffff;
+	text-align:center;
+}
+#add_drive_disable img {
+	background:url(main_controls_icons.png) no-repeat 0 -650px;
+	width:25px;
+	height:25px;
+}
+#mount_n_drive_disable img {
+	background:url(main_controls_icons.png) no-repeat 0 -350px;
+	width:25px;
+	height:25px;
+}
+#unmount_all_disable img{
+	background:url(main_controls_icons.png) no-repeat 0 -725px;
+	width:25px;
+	height:25px;
+}
+#make_img_disable img{
+	background:url(main_controls_icons.png) no-repeat 0 -500px;
+	width:25px;
+	height:25px;
+}
+.driveSelect {
+}
+.view2 .chengeViewBut {
+	float:right;
+	background:url(chenge_view.png) no-repeat;
+	width:17px;
+	height:8px;
+	margin-top:-2px;
+	position:relative;
+}
+.view2 .hover .chengeViewBut {
+	background-position: 0 -8px;
+}
+.chengeViewBut {
+	background:url(chenge_view.png) no-repeat 0 -16px;
+	width:17px;
+	height:8px;
+	margin-top:-2px;
+	position:relative;
+}
+.hover #noVirtualDriveBut {
+	background:url(no_drive_select.png) no-repeat;
+}
+.settingsBut {
+	width:111px;
+	height:25px;
+	padding-left:5px;
+	line-height:23px;
+	color:#333333;
+}
+.settingsBut {
+	background:url(settings_but.gif) no-repeat;
+}
+.hover .settingsBut {
+	background:url(settings_but.gif) 0 -50px no-repeat;
+}
+.selected .settingsBut {
+	background:url(settings_but.gif) 0 -100px no-repeat;
+}
+.change_skin_body {
+	width:361px;
+	height:462px;
+	margin:0px;
+}
+.change_skin_g {
+	width:361px;
+	height:462px;
+}
+.skinScreen {
+	height:95px;
+	background-repeat:no-repeat;
+	padding:10px 10px 10px 85px;
+	background-position: 10px 10px;
+}
+.flyoutContent {
+		background:#ffffff;
+		padding:0;
+		margin:0;
+}
+.skinBlock {
+	border-bottom:#c7cace 1px solid;
+	border-top:#ffffff 1px solid;
+}
+html .selectedSkinBlock {
+	background:#efeff3 url(skin_select.gif) repeat-x bottom center;
+}
+.skinTitle {
+	font-size:14px;
+	color:#000000;
+	margin-bottom:7px;
+}
+.skinAutor {
+	color:#737373;
+	margin-bottom:7px;
+}
+.buttApplyed, .buttApply {
+	background:url(skins_gallery_but.gif) no-repeat;
+	text-align:center;
+}
+.buttApplyed {
+	width:60px;
+	height:17px;
+	color:#ffffff;
+	line-height:16px;
+}
+.buttApply {
+	width:53px;
+	height:20px;
+	text-align:center;
+	color:#545e69;
+	line-height:18px;
+	background-position:0 -20px;
+	cursor:pointer;
+}
+html .skinButHover {
+	background-position:0 -45px;
+	color:#ffffff;
+}
+.cdPath {
+	margin:8px 0 -5px 3px;
+	overflow:hidden;
+	height:15px;
+	width:105px;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#9ed507;
+	text-align:center;
+	white-space:nowrap;
+}
+.cdName {
+	color:#9ed507;
+	font-weight:bold;
+}
+.separator{
+	font-size:0px;
+	height:3px;
+	width:107px;
+	margin-bottom:10px;
+	border-bottom:none;
+}
+#driveNum {
+	font-size:10px;
+	height:11px;
+	width:22px;
+	overflow:hidden;
+	text-align:center;
+	color:#333333;
+}
+
+.opacity_80 {
+	background:#333333;
+	#filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+.onestr{
+	display:inline-block;
+	position:absolute;
+	bottom:42px;}
+	
+.linkItem a{
+	color:#B5D0E8;}

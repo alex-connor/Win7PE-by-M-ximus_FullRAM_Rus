@@ -1,0 +1,27 @@
+HDDScan 3.2
+Bugfixes:
+Input parameters for tests bugfix
+Now program shows correct LBA block number on a map
+Features:
+Map update can be disabled - it should make test results more precise on PCs w/o powerful video card
+New S.M.A.R.T. attributes support
+Now program uses IE save dialog for saving reports, it should fix the problem with mht files
+In tests reports program adds processed blocks satistics 
+Command line support and command line builder added
+New button - Disable Auto Power Save for some Seagate disks added
+AlphaControls components got updated to version 6.35
+
+HDDScan 3.1
+Bugfixes:
+Oxford USB chip commands bugfix
+IDE drives S.M.A.R.T. and Features forms showing phantom bugfix
+S.M.A.R.T. Worst values showing error bugfix
+Intel AHCI controllers freeze bugfix
+Minor bugfixes
+Features:
+S.M.A.R.T. attributes icons have changed
+Test names in Test manager have changed
+Program startup drive selection
+Skins support added (see documentation)
+Skins available here - http://www.alphaskins.com/asdwnld.php
+Current AlphaControls components version - 5.6

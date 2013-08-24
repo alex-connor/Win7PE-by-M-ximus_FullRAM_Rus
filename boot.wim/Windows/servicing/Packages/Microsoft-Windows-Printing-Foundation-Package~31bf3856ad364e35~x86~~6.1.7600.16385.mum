@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Printing-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Microsoft-Windows-Printing-Foundation-Package" releaseType="Feature Pack">
+    <parent integrate="subsume">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Enable print, fax, and scan tasks on this computer" displayName="Print and Document Services" name="Printing-Foundation-Features">
+      <selectable disposition="staged">
+        <detectNone default="true"/>
+      </selectable>
+    </update>
+    <update description="Enables clients to print to TCP/IP printers connected to a Unix (or VAX) server" displayName="LPR Port Monitor" name="Printing-Foundation-LPRPortMonitor">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="Printing-Foundation-Features"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity language="neutral" name="Microsoft-Windows-Printing-LPRPortMonitor-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Makes your Windows computer work as a Line Printer Daemon (LPD) and Remote Line Printer client" displayName="LPD Print Service" name="Printing-Foundation-LPDPrintService">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="Printing-Foundation-Features"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity language="neutral" name="Microsoft-Windows-Printing-LPDPrintService-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Enables clients to use HTTP to connect to printers on Web print servers" displayName="Internet Printing Client" name="Printing-Foundation-InternetPrinting-Client">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="Printing-Foundation-Features"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="true"/>
+      </selectable>
+      <component>
+        <assemblyIdentity language="neutral" name="Microsoft-Windows-Printing-InternetPrinting-Client-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Enable fax and scan tasks on this computer" displayName="Windows Fax and Scan" name="FaxServicesClientPackage">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="Printing-Foundation-Features"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="true"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Fax-Client-Feature-Deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

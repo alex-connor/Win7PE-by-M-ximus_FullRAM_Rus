@@ -1,0 +1,807 @@
+                   +--------------------------------------+
+                   |           Partition Saving           |
+                   |                                      |
+                   |   http://www.partition-saving.com    |
+                   | Copyright (c) 1999-2012 D. Guibouret |
+                   +--------------------------------------+
+
+                               Evolutions list
+
+This file gives list of versions of Partition saving with main evolutions.
+
+  1- V1.00 -> V2.00
+  2- V2.00 -> V2.10
+  3- V2.10 -> V2.20
+  4- V2.20 -> V2.21
+  5- V2.21 -> V2.22
+  6- V2.22 -> V2.30
+  7- V2.30 -> V2.40
+  8- V2.40 -> V2.50
+  9- V2.50 -> V2.60
+ 10- V2.60 -> V2.70
+ 11- V2.70 -> V2.80
+ 12- V2.80 -> V2.90
+ 13- V2.90 -> V2.91
+ 14- V2.91 -> V3.00
+ 15- V3.00 -> V3.01
+ 16- V3.01 -> V3.10
+ 17- V3.10 -> V3.11
+ 18- V3.11 -> V3.20
+ 19- V3.20 -> V3.30
+ 20- V3.30 -> V3.40
+ 21- V3.40 -> V3.50
+ 22- V3.50 -> V3.60
+ 23- V3.60 -> V3.70
+ 24- V3.70 -> V3.71
+ 25- V3.71 -> V3.80
+ 26- V3.80 -> V3.90
+ 27- V3.90 -> V4.00
+
+
+1- V1.00 -> V2.00
+-----------------
+
+Evolutions made are:
+
+  - add of management of more than 8 Gb hard disk.
+  - add of data compression.
+  - add of several files saving capability.
+  - interface change.
+
+Remark:
+-------
+All these modifications do that it is not possible to restore with V2.00
+version files created with V1.00 version (and reciprocally).
+
+
+2- V2.00 -> V2.10
+-----------------
+
+Evolutions made are:
+
+  - all language versions are into the same file with language recognition at
+    beginning of execution.
+  - some changes are made into interface: use of arrow keys to go from one
+    element to another, add of arrows into scrollbar of listboxes.
+  - add of mouse use.
+  - add of batch mode.
+  - add of deflate level choice (was to the maximum into previous version).
+
+Remark:
+-------
+All these modifications do not concern file format. So it is possible to use
+files created with version 2.00 (and version 2.00 can use file created with
+version 2.10).
+
+
+3- V2.10 -> V2.20
+-----------------
+
+Evolutions made are:
+
+  - add of possibility to save only occupied sectors for partitions with
+    FAT12, FAT16, FAT32 (DOS/Windows) and ext2 (Linux) filesystem.
+  - add of an option into batch file for this new possibility.
+  - add of possibility to restore partitions from which only occupied sectors
+    have been saved, on partitions with different size and that are on disk
+    with different format.
+  - add of copypart.exe util.
+  - some change made into interface.
+
+Remark:
+-------
+This version is able to restore files created with previous versions (V2.00
+and V2.10).
+If all sectors of a partition are saved, created file format is not modified,
+so file can be restored with previous version program (V2.00 and V2.10).
+If only occupied sectors are saved, it is not possible to use this file with
+previous version of program (you will get an "Bad compression format" error).
+
+
+4- V2.20 -> V2.21
+-----------------
+
+Evolutions made are:
+
+  - correction of a problem due to that some CD readers/writers are identified
+    as hard disk. Hard disk detection is now more restrictive (if somebody see
+    that its hard disk is no more detected, please inform me).
+  - correction of a bug for hard disk with standard access that have at least
+    two logical partitions in the same extended partition. This bug does that
+    partitions after the first logical one were not detected on V2.00 and
+    V2.10 versions and a "Page fault" error on V2.20 version.
+  - correction in case of bad sectors: from 0 to 126 sectors following this
+    bad one can be not read/written. Now they are.
+  - add of "quit" and "reboot" options in options file in order to
+    automatically exit program at end of execution and to reboot computer.
+  - change of interface when asking for saving file name: now a second window
+    gives you partition size and free space on each drive.
+  - an estimation of remaining time is given in saving/restoring/copying
+    window.
+
+
+5- V2.21 -> V2.22
+-----------------
+
+Evolutions made are:
+
+  - correction of hard disk detection in order to detect again some disks that
+    were considered as CD-reader.
+  - correction in the case a drive is not considered as a hard disk: following
+    hard disks have a bad number.
+  - correction of reboot.
+  - add of window displaying search of last occupied sector in the case where
+    only occupied sectors are saved.
+  - add of a warning in case the file created/acceded is on the partition
+    saved/restored.
+
+Remark:
+-------
+Evolutions made on hard disks detection for 2.21 and 2.22 versions can in some
+case do that an hard disk is not the same has the one in the saved file if
+this one has been created with a version preceding the 2.21 one. If only
+occupied sectors have been saved, this does not have any consequence, but in
+the case where all sectors have been saved, it can generate an "No partition
+agrees with one saved into file" error. In this case you have to use the
+version you have used to create the file.
+
+
+6- V2.22 -> V2.30
+-----------------
+
+Evolutions made are:
+
+  - a new correction on disk detection.
+  - a correction on DOS drive letter attribution in case there was several
+    main DOS partition on the same disk.
+  - a new option to avoid check that created/read file is on partition
+    saved/restored.
+  - use of a new version of compiler and development environment that have
+    better compatibility with Windows 2000 and XP.
+  - availability to save only occupied sectors for NTFS partitions.
+  - correction on free size on DOS drive when there was more than 2Gb of free
+    space.
+  - compatibility between partitions of the same type (partitions that have
+    the same filesystem are considered as compatible).
+  - if in batch mode, several files are needed when restoring and are on a
+    removable media, program asks for next media in place of generating a
+    "file not found" error and asking for next file.
+  - changes into documentation and zip file structure.
+  - some changes into GUI.
+
+Remark:
+-------
+This version is able to restore files created with previous versions. Reverse
+is true also, but not in case where only occupied sectors of NTFS partition
+were saved (using a previous version on such a file will return a "Bad
+filesystem format" error when opening file).
+
+
+7- V2.30 -> V2.40
+-----------------
+
+Evolutions made are:
+
+  - merge of the 3 programs into one and use of UPX (executable compressor) to
+    reduce size. Add of window asking for action to do and of action options
+    (-c|-d|-r|-s|-t).
+  - add of console type user interface (-cui option) to solve some blocking
+    problems on some computers.
+  - correction of code to allow using batch mode when saving NTFS partitions.
+  - changes in order to use copy of sector in case some FAT sectors are
+    incorrect when saving only occupied sectors of FAT partition.
+
+Remark:
+-------
+This version is able to restore files created with previous versions. Reverse
+is true also. Nevertheless, if you have got some bad sectors when saving only
+occupied sectors of FAT partition, it is better to do this saving again with
+this version (as long as you do not change disk, previous saving will work,
+but the day you change your disk, it is possible that it does not work any
+more).
+
+
+8- V2.40 -> V2.50
+-----------------
+
+Evolutions made are:
+
+  - selected button is flanked by ">" and "<" to avoid potential confusion
+    when only two buttons are displayed.
+  - a driver is added to read saved file containing FAT partition from DOS as
+    if it is a partition.
+  - an option has been added to allow saving a FAT partition on itself.
+  - batch file has been modified to take into account this new availability.
+  - "reboot" option of batch file is also taked into account when saving.
+  - ext3 partitions are taken into account as ext2 partitions if journal is
+    created on the same partition.
+
+Remark:
+-------
+This version is able to restore files created with previous versions. Reverse
+is true also.
+
+
+9- V2.50 -> V2.60
+-----------------
+
+Evolutions made are:
+
+  - saving/restoring a whole disk, master boot record, first sectors of disk
+    and partition table is available.
+  - writing data on disk is always checked. That slow down restoring but
+    allows to check that disk is not broken.
+  - DOS drive detecting is modified such as network drive will be found again
+    with some network drivers.
+  - driver is corrected to avoid that computer hangs in case a program does
+    not close all files that it used on simulated partition.
+  - one of the paramaters of NTFS boot sector is modified in case a NTFS
+    partition is restored on a partition which is not the same as the origin
+    one (this parameter is said unused by Microsoft but is used during boot
+    sequence).
+  - add of a check that first chosen file cannot have the same name than
+    another file when using automatic naming to avoid it to be erased.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also, but not in case of saving disk, MBR, first sectors of disk or partition
+table (using a previous version on such a file will return a "Bad filesystem
+format" error when opening file). When disk use a standard access method, it
+can also occurs that files created with this version cannot be restored with a
+previous version.
+
+
+10- V2.60 -> V2.70
+------------------
+
+Evolutions made are:
+
+  - saving/restoring floppy disk is available.
+  - saving/restoring DOS devices that can be accessed using sectors is
+    available.
+  - parts of code that use floating point unit have been modified to no more
+    use if such as program can be used on 386 and 486SX that do not have a
+    floating point unit.
+  - in case a unexpected error appears, error message has more data such has I
+    I can find where error comes from.
+  - add of check that files are correctly written (by use of DOS VERIFY flag).
+  - add of -nvd and -nvf options (and their equivalent into option file) to
+    disable the check that sectors and files are correctly written.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also, but not in case of saving floppy disk or DOS device (using a previous
+version on such a file will return a "Bad support type" error when opening
+file).
+
+
+11- V2.70 -> V2.80
+------------------
+
+Evolutions made are:
+
+  - for disk with extended access, use of standard access parameters when
+    modifying boot sector of a FAT or NTFS partition instead of extended
+    access parameters. This correction can explain why in some cases, running
+    SYS.COM program is needed after restoring a FAT partition and why "NTLDR
+    missing" message appears after restoring NTFS partition.
+  - correction of an error when restoring partition table: not only partition
+    table part of restored sectors is set, but also signature that signal it
+    as a partition sector. This can avoid the good reading of partition table.
+  - correction of an error when restoring NTFS partition on a partition with a
+    different size: size of file telling which sectors are occupied was
+    updated only at one place, when it is present at 2 places. This seemed to
+    have no influence on Windows behaviour.
+  - add of -bui option that allows having an user interface similar to the
+    default one but with a better compatibility. Counterpart it is slower.
+  - add of -cm and -pm options to have two way to use mouse: -cm is the
+    default one and use a specific function of mouse driver (function that
+    cannot be present), -pm use a method with a better compatibility but that
+    can miss some double click events (it is the default method for Windows
+    NT/XP).
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+Because of the first correction, restoring partition can appear as different
+as origin one even if it is the same. In this case and if you have saved all
+sectors (and so no partition will match), you will be obliged to use the same
+version as the one you use for saving. If you have saved only occupied
+sectors, there will be theorically no differences.
+
+
+12- V2.80 -> V2.90
+------------------
+
+Evolutions made are:
+
+  - modifying Windows 2000/XP registry to update partition definition when a
+    partition is moved is available.
+  - modifying the BOOTSECT.DOS file to update it when a bootable partition
+    used into Windows XP multiboot is moved is available.
+  - a correction when restoring a NTFS partition on a partition with another
+    size to update size of file listing bad clusters. The fact that this file
+    does not have a correct size previously seems to have no consequence on
+    filesystem. Warning: only size is updated, file is not modified to reflect
+    bad clusters in more or less.
+  - add of "automatic_naming" option into option file that allows getting
+    automatic naming when using option file.
+  - add of use of environment variable into option file.
+  - maximum filesize can now be given in kb if free space on drive is less
+    than 10 Mb. This case can be useful to save small elements (MBR, partition
+    table) on floppy disk. Option file is modified to be able to add unit of
+    size (in Mb as default).
+  - change of a parameter into file header when saving a floppy disk to set it
+    compatible with driver use. This parameter is only used in this case, so
+    compatibility is insured with file created with previous versions for
+    others program options.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+Because of adding environment variable use into option file, if an old option
+file has a '%' into an option, it can be incorrectly read (you have to double
+the '%' to get it working).
+
+
+13- V2.90 -> V2.91
+------------------
+
+Evolutions made are:
+
+  - support of very fragmented NTFS partitions. These partitions can now be
+    saved with saving occupied only sectors when the whole partition should be
+    saved before.
+  - change of update of backup descriptor sectors on ext2 partitions. Update
+    is now done with using original sector definition instead of their own
+    definition because it seems not to be updated when using partition.
+  - change into interface when updating registry entries for the ask of driver
+    lettre to set to chosen partition. Instead of having to give the drive
+    letter, program shows you list of drive letter it can modify.
+  - a correction to avoid option file creation to be asked when doing a save
+    with an option file using the "automatic_naming" option.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also. But in case of very fragmented NTFS partition, it is obvious that
+previous version will not be able to restore file created with this version.
+It is also to be noticed that you can get a little difference on file size
+between this version and previous one when saving NTFS partition, this is not
+a problem and does not disallow file compatibility.
+
+
+14- V2.91 -> V3.00
+------------------
+
+Evolutions made are:
+
+  - saving file can now be written on NTFS partitions by using mounting
+    mechanism. By using this option you can also save a NTFS partition on
+    itself. File must have been created before from Windows because program is
+    not able to create files on NTFS partitions.
+  - add of option to create files on NTFS partitions from Windows to be able
+    to use them when performing save.
+  - not saving swap files contents is now available for FAT and NTFS
+    partitions.
+  - add of all options into option file to take into account these new
+    features ("mount=", "nb_files=" and "swap_dir="). Add of "max" value for
+    "max_size=" option to use minimum size between free disk size and 2047 Mb.
+  - add of forcing of FAT16 and FAT32 partitions check after restoring them in
+    case they were saved on themselves. This is not available for FAT12
+    partitions, so you have to perform this check by yourself. This is not
+    needed for NTFS partitions.
+  - a correction to avoid creating option file to be requested when performing
+    a save with option file in which filenames are not absolute pathname.
+  - use of zlib compression library 1.2.2.
+  - some changes into user interface.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also but not for partitions that were saved on themselves or without swap
+files. Restoring a FAT partition that was saved on itself by a previous
+version does not enable the automatic check, so you will have to perform it by
+yourself.
+
+
+15- V3.00 -> V3.01
+------------------
+
+Evolutions made are:
+
+  - display order of partition is modified: they are now ordered as they
+    appear on disk instead of being displaying in partition table order (this
+    does not change their numbering into options file, it is only screen
+    displaying that is modified).
+  - a buffer overflow correction when displaying DOS devices list.
+  - NTFS driver correction to take into account some files that are into a
+    zone that was considered as being reserved to filesystem until now.
+  - opening of file that are only read in read mode instead of opening them in
+    read/write mode.
+  - use of zlib compression library version 1.2.3.
+  - update of documentation (use of corrected version of english manual done
+    by Ralph Ball and rewrite of HOWTO).
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+16- V3.01 -> V3.10
+------------------
+
+Evolutions made are:
+
+  - reset of bad sectors information in case a partition is restored on a
+    different partition than source one.
+  - add of option to perform manually this reset in case partition seems
+    strictelly the same despite a disk change.
+  - mount of FAT/ext2 partitions in read/write mode with availability to
+    create files on them.
+  - availability to save an ext2 partition on itself.
+  - add of on-line help.
+  - correction of a bug in case of a NTFS V1.2 partition (NT <= 4) transformed
+    to NTFS V3.x (2000/XP) that is restored to the minimum allowed size
+    partition authorised for this restoration: last cluster was changed from
+    occupied to free.
+  - regression correction that did that file names were requested instead of
+    media change when restoring a partition from several removable medias.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also but not for ext2 partitions that were saved on themselves.
+
+
+17- V3.10 -> V3.11
+------------------
+
+Evolutions made are:
+
+  - correction of a bug when restoring a NTFS partition to a partition
+    different from source one but with a similar size: several clusters can
+    wrongly be marked as occupied. This error exists since version 2.91 and
+    for those having used one of these versions into these conditions, problem
+    can be corrected with executing chkdsk on partition. It shall be noticed
+    that files created with versions 2.91 to 3.10 are correct, it is restoring
+    phase that was erroneous.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+18- V3.11 -> V3.20
+------------------
+
+Evolutions made are:
+
+  - add of explorer to view content of an existing partition, edit or copy its
+    files.
+  - add of -e option that corresponds to previous change.
+  - add of -tuix and -buix options to use video mode with more lines (43 or 50
+    instead of 25).
+  - a correction such as file modification date on NTFS partition is updated
+    when this file is modified.
+  - a correction to avoid program to terminate abnormally when entering a
+    wrong directory name on a mounted partition.
+  - some changes into interface.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+19- V3.20 -> V3.30
+------------------
+
+Evolutions made are:
+
+  - add of option to explore backup files.
+  - add of option to extract only a partition or occupied sectors of a
+    partition when copying a backup file in case it contains all sectors.
+  - computed saving time is based on only occupied sectors when this option is
+    chosen (restoring time is still computed as if all sectors are occupied).
+  - add of "vmmhiber.w9x" (Windows Millenium hibernation file) as a swap file
+    for FAT partitions.
+  - add of sparse file support when exploring ext2/ext3 filesystem.
+  - add of "gmt", "max_mem_size", "empty_files", "ask_first_media" and
+    "stdaccess" options into configuration file. The last one shall not be
+    used unless you know what you do (you can loose the content of a whole
+    disk in case it is badly used).
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+20- V3.30 -> V3.40
+------------------
+
+Evolutions made are:
+
+  - add of option to update boot configuration data (the way boot is managed
+    into Vista in replacement of BOOT.INI).
+  - add of -e option corresponding to previous change, with associated options
+    into options file.
+  - add of options to be able to copy elements trough options file.
+  - some changes to take into account some FreeDos incompatibilities in how
+    drive existance is checked and automatic language detection.
+  - change to avoid using 100% of CPU when waiting for some input from user.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+21- V3.40 -> V3.50
+------------------
+
+Evolutions made are:
+
+  - it's the first available Windows version (that does not mean that DOS
+    version disappear). It shall be noticed that it can save system partition
+    only if this is done from another Windows installation or from a WinPE or
+    BartPE CD.
+  - add of an option to replace a boot sector or a superblock by its copy.
+  - add of an option to modify disk physical definition into a boot sector.
+  - add of an option to avoid checking free drive space when creating backup
+    file (if you have a driver that reports a wrong free size).
+  - add of option to save boot sector or superblock only of a partition.
+  - add of command line and options file options to take these new functions
+    into account.
+  - a better search and handling of boot sector copy for NTFS 1.2 partitions
+    (NT <= 3.51).
+  - bad sectors are no more saved when saving occupied sectors only for NTFS
+    and ext2/ext3 partitions (this was already the case for FAT partitions).
+  - when saving a partition on itself, using DOS drive letter of saved
+    partition to create backup file is no more available, you have to use the
+    mount mechanism for the saved partition.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+22- V3.50 -> V3.60
+------------------
+
+Evolutions made are:
+
+  - availability to save MBR and first sectors of disk in Windows version.
+  - availability to read/write file using NTFS compression mechanism when
+    mounting NTFS partition (but modified part of files is not compressed).
+  - add of option to know why a support cannot be chosen as destination to
+    restore a backup.
+  - "reboot=" option into options file works with Windows version when used
+    from Windows NT/XP/....
+  - add of "386spart.par" as swap file (used by Windows 3.1).
+  - availability to change the first sector value in boot sector if this value
+    is wrong when choosing option to fix FAT or NTFS boot sector.
+  - add of "fix_first_sector=" option into options files.
+  - change of way drives are detected in DOS version to avoid an error message
+    in case floppy drive is used through the B: letter.
+  - a correction in Windows version to disallow mounting a partition both as a
+    partition and a Windows drive.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+23- V3.60 -> V3.70
+------------------
+
+Evolutions made are:
+
+  - it's the first available Linux version. It shall be noticed that as for
+    Windows version it can save system partition only if this is done from
+    another Linux installation or from a liveCD.
+  - availability to save partitions table and all sectors of disks in Windows
+    version. This can be done only if the used Windows version is at least
+    Windows XP.
+  - availability to load an options file from user interface with being able
+    to view it before. Once the file is loaded, you come back to the screen to
+    choose what you want to do.
+  - availability to add a comment into options file when it is created.
+  - when the maximum file size is requested on backup, you can choose this
+    size into a list with some predefined values.
+  - add of searching maximum disk size with relying on partitions table
+    content. Depending on used OS, disks size can be slightly different. In
+    this case, previous program versions could find partitions table to be
+    wrong in case it defines some partition bigger than disk size (if it was
+    created from an OS where disk seems to be bigger than for current OS).
+    With this new mechanism, program tries to read last sectors to check if
+    partitions table is valid or not (note: because of way disk are managed
+    depending on OS, this modification will certainly change something only
+    for DOS version). This search is not on by default (see "-tds" options to
+    enable it).
+  - add of "-tds" option to enable disk size detection with relying on
+    partition table content. This is needed only if no partition appears when
+    getting list of what can be saved/restored.
+  - add of "test_disk_size=" option into options file that is similar to using
+    "-tds" on command line.
+  - remove of a check when detecting disk that could lead to not see some USB
+    disk accessed through BIOS. Depending on order of declaration of disks in
+    BIOS, this can modify disk numbering (if USB disk is before other disks).
+  - add of "only_if_same=" option into options file to perform a restore/copy
+    only if destination seems to be similar to the source (it has same
+    physical definition).
+  - files using extended access rights on ext2/ext3 partition can be read
+    (this changes something when exploring partition only, saving/restoring
+    does not have any constraint with these files).
+
+Remarks:
+--------
+
+  - Because of -tds option add, disk size can be different from the one found
+    by previous versions for disks using standard access (those of less than 8
+    Gb used on old motherboards) because in previous versions, default mode
+    was as if option is used. If you cannot restore a backup done with a
+    previous version on this type of disk or if partitions do no more appear,
+    you have to use this option.
+  - Less for above constraint, this version can restore files created with
+    previous versions. Reverse is true also.
+
+
+24- V3.70 -> V3.71
+------------------
+
+Evolutions made are:
+
+  - A correction to a regression that disallow opening files when using DOS
+    version within Windows NT/2000/XP/...
+  - Add of a workaround to a problem in DOS network redirector that remove the
+    distant directory if this one is empty.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also.
+
+
+25- V3.71 -> V3.80
+------------------
+
+Evolutions made are:
+
+  - Add of ext4 filesystem support.
+  - Change to allow updating drive letter into registry on Windows Seven.
+  - Add of a new way to designate partition to save/restore and partition
+    where to put backup file (-fp, -fd, -ff and -fnc options).
+  - Change to disable write verification as a default on DOS version. This
+    does DOS version to be similar to Windows and Linux ones, improve speed
+    and avoid getting errors with some USB drives. You can enable this option
+    back through the -vd and -vf options.
+  - Change to have a better estimation of remaining time when performing
+    restoration when restoring a partition where only occupied sectors were
+    saved (with counting saved sectors only instead considering whole
+    partition size). This change is active only with files created by this
+    version (with files created with previous versions, remaining time
+    estimation will still be wrong).
+  - Change to no more complain in case it remains less free size on disk than
+    requested maximum size but this free size is enough to store the remaining
+    size to save (only when using options file or automatic naming and when
+    several files are needed).
+  - Correction of restoration of ext2/ext3 partitions using the resize inode
+    feature when this partition is restored to a partition bigger than source
+    one. Until this version, the resize inode feature was not updated leading
+    to its corruption. If you have done this type of restoration, you have to
+    run e2fsck to check your partition. You can use this version to restore a
+    partition saved with a previous version without encountering this problem
+    (problem is linked to restoration, it is not inside backup file).
+  - Correction of Linux version to allow using partition with number between
+    10 and 19 when saving first partition (or between 20 and 29 when saving
+    second partion and so on) (ex: hda10 could not be used to store backup
+    files when saving hda1).
+  - Correction of Linux version to have a correct free memory size in case
+    having more than 4 Gb memory.
+  - Correction to avoid first file to be 20 bytes more than requested maximum
+    size.
+  - Add of -beep option to do regular beeps during backup.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+for backup of partitions where all sectors were saved, but previous versions
+cannot restore backup created with this version for partitions where only
+occupied sectors are saved because of change to improve restoration estimation
+time.
+
+
+26- V3.80 -> V3.90
+------------------
+
+Evolutions made are:
+
+  - add of support for GUID partitions table (GPT). This type of partitions
+    table will be needed for more than 2 Tb disks.
+  - a change when restoring MBR and MBR partitions table: the disk identifier
+    stored into MBR is restored when restoring the partitions table (previous
+    versions restore it when restoring the MBR). This is because disk
+    identifier is linked to partitions table (as it is used to identify
+    partitions) and to have the same behaviour between MBR and GPT partitions
+    tables.
+  - add of -force command line option to disable some checks done by program
+    on restoration, but this option shall be used with care as it can result
+    in wrong result.
+  - add of check_files_exist= option in options file to check that files exist
+    before restoring a backup (thus avoiding getting an error in middle of
+    process in case a file is missing).
+  - use of 1.2.5 zlib version.
+  - launch of new console at start of program in Windows version to disable
+    the quick edit mode (thus allowing using mouse). This can be disabled with
+    using the "-term no" command line option.
+  - change of Linux binaries extension from ".exe" to ".run" as some
+    distributions treat ".exe" files as compressed files.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also, less for backup of GUID partitions table.
+
+
+27- V3.90 -> V4.00
+------------------
+
+Evolutions made are:
+
+  - add of raw files treatment: some files could be considered as image of
+    supports (as obtained through "dd") and be saved and restored. The
+    corresponding options have been added.
+  - taking into account that disk can be not partitioned (as not partitioned
+    USB key that are too big to be considered as floppy).
+  - change of Linux version to support terminal with UTF-8 display and add of
+    the corresponding option.
+  - add of support of more support in Linux version: use of block devices:
+    /dev/ataraid, /dev/iseries, /dev/ccisss, /dev/mapper, /dev/md/md_d,
+    /dev/md/d, /dev/md_d, /dev/sx8, /dev/md, /dev/rd in addition to already
+    supported ones. If /etc/auto.master or /etc/autofs/auto.master file
+    exists, it is used to get a list of automatically mounted supports (with
+    considering only simple mount, not network nor scripted ones). If
+    /dev/fuse file (automatic mount in user space) exists, all devices are
+    displayed without them to appear in /etc/fstab.
+  - change of UTF-16 characters displaying: instead of being <code based on
+    value>, it is <numeric value of character in hexadecimal>. This does that
+    if an option file uses a name with old format, it will no more be
+    supported (such a coding can appear in filenames and in boot entry name).
+    This does not change anything to backup files.
+  - change of "beep" option to allow defining delay between 2 beeps.
+  - change of "fix_first_sector" option to allow defining the first sector
+    value.
+  - change of "force" option for it to allow testing all filesystem types on a
+    partition even if they are not one coherent with partition type.
+  - add of a check box when filling options file comment to not store full
+    path to created files such as options file can be used even if files are
+    moved as long as Partition-Saving is launched from directory where backup
+    files are.
+  - add of logging capability to store all error messages in a file. There is
+    no real reason to use this in most cases as it will slow down copy and
+    could generate a very big file in case of damaged disk.
+  - change of behaviour when "quit=yes" option is given in options file:
+    previously in case of fatal error, user had to click on "Ok" to end; now
+    program exits. If you want to keep previous behaviour, you have to use the
+    "quit=nobadsector" option instead. Please note that on Linux and Windows
+    versions you will still need to press "Enter" key else the terminal could
+    be closed before you can read the message.
+
+Remark:
+-------
+This version can restore files created with previous versions. Reverse is true
+also, less for backup of raw files.
+
+------
+All trademarks and registered trademarks are property of their respective
+holders.

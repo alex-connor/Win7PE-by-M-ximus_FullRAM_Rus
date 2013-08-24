@@ -1,0 +1,36 @@
+Default.SFX          GUI SFX-модуль RAR (русский)
+Def_US.SFX           GUI SFX-модуль RAR (английский)
+Descript.ion         Описания файлов
+Dos.SFX              SFX-модуль RAR для DOS
+File_Id.diz          Краткое описание программного пакета
+Formats              Папка с модулями поддержки дополнительных форматов архивов
+License.txt          Лицензия на использование и распространение RAR
+Order.htm            Информация о покупке лицензии
+Order.txt            Регистрационная форма
+Rar.exe              Консольная версия RAR
+Rar.txt              Руководство по консольной версии RAR
+RarExt.dll           Библиотека встраивания WinRAR в оболочку Windows
+RarExt64.dll         Библиотека встраивания WinRAR в оболочку Windows x64
+RarExtLoader.exe     Интерфейс между 64- и 32-бит расширениями оболочки
+RarFiles.lst         Порядок сортировки файлов для непрерывных архивов
+RarLng.dll           Языковые ресурсы
+RarReg.key           Если вы честный человек и не покупали RAR, то удалите этот файл!
+Rar_Site.txt         Список сайтов распространения
+Rcvt.cfg             Конфигурационный файл программы RCVT
+Rcvt.exe             Программа преобразования архивов
+Rcvt.txt             Документация на программу RCVT
+ReadMe.rus.txt       Информация для пользователей русской версии WinRAR
+ReadMe.txt           Краткое описание WinRAR
+Register.txt         Информация о регистрации
+TechNote.txt         Описание архивного формата RAR
+Uninstall.exe        Программа удаления
+Uninstall.lst        Список файлов для программы удаления
+UnRAR.exe            Бесплатная программа для распаковки архивов RAR
+UnRarSrc.txt         Ссылка на исходные тексты и библиотеку UnRAR
+WhatsNew.txt         История изменений версий
+WinCon.SFX           Консольный SFX-модуль RAR (русский)
+WinConUS.SFX         Консольный SFX-модуль RAR (английский)
+WinRAR.cnt           Файл с содержанием справки WinRAR
+WinRAR.exe           Версия RAR с графическим интерфейсом
+Zip.SFX              GUI SFX-модуль ZIP (русский)
+Zip_US.SFX           GUI SFX-модуль ZIP (английский)

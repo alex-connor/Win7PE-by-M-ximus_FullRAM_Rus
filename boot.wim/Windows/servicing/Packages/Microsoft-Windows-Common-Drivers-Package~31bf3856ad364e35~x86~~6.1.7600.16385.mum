@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Common-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Common-Drivers" releaseType="Feature Pack">
+    <update description="machine.inf" displayName="machine.inf" name="INF_machine" restart="required">
+      <driver inf="machine.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="machine.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="keyboard.inf" displayName="keyboard.inf" name="INF_keyboard" restart="required">
+      <driver inf="keyboard.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="keyboard.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="input.inf" displayName="input.inf" name="INF_input" restart="required">
+      <driver inf="input.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="input.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="usbstor.inf" displayName="usbstor.inf" name="INF_usbstor" restart="required">
+      <driver inf="usbstor.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="usbstor.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="msmouse.inf" displayName="msmouse.inf" name="INF_msmouse" restart="required">
+      <driver inf="msmouse.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="msmouse.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="mf.inf" displayName="mf.inf" name="INF_mf" restart="required">
+      <driver inf="mf.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="mf.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="vhdmp.inf" displayName="vhdmp.inf" name="INF_vhdmp" restart="required">
+      <driver inf="vhdmp.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="vhdmp.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="nettun.inf" displayName="nettun.inf" name="INF_nettun" restart="required">
+      <driver inf="nettun.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="nettun.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="1394.inf" displayName="1394.inf" name="INF_1394" restart="required">
+      <driver inf="1394.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="1394.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="ql2300.inf" displayName="ql2300.inf" name="INF_ql2300" restart="required">
+      <driver inf="ql2300.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="ql2300.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="ql40xx.inf" displayName="ql40xx.inf" name="INF_ql40xx" restart="required">
+      <driver inf="ql40xx.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="ql40xx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="ql40xx2.inf" displayName="ql40xx2.inf" name="INF_ql40xx2" restart="required">
+      <driver inf="ql40xx2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="ql40xx2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="nvraid.inf" displayName="nvraid.inf" name="INF_nvraid" restart="required">
+      <driver inf="nvraid.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="nvraid.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="lsi_fc.inf" displayName="lsi_fc.inf" name="INF_lsi_fc" restart="required">
+      <driver inf="lsi_fc.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="lsi_fc.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="lsi_sas.inf" displayName="lsi_sas.inf" name="INF_lsi_sas" restart="required">
+      <driver inf="lsi_sas.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="lsi_sas.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="lsi_sas2.inf" displayName="lsi_sas2.inf" name="INF_lsi_sas2" restart="required">
+      <driver inf="lsi_sas2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="lsi_sas2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="lsi_scsi.inf" displayName="lsi_scsi.inf" name="INF_lsi_scsi" restart="required">
+      <driver inf="lsi_scsi.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="lsi_scsi.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="megasas.inf" displayName="megasas.inf" name="INF_megasas" restart="required">
+      <driver inf="megasas.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="megasas.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="megasas2.inf" displayName="megasas2.inf" name="INF_megasas2" restart="required">
+      <driver inf="megasas2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="megasas2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="megasr.inf" displayName="megasr.inf" name="INF_megasr" restart="required">
+      <driver inf="megasr.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="megasr.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="iastorv.inf" displayName="iastorv.inf" name="INF_iastorv" restart="required">
+      <driver inf="iastorv.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="iastorv.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="amdsata.inf" displayName="amdsata.inf" name="INF_amdsata" restart="required">
+      <driver inf="amdsata.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="amdsata.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="amdsbs.inf" displayName="amdsbs.inf" name="INF_amdsbs" restart="required">
+      <driver inf="amdsbs.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="amdsbs.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="stexstor.inf" displayName="stexstor.inf" name="INF_stexstor" restart="required">
+      <driver inf="stexstor.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="stexstor.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="hpsamd.inf" displayName="hpsamd.inf" name="INF_hpsamd" restart="required">
+      <driver inf="hpsamd.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="hpsamd.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="elxstor.inf" displayName="elxstor.inf" name="INF_elxstor" restart="required">
+      <driver inf="elxstor.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="elxstor.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="adp94xx.inf" displayName="adp94xx.inf" name="INF_adp94xx" restart="required">
+      <driver inf="adp94xx.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="adp94xx.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="adpahci.inf" displayName="adpahci.inf" name="INF_adpahci" restart="required">
+      <driver inf="adpahci.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="adpahci.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="adpu320.inf" displayName="adpu320.inf" name="INF_adpu320" restart="required">
+      <driver inf="adpu320.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="adpu320.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="arc.inf" displayName="arc.inf" name="INF_arc" restart="required">
+      <driver inf="arc.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="arc.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="arcsas.inf" displayName="arcsas.inf" name="INF_arcsas" restart="required">
+      <driver inf="arcsas.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="arcsas.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="iirsp.inf" displayName="iirsp.inf" name="INF_iirsp" restart="required">
+      <driver inf="iirsp.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="iirsp.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="iirsp2.inf" displayName="iirsp2.inf" name="INF_iirsp2" restart="required">
+      <driver inf="iirsp2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="iirsp2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="nfrd960.inf" displayName="nfrd960.inf" name="INF_nfrd960" restart="required">
+      <driver inf="nfrd960.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="nfrd960.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="vsmraid.inf" displayName="vsmraid.inf" name="INF_vsmraid" restart="required">
+      <driver inf="vsmraid.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="vsmraid.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="sisraid2.inf" displayName="sisraid2.inf" name="INF_sisraid2" restart="required">
+      <driver inf="sisraid2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="sisraid2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="sisraid4.inf" displayName="sisraid4.inf" name="INF_sisraid4" restart="required">
+      <driver inf="sisraid4.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="sisraid4.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="agp.inf" displayName="agp.inf" name="INF_agp" restart="required">
+      <driver inf="agp.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="agp.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netloop.inf" displayName="netloop.inf" name="INF_netloop" restart="required">
+      <driver inf="netloop.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netloop.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="volsnap.inf" displayName="volsnap.inf" name="INF_volsnap" restart="required">
+      <driver inf="volsnap.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="volsnap.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="volume.inf" displayName="volume.inf" name="INF_volume" restart="required">
+      <driver inf="volume.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="volume.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="sbp2.inf" displayName="sbp2.inf" name="INF_sbp2" restart="required">
+      <driver inf="sbp2.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="sbp2.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="disk.inf" displayName="disk.inf" name="INF_disk" restart="required">
+      <driver inf="disk.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="disk.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="cdrom.inf" displayName="cdrom.inf" name="INF_cdrom" restart="required">
+      <driver inf="cdrom.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="cdrom.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="wd.inf" displayName="wd.inf" name="INF_wd" restart="required">
+      <driver inf="wd.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="wd.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="cpu.inf" displayName="cpu.inf" name="INF_cpu" restart="required">
+      <driver inf="cpu.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="cpu.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="hal.inf" displayName="hal.inf" name="INF_hal" restart="required">
+      <driver inf="hal.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="hal.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="acpi.inf" displayName="acpi.inf" name="INF_acpi" restart="required">
+      <driver inf="acpi.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="acpi.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="usb.inf" displayName="usb.inf" name="INF_usb" restart="required">
+      <driver inf="usb.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="usb.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="usbport.inf" displayName="usbport.inf" name="INF_usbport" restart="required">
+      <driver inf="usbport.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="usbport.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="umbus.inf" displayName="umbus.inf" name="INF_umbus" restart="required">
+      <driver inf="umbus.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="umbus.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="umpass.inf" displayName="umpass.inf" name="INF_umpass" restart="required">
+      <driver inf="umpass.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="umpass.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="hidserv.inf" displayName="hidserv.inf" name="INF_hidserv" restart="required">
+      <driver inf="hidserv.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="hidserv.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="hiddigi.inf" displayName="hiddigi.inf" name="INF_hiddigi" restart="required">
+      <driver inf="hiddigi.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="hiddigi.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="tape.inf" displayName="tape.inf" name="INF_tape" restart="required">
+      <driver inf="tape.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="tape.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="mshdc.inf" displayName="mshdc.inf" name="INF_mshdc" restart="required">
+      <driver inf="mshdc.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="mshdc.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="mchgr.inf" displayName="mchgr.inf" name="INF_mchgr" restart="required">
+      <driver inf="mchgr.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="mchgr.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="iscsi.inf" displayName="iscsi.inf" name="INF_iscsi" restart="required">
+      <driver inf="iscsi.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="iscsi.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="scsidev.inf" displayName="scsidev.inf" name="INF_scsidev" restart="required">
+      <driver inf="scsidev.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="scsidev.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="flpydisk.inf" displayName="flpydisk.inf" name="INF_flpydisk" restart="required">
+      <driver inf="flpydisk.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="flpydisk.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="fdc.inf" displayName="fdc.inf" name="INF_fdc" restart="required">
+      <driver inf="fdc.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="fdc.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="msports.inf" displayName="msports.inf" name="INF_msports" restart="required">
+      <driver inf="msports.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="msports.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="blbdrive.inf" displayName="blbdrive.inf" name="INF_blbdrive" restart="required">
+      <driver inf="blbdrive.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="blbdrive.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="tpm.inf" displayName="tpm.inf" name="INF_tpm" restart="required">
+      <driver inf="tpm.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="tpm.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="unknown.inf" displayName="unknown.inf" name="INF_unknown" restart="required">
+      <driver inf="unknown.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="unknown.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="battery.inf" displayName="battery.inf" name="INF_battery" restart="required">
+      <driver inf="battery.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="battery.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="ipmidrv.inf" displayName="ipmidrv.inf" name="INF_ipmidrv" restart="required">
+      <driver inf="ipmidrv.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="ipmidrv.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="djsvs.inf" displayName="djsvs.inf" name="INF_djsvs" restart="required">
+      <driver inf="djsvs.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="djsvs.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="dc21x4vm.inf" displayName="dc21x4vm.inf" name="INF_dc21x4vm" restart="required">
+      <driver inf="dc21x4vm.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="dc21x4vm.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="Intel(R) 82598EB 10 Gigabit AF Network Connection" displayName="Intel(R) 10 Gigabit XFP SR Server Adapter" name="ixe60x86" restart="required">
+      <driver inf="netxe32.inf" ranking="normal">
+        <assemblyIdentity buildType="release" language="neutral" name="netxe32.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netl160x.inf" displayName="netl160x.inf" name="INF_netl160x" restart="required">
+      <driver inf="netl160x.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netl160x.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netl260x.inf" displayName="netl260x.inf" name="INF_netl260x" restart="required">
+      <driver inf="netl260x.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netl260x.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netl1e86.inf" displayName="netl1e86.inf" name="INF_netl1e86" restart="required">
+      <driver inf="netl1e86.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netl1e86.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netl1c86.inf" displayName="netl1c86.inf" name="INF_netl1c86" restart="required">
+      <driver inf="netl1c86.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netl1c86.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netgb6.inf" displayName="netgb6.inf" name="INF_netgb6" restart="required">
+      <driver inf="netgb6.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netgb6.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="qd3x86.inf" displayName="qd3x86.inf" name="INF_qd3x86" restart="required">
+      <driver inf="qd3x86.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="qd3x86.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="mtconfig.inf" displayName="mtconfig.inf" name="INF_mtconfig" restart="required">
+      <driver inf="mtconfig.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="mtconfig.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="netimm.inf" displayName="netimm.inf" name="INF_netimm" restart="required">
+      <driver inf="netimm.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="netimm.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+  </package>
+</assembly>

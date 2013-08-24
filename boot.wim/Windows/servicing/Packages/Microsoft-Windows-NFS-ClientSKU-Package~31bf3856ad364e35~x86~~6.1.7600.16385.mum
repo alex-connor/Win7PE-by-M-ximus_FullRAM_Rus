@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-NFS-ClientSKU-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+  <package identifier="NFS-ClientSKU" releaseType="Feature Pack">
+    <parent integrate="subsume">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+    </parent>
+    <update description="Allows you to access files using the Network File System (NFS) protocol." displayName="Services for NFS" name="ServicesForNFS-ClientOnly">
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+    </update>
+    <update description="Enables this computer to gain access to files on UNIX-based computers" displayName="Client for NFS" name="ClientForNFS-Infrastructure">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="ServicesForNFS-ClientOnly"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-NFS-ClientCore-D" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-NFS-ClientLocalUI-D" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Tools for managing Services for NFS on local and remote computers" displayName="Administrative Tools" name="NFS-Administration">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <parent name="ServicesForNFS-ClientOnly"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-NFS-Administration-D" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-MSMQ-Client-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="MSMQ Client package" releaseType="Feature Pack">
+    <parent disposition="detect" integrate="delegate">
+      <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Foundation-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+    </parent>
+    <update description="Microsoft Message Queue (MSMQ) Server." displayName="Microsoft Message Queue (MSMQ) Server" name="MSMQ-Container">
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+    </update>
+    <update description="This feature installs the core components of MSMQ which enables you to perform basic Message queuing functions. This feature is a minimum requirement." displayName="Microsoft Message Queue (MSMQ) Server Core" name="MSMQ-Server">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Container"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="true"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-server-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="MSMQ Management Tools" displayName="MSMQ Management Tools" name="MSMQ-MMC">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-mmc-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Message Queue Triggers enables the invocation of a COM component or an executable depending on the filters that you define for the incoming messages in a given queue." displayName="MSMQ Triggers" name="MSMQ-Triggers">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-triggers-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="Active Directory Domain Services Integration feature enables publishing of queue properties to Active Directory Domain Services, out-of-the-box authentication and encryption of messages using certificates registered in Active Directory Domain Services, and routing of messages across Windows sites. This feature becomes operational only when the computer joins a domain." displayName="MSMQ Active Directory Domain Services Integration" name="MSMQ-ADIntegration">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <servicesToStop>
+        <service name="MSMQ"/>
+      </servicesToStop>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-adintegration-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="The HTTP Support feature allows you to expose a queue to the internet such that applications can send messages to the queue using HTTP protocol. This feature requires Internet Information Server." displayName="MSMQ HTTP Support" name="MSMQ-HTTP">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-StaticContent"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-DefaultDocument"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-DirectoryBrowsing"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-HttpErrors"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-HttpRedirect"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-NetFxExtensibility"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-HttpLogging"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-LoggingLibraries"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-RequestMonitor"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-HttpTracing"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-HttpCompressionStatic"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-ManagementConsole"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-ISAPIExtensions"/>
+        </detectUpdate>
+        <detectUpdate>
+          <parent name="IIS-Metabase"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-http-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="The Multicast support feature enables you to send messages to a Multicast IPAdress. Queues can be associated with a Multicast IPAddress. Messages sent to a Multicast IPAddress will be delivered to the queues that are associated with that IPAddress." displayName="Multicasting Support" name="MSMQ-Multicast">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-multicast-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="The DCOM proxy feature enables MSMQ applications to use MSMQ DCOM API to connect to a remote MSMQ Server." displayName="MSMQ DCOM Proxy" name="MSMQ-DCOMProxy">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Container"/>
+        </detectUpdate>
+      </applicable>
+      <selectable disposition="staged">
+        <detectNone default="false"/>
+      </selectable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-dcomproxy-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+    <update description="MSMQ Runtime components" displayName="MSMQ Runtime components" name="MSMQ-Runtime">
+      <applicable disposition="staged">
+        <detectUpdate>
+          <update name="MSMQ-Server"/>
+        </detectUpdate>
+      </applicable>
+      <component>
+        <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-msmq-runtime-deployment" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </component>
+    </update>
+  </package>
+</assembly>

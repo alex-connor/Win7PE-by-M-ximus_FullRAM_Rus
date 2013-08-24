@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Session version="1.0" id="13984_2704401992" client="DISM Package Manager Provider" options="0" currentPhase="1" lastSuccessfulState="Complete" pendingFollower="true" retry="false" Queued="2009/07/13/20:54:23" Started="2009/07/13/20:54:23" Complete="2009/07/13/20:54:35" status="0x0">
+    <Tasks>
+        <Phase seq="1">
+            <package id="WinPE-WMI-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" name="WinPE-WMI_ru-RU" targetState="Installed" options="4"/>
+        </Phase>
+    </Tasks>
+    <Actions>
+        <Phase seq="1" rebootRequired="true" Resolved="2009/07/13/20:54:23" Staged="2009/07/13/20:54:26" Installed="2009/07/13/20:54:35">
+            <Resolve package="WinPE-WMI-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-WMI"/>
+            <Stage package="WinPE-WMI-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-WMI"/>
+            <Install package="WinPE-WMI-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-WMI"/>
+        </Phase>
+    </Actions>
+</Session>

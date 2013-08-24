@@ -1,0 +1,151 @@
+[rus]
+title=заголовок
+maker=компилятор
+time=дата
+chset=язык
+
+[CHMDir]
+Languages=English,Russian
+
+[CHMDir.English]
+
+LangName=English
+
+2=Cancel
+101=CHMDir plugin settings
+1000=Unpacker
+1001=&Show special CHM files
+1002=S&how special ITS files
+1003=Us&e file attributes
+1004=&Files in cache:
+1010=Packer
+1011=&LZX window size:
+1013=&Dir listing chunk size:
+1015=&Calculate optimal size of listing chunk
+1016=S&ort dir listing by extension before compress
+1017=S&tore files by ext. (jpg;png;gif;):
+1019=Default to&pic filenames (index.htm;index.html;readme.htm;):
+1021=Dialog l&anguage:
+1024=Lo&w priority
+1025=Title of topic without <T&ITLE> tag:
+1028=&Use IStorage COM interface (itss.dll) for packing
+1030=Use custo&m window
+1031=Edit...
+1040=CHM la&nguage:
+1042=Sto&re time of the file’s last update
+
+102=HtmlHelp windows properties
+2001=&Type
+2003=Title
+2005=TOC
+2007=Index
+2009=Default HTML
+2011=Home
+2021=&Help properties
+2022=No button text
+2023=Sync TOC && index
+2024=Search tab
+2025=History tab
+2026=Favorites tab
+2027=Put HTML title
+2028=No buttons
+2029=Menu
+2030=Advanced FTS
+2035=Save window pos.
+2036=Hid&e TOC && index
+2041=Toolbar &buttons
+2042=Expand/contract
+2043=Back
+2044=Forward
+2045=Stop
+2046=Refresh
+2047=Home
+2048=Sync
+2049=Options
+2050=Print
+2051=Zoom font
+2052=TOC next
+2053=TOC prev
+2054=Jump1
+2055=Jump2
+2061=Window &position
+2062=Left
+2064=Top
+2066=Right
+2068=Bottom
+2080=&Show state
+2081=&Window styles
+2082=E&x. Window styles
+2090=&Delete information about file from hh.dat
+
+
+[CHMDir.Russian]
+
+LangName=Русский
+
+2=Отмена
+101=Настройки плагина CHMDir
+1000=Распаковка
+1001=&Показывать файлы CHM
+1002=П&оказывать файлы ITS
+1003=&Использовать атрибуты файлов
+1004=Архивов в &кэше:
+1010=Упаковка
+1011=&Размер окна LZX:
+1013=Размер &чанка каталога:
+1015=&Вычислять оптимальный размер чанка
+1016=&Сортировать по расш. перед упаковкой
+1017=Н&е сжимать расш. (.jpg;.png;.gif;):
+1019=Названия топиков по &умолчанию (index.htm;index.html;readme.htm;):
+1021=&Язык диалога:
+1024=&Низкий приоритет
+1025=&Заголовок топика без тега <TITLE>:
+1028=Для упаковки испо&льзовать COM интерфейс IStorage (itss.dll)
+1030=Н&астраиваемое окно
+1031=Изменить...
+1040=Яз&ык CHM:
+1042=Со&хранять дату и время файла
+
+102=Свойства окна справки
+2001=&Тип
+2003=Заголовок
+2005=Содержание
+2007=Индекс
+2009=По умолчанию
+2011=Дом. страница
+2021=&Свойства окна
+2022=Кнопки без текста
+2023=Синхр. сод. и инд.
+2024=Поиск
+2025=Журнал
+2026=Избранное
+2027=Заголовок HTML
+2028=Без кнопок
+2029=Меню
+2030=Расшир. поиск
+2035=Сохр. поз. окна
+2036=Ск&рыть вкладки
+2041=Панель &кнопок
+2042=Показать/скрыть
+2043=Назад
+2044=Вперёд
+2045=Остановить
+2046=Обновить
+2047=Домой
+2048=Найти
+2049=Параметры
+2050=Печать
+2051=Шрифт
+2052=Далее по содерж.
+2053=Назад по содерж.
+2054=Переход1
+2055=Переход2
+2061=&Положение окна
+2062=Слева
+2064=Сверху
+2066=Справа
+2068=Снизу
+2080=&Отображение окна
+2081=Сти&ли окна
+2082=Расш. ст&или окна
+2090=&Удалить сведения о файле из hh.dat

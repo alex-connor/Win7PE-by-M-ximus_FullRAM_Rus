@@ -1,0 +1,430 @@
+
+Imagine - What's new:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+v1.0.3, May 24 2008
+ - New: Slideshow
+ - New: 'Option' in Batch conversion & Capture screen dialog
+ - New: Each file type has its own icon
+ - Remove: Context menu - 'Export to AVI'
+
+v1.0.2, May 04 2008
+ - New: Support for APNG (Animated Portable Network Graphics) file format
+ - New: Tiled view (allows to check textures for seamless tiling, very
+   useful for game developers/modders)
+ - New: Context menu - 'Version history'
+ - New: Option 'Display load time'
+ - New: Printing multiple page images
+ - New: Improved scroll bar
+ - Fix: Full screen mode at startup bug
+ - Fix: Toggle fit bug
+ - Fix: Thumbnail clipboard bug
+ - Fix: Multiple page image bug
+
+v1.0.1, March 09 2008
+ - New: Option 'Toggle fit'
+ - Fix: WMF/EMF zoom bug
+ - Fix: Window preferences dialog bug
+
+v1.0.0, March 02 2008
+ - New: Capture screen
+ - New: Customizable toolbar skin
+ - New: Option 'Center window'
+ - New: Option 'Fit window'
+ - New: Option 'Fit image'
+ - New: Option 'Cycle through end/begin of folder'
+ - New: Option 'Hide cursor in full screen'
+ - New: 'Fit image' routines fully rewritten
+ - New: English language template fully rewritten
+ - New: Translation information in language selection dialog
+ - New: Versioning changed from 4 to 3 digits
+ - New: Dropped beta status
+ - Fix: Keyboard shortcut bug
+ - Fix: Total Commander Lister fit option bug
+ - Fix: Thumbnail browser preferences dialog bug
+ - Fix: GIF bug
+ - Fix: XPM bug
+
+v1.0.0.0 beta 10, January 13 2008
+ - New: Changed license from Freeware to Donationware
+ - New: Option 'Always on top'
+ - Fix: Save dialog bug
+
+v1.0.0.0 beta 9, December 09 2007
+ - New: Improved progress bar
+ - New: Context menu - 'Keyboard shortcuts'
+ - New: Command line parameter 'Depth'
+ - New: Command line parameter 'Filter'
+ - New: Command line parameter 'Resize'
+ - New: Command line parameter 'Wallpaper'
+ - New: Option 'Show full path in title bar'
+ - New: option 'Add extension with capital letters'
+
+v1.0.0.0 beta 8, November 20 2007
+ - Fix: BMP RLE encoding bug
+ - Fix: Saving to BMP with packer plugin
+
+v1.0.0.0 beta 7, November 09 2007
+ - New: Dithering for 1/4 bit color depth conversion
+ - New: More accurate colors on 8 bit color desktops
+ - New: Improved status bar
+ - Fix: Progress bar bug
+
+v1.0.0.0 beta 6, October 07 2007
+ - New: Improved thumbnail loading speed
+ - Fix: Printing bug
+ - Fix: TGA grayscale image bug
+ - Fix: Palette import bug
+ - Fix: Thumbnail window bug
+
+v1.0.0.0 beta 5, June 30 2007
+ - New: 'Command history' dialog
+ - New: Improved status bar
+
+v1.0.0.0 beta 4, May 06 2007
+ - New: Improved Filter browser preview speed
+ - New: Option 'Undo' buffer
+ - New: Option 'Display frequency per second'
+ - New: Additional menus
+ - Fix: Scroll bug
+
+v1.0.0.0 beta 3, December 02 2006
+ - New: Support for Total Commanders plugin function 'ListLoadNext'
+
+v1.0.0.0 beta 2, November 04 2006
+ - New: Option 'Full screen at startup'
+ - New: Command line parameter 'Fullscreen'
+
+v1.0.0.0 beta 1, October 22 2006
+ - New: Batch conversion
+ - New: Improved shell extension, all frames of an animation are shown.
+ - New: Command 'Cut'
+ - Fix: Status bar tooltip bug
+
+v0.9.7.0, September 07 2006
+ - New: Alpha blend drawing routine rewritten
+ - New: Display HTML color code as pixel color
+ - Fix: 16 BPP 5:6:5 image clipboard bug
+ - Fix: XNM bug
+ - Fix: Transparent background mask bug
+ - Fix: File list bug
+
+v0.9.7.0 beta 13, August 19 2006
+ - New: TWAIN support
+ - New: Improved print dialog
+
+v0.9.7.0 beta 12, July 29 2006
+ - New: Support for ICL (Icon Library) file format
+ - Fix: 'Rotate according to EXIF' in shell extension
+
+v0.9.7.0 beta 11, July 22 2006
+ - New: Support for MNG (Multiple Network Graphics) file format
+ - Fix: Crop bug
+
+v0.9.7.0 beta 10, July 17 2006
+ - New: Image information - Show DPI (Dots Per Inch) value
+ - New: Cropping by scrolling
+ - Fix: Current directory index bug
+
+v0.9.7.0 beta 9, July 08 2006
+ - New: Commands 'FileFirst', 'FileLast'
+ - New: Improved status bar - Optionally show current directory index
+ - New: Improved mouse configuration
+
+v0.9.7.0 beta 8, June 08 2006
+ - New: File open dialog - Doubleclick thumbnail to preview image
+ - New: Improved status bar
+ - Fix: Icon bug in preference dialog
+
+v0.9.7.0 beta 7, March 28 2006
+ - New: Thumbnail browser - Thumbnail size configurable
+ - New: Shell extension - Context menu image size configurable
+ - New: Command line parameter support
+
+v0.9.7.0 beta 6, March 04 2006
+ - New: Support for JBIG (Joint Bi-level Image Experts Group) format saving,
+   requires additional plugin.
+ - New: Images added to preferences dialog tabs
+
+v0.9.7.0 beta 5, February 22 2006
+ - New: GIF routine rewritten
+ - New: Animation preferences
+
+v0.9.7.0 beta 4, February 01 2006
+ - New: Improved thumbnail loading speed
+ - New: Thumbnail browser - Directory tree can be hidden
+ - New: Thumbnail browser preferences - 'Rotate according to EXIF'
+ - New: Status bar preferences - Drag status bar items with mouse
+
+v0.9.7.0 beta 3, January 25 2006
+ - New: Status bar preferences
+ - New: Improved 'Display while loading' function, no resizing after loading.
+ - New: Improved Thumbnail browser
+ - New: Transparency for thumbnails
+ - New: Image information - Mask function can show 32 bit alpha value
+ - New: Image information - File size information
+ - New: Auto change zoom factor when entering full screen mode
+ - Fix: PNG bug (16 bits per sample)
+ - Fix: TIFF bug (16 bits per sample and tiled image)
+ - Fix: PCX bug
+ - Fix: Toolbar and status bar disappearing in full screen mode
+
+v0.9.7.0 beta 2, January 08 2006
+ - New: Context menu - File - 'Open with'
+ - New: Improved printing
+
+v0.9.7.0 beta 1, December 19 2005
+ - New: Mouse preferences
+ - New: Command 'Lock zoom'
+
+v0.9.0.0, September 16 2005
+ - New: Unicode version available
+ - New: Plugin SDK updated, v0.1.0.5
+ - New: Built-in support for several file formats, previous plugins obsolete.
+ - New: Improved shell extension
+ - New: Redesigned preferences dialog
+ - New: Option 'Ignore errors'
+ - New: Option 'MRUD count'
+ - New: Redesigned thumbnail browser window
+ - New: Context menu in thumbnail browser
+ - Fix: Shell extension crash bug
+ - Fix: Filter browser dialog bug, Windows XP
+ - Fix: Metafile bug
+ - Fix: Preferences dialog font bug
+ - Fix: Launch bug, Windows 95
+ - Fix: Flickering lister window after size change
+
+v0.9.0.0 beta 12, July 15 2005
+ - New: Support for WMF (Windows Metafile) file format
+ - New: Support for EMF (Windows Enhanced Metafile) file format
+ - New: Zoom factor configurable
+ - New: Command 'Create multiple page'
+ - Fix: Scroll bug
+
+v0.9.0.0 beta 11, July 06 2005
+ - New: Support for MAC, MACP (Apple Macintosh MacPaint) file format
+ - New: Support for RLA (Wavefront Raster Image) file format
+ - New: Command 'Previous frame'
+ - New: Command 'Rename'
+ - New: Option 'Only one instance'
+ - Fix: EXIF bug
+
+v0.9.0.0 beta 10, April 10 2005
+ - New: Support for XCF (GIMP Bitmap) file format
+ - Fix: Transparent image scroll bug
+ - Fix: Thumbnail background color bug
+ - Fix: 32 bit clipboard paste bug
+ - Fix: EXIF bug
+
+v0.9.0.0 beta 9, March 10 2005
+ - New: Plugin SDK updated, v0.1.0.2
+ - New: Support for PSP (Paint Shop Pro Image) file format
+ - New: Support for XBM (X10/X11 Bitmap) file format
+ - New: Support for XPM (X11 Pixmap) file format
+ - New: Support for ANM (DeluxePaint Animation) file format
+ - New: Zoom/Fit routine rewritten
+ - New: More internal optimizing
+ - New: Resample filter for resizing
+ - New: Option 'Rotate according to EXIF'
+ - New: Interface 'Font type' configurable
+ - New: Thumbnail tooltip
+ - Fix: Flickering screen
+ - Fix: Folder including more than 1024 image files bug
+ - Fix: Rotation bug
+ - Fix: Shortcut dialog bug
+
+Version 0.9.0.0 beta 8 'Feb 10 2005
+ - New: Plugin SDK available, v0.1.0.0
+ - New: Support for DDS (DirectDraw Surface) file format
+ - New: Improved preview color quality
+ - New: Some internal optimizing
+ - New: Application icon changed
+ - New: Toolbar color changed
+ - Fix: Transparent pixel color bug, Windows 9x
+ - Fix: Thumbnail browser - Treeview icon bug
+ - Fix: Shell extension crash bug
+ - Fix: CMYK TIFF display bug
+
+v0.9.0.0 beta 7, January 22 2005
+ - New: Support for Total Commander v6.5 thumbnail mode
+
+v0.9.0.0 beta 6, January 08 2005
+ - New: Support for antialiasing
+
+v0.9.0.0 beta 5, December 27 2004
+ - New: Shell extension context menu (preview images via Explorer
+   context menu)
+ - New: Save toolbar settings to Imagine.ini
+ - New: Save shortcut data to Imagine.ini
+
+v0.9.0.0 beta 4, December 10 2004
+ - New: Imagine.wlx renamed to Imagine.dll
+ - New: Thumbnail browser window decorated
+ - New: Several file operations (Copy/Move)
+ - New: Resizing (yet primitive)
+ - New: Printing (yet primitive)
+ - New: Online help (yet primitive)
+
+v0.9.0.0 beta 3, August 28 2004
+ - New: Thumbnail browser
+ - New: Context menu - 'Supported file formats'
+ - New: Packer plugin for Total Commander can read Imagine.ini
+ - New: Window preferences
+
+v0.9.0.0 beta 2, August 14 2004
+ - New: Packer plugin for Total Commander (Imagine.wcx)
+ - New: Several translations
+ - New: Option 'MRUD'
+ - New: Option 'Center window'
+ - New: Option 'Fit to image'
+
+v0.9.0.0 beta 1, August 06 2004
+ - New: Support for PIC, CEL (Autodesk Animator PIC) file format
+ - New: File extension association dialog restructured
+ - New: Run standalone executable without arguments
+ - New: Command 'Save'
+ - New: Command 'Close'
+ - New: Command 'Clear clipboard'
+
+v0.8.4.0, July 26 2004
+ - New: Toolbar, customizable
+ - New: Command 'Import palette'
+ - Fix: Delete bug
+
+v0.8.4.0 beta 3, July 14 2004
+ - New: Support for CDR, CDT, PAT, CMX (CorelDRAW Drawing) file format
+ - New: Standalone executable
+ - New: Command 'Set/Clear transparency'
+ - New: Saving to interlaced PNG file format
+ - New: TGA 32 bit alpha value
+ - Fix: JPEG bug
+
+v0.8.4.0 beta 2, March 18 2004
+ - New: 16 bit color depth conversion
+ - New: Saving to Multiple Icon/Cursor file format
+ - New: Show zoom factor for fitted image
+ - New: Keyboard shortcuts configurable
+ - New: More interface text translatable
+ - New: Comments in language files
+ - Fix: Multiple TIFF file format bugs
+
+v0.8.4.0 beta 1, February 26 2004
+ - New: Multilingual support
+ - New: Saving to progressive JPEG file format
+ - New: Improved image information
+ - New: File list sorting
+ - New: Option 'Display while loading'
+ - New: Option 'Delete to Recycle Bin'
+ - New: Command 'Reopen'
+ - New: Command 'Paste'
+ - New: Shortcut for Preferences reverted to 'Alt+Enter'
+
+v0.8.0.0, February 07 2004
+ - New: Support for DCX (Zsoft Multi-Page Paintbrush) file format
+ - New: Support for WBMP, WAP, WBM (Wireless Bitmap) file format
+ - New: Support for most common TIFF compression methods:
+   RAW, Packbits, CCITT, LZW, ZIP, JPEG, ThunderScan
+ - New: Saving to TIFF file format
+ - New: Support for Multiple page images (TIF, ICO, DCX)
+ - New: Effect filter
+ - New: EXIF information
+ - New: Full screen preferences
+ - New: Information dialog restructured
+ - New: Command 'Rotate free'
+ - New: Command 'Export Palette'
+ - New: Context menu - 'Installed plugins'
+ - New: Option 'Ask to overwrite file'
+ - New: Option 'Don't notify end/begin of folder'
+ - New: Zoom in/out using mouse wheel
+ - New: Horizontal scrolling using mouse wheel
+ - New: Zoom out beyond original image size
+ - New: Improved refresh speed for zoomed images
+ - New: Support for several palette file types
+ - Fix: PCX bug
+ - Fix: RLE bug
+
+v0.7.3.0, January 01 2004
+ - New: Support for Zoom in/out
+ - New: Support for drag'n'drop
+ - New: Command 'Open'
+ - New: Option 'Fit only big images' re-added
+ - Fix: Images containing alpha value display bug
+ - Fix: 32 bit BMP with color mask display bug
+ - Fix: Properties dialog opening bug, Windows NT
+
+v0.7.0.1, November 24 2003
+ - Fix: Runtime error, Windows XP
+
+v0.7.0.0, November 22 2003
+ - New: Support for JBG (Joint Bi-level Image Experts Group) file format
+ - New: Support for ICO (Windows Icon) file format
+ - New: Support for CUR (Windows Cursor) file format
+ - New: Support for ANI (Windows Animated Cursor) file format
+ - New: Support for CLP (Windows Clipboard) file format
+ - New: Support for RLE (Utah RLE) file format
+ - New: Support for Imagine plugins
+ - New: BMP and ICO files can be viewed with Imagine plugin
+ - New: Save to FLIC file format
+ - New: Animation file saving changed to 'Save as', removed some of
+   the export options
+ - New: Option 'Center Image'
+ - New: Context menu restructured
+ - New: Use left mouse button to acquire pixel color information
+ - New: Use right mouse button to scroll
+ - New: Command 'View Next/Previous' image
+ - New: Changed location of INI file, now same folder as Imagine.wlx
+ - Fix: Keyboard shortcuts, Windows 9x
+
+v0.6.0.0, September 06 2003
+ - New: Support for RAS (Sun Raster Image) file format
+ - New: Support for SGI, RGB, BW (Silicon Graphics Image) file format
+ - New: Auto color conversion when saving file to different format
+ - New: Command 'Change color depth'
+ - New: Command 'Set as wallpaper'
+ - New: Keyboard support for palette editing
+ - New: Background preferences
+ - Fix: Small scroll bug
+
+v0.5.0.0, August 10 2003
+ - New: Status bar
+ - New: Save options
+ - New: Show progress (save file/modify image)
+ - New: Several shortcuts
+
+v0.4.9.0, August 06 2003
+ - New: Support for PBM (Portable Bitmap) file format
+ - New: Support for PGM (Portable Graymap) file format
+ - New: Support for PPM (Portable Pixelmap) file format
+ - New: Support for PNG transparency
+
+v0.4.8.0, August 02 2003
+ - New: Save to PNG file format
+
+v0.4.7.0, August 01 2003
+ - New: Option 'Show transparency'
+ - New: Support for PCD (Kodak PhotoCD) file format
+ - New: Support for JPC, JP2, J2K (JPEG2000 Wavelet) file format
+
+v0.4.1.1, July 28 2003
+ - Fix: PNG bug
+
+v0.4.1.0, July 28 2003
+ - New: Command 'Edit Palette'
+
+v0.4.0.0, July 24 2003
+ - New: Option 'Fit only big images'
+ - New: Command 'Vertical/Horizontal flip'
+ - New: Command 'Grayscale'
+ - New: Command 'Negative'
+ - New: Command 'Swap colors'
+ - New: Command 'Rotate'
+
+v0.3.7.0, July 22 2003
+ - Fix: GIF bug
+ - Fix: Scroll bug
+
+v0.3.0.0, July 16 2003
+ - First release
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Copyright (c) 2003-2008 Chun Sejin - Text document courtesy by deus-ex

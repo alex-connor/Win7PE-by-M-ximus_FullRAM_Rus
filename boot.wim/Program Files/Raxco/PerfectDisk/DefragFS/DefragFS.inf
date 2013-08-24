@@ -1,0 +1,91 @@
+;;;
+;;; Raxco's File System
+;;;
+;;; Copyright (c) 2010, Raxco Software, Inc.
+;;;
+
+[Version]
+signature  	= "$Windows NT$"
+Class		= "FileSystem"
+ClassGuid 	= {8b2b157c-7f41-490d-b67d-6e26dd8c5ad9}	;This value is determined by the Class
+Provider 	= %Raxco%
+DriverVer 	= 08/30/2010,8.0.0.23
+CatalogFile     = defragFS.cat
+DriverPackageType = FileSystem
+
+
+[DestinationDirs]
+DefaultDestDir  = 12
+FS.DriverFiles  = 12  ;%windir%\system32\drivers
+
+[SourceDisksNames]
+1 = %Disk1%
+
+[SourceDisksFiles]
+DefragFS.sys    = 1
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc      = %ServiceDesc%
+;; CopyFiles       = FS.DriverFiles
+
+[DefaultInstall.Services]
+AddService      = %ServiceName%,,FS.Service
+AddReg          = FS.AddRegistry
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+;; DelFiles        = FS.DriverFiles
+DelReg          = FS.DelRegistry
+
+[DefaultUninstall.Services]
+DelService      = %ServiceName%,0x204	    ; Flag notes to stop service first, then delete it
+ 
+
+;;
+;; Services Section
+;;
+
+[FS.Service]
+DisplayName     = %ServiceName%
+Description     = %ServiceDesc%
+ServiceBinary   = %12%\DefragFS.sys    	    ;%windir%\system32\drivers\DefragFS.sys
+ServiceType     = 2			    ;SERVICE_FILE_SYSTEM_DRIVER
+StartType       = 2			    ;SERVICE_AUTO_START
+ErrorControl    = 1			    ;SERVICE_ERROR_NORMAL
+LoadOrderGroup  = "File system"
+AddReg		= FS.AddRegistry
+
+;;
+;; Registry Modifications
+;;
+
+[FS.AddRegistry]
+HKLM,system\currentcontrolset\services\%ServiceName%,DebugFlags,0x00010001 ,0
+
+[FS.DelRegistry]
+HKLM,system\currentcontrolset\services\%ServiceName%,DebugFlags
+
+;;
+;; Copy Files
+;;
+
+[FS.DriverFiles]
+DefragFS.sys
+
+;;
+;; String Section
+;;     Update the strings in this section as appropriate for your file system.
+;;
+
+[Strings]
+Raxco	       = "Raxco Software"
+ServiceDesc    = "PerfectDisk support file system"
+ServiceName    = "DefragFS"
+Disk1          = "DISK1"

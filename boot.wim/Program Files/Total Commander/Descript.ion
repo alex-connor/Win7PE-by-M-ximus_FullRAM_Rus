@@ -1,0 +1,37 @@
+Backup Резервные копии настроек
+Language Языки Total Commander
+Plugins Плагины Total Commander
+Soft Дополнительные программы
+Utils Дополнительные утилиты
+Default.bar Панель инструментов
+No.bar Панель кнопок
+System.bar Системная панель
+Program.bar Программная панель
+UserBar.bar Пользовательская панель
+Descript.ion Файл с комментариями для файлов в папке
+Drives.dll Библиотека значков для отображения дисков
+Fileicons.dll Значки для отображения файлов и папок
+History.txt История версий Total Commander
+Keyboard.txt Горячие клавиши Total Commander
+Readme.txt Информация о версии Total Commander
+Sfxhead.sfx Заголовок для самораспаковывающихся ZIP архивов
+TCPPcmd.htm Список встроенных команд Total Commander
+Totalcmd.exe.manifest Файл поддержки XP-стилей
+Wcmicons.dll Библиотека значков для панели инструментов
+Wcmicons.inc Внутренняя команда -> индекс значка
+Wincmd.key Лицензионный ключ Total Commander
+Wincmd.ini Конфигурационный файл Total Commander
+Wcx_ftp.ini Настройки встроенного FTP-клиента
+CABRK.DLL CAB unpacker DLL
+FRERES32.DLL Library to get free system resources on Windows 9x/ME
+TCUNZLIB.DLL Library used for unpacking thumbnails and for FTP MODE Z
+UNACEV2.DLL ACE unpacker DLL
+SHARE_NT.EXE Helper tool to show share/unshare dialog on Windows NT
+TCMADMIN.EXE Tool to copy/delete/create folder/remove folder with administrator rights
+TOTALCMD.EXE Total Commander main program
+WC32TO16.EXE Helper tool to set the date/time of directories on Win9x and ME
+Totalcmd.inc Комадные строки для меню и панели инструментов
+CGLPTNT.SYS Parallel port driver for Windows NT/2000/XP
+UnRAR.dll Библиотека для распаковки RAR архивов
+CGLPT9X.VXD Parallel port driver for Windows 9x/ME
+WCMZIP32.DLL ZIP packer DLL

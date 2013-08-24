@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." manifestVersion="1.0">
+  <assemblyIdentity buildType="release" language="neutral" name="Microsoft-Windows-Printer-Drivers-Package" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" version="6.1.7600.16385"/>
+  <package identifier="Printer-Drivers" releaseType="Feature Pack">
+    <update description="prnbr002.inf" displayName="prnbr002.inf" name="INF_prnbr002" restart="required">
+      <driver inf="prnbr002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr003.inf" displayName="prnbr003.inf" name="INF_prnbr003" restart="required">
+      <driver inf="prnbr003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr004.inf" displayName="prnbr004.inf" name="INF_prnbr004" restart="required">
+      <driver inf="prnbr004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr005.inf" displayName="prnbr005.inf" name="INF_prnbr005" restart="required">
+      <driver inf="prnbr005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr006.inf" displayName="prnbr006.inf" name="INF_prnbr006" restart="required">
+      <driver inf="prnbr006.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr006.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr007.inf" displayName="prnbr007.inf" name="INF_prnbr007" restart="required">
+      <driver inf="prnbr007.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr007.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr008.inf" displayName="prnbr008.inf" name="INF_prnbr008" restart="required">
+      <driver inf="prnbr008.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr008.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr009.inf" displayName="prnbr009.inf" name="INF_prnbr009" restart="required">
+      <driver inf="prnbr009.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr009.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnbr00a.inf" displayName="prnbr00a.inf" name="INF_prnbr00a" restart="required">
+      <driver inf="prnbr00a.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnbr00a.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca003.inf" displayName="prnca003.inf" name="INF_prnca003" restart="required">
+      <driver inf="prnca003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00a.inf" displayName="prnca00a.inf" name="INF_prnca00a" restart="required">
+      <driver inf="prnca00a.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00a.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00b.inf" displayName="prnca00b.inf" name="INF_prnca00b" restart="required">
+      <driver inf="prnca00b.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00b.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00c.inf" displayName="prnca00c.inf" name="INF_prnca00c" restart="required">
+      <driver inf="prnca00c.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00c.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00d.inf" displayName="prnca00d.inf" name="INF_prnca00d" restart="required">
+      <driver inf="prnca00d.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00d.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00e.inf" displayName="prnca00e.inf" name="INF_prnca00e" restart="required">
+      <driver inf="prnca00e.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00e.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00f.inf" displayName="prnca00f.inf" name="INF_prnca00f" restart="required">
+      <driver inf="prnca00f.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00f.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00g.inf" displayName="prnca00g.inf" name="INF_prnca00g" restart="required">
+      <driver inf="prnca00g.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00g.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00h.inf" displayName="prnca00h.inf" name="INF_prnca00h" restart="required">
+      <driver inf="prnca00h.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00h.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00i.inf" displayName="prnca00i.inf" name="INF_prnca00i" restart="required">
+      <driver inf="prnca00i.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00i.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00x.inf" displayName="prnca00x.inf" name="INF_prnca00x" restart="required">
+      <driver inf="prnca00x.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00x.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00y.inf" displayName="prnca00y.inf" name="INF_prnca00y" restart="required">
+      <driver inf="prnca00y.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00y.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnca00z.inf" displayName="prnca00z.inf" name="INF_prnca00z" restart="required">
+      <driver inf="prnca00z.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnca00z.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep002.inf" displayName="prnep002.inf" name="INF_prnep002" restart="required">
+      <driver inf="prnep002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep003.inf" displayName="prnep003.inf" name="INF_prnep003" restart="required">
+      <driver inf="prnep003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep004.inf" displayName="prnep004.inf" name="INF_prnep004" restart="required">
+      <driver inf="prnep004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep005.inf" displayName="prnep005.inf" name="INF_prnep005" restart="required">
+      <driver inf="prnep005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00a.inf" displayName="prnep00a.inf" name="INF_prnep00a" restart="required">
+      <driver inf="prnep00a.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00a.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00b.inf" displayName="prnep00b.inf" name="INF_prnep00b" restart="required">
+      <driver inf="prnep00b.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00b.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00c.inf" displayName="prnep00c.inf" name="INF_prnep00c" restart="required">
+      <driver inf="prnep00c.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00c.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00d.inf" displayName="prnep00d.inf" name="INF_prnep00d" restart="required">
+      <driver inf="prnep00d.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00d.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00e.inf" displayName="prnep00e.inf" name="INF_prnep00e" restart="required">
+      <driver inf="prnep00e.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00e.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00f.inf" displayName="prnep00f.inf" name="INF_prnep00f" restart="required">
+      <driver inf="prnep00f.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00f.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00g.inf" displayName="prnep00g.inf" name="INF_prnep00g" restart="required">
+      <driver inf="prnep00g.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00g.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnep00l.inf" displayName="prnep00l.inf" name="INF_prnep00l" restart="required">
+      <driver inf="prnep00l.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnep00l.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnfx002.inf" displayName="prnfx002.inf" name="INF_prnfx002" restart="required">
+      <driver inf="prnfx002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnfx002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnge001.inf" displayName="prnge001.inf" name="INF_prnge001" restart="required">
+      <driver inf="prnge001.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnge001.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prngt002.inf" displayName="prngt002.inf" name="INF_prngt002" restart="required">
+      <driver inf="prngt002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prngt002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prngt003.inf" displayName="prngt003.inf" name="INF_prngt003" restart="required">
+      <driver inf="prngt003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prngt003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prngt004.inf" displayName="prngt004.inf" name="INF_prngt004" restart="required">
+      <driver inf="prngt004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prngt004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnhp002.inf" displayName="prnhp002.inf" name="INF_prnhp002" restart="required">
+      <driver inf="prnhp002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnhp002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnhp003.inf" displayName="prnhp003.inf" name="INF_prnhp003" restart="required">
+      <driver inf="prnhp003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnhp003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnhp004.inf" displayName="prnhp004.inf" name="INF_prnhp004" restart="required">
+      <driver inf="prnhp004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnhp004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnhp005.inf" displayName="prnhp005.inf" name="INF_prnhp005" restart="required">
+      <driver inf="prnhp005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnhp005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnin002.inf" displayName="prnin002.inf" name="INF_prnin002" restart="required">
+      <driver inf="prnin002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnin002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnin003.inf" displayName="prnin003.inf" name="INF_prnin003" restart="required">
+      <driver inf="prnin003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnin003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnin004.inf" displayName="prnin004.inf" name="INF_prnin004" restart="required">
+      <driver inf="prnin004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnin004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnkm002.inf" displayName="prnkm002.inf" name="INF_prnkm002" restart="required">
+      <driver inf="prnkm002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnkm002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnkm003.inf" displayName="prnkm003.inf" name="INF_prnkm003" restart="required">
+      <driver inf="prnkm003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnkm003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnkm004.inf" displayName="prnkm004.inf" name="INF_prnkm004" restart="required">
+      <driver inf="prnkm004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnkm004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnkm005.inf" displayName="prnkm005.inf" name="INF_prnkm005" restart="required">
+      <driver inf="prnkm005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnkm005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky002.inf" displayName="prnky002.inf" name="INF_prnky002" restart="required">
+      <driver inf="prnky002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky003.inf" displayName="prnky003.inf" name="INF_prnky003" restart="required">
+      <driver inf="prnky003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky004.inf" displayName="prnky004.inf" name="INF_prnky004" restart="required">
+      <driver inf="prnky004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky005.inf" displayName="prnky005.inf" name="INF_prnky005" restart="required">
+      <driver inf="prnky005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky006.inf" displayName="prnky006.inf" name="INF_prnky006" restart="required">
+      <driver inf="prnky006.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky006.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky007.inf" displayName="prnky007.inf" name="INF_prnky007" restart="required">
+      <driver inf="prnky007.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky007.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky008.inf" displayName="prnky008.inf" name="INF_prnky008" restart="required">
+      <driver inf="prnky008.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky008.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnky009.inf" displayName="prnky009.inf" name="INF_prnky009" restart="required">
+      <driver inf="prnky009.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnky009.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnle002.inf" displayName="prnle002.inf" name="INF_prnle002" restart="required">
+      <driver inf="prnle002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnle002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnle003.inf" displayName="prnle003.inf" name="INF_prnle003" restart="required">
+      <driver inf="prnle003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnle003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnle004.inf" displayName="prnle004.inf" name="INF_prnle004" restart="required">
+      <driver inf="prnle004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnle004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx002.inf" displayName="prnlx002.inf" name="INF_prnlx002" restart="required">
+      <driver inf="prnlx002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx003.inf" displayName="prnlx003.inf" name="INF_prnlx003" restart="required">
+      <driver inf="prnlx003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx004.inf" displayName="prnlx004.inf" name="INF_prnlx004" restart="required">
+      <driver inf="prnlx004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx005.inf" displayName="prnlx005.inf" name="INF_prnlx005" restart="required">
+      <driver inf="prnlx005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx006.inf" displayName="prnlx006.inf" name="INF_prnlx006" restart="required">
+      <driver inf="prnlx006.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx006.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx007.inf" displayName="prnlx007.inf" name="INF_prnlx007" restart="required">
+      <driver inf="prnlx007.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx007.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx008.inf" displayName="prnlx008.inf" name="INF_prnlx008" restart="required">
+      <driver inf="prnlx008.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx008.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx009.inf" displayName="prnlx009.inf" name="INF_prnlx009" restart="required">
+      <driver inf="prnlx009.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx009.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00a.inf" displayName="prnlx00a.inf" name="INF_prnlx00a" restart="required">
+      <driver inf="prnlx00a.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00a.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00b.inf" displayName="prnlx00b.inf" name="INF_prnlx00b" restart="required">
+      <driver inf="prnlx00b.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00b.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00c.inf" displayName="prnlx00c.inf" name="INF_prnlx00c" restart="required">
+      <driver inf="prnlx00c.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00c.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00d.inf" displayName="prnlx00d.inf" name="INF_prnlx00d" restart="required">
+      <driver inf="prnlx00d.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00d.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00e.inf" displayName="prnlx00e.inf" name="INF_prnlx00e" restart="required">
+      <driver inf="prnlx00e.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00e.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00v.inf" displayName="prnlx00v.inf" name="INF_prnlx00v" restart="required">
+      <driver inf="prnlx00v.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00v.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00w.inf" displayName="prnlx00w.inf" name="INF_prnlx00w" restart="required">
+      <driver inf="prnlx00w.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00w.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00x.inf" displayName="prnlx00x.inf" name="INF_prnlx00x" restart="required">
+      <driver inf="prnlx00x.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00x.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00y.inf" displayName="prnlx00y.inf" name="INF_prnlx00y" restart="required">
+      <driver inf="prnlx00y.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00y.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnlx00z.inf" displayName="prnlx00z.inf" name="INF_prnlx00z" restart="required">
+      <driver inf="prnlx00z.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnlx00z.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnms002.inf" displayName="prnms002.inf" name="INF_prnms002" restart="required">
+      <driver inf="prnms002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnms002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnnr002.inf" displayName="prnnr002.inf" name="INF_prnnr002" restart="required">
+      <driver inf="prnnr002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnnr002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnnr003.inf" displayName="prnnr003.inf" name="INF_prnnr003" restart="required">
+      <driver inf="prnnr003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnnr003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnnr004.inf" displayName="prnnr004.inf" name="INF_prnnr004" restart="required">
+      <driver inf="prnnr004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnnr004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnod002.inf" displayName="prnod002.inf" name="INF_prnod002" restart="required">
+      <driver inf="prnod002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnod002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnok002.inf" displayName="prnok002.inf" name="INF_prnok002" restart="required">
+      <driver inf="prnok002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnok002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc002.inf" displayName="prnrc002.inf" name="INF_prnrc002" restart="required">
+      <driver inf="prnrc002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc003.inf" displayName="prnrc003.inf" name="INF_prnrc003" restart="required">
+      <driver inf="prnrc003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc004.inf" displayName="prnrc004.inf" name="INF_prnrc004" restart="required">
+      <driver inf="prnrc004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc005.inf" displayName="prnrc005.inf" name="INF_prnrc005" restart="required">
+      <driver inf="prnrc005.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc005.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc006.inf" displayName="prnrc006.inf" name="INF_prnrc006" restart="required">
+      <driver inf="prnrc006.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc006.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc007.inf" displayName="prnrc007.inf" name="INF_prnrc007" restart="required">
+      <driver inf="prnrc007.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc007.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc00a.inf" displayName="prnrc00a.inf" name="INF_prnrc00a" restart="required">
+      <driver inf="prnrc00a.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc00a.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc00b.inf" displayName="prnrc00b.inf" name="INF_prnrc00b" restart="required">
+      <driver inf="prnrc00b.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc00b.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnrc00c.inf" displayName="prnrc00c.inf" name="INF_prnrc00c" restart="required">
+      <driver inf="prnrc00c.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnrc00c.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnsa002.inf" displayName="prnsa002.inf" name="INF_prnsa002" restart="required">
+      <driver inf="prnsa002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnsa002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnsh002.inf" displayName="prnsh002.inf" name="INF_prnsh002" restart="required">
+      <driver inf="prnsh002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnsh002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnso002.inf" displayName="prnso002.inf" name="INF_prnso002" restart="required">
+      <driver inf="prnso002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnso002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnsv002.inf" displayName="prnsv002.inf" name="INF_prnsv002" restart="required">
+      <driver inf="prnsv002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnsv002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnsv003.inf" displayName="prnsv003.inf" name="INF_prnsv003" restart="required">
+      <driver inf="prnsv003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnsv003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnsv004.inf" displayName="prnsv004.inf" name="INF_prnsv004" restart="required">
+      <driver inf="prnsv004.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnsv004.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnts002.inf" displayName="prnts002.inf" name="INF_prnts002" restart="required">
+      <driver inf="prnts002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnts002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnts003.inf" displayName="prnts003.inf" name="INF_prnts003" restart="required">
+      <driver inf="prnts003.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnts003.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+    <update description="prnxx002.inf" displayName="prnxx002.inf" name="INF_prnxx002" restart="required">
+      <driver inf="prnxx002.inf" ranking="currentDevices">
+        <assemblyIdentity buildType="release" language="neutral" name="prnxx002.inf" processorArchitecture="x86" publicKeyToken="31bf3856ad364e35" type="driverUpdate" version="6.1.7600.16385" versionScope="nonSxS"/>
+      </driver>
+    </update>
+  </package>
+</assembly>

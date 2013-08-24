@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="ws3cap.inf" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" type="driverUpdate" versionScope="nonSxS" />
+  <file name="ws3cap.inf" sourceName="" sourcePath=".\" importPath="$(build.nttree)\multi\vm\">
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">7jn+Gf/Yi9Tpwg3IP/5lbW1dOyaZ7frhHOep6khQ92k=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="vms3cap.sys" sourceName="" sourcePath=".\" importPath="$(build.nttree)\vm\">
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">KP0ZDhNnaw/UUqc8MGm3Igbik42yJAuqm9tWaHx0iis=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <deployment xmlns="urn:schemas-microsoft-com:asm.v3" />
+</assembly>

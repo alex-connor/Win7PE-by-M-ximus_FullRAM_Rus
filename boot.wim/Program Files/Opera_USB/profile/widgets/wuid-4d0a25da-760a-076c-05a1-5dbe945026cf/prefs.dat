@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preferences>
+  <section id="ui">
+    <value id="name" xml:space="preserve">Fridge</value>
+  </section>
+  <section id="wuid-4d0a25da-760a-076c-05a1-5dbe945026cf">
+    <value id="network_access" xml:space="preserve">24</value>
+  </section>
+</preferences>

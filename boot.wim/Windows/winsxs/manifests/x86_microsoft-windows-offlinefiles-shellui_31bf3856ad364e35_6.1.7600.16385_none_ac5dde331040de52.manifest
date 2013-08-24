@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-OfflineFiles-ShellUI" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-OfflineFiles-ShellUI.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="cscui.dll" destinationPath="$(runtime.system32)\" sourceName="cscui.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">LApOqR7IfzFrmgB6GnDRszTYZRLuboosiVKfb/e+xHQ=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\PropertySheetHandlers\{7EFA68C6-086B-43e1-A2D2-55A113531240}" owner="false" />
+    <registryKey keyName="HKEY_CLASSES_ROOT\AllFilesystemObjects\shellex\ContextMenuHandlers\{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}" owner="false" />
+    <registryKey keyName="HKEY_CLASSES_ROOT\Directory\shellex\PropertySheetHandlers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{7EFA68C6-086B-43e1-A2D2-55A113531240}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Folder\shellex\PropertySheetHandlers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{7EFA68C6-086B-43e1-A2D2-55A113531240}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Folder\shellex\ContextMenuHandlers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{C51F0A6B-2A63-4cf4-8938-24404EAEF422}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{C51F0A6B-2A63-4cf4-8938-24404EAEF422}" owner="false">
+      <registryValue name="AutoStart" valueType="REG_SZ" value="" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{10CFC467-4392-11d2-8DB4-00C04FA31A66}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{AFDB1F70-2A4C-11d2-9039-00C04F8EEB3E}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shellex\ContextMenuHandlers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{AFDB1F70-2A4C-11d2-9039-00C04F8EEB3E}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{4E77131D-3629-431c-9818-C5679DC83E81}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{750fdf10-2a26-11d1-a3ea-080036587f03}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Offline Files Synchronization Handler" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{AFDB1F70-2A4C-11d2-9039-00C04F8EEB3E}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Offline Files Folder" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FA3F3DD9-4C1A-456B-A8FA-C76EF3ED83B8}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Offline Files Background Synchronization Task Handler" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers\Offline Files" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{4E77131D-3629-431c-9818-C5679DC83E81}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{AFDB1F70-2A4C-11d2-9039-00C04F8EEB3E}\ShellFolder" owner="false">
+      <registryValue name="Attributes" valueType="REG_DWORD" value="0x20000022" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{750fdf10-2a26-11d1-a3ea-080036587f03}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FA3F3DD9-4C1A-456B-A8FA-C76EF3ED83B8}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}" owner="false">
+      <registryValue name="AppID" valueType="REG_SZ" value="{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}" operationHint="replace" owner="true" />
+      <registryValue name="LocalizedString" valueType="REG_EXPAND_SZ" value="@%SystemRoot%\system32\cscui.dll,-45" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}\LUA" owner="false">
+      <registryValue name="RunLevel" valueType="REG_DWORD" value="0x00000002" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}\Elevation" owner="false">
+      <registryValue name="Enabled" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+      <registryValue name="IconReference" valueType="REG_EXPAND_SZ" value="@%systemroot%\system32\cscui.dll,-1200" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AppID\{A0ADD4EC-5BD3-4f70-A47B-07797A45C635}" owner="false">
+      <registryValue name="DllSurrogate" valueType="REG_SZ" value="" operationHint="replace" owner="true" />
+      <registryValue name="AccessPermission" valueType="REG_BINARY" value="010004806000000070000000000000001400000002004C00030000000000140003000000010100000000000512000000000014000700000001010000000000050A0000000000140003000000010100000000000504000000CDCDCDCDCDCDCDCD0102000000000005200000002002000001020000000000052000000020020000" operationHint="replace" owner="true" />
+      <registryValue name="LaunchPermission" valueType="REG_BINARY" value="01000480780000008800000000000000140000000200640004000000000014001F000000010100000000000512000000000018001F00000001020000000000052000000020020000000014001F000000010100000000000504000000000014000B000000010100000000000512000000CDCDCDCDCDCDCDCD0102000000000005200000002002000001020000000000052000000020020000" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{10CFC467-4392-11d2-8DB4-00C04FA31A66}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Offline Files Folder Options" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SyncMgr\Handlers\{750fdf10-2a26-11d1-a3ea-080036587f03}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Offline Files" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SyncMgr\Handlers\{750fdf10-2a26-11d1-a3ea-080036587f03}\DefaultIcon" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll,-1200" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{68E1DF8C-9512-4801-A105-25A44DCCB164}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{7EFA68C6-086B-43e1-A2D2-55A113531240}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Apartment" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{357b663c-d9fa-4188-99af-2943920f96c5}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="PSFactoryBuffer" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{357b663c-d9fa-4188-99af-2943920f96c5}\InProcServer32" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\system32\cscui.dll" operationHint="replace" owner="true" />
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{b464955c-9277-4657-a3dc-99a32c76c6f3}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="IOfflineFilesSyncContext" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{b464955c-9277-4657-a3dc-99a32c76c6f3}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="13" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{b464955c-9277-4657-a3dc-99a32c76c6f3}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{357b663c-d9fa-4188-99af-2943920f96c5}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{357b663c-d9fa-4188-99af-2943920f96c5}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="IOfflineFilesControlPanel" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{357b663c-d9fa-4188-99af-2943920f96c5}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="6" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{357b663c-d9fa-4188-99af-2943920f96c5}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{357b663c-d9fa-4188-99af-2943920f96c5}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{11fda1eb-ffcd-4d22-a87b-e1d046ba50ed}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="IOfflineFilesSyncContextItem" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{11fda1eb-ffcd-4d22-a87b-e1d046ba50ed}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{11fda1eb-ffcd-4d22-a87b-e1d046ba50ed}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{357b663c-d9fa-4188-99af-2943920f96c5}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{D35E46DC-7AC5-41B8-91AA-7660CD315EEA}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="IEnumOfflineFilesSyncContextItems" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{D35E46DC-7AC5-41B8-91AA-7660CD315EEA}\NumMethods" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="7" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{D35E46DC-7AC5-41B8-91AA-7660CD315EEA}\ProxyStubClsid32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{357b663c-d9fa-4188-99af-2943920f96c5}" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{474C98EE-CF3D-41f5-80E3-4AAB0AB04301}\" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{4E77131D-3629-431c-9818-C5679DC83E81}\" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{68E1DF8C-9512-4801-A105-25A44DCCB164}\" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{7EFA68C6-086B-43e1-A2D2-55A113531240}\" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{C51F0A6B-2A63-4cf4-8938-24404EAEF422}\" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}" owner="false">
+      <securityDescriptor name="WRP_KEY_DEFAULT_SDDL" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_KEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="cscui_CLSID_ProxyStub" value="{357b663c-d9fa-4188-99af-2943920f96c5}" />
+        <string id="cscui_IID_IEnumOfflineFilesSyncContextItems" value="{D35E46DC-7AC5-41B8-91AA-7660CD315EEA}" />
+        <string id="cscui_IID_IOfflineFilesControlPanel" value="{357b663c-d9fa-4188-99af-2943920f96c5}" />
+        <string id="cscui_IID_IOfflineFilesSyncContext" value="{b464955c-9277-4657-a3dc-99a32c76c6f3}" />
+        <string id="cscui_IID_IOfflineFilesSyncContextItem" value="{11fda1eb-ffcd-4d22-a87b-e1d046ba50ed}" />
+        <string id="description" value="Manifest for cscui.dll" />
+        <string id="displayName" value="cscui.dll" />
+      </stringTable>
+    </resources>
+  </localization>
+  <taskScheduler xmlns="urn:schemas-microsoft-com:asm.v3">
+    <Task xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+      <RegistrationInfo>
+        <URI>\Microsoft\Windows\Offline Files\Background Synchronization</URI>
+        <Version>1.0</Version>
+        <Source>$(@%systemroot%\system32\cscui.dll,-5000)</Source>
+        <Author>$(@%systemroot%\system32\cscui.dll,-5001)</Author>
+        <Description>$(@%systemroot%\system32\cscui.dll,-5003)</Description>
+      </RegistrationInfo>
+      <Triggers>
+        <TimeTrigger>
+          <Repetition>
+            <Interval>PT6H</Interval>
+            <StopAtDurationEnd>false</StopAtDurationEnd>
+          </Repetition>
+          <StartBoundary>2008-01-01T00:00:00</StartBoundary>
+          <RandomDelay>PT1H</RandomDelay>
+        </TimeTrigger>
+      </Triggers>
+      <Principals>
+        <Principal id="Users">
+          <GroupId>S-1-5-11</GroupId>
+        </Principal>
+      </Principals>
+      <Settings>
+        <AllowStartOnDemand>true</AllowStartOnDemand>
+        <AllowHardTerminate>true</AllowHardTerminate>
+        <StartWhenAvailable>true</StartWhenAvailable>
+        <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+        <DisallowStartIfOnBatteries>false</DisallowStartIfOnBatteries>
+        <StopIfGoingOnBatteries>false</StopIfGoingOnBatteries>
+        <Enabled>false</Enabled>
+        <Hidden>false</Hidden>
+        <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+        <WakeToRun>false</WakeToRun>
+        <ExecutionTimeLimit>P1D</ExecutionTimeLimit>
+      </Settings>
+      <Actions Context="Users">
+        <ComHandler>
+          <ClassId>{FA3F3DD9-4C1A-456B-A8FA-C76EF3ED83B8}</ClassId>
+        </ComHandler>
+      </Actions>
+    </Task>
+    <Task xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
+      <RegistrationInfo>
+        <URI>\Microsoft\Windows\Offline Files\Logon Synchronization</URI>
+        <Version>1.0</Version>
+        <Source>$(@%systemroot%\system32\cscui.dll,-5000)</Source>
+        <Author>$(@%systemroot%\system32\cscui.dll,-5001)</Author>
+        <Description>$(@%systemroot%\system32\cscui.dll,-5002)</Description>
+      </RegistrationInfo>
+      <Triggers>
+        <LogonTrigger>
+          <Enabled>true</Enabled>
+          <Delay>PT4M</Delay>
+        </LogonTrigger>
+      </Triggers>
+      <Principals>
+        <Principal id="Users">
+          <GroupId>S-1-5-11</GroupId>
+        </Principal>
+      </Principals>
+      <Settings>
+        <AllowStartOnDemand>true</AllowStartOnDemand>
+        <AllowHardTerminate>true</AllowHardTerminate>
+        <StartWhenAvailable>true</StartWhenAvailable>
+        <RunOnlyIfNetworkAvailable>true</RunOnlyIfNetworkAvailable>
+        <DisallowStartIfOnBatteries>true</DisallowStartIfOnBatteries>
+        <StopIfGoingOnBatteries>true</StopIfGoingOnBatteries>
+        <Enabled>false</Enabled>
+        <Hidden>false</Hidden>
+        <UseUnifiedSchedulingEngine>true</UseUnifiedSchedulingEngine>
+        <WakeToRun>false</WakeToRun>
+        <ExecutionTimeLimit>P1D</ExecutionTimeLimit>
+      </Settings>
+      <Actions Context="Users">
+        <ComHandler>
+          <ClassId>{FA3F3DD9-4C1A-456B-A8FA-C76EF3ED83B8}</ClassId>
+          <Data>Logon</Data>
+        </ComHandler>
+      </Actions>
+    </Task>
+  </taskScheduler>
+</assembly>

@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="DirectSound game audio API." displayName="DirectSound API" company="Microsoft" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." creationTimeStamp="2003-07-16T12:28:13" lastUpdateTimeStamp="2004-05-12T21:00:45">
+  <assemblyIdentity name="Microsoft-Windows-Audio-DSound" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-DSound.Resources" version="6.0.6001.18000" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-MSVCRT" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Kernel32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Ntdll" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Advapi32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-COM-Base-QFE-OLE32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-DirectShow-DMO" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-User32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-MMECore-Base" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-UserPowerManagement" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <file name="dsdmo.dll" destinationPath="$(runtime.system32)\" sourceName="dsdmo.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">3qxvFn/u7N3/SDc9v2ebF+fg/B2xHH2W18lQYAFTQgA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="dsound.dll" destinationPath="$(runtime.system32)\" sourceName="dsound.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">CS5d5ufB0xBAFQ6yswcdx4PCbGpBN4XDMW9djsXOq9k=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{47D4D946-62E8-11cf-93BC-444553540000}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSound Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{47D4D946-62E8-11cf-93BC-444553540000}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3901CC3F-84B5-4FA4-BA35-AA8172B8A09B}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSound 8.0 Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3901CC3F-84B5-4FA4-BA35-AA8172B8A09B}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B0210780-89CD-11d0-AF08-00A0C925CD16}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundCapture Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B0210780-89CD-11d0-AF08-00A0C925CD16}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E4BCAC13-7F99-4908-9A8E-74E3BF24B6E1}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundCapture 8.0 Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E4BCAC13-7F99-4908-9A8E-74E3BF24B6E1}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FEA4300C-7959-4147-B26A-2377B9E7A91D}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundFullDuplex Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FEA4300C-7959-4147-B26A-2377B9E7A91D}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B2F586D4-5558-49D1-A07B-3249DBBB33C2}" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundBufferConfig Object" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{B2F586D4-5558-49D1-A07B-3249DBBB33C2}\InprocServer32" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsound.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\87fc0268-9a55-4360-95aa-004a1d9de26c\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFE6629C-81F7-4281-BD91-C9D604A95AF6}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundChorusDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundI3DL2ReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundEchoDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundGargleDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundGargleDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundI3DL2ReverbDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundI3DL2ReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF011F79-4000-406D-87AF-BFFB3FC39D57}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundGargleDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{87FC0268-9A55-4360-95AA-004A1D9DE26C}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundWavesReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundGargleDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundGargleDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundDistortionDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF114C90-CD1D-484E-96E5-09CFAF912A21}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF011F79-4000-406D-87AF-BFFB3FC39D57}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundCompressorDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundGargleDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundI3DL2ReverbDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundDistortionDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF114C90-CD1D-484E-96E5-09CFAF912A21}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\efca3d92-dfd8-4672-a603-7420894bad98\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Flanger" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundWavesReverbDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{87FC0268-9A55-4360-95AA-004A1D9DE26C}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFCA3D92-DFD8-4672-A603-7420894BAD98}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundFlangerDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundGargleDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundGargleDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\ef3e932c-d40b-4f51-8ccf-3f98f1b29d5d\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Echo" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF011F79-4000-406D-87AF-BFFB3FC39D57}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundCompressorDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{120CED89-3BF4-4173-A132-3CB406CF3231}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{87FC0268-9A55-4360-95AA-004A1D9DE26C}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundDistortionDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundDistortionDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundI3DL2ReverbDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundI3DL2ReverbDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundCompressorDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundCompressorDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFCA3D92-DFD8-4672-A603-7420894BAD98}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundFlangerDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF114C90-CD1D-484E-96E5-09CFAF912A21}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundDistortionDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundChorusDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundChorusDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundChorusDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EFE6629C-81F7-4281-BD91-C9D604A95AF6}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundI3DL2ReverbDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundI3DL2ReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF114C90-CD1D-484E-96E5-09CFAF912A21}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundDistortionDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundEchoDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\ef114c90-cd1d-484e-96e5-09cfaf912a21\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Distortion" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundParamEqDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{120CED89-3BF4-4173-A132-3CB406CF3231}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundCompressorDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundCompressorDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\ef011f79-4000-406d-87af-bffb3fc39d57\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Compressor" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundParamEqDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{120CED89-3BF4-4173-A132-3CB406CF3231}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\ef985e71-d5c7-42d4-ba4d-2d073e2e96f4\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="I3DL2Reverb" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\efe6629c-81f7-4281-bd91-c9d604a95af6\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Chorus" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundEchoDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFE6629C-81F7-4281-BD91-C9D604A95AF6}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundChorusDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundChorusDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundChorusDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFCA3D92-DFD8-4672-A603-7420894BAD98}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundFlangerDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundI3DL2ReverbDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{87FC0268-9A55-4360-95AA-004A1D9DE26C}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundWavesReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundParamEqDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundParamEqDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\bf963d80-c559-11d0-8a2b-00a0c9255ac1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Acoustic Echo Canceller" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\efca3d92-dfd8-4672-a603-7420894bad98\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\ef985e71-d5c7-42d4-ba4d-2d073e2e96f4\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFCA3D92-DFD8-4672-A603-7420894BAD98}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundWavesReverbDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundWavesReverbDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundGargleDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundEchoDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundEchoDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundEchoDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundChorusDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundChorusDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\efe6629c-81f7-4281-bd91-c9d604a95af6\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundFlangerDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundFlangerDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\87fc0268-9a55-4360-95aa-004a1d9de26c\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="WavesReverb" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundDistortionDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundDistortionDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundGargleDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\dafd8210-5711-4b91-9fe3-f75b7ae279bf\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Gargle" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundFlangerDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EFCA3D92-DFD8-4672-A603-7420894BAD98}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{DAFD8210-5711-4B91-9FE3-F75B7AE279BF}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundGargleDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\ef3e932c-d40b-4f51-8ccf-3f98f1b29d5d\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{120CED89-3BF4-4173-A132-3CB406CF3231}\VersionIndependentProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundParamEqDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundI3DL2ReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundFlangerDMO\CurVer\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundFlangerDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFE6629C-81F7-4281-BD91-C9D604A95AF6}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundChorusDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EFE6629C-81F7-4281-BD91-C9D604A95AF6}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\dafd8210-5711-4b91-9fe3-f75b7ae279bf\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF114C90-CD1D-484E-96E5-09CFAF912A21}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="dsdmo.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{120CED89-3BF4-4173-A132-3CB406CF3231}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundParamEqDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF985E71-D5C7-42D4-BA4D-2D073E2E96F4}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundI3DL2ReverbDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundCompressorDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF011F79-4000-406D-87AF-BFFB3FC39D57}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundCompressorDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF011F79-4000-406D-87AF-BFFB3FC39D57}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\120ced89-3bf4-4173-a132-3cb406cf3231\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ParamEq" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="InputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="OutputTypes" valueType="REG_BINARY" value="6175647300001000800000AA00389B710100000000001000800000AA00389B71" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{87FC0268-9A55-4360-95AA-004A1D9DE26C}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundWavesReverbDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\ef011f79-4000-406d-87af-bffb3fc39d57\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundEchoDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundEchoDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundFlangerDMO.1\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EFCA3D92-DFD8-4672-A603-7420894BAD98}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EFE6629C-81F7-4281-BD91-C9D604A95AF6}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundChorusDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundWavesReverbDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundWavesReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundEchoDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundEchoDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundEchoDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{EF3E932C-D40B-4F51-8CCF-3F98F1B29D5D}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundWavesReverbDMO\CLSID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{87FC0268-9A55-4360-95AA-004A1D9DE26C}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundParamEqDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundParamEqDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundFlangerDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundFlangerDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Audio effects" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundDistortionDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundDistortionDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundParamEqDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundParamEqDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\120ced89-3bf4-4173-a132-3cb406cf3231\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundCompressorDMO\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundCompressorDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF114C90-CD1D-484E-96E5-09CFAF912A21}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundDistortionDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Microsoft.DirectSoundWavesReverbDMO.1\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="DirectSoundWavesReverbDMO" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{EF011F79-4000-406D-87AF-BFFB3FC39D57}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundCompressorDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{120CED89-3BF4-4173-A132-3CB406CF3231}\ProgID\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.DirectSoundParamEqDMO.1" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\DirectShow\MediaObjects\Categories\f3602b3f-0592-48df-a4cd-674721e7ebeb\ef114c90-cd1d-484e-96e5-09cfaf912a21\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" displayName="WRP_FILE_DEFAULT_SDDL" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="DirectSound game audio API." />
+        <string id="displayName" value="DirectSound API" />
+      </stringTable>
+    </resources>
+  </localization>
+</assembly>

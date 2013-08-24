@@ -1,0 +1,147 @@
+--- /c/Documents and Settings/Jason/Desktop/plugin_lumimasking.c	2006-05-05 21:37:15.000000000 -0700
++++ ../xvid/src/plugins/plugin_lumimasking.c	2008-02-21 02:16:56.359375000 -0800
+@@ -2,11 +2,11 @@
+  *
+  *  XVID MPEG-4 VIDEO CODEC
+  *  - XviD plugin: performs a lumimasking algorithm on encoded frame  -
+  *
+  *  Copyright(C) 2002-2003 Peter Ross <pross@xvid.org>
+- *               2002      Christoph Lampert <gruel@web.de>
++ *			   2002	  Christoph Lampert <gruel@web.de>
+  *
+  *  This program is free software ; you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation ; either version 2 of the License, or
+  *  (at your option) any later version.
+@@ -23,10 +23,12 @@
+  * $Id: plugin_lumimasking.c,v 1.6 2006/05/06 04:37:15 syskin Exp $
+  *
+  ****************************************************************************/
+ 
+ #include <stdlib.h>
++#include <stdio.h>
++#include <math.h>
+ 
+ #include "../xvid.h"
+ #include "../global.h"
+ #include "../portab.h"
+ #include "../utils/emms.h"
+@@ -155,31 +157,31 @@
+ 									 int *out,
+ 									 int num,
+ 									 int min_quant,
+ 									 int max_quant);
+ 
+-static int
+-lumi_plg_frame(lumi_data_t *handle, xvid_plg_data_t *data)
++static int lumi_plg_frame(lumi_data_t *handle, xvid_plg_data_t *data)
+ {
+-	int i, j;
+-
+-	float global = 0.0f;
++	//Don't apply variance-masking to B-frames.
++	if (data->type == XVID_TYPE_BVOP) return 0;
+ 
+-	const float DarkAmpl = 14 / 4;
+-	const float BrightAmpl = 10 / 3;
+-	float DarkThres = 90;
+-	float BrightThres = 200;
++	int i, j;
+ 
+-	const float GlobalDarkThres = 60;
+-	const float GlobalBrightThres = 170;
++	/* Arbitrary centerpoint for variance-based AQ.  Roughly the same as used in x264. */
++	float center = 14000;
+ 
+-	if (data->type == XVID_TYPE_BVOP) return 0;
++	/* Arbitrary strength for variance-based AQ. */
++	float strength = 0.2;
+ 
+ 	/* Do this for all macroblocks individually  */
+-	for (j = 0; j < data->mb_height; j++) {
+-		for (i = 0; i < data->mb_width; i++) {
+-			int k, l, sum = 0;
++	for (j = 0; j < data->mb_height; j++)
++	{
++		for (i = 0; i < data->mb_width; i++)
++		{
++			int k, l, sum = 0, sum_of_squares = 0;
+ 			unsigned char *ptr;
+ 
+ 			/* Initialize the current quant value to the frame quant */
+ 			handle->quant[j*data->mb_width + i] = (float)data->quant;
+ 
+@@ -187,41 +189,34 @@
+ 
+ 			/* Get the MB address */
+ 			ptr  = data->current.plane[0];
+ 			ptr += 16*j*data->current.stride[0] + 16*i;
+ 
+-			/* Accumulate luminance */
++			/* Accumulate sum and sum of squares over the MB */
+ 			for (k = 0; k < 16; k++)
+ 				for (l = 0; l < 16; l++)
+-					 sum += ptr[k*data->current.stride[0] + l];
++				{
++					int val = ptr[k*data->current.stride[0] + l];
++					sum += val;
++					sum_of_squares += val * val;
++				}
++					 
++			/* Variance = SSD - SAD^2 / (numpixels) */
++			int variance = sum_of_squares - sum * sum / 256;
+ 			
+-			handle->val[j*data->mb_width + i] = (float)sum/256.0f;
+-
+-			/* Accumulate the global frame luminance */
+-			global += (float)sum/256.0f;
++			handle->val[j*data->mb_width + i] = variance;
+ 		}
+ 	}
+-
+-	/* Normalize the global luminance accumulator */
+-	global /= data->mb_width*data->mb_height;
+-
+-	DarkThres = DarkThres*global/127.0f;
+-	BrightThres = BrightThres*global/127.0f;
+-
+-
+-	/* Apply luminance masking only to frames where the global luminance is
+-	 * higher than DarkThreshold and lower than Bright Threshold */
+-	 if ((global < GlobalBrightThres) && (global > GlobalDarkThres)) {
+-
+-		/* Apply the luminance masking formulas to all MBs */
+-		for (i = 0; i < data->mb_height; i++) {
+-			for (j = 0; j < data->mb_width; j++) {
+-				if (handle->val[i*data->mb_width + j] < DarkThres)
+-					handle->quant[i*data->mb_width + j] *= 1 + DarkAmpl * (DarkThres - handle->val[i*data->mb_width + j]) / DarkThres;
+-				else if (handle->val[i*data->mb_width + j] > BrightThres)
+-					handle->quant[i*data->mb_width + j] *= 1 + BrightAmpl * (handle->val[i*data->mb_width + j] - BrightThres) / (255 - BrightThres);
+-			}
++    
++	/* Apply the variance masking formula to all MBs */
++	for (i = 0; i < data->mb_height; i++)
++	{
++		for (j = 0; j < data->mb_width; j++)
++		{
++			float value = handle->val[i*data->mb_width + j];
++			float qscale_diff = strength * logf(value / center);
++			handle->quant[i*data->mb_width + j] *= (1.0 + qscale_diff);
+ 		}
+ 	}
+ 
+ 	 /* Normalize the quantizer field */
+ 	 data->quant = normalize_quantizer_field(handle->quant,
+@@ -246,11 +241,11 @@
+ 
+ /*****************************************************************************
+  * Helper functions
+  ****************************************************************************/
+ 
+-#define RDIFF(a, b)    ((int)(a+0.5)-(int)(b+0.5))
++#define RDIFF(a, b)	((int)(a+0.5)-(int)(b+0.5))
+ 
+ static int
+ normalize_quantizer_field(float *in,
+ 						  int *out,
+ 						  int num,

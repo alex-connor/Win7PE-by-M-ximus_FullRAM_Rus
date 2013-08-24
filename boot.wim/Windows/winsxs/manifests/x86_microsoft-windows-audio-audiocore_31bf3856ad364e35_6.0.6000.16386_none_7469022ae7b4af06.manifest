@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="Windows Audio Core" displayName="Audio Core" company="Microsoft" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." creationTimeStamp="2003-07-16T11:17:38" lastUpdateTimeStamp="2005-04-06T23:12:05">
+  <assemblyIdentity name="Microsoft-Windows-Audio-AudioCore" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-MMDeviceAPI" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-AudioCore.Resources" version="6.0.6000.16386" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-WMI-Feature-Core" version="6.0.6000.16386" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-User32" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="NetFx-MSCOREE_DLL" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Ntdll" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-MSVCRT" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Kernel32" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Advapi32" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-COM-Base-QFE-OLE32" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-OLE-Automation" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-RPC-Local" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-DirectShow-KernelSupport" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-MMCSS" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-BaseDependencies" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-TerminalServices-PublicApis" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-TerminalServices-Runtime" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-SetupAPI" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-crypt32-dll" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-wintrust-dll" version="6.0.6000.16386" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <file name="AudioSes.dll" destinationPath="$(runtime.system32)\" sourceName="AudioSes.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Default" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">/wMmsxHHeE3Cl6WsyR44M1yJCilsuoR6ZPyZEBwO+Q0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="AudioEng.dll" destinationPath="$(runtime.system32)\" sourceName="AudioEng.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Default" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">AuI5YjRPHjYAo/y12Q8ke0IO7mccnSdVrYQQ621KkMs=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="audiosrv.dll" destinationPath="$(runtime.system32)\" sourceName="audiosrv.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Default" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">nnanaz11qmr6hVJBLEi8uIvIcI917a/vvZfv7kOHpK8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="audiodg.exe" destinationPath="$(runtime.system32)\" sourceName="audiodg.exe" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Default" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">CU35CVd7XmvqGqsKg73b6lKVBHVJ1fFI3U8zMP+Qhao=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="AUDIOKSE.dll" destinationPath="$(runtime.system32)\" sourceName="AUDIOKSE.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">V112WEMsS5V64yfwdB5QtobF9lcZuBqYr5b3jrXNDC0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="EncDump.dll" destinationPath="$(runtime.system32)\" sourceName="EncDump.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" />
+    <signatureInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+      <signatureDescriptor PETrust="true" />
+    </signatureInfo>
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">Xj0WJQUjxNew6Mh+OpUttbB7iq9g5oeb/gQB5vowv88=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="audiocore.mof" destinationPath="$(runtime.wbem)\" sourceName="audiocore.mof" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">CktyeokKJLdyHNThlJsB/8EMIGb0/uLtxAPBAuTFEVo=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <memberships>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories.Services" version="6.0.6000.16386" publicKeyToken="31bf3856ad364e35" typeName="Service" />
+      <categoryInstance subcategory="Audiosrv">
+        <serviceData name="AudioSrv" displayName="@%SystemRoot%\system32\audiosrv.dll,-200" errorControl="normal" group="AudioGroup" imagePath="%SystemRoot%\System32\svchost.exe -k LocalServiceNetworkRestricted" start="auto" type="win32ShareProcess" description="@%SystemRoot%\System32\audiosrv.dll,-201" dependOnService="AudioEndpointBuilder, RpcSs, MMCSS" objectName="NT AUTHORITY\LocalService" sidType="unrestricted" requiredPrivileges="SeChangeNotifyPrivilege,SeImpersonatePrivilege,SeIncreaseWorkingSetPrivilege">
+          <failureActions resetPeriod="0">
+            <actions>
+              <action type="restartService" delay="60000" />
+              <action type="restartService" delay="120000" />
+              <action type="none" />
+            </actions>
+          </failureActions>
+        </serviceData>
+      </categoryInstance>
+      <categoryInstance subcategory="AudioEndpointBuilder">
+        <serviceData name="AudioEndpointBuilder" displayName="@%SystemRoot%\system32\audiosrv.dll,-204" errorControl="normal" group="AudioGroup" imagePath="%SystemRoot%\System32\svchost.exe -k LocalSystemNetworkRestricted" start="auto" type="win32ShareProcess" description="@%SystemRoot%\System32\audiosrv.dll,-205" dependOnService="PlugPlay" objectName="LocalSystem" sidType="unrestricted" requiredPrivileges="SeChangeNotifyPrivilege">
+          <failureActions resetPeriod="0">
+            <actions>
+              <action type="restartService" delay="60000" />
+              <action type="restartService" delay="120000" />
+              <action type="none" />
+            </actions>
+          </failureActions>
+        </serviceData>
+      </categoryInstance>
+    </categoryMembership>
+    <categoryMembership>
+      <id name="Microsoft.Windows.Categories" version="1.0.0.0" publicKeyToken="365143bb27e7ac8b" typeName="SvcHost" />
+      <categoryInstance subcategory="LocalServiceNetworkRestricted">
+        <serviceGroup xmlns="urn:schemas-microsoft-com:asm.v3" position="last" serviceName="AudioSrv" />
+      </categoryInstance>
+      <categoryInstance subcategory="LocalSystemNetworkRestricted">
+        <serviceGroup xmlns="urn:schemas-microsoft-com:asm.v3" position="last" serviceName="AudioEndpointBuilder" />
+      </categoryInstance>
+    </categoryMembership>
+  </memberships>
+  <registryKeys>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AppID\{F135BE18-BF34-4CBD-B1D5-55D49F0DEDCC}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft Audio Device Graph Server" operationHint="replace" owner="true" />
+      <registryValue name="LaunchPermission" valueType="REG_BINARY" value="010004803000000040000000000000001400000002001C000100000000001400090000000101000000000005130000000102000000000005200000002002000001020000000000052000000020020000" operationHint="replace" owner="true" />
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{e916b6b2-22bd-4afc-b337-d3d9fb27670e}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioCopy Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{e916b6b2-22bd-4afc-b337-d3d9fb27670e}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9DBA709C-B3E1-4013-95B7-5ED33A2E8561}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="CrossProcessServerInput Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{9DBA709C-B3E1-4013-95B7-5ED33A2E8561}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3fd7f233-a716-472e-8f2f-c25954f34e96}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioFormatConvert Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3fd7f233-a716-472e-8f2f-c25954f34e96}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3DC09436-7D83-4BA0-ADDC-CD47F996C5BA}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioMeter Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{3DC09436-7D83-4BA0-ADDC-CD47F996C5BA}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CD773740-B187-4974-A1D5-E0FF91372277}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="CrossProcessClientOutput Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{CD773740-B187-4974-A1D5-E0FF91372277}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{12DD4DBB-532B-4FCE-8653-74CDB9C8FE5A}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioMixer Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{12DD4DBB-532B-4FCE-8653-74CDB9C8FE5A}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{F64A6DA6-E8AF-4B7B-BCA8-847AE765D538}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="CrossProcessClientInputEndpoint class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{F64A6DA6-E8AF-4B7B-BCA8-847AE765D538}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{541987EE-0E02-411E-9A85-1FC6156E7F4B}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="audiomatrix class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{541987EE-0E02-411E-9A85-1FC6156E7F4B}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{5BFD515E-4ABA-4483-A1C5-6651B7110AB6}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="CrossProcessServerOutputEndpoint Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{5BFD515E-4ABA-4483-A1C5-6651B7110AB6}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{06587E71-F043-403A-BF49-CB591BA6E103}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioVolume Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{06587E71-F043-403A-BF49-CB591BA6E103}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\AUDIOENG.DLL" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E1150CE9-5BD4-4044-8FE9-98CF40137A41}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioProcessor Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{E1150CE9-5BD4-4044-8FE9-98CF40137A41}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{C58BD103-E87F-4B78-A0FA-7A5C95970EE2}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioRateConvert Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{C58BD103-E87F-4B78-A0FA-7A5C95970EE2}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{20404060-F24F-4F89-84C6-8AF80B0A17CB}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioKSRenderEndpoint Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{20404060-F24F-4F89-84C6-8AF80B0A17CB}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audiokse.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{1FE45ED3-B842-4CF2-8DF6-43E3D6D10E64}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="audiokscaptureendpoint class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{1FE45ED3-B842-4CF2-8DF6-43E3D6D10E64}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audiokse.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{41FCCC3A-1FA1-4949-953A-6EE61C46A4D1}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="Microsoft.Audio.AudioClient Binder" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{41FCCC3A-1FA1-4949-953A-6EE61C46A4D1}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioses.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{294935CE-F637-4E7C-A41B-AB255460B862}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="" operationHint="replace" owner="true" Value="Microsoft.Policy.Config Class">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{294935CE-F637-4E7C-A41B-AB255460B862}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioses.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{948CFD8C-1888-4E52-8703-99610347EBB6}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioPump Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{948CFD8C-1888-4E52-8703-99610347EBB6}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioeng.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{89115307-8248-448f-ADA0-F3F3718A9B2A}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="SystemAudioDeviceShared Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APPID" valueType="REG_SZ" value="{F135BE18-BF34-4CBD-B1D5-55D49F0DEDCC}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{75269C13-41E1-4D0E-B8A0-9F8F22E246C9}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="SystemAudioDeviceExclusive Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APPID" valueType="REG_SZ" value="{F135BE18-BF34-4CBD-B1D5-55D49F0DEDCC}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{ADD18BF7-AB60-4283-A580-D7544DD255D2}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioDeviceGraph Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APPID" valueType="REG_SZ" value="{F135BE18-BF34-4CBD-B1D5-55D49F0DEDCC}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{07252659-bb6b-4b79-b78b-623f6699a579}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioConstrictor Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{07252659-bb6b-4b79-b78b-623f6699a579}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\AUDIOENG.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{27c98999-2895-4829-b080-5a8b65bd3db0}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioRateConvertCMPT Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{27c98999-2895-4829-b080-5a8b65bd3db0}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\AUDIOENG.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{d69e0717-dd4b-4b25-997a-da813833b8ac}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="AudioLimiter Class" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{d69e0717-dd4b-4b25-997a-da813833b8ac}\InprocServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\AUDIOENG.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="Both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\" owner="false">
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{3DC09436-7D83-4BA0-ADDC-CD47F996C5BA}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudiometer" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000f" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{419b26e3-fa99-4408-83de-cc1276efa489}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{541987EE-0E02-411E-9A85-1FC6156E7F4B}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudiomatrix" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000c" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{bb8b2f5d-2af0-473f-bd94-f55a77587d3f}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{C58BD103-E87F-4B78-A0FA-7A5C95970EE2}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudiorateconvert" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000a" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000003" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{788f7be2-9c40-41c0-af05-4393fbf409f9}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface1" valueType="REG_SZ" value="{c78841ef-516f-4516-b591-f04fa93783a9}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface2" valueType="REG_SZ" value="{7ba1db8f-78ad-49cd-9591-f79d80a17c81}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{3FD7F233-A716-472E-8F2F-C25954F34E96}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudioformatconvert" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x00000006" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000002" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{fc7dff56-6b8d-45a9-b4ca-266f9ac21693}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface1" valueType="REG_SZ" value="{6bb6a944-7352-4327-ab91-d92607b25656}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{E916B6B2-22BD-4AFC-B337-D3D9FB27670E}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudiocopy" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000e" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{adf7583d-f947-4311-83fb-066ad4e5e7c2}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{12DD4DBB-532B-4FCE-8653-74CDB9C8FE5A}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="caudiomixer" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="Copyright (C) 2003 Microsoft Corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000e" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{c23bdc7a-47f8-49a1-b750-692c35b532c3}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{06587E71-F043-403A-BF49-CB591BA6E103}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="CAudioVolume" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="copyright (c) 2003 microsoft corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000f" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{d81229b1-5a43-480c-92f7-be0f7f4eab60}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="APOInterface1" valueType="REG_SZ" value="{885c7b80-3fa2-4e5a-be07-cf01e1d6e2cd}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{07252659-BB6B-4B79-B78B-623F6699A579}\" owner="false">
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{6B54B2B5-45EE-4F11-9935-9EC3183AD534}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="Copyright (c) 2003 Microsoft Corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000e" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="CAudioConstrictor" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{27C98999-2895-4829-B080-5A8B65BD3DB0}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="CAudioRateConvertCMPT" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="Copyright (c) 2005 Microsoft Corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000a" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000003" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{788F7BE2-9C40-41C0-AF05-4393FBF409F9}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="APOInterface1" valueType="REG_SZ" value="{C78841EF-516F-4516-B591-F04FA93783A9}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="APOInterface2" valueType="REG_SZ" value="{7BA1DB8F-78AD-49CD-9591-F79D80A17C81}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" noJournaling="false" noPerUserVirtualization="false" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{D69E0717-DD4B-4B25-997A-DA813833B8AC}\" owner="false">
+      <registryValue name="FriendlyName" valueType="REG_SZ" value="CAudioLimiter" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="Copyright" valueType="REG_SZ" value="Copyright (c) 2003 Microsoft Corporation" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MajorVersion" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinorVersion" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="Flags" valueType="REG_DWORD" value="0x0000000e" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxInputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MinOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxOutputConnections" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="MaxInstances" valueType="REG_DWORD" value="0xffffffff" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="NumAPOInterfaces" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <registryValue name="APOInterface0" valueType="REG_SZ" value="{7DF8824C-AEC7-4119-9425-E6979172A8AE}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" noJournaling="false" noPerUserVirtualization="false" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" noJournaling="false" noPerUserVirtualization="false" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FD7F2B29-24D0-4B5C-B177-592C39F9CA10}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="psfactorybuffer" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\CLSID\{FD7F2B29-24D0-4B5C-B177-592C39F9CA10}\InProcServer32\" owner="false">
+      <registryValue name="" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\audioses.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ThreadingModel" valueType="REG_SZ" value="both" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{DC73B98F-AC0D-4E1E-B9FE-13F6378B1219}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="icontrolchangedelegate" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{DC73B98F-AC0D-4E1E-B9FE-13F6378B1219}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FC7DFF56-6B8D-45A9-B4CA-266F9AC21693}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudioformatconverter" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FC7DFF56-6B8D-45A9-B4CA-266F9AC21693}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{B9CACC9C-6879-4988-A3CE-FFD38E08AB93}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="idevicetopologytest" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{B9CACC9C-6879-4988-A3CE-FFD38E08AB93}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{141AD42E-FC56-4D14-952D-3D3FF9AA97FB}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiodevicegraph" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{141AD42E-FC56-4D14-952D-3D3FF9AA97FB}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{2F732065-EFF0-4C7C-8FC1-363851B1F1D7}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiographcallback" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{2F732065-EFF0-4C7C-8FC1-363851B1F1D7}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{A424E4D2-0A03-446C-9F87-D49A796B32B4}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iconnection" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{A424E4D2-0A03-446C-9F87-D49A796B32B4}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{C23BDC7A-47F8-49A1-B750-692C35B532C3}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiomixer" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{C23BDC7A-47F8-49A1-B750-692C35B532C3}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{6BB6A944-7352-4327-AB91-D92607B25656}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiodither" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{6BB6A944-7352-4327-AB91-D92607B25656}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{55C82F5B-97C8-49A6-8624-8417FE7339D2}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ienumsadevices" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{55C82F5B-97C8-49A6-8624-8417FE7339D2}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{ADF7583D-F947-4311-83FB-066AD4E5E7C2}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiocopy" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{ADF7583D-F947-4311-83FB-066AD4E5E7C2}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{419B26E3-FA99-4408-83DE-CC1276EFA489}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiometer" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{419B26E3-FA99-4408-83DE-CC1276EFA489}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{22827DB0-8266-4E0F-8172-9C169B813D28}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ilink" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{22827DB0-8266-4E0F-8172-9C169B813D28}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{26F1B44F-2B86-4934-9E5B-BE4F8ABD7F6E}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="isaprovider" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{26F1B44F-2B86-4934-9E5B-BE4F8ABD7F6E}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{BB8B2F5D-2AF0-473F-BD94-F55A77587D3F}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiomatrix" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{BB8B2F5D-2AF0-473F-BD94-F55A77587D3F}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FD7F2B29-24D0-4B5C-B177-592C39F9CA10}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudioprocessingobject" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FD7F2B29-24D0-4B5C-B177-592C39F9CA10}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{7BA1DB8F-78AD-49CD-9591-F79D80A17C81}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudioprocessingobjectvbr" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{7BA1DB8F-78AD-49CD-9591-F79D80A17C81}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{B028B3E3-DC05-43CF-B458-AB69048B5673}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiopump" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{B028B3E3-DC05-43CF-B458-AB69048B5673}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FD70EB2D-F0FA-4979-941F-7DBD8B5AB605}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiocrossprocessserverendpoint" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{FD70EB2D-F0FA-4979-941F-7DBD8B5AB605}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{d81229b1-5a43-480c-92f7-be0f7f4eab60}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiovolume" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{d81229b1-5a43-480c-92f7-be0f7f4eab60}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{885c7b80-3fa2-4e5a-be07-cf01e1d6e2cd}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiomuteapo" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{885c7b80-3fa2-4e5a-be07-cf01e1d6e2cd}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{1136A91A-2BEF-45B3-91D9-0A58472EE8A7}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="ikscomponentid" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{1136A91A-2BEF-45B3-91D9-0A58472EE8A7}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{C684B72A-6DF4-4774-BDF9-76B77509B653}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudioendpointcontrol" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{C684B72A-6DF4-4774-BDF9-76B77509B653}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{788F7BE2-9C40-41C0-AF05-4393FBF409F9}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudiorateconvert" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{788F7BE2-9C40-41C0-AF05-4393FBF409F9}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{39298A5B-389B-4B0A-B1DF-25F002B85AD8}\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="iaudioprocessor" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <securityDescriptor name="WRP_REGKEY_DEFAULT_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_CLASSES_ROOT\Interface\{39298A5B-389B-4B0A-B1DF-25F002B85AD8}\ProxyStubClsid32\" owner="false">
+      <registryValue name="" valueType="REG_SZ" value="{fd7f2b29-24d0-4b5c-b177-592c39f9ca10}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\RestrictedServices\Static\System" owner="false">
+      <registryValue name="AVEndpointBuilder-1" valueType="REG_SZ" value="V2.0|Action=Block|Dir=in|App=%SystemRoot%\system32\svchost.exe|Svc=AudioEndpointBuilder|Name=Block any inbound traffic to AudioEndpointBuilder|" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Audiosrv\Parameters" owner="false">
+      <registryValue name="ServiceDll" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\Audiosrv.dll" operationHint="replace" owner="true" />
+      <registryValue name="ServiceDllUnloadOnStop" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AudioEndpointBuilder\Parameters" owner="false">
+      <registryValue name="ServiceDll" valueType="REG_EXPAND_SZ" value="%SystemRoot%\System32\Audiosrv.dll" operationHint="replace" owner="true" />
+      <registryValue name="ServiceDllUnloadOnStop" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\MMDevices" owner="false">
+      <securityDescriptor name="MMDEVICE_API_REGKEY_SDDL" />
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" MapFullAccessToAllowed="false" perUserVirtualization="DisableRecurse" />
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\WMI\Autologger\Audio" owner="false">
+      <registryValue name="GUID" valueType="REG_SZ" value="{15BC788A-6A38-4D79-8773-B53FDFB84D79}" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MaxFileSize" valueType="REG_DWORD" value="0x00000005" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled " />
+      </registryValue>
+      <registryValue name="LogFileMode" valueType="REG_DWORD" value="0x00008002" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="Start" valueType="REG_DWORD" value="0x00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="ClockType" valueType="REG_DWORD" value="0x00000002" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="FileName" valueType="REG_SZ" value="%SystemRoot%\System32\LogFiles\Audio\AudioSrv.Evm" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="FileMax" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\WMI\Autologger\Audio\{E27950EB-1768-451F-96AC-CC4E14F6D3D0}" owner="false">
+      <registryValue name="Enabled" valueType="REG_DWORD" value="0x00000001" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="MatchAnyKeyword" valueType="REG_QWORD" value="FFFFFF7F00000000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+      <registryValue name="EnableLevel" valueType="REG_DWORD" value="0x00000004" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+    </registryKey>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\WMI\Security\" owner="false">
+      <registryValue name="60d201f4-741e-4792-b5b3-673fc6c25b3b" valueType="REG_BINARY" value="010004801400000024000000000000003400000001020000000000052000000020020000010200000000000520000000200200000200880006000000000014000508000001010000000000010000000000001400FF0F120001010000000000051200000000001400FF0F120001010000000000051300000000001400FF0F120001010000000000051400000000001800FF0F120001020000000000052000000020020000000018000008000001020000000000052000000021020000" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Disabled" />
+      </registryValue>
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="MMDEVICE_API_REGKEY_SDDL" sddl="O:S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775G:S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775D:P(A;CI;GRGWGXSD;;;S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775)(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GRGWGXSD;;;S-1-5-80-1580948945-3239616721-2529237571-3761093093-1214243633)(A;CI;0x0002001b;;;BA)(A;CI;GRGX;;;BU)" operationHint="replace" displayName="MMDEVICE_API_REGKEY_SDDL" description="Default SD for MMDEVICE registry key" />
+          <securityDescriptorDefinition name="WindowsAudioLogFileSecurityDescriptor" sddl="D:(A;OICI;GRGWGX;;;S-1-5-80-2676549577-1911656217-2625096541-4178041876-1366760775)" operationHint="append" displayName="Windows Audio Log File Directory Security Descriptor" description="Windows Audio Log File Directory Security Descriptor" />
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" displayName="WRP_FILE_DEFAULT_SDDL" description="Default SDDL for Windows Resource Protected file" />
+          <securityDescriptorDefinition name="WRP_REGKEY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CI;GR;;;SY)(A;CI;GR;;;BA)(A;CI;GR;;;BU)" operationHint="replace" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="Windows Audio Core" />
+        <string id="description1" value="The allowable range of values for the latency coefficient." />
+        <string id="description13" value="Exclusive-mode system audio device" />
+        <string id="description14" value="System audio provider" />
+        <string id="description15" value="Non-exclusive system audio device" />
+        <string id="description16" value="Audio device graph" />
+        <string id="description17" value="Hardware capture endpoint" />
+        <string id="description18" value="Hardware render endpoint" />
+        <string id="description19" value="Format converter APO: integer 32 to float 32" />
+        <string id="description2" value="The allowable range of the budget percentage" />
+        <string id="description20" value="Format converter APO: integer 16 to float 32" />
+        <string id="description21" value="Format converter APO: integer 24 to float 32" />
+        <string id="description22" value="Timestamp fixer APO" />
+        <string id="description23" value="Meter APO" />
+        <string id="description24" value="Format converter APO: float 64 to integer 32" />
+        <string id="description25" value="Format converter APO: float 32 to integer 20 wide" />
+        <string id="description26" value="Format converter APO: integer 20 wide to float 32" />
+        <string id="description27" value="Format converter APO: float 32 to integer 24 wide" />
+        <string id="description28" value="Format converter APO: float 64 to integer 16" />
+        <string id="description29" value="Format converter APO: float 32 to integer 8" />
+        <string id="description3" value="The minimum number of processing periods additionally queued on the hardware. This may be set to a non-zero value to increase the latency of the audio hardware for purposes of glitch reduction." />
+        <string id="description30" value="Format converter APO: float 32 to integer 32" />
+        <string id="description31" value="Volume APO" />
+        <string id="description32" value="Format converter APO: integer 24 wide to float 32" />
+        <string id="description33" value="Mixer APO" />
+        <string id="description34" value="Format converter APO: integer 16 to float 64" />
+        <string id="description35" value="Format converter APO: integer 8 to float 32" />
+        <string id="description36" value="Format converter APO: float 32 to integer 16" />
+        <string id="description37" value="Matrix APO" />
+        <string id="description38" value="Copy APO" />
+        <string id="description39" value="Format converter APO: float 32 to integer 24" />
+        <string id="description4" value="Name of the DLS file used with default software synthesizer playback." />
+        <string id="description40" value="Format converter APO: integer 32 to float 64" />
+        <string id="description41" value="Sample rate converter APO" />
+        <string id="description5" value="Percent of the processing period that is requested as the budget. For example, 10 means 10% of the period is the budget. If the period were 10 ms, the budget would then be 1 ms." />
+        <string id="description55" value="Manages audio devices for Windows-based programs. If this service is stopped, audio devices and effects will not function properly. If this service is disabled, any services that explicitly depend on it will fail to start." />
+        <string id="description6" value="Some-desc" />
+        <string id="description60" value="Manages audio devices for Windows-based programs.  If this service is stopped, audio devices and effects will not function properly.  If this service is disabled, any services that explicitly depend on it will fail to start" />
+        <string id="description62" value="Default SDDL for Windows Resource Protected file" />
+        <string id="displayName" value="Audio Core" />
+        <string id="displayName1" value="Latency Coefficient" />
+        <string id="displayName2" value="Default DLS File Name" />
+        <string id="displayName3" value="Budget Percentage" />
+        <string id="displayName54" value="Windows Audio" />
+        <string id="displayName59" value="Windows Audio" />
+        <string id="displayName61" value="WRP_FILE_DEFAULT_SDDL" />
+      </stringTable>
+    </resources>
+  </localization>
+  <mof xmlns="urn:schemas-microsoft-com:asm.v3" name="$(runtime.wbem)\audiocore.mof" />
+  <configuration xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <configurationSchema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Microsoft-Windows-Audio-AudioCore" targetNamespace="Microsoft-Windows-Audio-AudioCore">
+        <xsd:element default="2" name="Start_AudioSrv" type="xsd:unsignedInt" wcm:displayName="Service start type for the audiosrv service" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AudioSrv')" wcm:legacyName="Start" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:visible="false" />
+        <xsd:element default="2" name="Start_EndpointBuilder" type="xsd:unsignedInt" wcm:displayName="Service start type for the audioendpointbuilder service" wcm:handler="regkey('HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AudioEndpointBuilder')" wcm:legacyName="Start" wcm:legacyType="REG_DWORD" wcm:scope="allUsers" wcm:visible="false" />
+      </xsd:schema>
+    </configurationSchema>
+  </configuration>
+</assembly>

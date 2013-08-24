@@ -1,0 +1,59 @@
+The license agreement
+
+1. Object of the license. 
+ Object of the license is the program - BS Explorer shell including program, 
+language modules, files of a configuration. And also, the help to the program, a 
+file readme, a history of versions and this license agreement.
+
+2. Scope of licence.
+ The program is Freeware, therefore you can do(make) with her everything, that 
+want, except for the restrictions directly specified in item №3 of the given 
+agreement.
+
+3. Restrictions.
+- A copyright. It is forbidden to delete or change any notices on copyrights on 
+all components of the program.
+- Prohibition of commercial distribution. It is forbidden to distribute the 
+given program возмездное. Exception makes
+ the reimbursement for a data carrier and copying. Inclusion in any collections 
+and accommodation on web-pages without the consent of the author is forbidden.
+ At the same time, the Agreement does not forbid use of the program in 
+commercial objectives.
+- Structure of the program. It is forbidden to distribute the changed complete 
+set.
+- Use of the program should be carried out according to the current legislation.
+- Decompiling, reverse ingenering and other actions are not forbidden. But it is 
+much easier to communicate with me and to ask initial texts of the program.
+
+4. The copyright.
+ All rights belong Boa Software on behalf of its(her) unique representative Boa 
+aka Yri Safonow.
+Separate parts of a code belong:
+
+To author ReactOs Explorer Martin Fuchs
+(http://www.sky.franken.de/explorer/) 
+
+Sherpya <sherpya@hotmail.com> 
+
+5. Refusal of guarantees. 
+ Freeware. Is as - it is short and clear. Therefore - what guarantees. Or all 
+risk of the use of the given breakage
+ You take up or press DEL and overlook about him. I can guarantee only, that at 
+the moment of creation of the given archive of viruses in him was not. And she 
+does not format the screw. And passwords by mail does not send. I.e. only that, 
+what is it not троян and not a virus. As, it is necessary to remind, what is it 
+- the test version of the program, and besides, the program was initially 
+written for " the internal use " and I did not plan her(it) to distribute. 
+
+6. Refusal of the responsibility for indirect damage.
+ To the greatest degree, admitted by the current legislation, I refuse to 
+bear(carry) a liability for any concrete, casual, indirect or connected damage 
+(where enter, including, all without exception kinds of losses: the half-
+received profit, the termination(discontinuance) of activity of the enterprise, 
+loss of the important information, damage of the equipment or any other losses), 
+arisen because of use or impossibility of use of the given program even if 
+representatives of firm have been warned about an opportunity of occurrence of 
+such damage.
+
+7. It is distributed freely under condition of an invariance of the program and 
+structure of archive. 

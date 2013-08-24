@@ -1,0 +1,19 @@
+Changes of ICLRead.wcx.
+
+Format:
+A: added;
+C: changed;
+F: fixed.
+
+v1.0.1.0
+A: show some info when adding icons
+A: show 'User Abort!' message when user abort's adding/deleting icons
+F: showing icons containing more 59 subicons (in time section(HH:MM): if subicons more than 59 then format is 01:59 else 00:subicons_count)
+
+v1.2
+Ñ: icon names now has format "0000_IconDescription.ico" (150 symbols max).
+Ñ: small internal changes.
+
+v1.3
+Ñ: speed up add icons and save icon library;
+Ñ: small internal changes.

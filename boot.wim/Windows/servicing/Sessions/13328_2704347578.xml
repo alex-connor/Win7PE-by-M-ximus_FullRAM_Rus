@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Session version="1.0" id="13328_2704347578" client="DISM Package Manager Provider" options="0" currentPhase="1" lastSuccessfulState="Complete" pendingFollower="true" retry="false" Queued="2009/07/13/20:53:30" Started="2009/07/13/20:53:30" Complete="2009/07/13/20:53:32" status="0x0">
+    <Tasks>
+        <Phase seq="1">
+            <package id="WinPE-SRT-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" name="WinPE-SRT_ru-RU" targetState="Installed" options="4"/>
+        </Phase>
+    </Tasks>
+    <Actions>
+        <Phase seq="1" rebootRequired="true" Resolved="2009/07/13/20:53:31" Staged="2009/07/13/20:53:31" Installed="2009/07/13/20:53:32">
+            <Resolve package="WinPE-SRT-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-SRT"/>
+            <Stage package="WinPE-SRT-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-SRT"/>
+            <Install package="WinPE-SRT-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-SRT"/>
+        </Phase>
+    </Actions>
+</Session>

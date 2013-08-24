@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" description="Windows Multimedia API Other" displayName="Windows Multimedia API Other" company="Microsoft" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved." creationTimeStamp="2003-07-30T17:46:20" lastUpdateTimeStamp="2004-04-06T02:22:30">
+  <assemblyIdentity name="Microsoft-Windows-Audio-MMECore-Other" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-MMECore-Other.Resources" version="6.0.6001.18000" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="no">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-MMECore-Base" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-MSVCRT" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-User32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Kernel32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Ntdll" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Audio-MMECore-ACM" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-SetupAPI" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-Advapi32" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <dependency discoverable="yes">
+    <dependentAssembly>
+      <assemblyIdentity name="Microsoft-Windows-RPC-Local" version="6.0.6001.18000" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+    </dependentAssembly>
+  </dependency>
+  <file name="gm.dls" destinationPath="$(runtime.drivers)\" sourceName="gm.dls" sourcePath=".\" importPath="$(build.nttree)\">
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Default" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">Mimwm519nz9Hk7DZs0/mq8dc+kolA8DJD0P/ZRun8sA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="gmreadme.txt" destinationPath="$(runtime.drivers)\" sourceName="gmreadme.txt" sourcePath=".\" importPath="$(build.nttree)\">
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="notProtected" perUserVirtualization="Default" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">EL9uFcCMjH9dlrZYureK7YbR3iDwjnhx7vugk5rxGgI=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="midimap.dll" destinationPath="$(runtime.system32)\" sourceName="midimap.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disable" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">UV6VMs1TxCxIoCFrNLE8DrOQ0Co7omD0SyMo1cR2Vv0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="msacm32.drv" destinationPath="$(runtime.system32)\" sourceName="msacm32.drv" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disable" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">lIRN+2krfIx4jwWDYGrBd44ji+bgY6bt2Y0RpwrwOEI=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="mmci.dll" destinationPath="$(runtime.system32)\" sourceName="mmci.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disable" />
+    
+  <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"><dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"><dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" /></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" /><dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">gRMuy0mVyhXyp5KAMK1lEM8yeW0BrOIzt7Wyk026DPY=</dsig:DigestValue></asmv2:hash></file>
+  <file name="mmcico.dll" destinationPath="$(runtime.system32)\" sourceName="mmcico.dll" sourcePath=".\" importPath="$(build.nttree)\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="readOnlyFailWrites" perUserVirtualization="Disable" />
+    
+  <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"><dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"><dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" /></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" /><dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">8T+H3TVv9jVnRnq+l5iskOTkTDOsyvrSgFqHcY3RF8s=</dsig:DigestValue></asmv2:hash></file>
+  <registryKeys>
+    <registryKey keyName="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Drivers32" owner="false">
+      <registryValue name="midimapper" valueType="REG_SZ" value="midimap.dll" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <registryValue name="wavemapper" valueType="REG_SZ" value="msacm32.drv" operationHint="replace" owner="true">
+        <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+      </registryValue>
+      <systemProtection xmlns="urn:schemas-microsoft-com:asm.v3" behavior="inherit" />
+    </registryKey>
+  </registryKeys>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" displayName="WRP_FILE_DEFAULT_SDDL" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+  <localization>
+    <resources culture="en-US">
+      <stringTable>
+        <string id="description" value="Windows Multimedia API Other" />
+        <string id="displayName" value="Windows Multimedia API Other" />
+      </stringTable>
+    </resources>
+  </localization>
+  <configuration xmlns="urn:schemas-microsoft-com:asm.v3" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+    <configurationSchema>
+      <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="Microsoft-Windows-Audio-MMECore-Other" targetNamespace="Microsoft-Windows-Audio-MMECore-Other" />
+    </configurationSchema>
+    <metadata />
+  </configuration>
+</assembly>

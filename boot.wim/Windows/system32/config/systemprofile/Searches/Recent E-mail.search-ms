@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<persistedQuery version="1.0">
+    <viewInfo viewMode="details" iconSize="16">
+        <sortList>
+            <sort viewField="System.Message.DateReceived" direction="descending"/>
+        </sortList>
+    </viewInfo>
+
+    <query>
+        <conditions>
+            <condition type="leafCondition" valuetype="System.StructuredQueryType.DateTime" property="System.Message.DateReceived" operator="imp" value="R00UUUUUUUUZZXD-7NU" propertyType="wstr" />
+        </conditions>
+        <kindList>
+            <kind name="Email"/>
+        </kindList>
+        <subQueries>
+            <subQuery knownSearch="{4f800859-0bd6-4e63-bbdc-38d3b616ca48}"/>
+        </subQueries>
+    </query>
+</persistedQuery>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v3" manifestVersion="1.0" copyright="Copyright (c) Microsoft Corporation. All Rights Reserved.">
+  <assemblyIdentity name="Microsoft-Windows-AeroDiagnostic" version="6.1.7600.16385" processorArchitecture="x86" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+  <dependency discoverable="no" resourceType="Resources">
+    <dependentAssembly dependencyType="prerequisite">
+      <assemblyIdentity name="Microsoft-Windows-AeroDiagnostic.Resources" version="6.1.7600.16385" processorArchitecture="x86" language="*" buildType="release" publicKeyToken="31bf3856ad364e35" />
+    </dependentAssembly>
+  </dependency>
+  <file name="TS_MirrorDriver.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_MirrorDriver.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">D6BhbA++hyEwSjQY4UIj2QRakq9y9pPQd09CwfxPpMM=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_SKU.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_SKU.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">HIztVk28WK+85Sx7U2ux8CpLLSLl0eYKCiIt/5ZcIpE=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="DiagPackage.dll" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="DiagPackage.dll" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">vOeALgiCW6klC/X+waJtg9k7dObXzvyRZsRLsEettH8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_ColorTheme.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_ColorTheme.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">ZfQZSNubdRImFcw4Ut7zGSqvT0XiiBEf+Pbm7svc15A=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_ColorTheme.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_ColorTheme.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">zUiXufMWdFoVE9VCQdtvTm2eAFjanpk2XVZaHjvImMA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_WinSat.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_WinSat.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">Ns6TH+J5WehRLcl4YP139RK9SF7LNQlMaYLMwGIB8X0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_WinSat.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_WinSat.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">vazVhxpibc6vQHDAmvLUS0OskT4FxsXa91yjfd31xjg=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_Transparency.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_Transparency.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">49IAh3PFreTqe1jat/AgrQNcF0fFYcicg0r2ecVQFjc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_Transparency.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_Transparency.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">ZLA5h0V2RmnnWNxp87LUPLW1L80qZSRRb441K1qCu9A=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="DiagPackage.diagpkg" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="DiagPackage.diagpkg" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">C4m8FCinJpycHJxqIRl7+m47q8FcrG9a/+AFjBU8U1c=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="DesktopWindowsMgmt.dll" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="DesktopWindowsMgmt.dll" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">J8l/RJ5dzHBMqws8kF+PYHo7pdDHG3Cxb4siBNVMLvw=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="MonitorSnapIn.dll" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="MonitorSnapIn.dll" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">YqXTvAoRiGIFBLqSksl5mdeREMaCkS2M/vtuQnKN2zY=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_AeroFeature.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_AeroFeature.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">6RD22YbEpkZWgyWmPAXlySJfUyN4kNeARB8pbU2UGQA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_RunDiagnosticScript.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_RunDiagnosticScript.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">27KrJ0i3jIQXtCb80KYSZLtjTtN0SI1d/wEvr4+1rPE=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_Utility.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_Utility.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">nJ7kpbJHo8kpfv97vpD4kcmYDR7iHB35khlBOVLNZ9I=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_VideoMemory.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_VideoMemory.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">S1r1vo4TIDTrT/2Ye+ihc38m02PjPtldilaNx+x1aI0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_Invocation.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_Invocation.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">S/BzcLI2gXekNQ8DdifHxFsGQovjajSwTDy8p0Ik/Xc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_LoadAssembly.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_LoadAssembly.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">FJ4H5Ge2sEp5YVLh7OX9YF2bGqX/boQE7O5Upl7mfE8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_RegSnapin.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_RegSnapin.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">mAq0NuPbIqse/WZRR+axFlqJLdddutJv3u5sdtHZ6o0=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="CL_WinSAT.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="CL_WinSAT.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">zznhZ0rz0Az266QsALzHiksOZ3hUObUkYyDe88xEwqc=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="MF_AERODiagnostic.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="MF_AERODiagnostic.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">8CbsYdhjTw+j+EHkrti2/6Zy0iGTKxtDU/xC2ph23WA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_DWMEnable.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_DWMEnable.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">94t/rirbx5UUgxDtqXdrY3PXWQpaG8hUf0YI7Dntf4w=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_PowerPolicySetting.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_PowerPolicySetting.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">36nMDYA/pCgPes27rHuXkzThKLptYXRS09ODKURzt6g=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_UXSMS.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_UXSMS.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">J4DkKPPIa8BkQ2z7vx986CPE/jmP5nIr8QOocspFLsw=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_DWMEnable.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_DWMEnable.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">eqbdSTpZKFRad1hyVgqMQkCu58yj0HikvFO+DczsVu8=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_HardwareSupport.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_HardwareSupport.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">gAR6+GxjGFHntfrU98Gl2G0qKu0RODBLrMfODhJj3PM=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_LowColorDepth.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_LowColorDepth.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">DiTlUO+kTbTNusaIBUmtAc674VNJImVU/0ERDlivqEM=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_ChangeColorDepth.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_ChangeColorDepth.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">ybAdkwSxf66MCBlRVermanvC7X8Hjxaj3V3cp78K3sg=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_PowerPolicySetting.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_PowerPolicySetting.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">ExrMQfDc4hEHRqOq6EkeeVad2gsZwp5xK27pOhhnGpA=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_UXSMS.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_UXSMS.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">CQhLLcfFZ/oz6cU2Vb9oo0P/4sUfZQga0sMHioW1+RM=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_WDDMDriver.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_WDDMDriver.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">EDIFWkH46yn2au9K3T6Fodd43wY82OhIVHk4aAZThP4=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="RS_Themes.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="RS_Themes.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">XYwC2ZS/PzLRJuTzFoF4m4cUBtybYAEpqi7XXbI/Rpo=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="TS_Themes.ps1" destinationPath="$(runtime.windows)\diagnostics\system\AERO\" sourceName="TS_Themes.ps1" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">0BH5pOD061NXYsTaLYINF7c1Xm8fLz+dWUCrnEUjKvU=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <file name="AeroDiagnostic.xml" destinationPath="$(runtime.windows)\diagnostics\index\" sourceName="AeroDiagnostic.xml" sourcePath=".\" importPath="$(build.nttree)\diagnostics\packages\AERO\">
+    <securityDescriptor name="WRP_FILE_DEFAULT_SDDL" />
+    <asmv2:hash xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+      <dsig:Transforms xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">VH9JhBvHyadOXTYSj3joryMipjFYp7rochRW5TW182k=</dsig:DigestValue>
+    </asmv2:hash>
+  </file>
+  <directories>
+    <directory destinationPath="$(runtime.windows)\diagnostics\system\AERO\" owner="false">
+      <securityDescriptor name="WRP_DIRECTORY_DEFAULT_SDDL" />
+    </directory>
+  </directories>
+  <trustInfo>
+    <security>
+      <accessControl>
+        <securityDescriptorDefinitions>
+          <securityDescriptorDefinition name="WRP_DIRECTORY_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;CIOI;GA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;CIOI;GRGX;;;SY)(A;CIOI;GRGX;;;BA)(A;CIOI;GRGX;;;BU)S:(AU;FASA;SDWDWOFW;;;WD)" operationHint="replace" />
+          <securityDescriptorDefinition name="WRP_FILE_DEFAULT_SDDL" sddl="O:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464G:S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464D:P(A;;FA;;;S-1-5-80-956008885-3418522649-1831038044-1853292631-2271478464)(A;;GRGX;;;BA)(A;;GRGX;;;SY)(A;;GRGX;;;BU)S:(AU;FASA;0x000D0116;;;WD)" operationHint="replace" description="Default SDDL for Windows Resource Protected file" />
+        </securityDescriptorDefinitions>
+      </accessControl>
+    </security>
+  </trustInfo>
+</assembly>

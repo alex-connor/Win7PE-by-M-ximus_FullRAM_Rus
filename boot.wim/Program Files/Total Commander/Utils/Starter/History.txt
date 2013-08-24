@@ -1,0 +1,59 @@
+5.6.2.8 (09 Apr 2006)
+~~~~~~~~~~
+CHG: Startups: new look&feel
+ADD: Startups: ability to enable, disable, toggle and delete several items at once (corresponding confirmation options were also added)
+ADD: Services: save as html and txt now working
+ADD: Startups and Services: item info in tooltip
+CHG: Other not-so-major changes
+
+5.6.2.5 (26 Mar 2006)
+~~~~~~~~~~
+ADD: Services: ability to start/stop services from toolbar. Holding Shift while pressing Stop will Restart service.
+CHG: Psapi.dll: search for existing file in System dir first and use it instead of a local psapi.dll.
+FIX: Status bar hints (CPU & Mem) were visible even if Starter was minimized.
+FIX: FileInfo dialog: file size for modules (.dll) was 'Unknown'.
+
+5.6.2.4 (12 Mar 2006)
+~~~~~~~~~~
+ADD: Options\Sounds page. If the file is in .\Data\Sounds\, relative paths are used. It was done keeping in mind the future versions.
+ADD: Options\Actions: default startup location for new items (used when startup sections tree is disabled or 'All sections' is selected).
+CHG: Lots of changes in new/edit startup item dialog. Quotes handling especially.
+CHG: Processes: Find module approach was changed to plain substring search in processes (future versions again...).
+CHG: Massive code cleanup.
+
+5.6.2.3 (08 Mar 2006)
+~~~~~~~~~~
+ADD: Multiselect in Processes. Terminate and change priority functions can now be used for multiple processes simultaneously.
+ADD: Options\Icons: Show icons in Starter's main and context menus. Now you can get rid of many icons from the interface at once, if you don't like them.
+ADD: Options\Icons: Show CPU usage graph in tray icon, when CPU usage and tray icon are enabled.
+CHG: Context menus appearance was changed a bit.
+FIX: Some file paths parsing was broken since 5.6.2.0.
+
+5.6.2.2 (25 Feb 2006)
+~~~~~~~~~~
+CHG: Some changes to support operating under permissionless user
+
+5.6.2.1 (19 Feb 2006)
+~~~~~~~~~~
+CHG: Changed style for CPU/Mem graphs
+CHG: Tray icon now shows CPU load graph
+CHG: Tray icon's hint now shows CPU load, free memory and processes count (static atm)
+
+5.6.2.0 (23 Jan 2006)
+~~~~~~~~~~
+INF: Services tab seems finished.
+ADD: Option to store settings in a file instead of registry.
+     If the file is ReadOnly, it will not be updated and any settings you change will not be saved.
+     This is the search order for settings location:
+     1. File specified in the commandline: -inifile <filename>
+     2. Starter.ini in the same directory as Starter.exe, only if the file exists
+     3. Starter.ini in user's profile directory (%USERPROFILE%, usually 'C:\Documents and Settings\'), only if the file exists
+     4. Starter.ini in Windows' directory (e.g C:\Windows\), if exists
+     5. Registry, as before
+     Note: .ini file name depend on .exe name: "Starter v5.6.2.0.exe" will search for "Starter v5.6.2.0.ini" file, not "Starter.ini"
+CHG: Modified caption button to somewhat support XP Themes. But I still want to remove it.
+ADD: Option: Navigator\'Use flat style for buttons'. On by default.
+LNG: Added Belarusian.lng by Starovoitov Sergey aka OldEvrei
+CHG: A lot of changes, fixes, new bugs, etc.
+
+<old info was moved to "History Archive.txt">

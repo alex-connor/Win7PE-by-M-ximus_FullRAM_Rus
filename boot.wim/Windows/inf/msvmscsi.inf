@@ -1,0 +1,173 @@
+﻿; Copyright (c) 2004 Microsoft Corporation.  All Rights Reserved.
+;
+; Module:	msvmscsi.inf
+;
+; Contains:	This inf should should be used to install the microsoft
+;		virtual machine SCSI miniport driver.
+;	
+; THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+; ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+; THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+; PARTICULAR PURPOSE.
+;
+; Copyright (c) 2004 Microsoft Corporation.  All Rights Reserved.
+
+
+; ----------------------------------------------------------------------
+; Version - This section is the "header" of the file.
+; ----------------------------------------------------------------------
+
+[Version]
+signature="$Windows NT$"						
+Class=SCSIAdapter							
+ClassGUID={4d36e97b-e325-11ce-bfc1-08002be10318} 
+Provider=%Msft%
+catalogfile=vmadd_msvmscsi_sys.cat
+DriverVer= 04/24/2007,13.811.0.0
+
+
+; ----------------------------------------------------------------------
+; SourceDisksNames - This section is used to tell the inf reader where
+;	the driver files are located.
+;
+; Entry Template - diskid = description[,[tagfile][,<unused>,subdir]]
+;
+; ----------------------------------------------------------------------
+
+[SourceDisksNames]
+1 = %VM_ADDITIONS_DISK%,,,\
+
+
+; ----------------------------------------------------------------------
+; SourceDisksFiles - This section is used to tell the inf reader what 
+;	file are needed for installation.
+;
+; Entry Template - filename = diskid[,[ subdir][, size]]
+;
+; ----------------------------------------------------------------------
+
+[SourceDisksFiles]
+msvmscsi.sys = 1
+
+
+; ----------------------------------------------------------------------
+; DestinationDirs - This section specifies the destination directories
+;	for all file operations taken by this inf file.
+;
+; Entry Template - [DefaultDestDir=dirid[,subdir]] 
+;				   [file-list-section=dirid[,subdir]] ... 
+;
+; ----------------------------------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 12		; 12 evaluates to %windir%\system32 for NT-based systems and ...
+						; %windir%\system\IoSubsys on Windows 9x/Me systems
+						; http://msdn.microsoft.com/library/default.asp?url=/library/en-us/install/hh/install/create-inf_3aav.asp
+
+
+; ----------------------------------------------------------------------
+; Manufacturer -  Every entry in the "Manufacturer" section must 
+;	have a corresponding "Models" section. Each "Models" section is 
+;	identified by the "indentifier" from each entry.
+;
+; Entry Template - manufacturer=identifier 
+;
+; ----------------------------------------------------------------------
+
+[Manufacturer]
+%Msft%=MICROSOFT
+
+
+; ----------------------------------------------------------------------
+; Models - This section matches a specific device with an install script,
+;	so to speak. The pnp manager uses the hw-id and the compatible-id to
+;	find a match for a device. 
+;
+;	Every entry in the "Models" section must have a corresponding
+;	"DDInstall" section. Each "DDInstall" section is identified by the
+;	"install-section-name" from each entry.
+;
+; Entry Template - device-description=install-section-name,hw-id[,compatible-id...]
+;				   [device-description=install-section-name,hw-id[,compatible-id]...] ...
+;
+; ----------------------------------------------------------------------
+
+[MICROSOFT]
+%msvmscsi.DeviceDesc%=msvmscsi,PCI\VEN_9004&DEV_7078&SUBSYS_70781414&REV_02
+
+
+; ----------------------------------------------------------------------
+; DDInstall - This section tells how to install the specific driver for
+;	the specific device from the "Models" section.
+; ----------------------------------------------------------------------
+
+[msvmscsi.ntx86]
+CopyFiles=@msvmscsi.sys
+
+
+; ----------------------------------------------------------------------
+; DDInstall.Services - This section tells what kind of service will be
+;	associated with this driver. (NOTE: this is only used on win2000+
+;	systems)
+; ----------------------------------------------------------------------
+
+[msvmscsi.ntx86.Services]
+AddService = "msvmscsi", 0x00000002, msvmscsi_Service_Inst, msvmscsi_EventLog_Inst
+
+
+; ----------------------------------------------------------------------
+; This section adds a registry key to install the message DLL for the
+; 	event log.
+; ----------------------------------------------------------------------
+
+[msvmscsi_EventLog_Inst]
+AddReg = msvmscsi_EventLog_AddReg
+
+[msvmscsi_EventLog_AddReg]
+HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll"
+HKR,,TypesSupported,0x00010001,7
+
+
+; ----------------------------------------------------------------------
+; service-install-section - This section describes the service that's
+; 	going to be installed. This is referenced by the "DDInstall.Services"
+;	section.
+; ----------------------------------------------------------------------
+
+[msvmscsi_Service_Inst]			 
+ServiceType		= 1								; Almost always set to SERVICE_KERNEL_DRIVER
+StartType		= 0								; Set to SERVICE_BOOT_START because it might be required to boot an OS
+ErrorControl	= 1								; SERVICE_ERROR_NORMAL Allows booting but will flag an error
+ServiceBinary	= %12%\msvmscsi.sys				; Tells where to find the driver where 12 means the system defined driver folder
+LoadOrderGroup	= SCSI Miniport
+AddReg			= msvmscsi_Service_Registry_Entries
+
+; ----------------------------------------------------------------------
+; add-registry-section - This section is used to install service specific
+;	registry entries for the driver's service
+;
+; Entry Template - reg-root, [subkey], [value-entry-name], [flags], [value]
+;
+; ----------------------------------------------------------------------
+
+[msvmscsi_Service_Registry_Entries]
+HKR, "Parameters\PnpInterface", "5", 0x00010001, 0x00000001 
+; This is used to tell everyone that this driver is plug'n'play compatible on the PCI bus.
+
+
+; ----------------------------------------------------------------------
+; Strings - This section enables string substitution. 
+;
+; Entry Template - strkey1= ["]some string["]
+;				   strkey2 = "     string-with-leading-or-trailing-whitespace      " | 
+;				   "very-long-multiline-string " | 
+;				   "string-with-semicolon" | "string-ending-in-backslash" |
+;				   ""double-quoted-string-value""
+;				   ...
+;
+; ----------------------------------------------------------------------
+
+[Strings]
+Msft="Microsoft"
+VM_ADDITIONS_DISK="Virtual Machine Additions"
+msvmscsi.DeviceDesc="Microsoft Virtual Machine PCI SCSI Controller"

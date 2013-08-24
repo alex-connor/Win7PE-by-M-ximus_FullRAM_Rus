@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>LionTech - Font.wlx</title>
+    <meta http-equiv="Content-Type"     content="text/html; charset=utf-8"></meta>
+    <meta http-equiv="Content-Language" content="en-us"></meta>
+    <meta name="author"                 content="Peter Stuer, Peter.Stuer@telenet.be"></meta>
+    <meta name="description"            content="Lion Tech develops small and fast Windows freeware, like IconShop and the Font Lister plug-in for Total Commander"></meta>
+    <meta name="keywords"               content="font.wlx, lion tech, freeware, download, windows 95, windows nt, windows 2000, windows XP, win95, winnt, utilities, font, fon, ttf, truetype"></meta>
+    <meta name="generator"              content="notepad"></meta>
+    <style type="text/css">
+    <!--
+        body, td    { color: #000000; background-color: #FFFFFF; font: normal 10pt Verdana, Arial }
+        h1          { color: #000000; background-color: #FFFFFF; font: bold 13pt Verdana, Arial }
+        h2          { color: #000000; background-color: #FFFFFF; font: bold 12pt Verdana, Arial }
+        h3          { color: #000000; background-color: #FFFFFF; font: italic bold 11pt Verdana, Arial }
+        a           { color: #13784E }
+        -->
+    </style>
+</head>
+
+<body>
+<h1>Font.wlx 0.09 - Font Lister/Content plugin for Total Commander</h1>
+
+<h2>1. Description</h2>
+
+<p>This is a lister/content plugin for Total Commander that allows you to display the glyphs and
+some additional properties of a font in the Lister or the QuickView window of Total
+Commander. It also makes a number of the font properties available as custom fields.</p>
+
+<p>It has been tested with <a href="http://www.ghisler.com/">Total Commander 5.51</a> and later on Windows 2000
+and Windows XP.<br/>
+Any older version of Windows is not supported.</p>
+
+<h2>2. Features</h2>
+
+<ul>
+    <li>Support for Raster, Vector, TrueType, TrueType Collections, OpenType and PostScript Type 1 fonts.</li>
+    <li>Display the first 256 glyphs.</li>
+    <li>Support for Character Sets.</li>
+    <li>Support for Unicode blocks.</li>
+    <li>The font info can be selected and copied to the clipboard.</li>
+    <li>The font is displayed as a grid of glyph and as a sample text.</li>
+    <li>Zoom function of an individual glyph.</li>
+</ul>
+
+<h2>3. Download</h2>
+
+<p>Click <a href="http://users.telenet.be/liontech/wlxFont.zip">here</a> to download the latest version.</p>
+
+<h2>4. Installation</h2>
+
+<ol>
+    <li>Copy the <b>msvcr71.dll</b> in your System32 folder if you don't have it yet. It is the standard Microsoft C++ runtime library.</li>
+    <li>Copy the file <b>Font.wlx</b> to your Total Commander's plugin folder.</li>
+    <li>If you want to run the plugin in another language:
+    <ul>
+        <li>Copy the corresponding translation file <b>Font.&lt;language&gt;.lng</b> to your Total Commander's plugin folder where &lt;language&gt; is the language of your choice.</li>
+        <li>Select the language on the Options page</li>
+    </ul>
+    <i>Note: The file Font.English.lng is included as an example for translators and is not required if you run the plugin in English.</i></li>
+    <li>Select <b>Options / Configure ...</b> from the Lister menu to open the <b>Configure Lister</b> dialog.</li>
+    <li>Enable the <b>Load bitmaps as graphics at startup</b> option.</li>
+    <li>Click on the <b>LS-Plugins</b> button to open the <b>Lister Plugins</b> dialog and add the plugin.</li>
+</ol>
+
+<h2>5. Usage</h2>
+
+<p>The plugin will be used when you view a raster, vector, TrueType, OpenType, TrueType Collection, or PostScript Type 1 with the lister of Total Commander.
+It registers support for the following file extensions with Total Commander: TTF, TTC, OTF, FON and PFM.</p>
+
+<p>The font information is spread over 3 tab pages with an additional tab page for the options of the plugin.</p>
+
+<h3>The Glyphs page</h3>
+
+<p>This page displays the glyphs of the selected font. By default it displays the first 256 Windows ANSI characters in the default code page of the system.
+The first 128 characters are identical to the ASCII character set, the next 128 are different for each ANSI character set.</p>
+
+<p>Each glyph is displayed in a cell. At the top of the cell is the glyph number displayed in hexadecimal format.
+You can used this code in HTML documents: <b>&amp;#x03A9;</b> will display a capital omega <b>&#x03A9;</b>. When you click on a cell with the left mousebutton,
+a zoomed version of the glyph will be displayed as long as the mousebutton is pressed and the mouse remains over the zoomed area. The zoomed area also
+contains the glyph number in hexadecimal and decimal and the selected glyph rendered in the current user-interface font.</p>
+
+<p>With the combo-box in the top-left corner of the page you can select another Unicode block to display. The entries can be sorted ascending or descending
+by block range or by block description.<br/>
+<i>Note: the ANSI block is a pseudo-block added for convenience and is not defined by the Unicode standard. It will always be the first entry in the combo-box.</i></p>
+
+<p>The top-right combo-box allows you to select a different Windows code page. The OEM code set f.e. contains the DOS linedraw characters.</p>
+
+<p>At the bottom of the page is an edit box and a slider which can be used to set the size of the font used to draw the glyphs.</p>
+
+<h3>The Info page</h3>
+
+<p>This page will display information that is embedded in the font file and information about the font reported by Windows. You can select all or part
+of the information by clicking and dragging the mouse and use Ctrl-C to copy the selected text to the clipboard.</p>
+
+<h3>The Sample page</h3>
+
+<p>This page will display a sample text in the currently selected font. You can edit the text as you like. The changed text will be stored and used
+when viewing other fonts.</p>
+
+<p>At the bottom of the page is an edit box and a slider which can be used to set the size of the font used to draw the sample.</p>
+
+<h3>The Options page</h3>
+
+<p>The Zoom Box <b>Font Size</b> is the size of the font used to display the Zoom Box expressed in points.</p>
+
+<p>The Zoom Box <b>Width</b> and <b>Height</b> is the width and height of the Zoom Box expressed in pixels.</p>
+
+<p>The <b>Sort Unicode Blocks by</b> combo-box allows you to select in which order the Unicode Blocks are displayed.</p>
+
+<p>The <b>User Interface Language</b> determines the language used to display the user interface. The contents depends on the language files that
+are available. English is always available.<br/>
+<i>Note: A new language selection is only used after the plugin is closed and re-opened.</i></p>
+
+<p>The <b>Save Current</b> options determine which settings will be saved and re-used when the plugin closes and re-opens.</p>
+<ul>
+    <li>When <b>Tab Page</b> is checked the plugin re-opens with the last displayed Tab page.</li>
+    <li>When <b>Unicode Block</b> is checked the plugin re-opens with the last selected Unicode block.</li>
+    <li>When <b>Character Set</b> is checked the plugin re-opens with the last selected character set.</li>
+    <li>When <b>Sample Text</b> is checked the plugin re-opens with the last used sample text.</li>
+</ul>
+
+<h3>Custom Fields</h3>
+
+<p>The plugin makes the following fields available for custom views or content searching:</p>
+<ul>
+    <li>Name</li>
+    <li>Family</li>
+    <li>Style</li>
+    <li>Identifier</li>
+    <li>PostScript Name</li>
+    <li>PostScript CID</li>
+    <li>Type</li>
+    <li>Version</li>
+    <li>Copyright</li>
+    <li>Manufacturer</li>
+    <li>Designer</li>
+    <li>Width Class</li>
+</ul>
+
+<h3>Keyboard short-cuts</h3>
+
+<table>
+<tr><td>Next tab page</td><td>Ctrl-PgDn or Ctrl-Tab</td></tr>
+<tr><td>Previous tab page</td><td>Ctrl-PgUp or Ctrl-Shift-Tab</td></tr>
+<tr><td>Next control</td><td>Ctrl-Right</td></tr>
+<tr><td>Previous control</td><td>Ctrl-Left</td></tr>
+<tr><td>Close window</td><td>Esc</td></tr>
+</table>
+
+<h2>6. Translations</h2>
+
+<p>The plugin looks for language files that have the format <b>Font.&lt;Language&gt;.lng</b> in the same folder as where the plugin exists. The languages
+are displayed on the Options page.</p>
+
+<p>You can create new translations by using the <b>Font.English.lng</b> file as a template. The language files are text files that can be opened with any
+text editor.</p>
+
+<p>The <b>Font.English.lng</b> file is not required if you use the plugin in English.</p>
+
+<h2>7. Frequently Asked Questions (FAQ)</h2>
+
+<ol>
+<li>
+<b>The plugin does not work.</b><br/>
+<p>Check if the plugin is correctly installed using the installation procedure and that you have not installed any other Lister plugin that works with font files.</p>
+</li>
+<li>
+<b>The plugin does not display any raster or vector fonts.</b><br/>
+<p>Check if you have installed another Lister plugin that displays information about executables such as the excellent
+<a href="http://physio-a.univ-tours.fr/tcplugins/">FileInfo</a> plugin by <a href="mailto:fgannier@physio-a.univ-tours.fr">Fran&ccedil;ois Gannier</a>.
+Raster and vector fonts have the format of a 16-bit DLL and this plugin will open it.<br/>
+Move the Font.wlx plugin before the FileInfo.wlx in the installed plugin list.<br/>
+</p>
+</li>
+</ol>
+
+<h2>8. Known problems</h2>
+
+<ul>
+    <li>Some fonts don't report their supported Unicode blocks correctly or consistently.</li>
+    <li>Some raster fonts such as vgas1256.fon can't be loaded.</li>
+    <li>The Sample page does not work with vector fonts.</li>
+    <li>To view a PostScript Type 1 font, select the .PFM file. The corresponding .PFB file must be in the same folder.</li>
+    <li>Only the first font of a TrueType Font Collection is displayed.</li>
+    <li>The Options page does not have a keyboard interface.</li>
+    <li>The field names are not localized yet.</li>
+</ul>
+
+<h2>9. Acknowledgements</h2>
+
+<ul>
+    <li>Thanks to Pete on the <a href="http://www.ghisler.ch/board/viewforum.php?f=6">
+    Total Commander Plugin Development &amp; Support</a> forum for testing each version and providing usefull feedback.</li>
+    <li>Thanks to Krizsik J&#xF3;zsef for the Hungarian translation.</li>
+    <li>Thanks to <i>Sheridan</i> &amp; Tchanturia Irakly for the Russian translation.</li>
+    <li>Thanks to <i>lu</i> for the Ukranian translation.</li>
+    <li>Thanks to Fabio Chelly for the French translation.</li>
+    <li>Thanks to Aleg Azarouski for the Belarussian translation.</li>
+    <li>Thanks to Jan Romanczyk for the Polish translation.</li>
+    <li>Thanks to Christian Ghisler for developing <a href="http://www.ghisler.com/">Total Commander</a>.</li>
+</ul>
+
+<h2>10. Not implemented yet</h2>
+
+<ul>
+    <li>Support for TrueType resource files (FOT).</li>
+    <li>Support for Multiple Master fonts (MMM).</li>
+    <li>Printing</li>
+</ul>
+
+<h2>11. History</h2>
+
+<h3>2005-02-04 Version 0.09</h3>
+<ul>
+    <li>Added some Unicode 4.0 ranges.</li>
+    <li>Added Content plug-in API.</li>
+</ul>
+
+<h3>2005-01-03 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Added Polish translation.</li>
+</ul>
+
+<h3>2004-09-14 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Added Belarussian translation.</li>
+</ul>
+
+<h3>2004-04-20 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Added French translation.</li>
+</ul>
+
+<h3>2004-01-28 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Added Ukranian translation.</li>
+</ul>
+
+<h3>2003-12-23 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Updated Russian translation.</li>
+</ul>
+
+<h3>2003-12-13 Version 0.08 Silent Update</h3>
+<ul>
+    <li>Added Hungarian translation.</li>
+    <li>Added Russian translation.</li>
+</ul>
+
+<h3>2003-08-23 Version 0.08</h3>
+<ul>
+    <li>Improved the keyboard interface of the plugin.</li>
+    <li>Added support for translations.</li>
+    <li>Added controls to change the size of the Glyphs and the Sample font.</li>
+    <li>Implemented the Options page.</li>
+</ul>
+
+<h3>2003-08-20 Version 0.07</h3>
+<ul>
+    <li>Improved the keyboard interface of the plugin.</li>
+    <li>Added support for TrueType Font Collections (TTC). Note that this means that the plugin detection string has been expanded again.</li>
+    <li>Updated the Unicode block ranges and descriptions to be in line with <a href="http://www.unicode.org">Unicode 4.0</a>.</li>
+    <li>Small cosmetic changes to the Zoom window.</li>
+    <li>Added an option to change the size of the Zoom window.</li>
+    <li>Implemented the sorting of the Unicode blocks.</li>
+    <li>Expanded the documentation a little.</li>
+</ul>
+
+<h3>2003-08-17 Version 0.06</h3>
+<ul>
+    <li>Bug fix: Removed the extra set of quotes again.</li>
+    <li>Added the filename of the current font to the Info page.</li>
+    <li>The TrueType/OpenType version is displayed when applicable.</li>
+    <li>The Width class of a font is displayed when applicable.</li>
+    <li>The weight, italic and underline design parameters are used when found.</li>
+    <li>The Copyright string for raster fonts wasn't displayed.</li>
+    <li>Added support for PostScript Type 1 fonts (PFM).</li>
+    <li>Added support for OpenType fonts (OTF).</li>
+</ul>
+
+<h3>2003-08-15 Version 0.05</h3>
+<ul>
+    <li>Bug fix: The raster and vector font type descriptions were switched.</li>
+    <li>Bug fix: The keyboard short-cuts of the Lister window didn't work anymore after a glyph had been zoomed.</li>
+    <li>Bug fix: Removed spaces from the plugin detection string and added an extra set of quotes.</li>
+    <li>Bug fix: Memory leak in the font info.</li>
+    <li>Bug fix: Clicking on the up/down controls caused an unnecessary refresh of the complete plugin window resulting in an annoying flickering.</li>
+    <li>The Characters range has been renamed to ASCII and displays the first 256 characters.</li>
+    <li>Added support for character sets.</li>
+    <li>All characters of a character set or a Unicode block are now displayed instead of just those that the font says it supports.</li>
+    <li>The Glyph Zoom window now pops up when you click the left mousebutton and disappears when you release it or when the mouse leaves the window.</li>
+    <li>Added some more font information and the Code Pages that the font supports.</li>
+    <li>Code optimizations. The plugin and the Zoom window should be a very little bit faster.</li>
+    <li>Code cleanup.</li>
+</ul>
+
+<h3>2003-08-13 Version 0.04</h3>
+<ul>
+    <li>Fixed a small offset bug in the Glyphs page.</li>
+    <li>Fixed a synchronisation bug between the Unicode droplist and the left/right control.</li>
+    <li>Added support for Windows raster and vector fonts.</li>
+    <li>Added a label to the Info page describing the font type (raster vector, TrueType)</li>
+    <li>The scroll bar of the Glyphs page remains visible, even when not necessary, to prevent the
+    grid from resizing. This should be easier on the eyes when scrolling through a list of
+    fonts.</li>
+    <li>Added a zoom function. Click on a glyph with the left mousebutton to display a zoomed version.</li>
+    <li>If a font can't be loaded an error message will be displayed on the Glyphs page.</li>
+    <li>Converted this ReadMe file to HTML.</li>
+</ul>
+
+<h3>2003-08-12 Version 0.03</h3>
+
+<ul>
+    <li>Implemented the user-interface.</li>
+    <li>The Info page displays the supported Unicode blocks of the font.</li>
+    <li>Implemented the saving and loading of plug-in options.</li>
+</ul>
+
+<h3>2003-08-11 Version 0.02</h3>
+
+<ul>
+    <li>First attempt at supporting the Unicode blocks.</li>
+    <li>Added support for some more font identification strings.</li>
+    <li>Renamed the plugin to Font.wlx.</li>
+</ul>
+
+<h3>2003-06-12 Version 0.01</h3>
+
+<ul>
+<li>First release.</li>
+</ul>
+
+<h2>12. Contact</h2>
+
+<p>Any bug reports or suggestions are welcome.<br/>
+<br/>
+Author: Peter Stuer<br/>
+Email : <a href="mailto://Peter.Stuer@telenet.be">mailto://Peter.Stuer@telenet.be</a><br/>
+Web : <a href="http://users.telenet.be/liontech">http://users.telenet.be/liontech</a><br/>
+<br/>
+Copyright &copy; 2003-2005 by <a href="mailto:Peter.Stuer@telenet.be">Peter Stuer</a>. All rights
+reserved.<br/>
+<br/>
+German translation of the Readme file  &copy; 2003 by <a href="mailto:petef@online.de">Peter Firmkaes</a>
+(alias Pete in <a href="http://www.ghisler.ch/board/index.php">Total Commander Forum</a>).<br/>
+<br/>
+Total Commander is an international trademark of <a href="http://www.ghisler.com/">Ghisler &amp; Co</a>.
+</p>
+
+<h2>13. No Warranty</h2>
+
+<p>Because the program or document is licensed free of charge, there is no warranty for the program, to the extent permitted by applicable law. Except when
+otherwise stated in writing the copyright holders and/or other parties provide the program "as is" without warranty of any kind, either expressed or implied,
+including, but not limited to, the implied warranties of merchant ability and fitness for a particular purpose. The entire risk as to the quality and performance of
+the program is with you. Should the program prove defective, you assume the cost of all necessary servicing, repair or correction.</p>
+
+<p>In no event unless required by applicable law or agreed to in writing will any copyright holder, or any other party who may modify and/or redistribute the
+program or document as permitted above, be liable to you for damages, including any general, special, incidental or consequential damages arising out of the use or
+inability to use the program or document (including but not limited to loss of data or data being rendered inaccurate or losses sustained by you or third parties or
+a failure of the program to operate with any other programs), even if such holder or other party has been advised of the possibility of such damages.</p>
+
+<p><a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" style="height: 31; width: 88; border: 0"/></a></p>
+</body>
+</html>

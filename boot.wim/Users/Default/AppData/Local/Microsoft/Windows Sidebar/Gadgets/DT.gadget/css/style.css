@@ -1,0 +1,325 @@
+
+body
+{
+	overflow:hidden;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body,div,ul,li,p,a,form{margin:0;padding:0;}
+#mainDTGadjet {
+	width:134px;
+	position:relative;
+	overflow:hidden;
+}
+.positionAbsolute {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+.borderNone{ border:none}
+.displayNone{ display:none;}
+
+#tabArea {
+	padding: 0 0 0 5px;
+}
+#tabArea ul, #mainControls ul, .lines ul, .control_lines ul {
+	list-style-type:none;
+}
+#tabArea li, #mainControls li, .lines li, .control_lines li {
+	display:block;
+	float:left;
+}
+#tabArea li {
+	padding:4px 3px 0 5px;
+	font-size:0px;
+}
+.pointer {
+	cursor:pointer;
+}
+#content2, #content3 {
+	overflow:hidden;
+}
+.drive {
+	overflow:hidden;
+}
+#controls1{
+	padding-left:17px;
+}
+#controls2, #controls3{
+	padding-left:36px;
+}
+.disable .pointer {
+	cursor:default;
+}
+.font_size0 {
+	font-size:0px;
+}
+.cdPath {
+	margin:3px 0 0 3px;
+	overflow:hidden;
+	height:15px;
+	width:105px;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	white-space:nowrap;
+}
+.cdName {
+	color:#baecff;
+	font-weight:bold;
+}
+.separator{
+	font-size:0px;
+	height:3px;
+	width:107px;
+	margin-bottom:10px;
+	border-bottom:#88b9e2 1px dashed;
+}
+.ctrl1 #controls1 {
+	display:block;
+}
+.ctrl1 #controls2, .ctrl1 #controls3{
+	display:none;
+}
+.ctrl2 #controls2 {
+	display:block;
+}
+.ctrl2 #controls1, .ctrl2 #controls3{
+	display:none;
+}
+.ctrl3 #controls3 {
+	display:block;
+}
+.ctrl3 #controls1, .ctrl3 #controls2{
+	display:none;
+}
+#content1 {
+	padding:0 5px 0 6px;
+}
+#content2, #content3 {
+	padding:0 5px 0 6px;
+}
+#content3 {
+	font-size:11px;
+}
+.cont1 #content1 {
+	display:block;
+}
+.cont1 #content2, .cont1 #content3{
+	display:none;
+}
+.cont2 #content2 {
+	display:block;
+}
+.cont2 #content1, .cont2 #content3{
+	display:none;
+}
+.cont3 #content3 {
+	display:block;
+}
+.cont3 #content1, .cont3 #content2{
+	display:none;
+}
+.linkIcon {
+	margin:0 4px -4px 0;
+}
+.displayMiddle a {
+	font-size:11px;
+	color:#003590;
+	text-decoration:underline;
+}
+.displayMiddle a:hover{
+	text-decoration:none;
+}
+.linkItem { padding:3px 0 3px 5px;}
+.rss {
+	padding: 2px 4px 5px 5px;
+}
+.rss_icon {
+margin:0 4px -4px 0;
+}
+.howToUseLink {
+	margin:3px 0 0 3px;
+	overflow:hidden;
+	height:15px;
+	width:105px;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+	white-space:nowrap;
+}
+.howToUseLink a {
+	color:#baecff;
+	text-decoration:underline;
+}
+.howToUseLink a:hover {
+	text-decoration:none;
+}
+#noVirtualDrive {
+	display:none;
+}
+.noVirtualDrives #noVirtualDrive{
+	display:block;
+}
+.up_down_controls {
+	padding-left:15px;
+	height:11px;
+}
+.control_lines {
+	display:none;
+}
+.view2 .control_lines {
+	display:block;
+}
+.chengeView {
+	font-size:0px;
+	height:8px;
+	padding-right:6px;
+}
+#change_view {
+	display:none;
+}
+
+.hover .chengeViewBut {
+	background-position: 0 -24px;
+}
+.view2 .separator {
+	display:none;
+}
+#driveNum {
+	font-size:10px;
+	height:11px;
+	width:22px;
+	overflow:hidden;
+	text-align:center;
+	color:#ffffff;
+}
+#up_not_active, #down_not_active {
+	display:none;
+}
+
+.view2 .driveSelect { background:transparent;}
+#message_box {
+	width:115px;
+	display:none;
+	position:absolute;
+	left:9px;
+	z-index:1000;
+}
+.hover .messageButLeft {
+	background-position: 0 -39px;
+}
+.hover .messageButMiddle {
+	background-position: 0 -52px;
+}
+.hover .messageButRight {
+	background-position: right -65px;
+}
+.mConteiner {
+	padding:3px 5px 3px 5px;
+}
+.messageTitle {
+	font-size:12px;
+	color:#0f377a;
+	padding:1px 0 2px 0;
+	border-bottom:#80a9cb 1px solid;
+}
+.messageText {
+	font-size:10px;
+	color:#333333;
+	padding:5px 0 5px 0;
+	border-top:#ffffff 1px solid;
+}
+.messageControls ul {
+	list-style-type:none;
+}
+.messageControls li {
+	display:block;
+	float:left;
+}
+.messageControls {
+	margin-left:5px;
+}
+ .initError #content, .initError #mainControls {
+	display:none;
+}
+ .initError #message_box {
+}
+#loadingDrives {
+	display:none;
+	height:58px;
+}
+.loadingDrives #loadingDrives {
+	display:block;
+}
+#controls2 ul, #controls3 ul {
+	display:none;
+}
+.opacity_80 {
+	background:#ffffff;
+	#filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+.blockLoader {
+	left:5px;
+	top:27px;
+}
+.blockStandart {
+	left:0px;
+	top:0px;
+}
+#controls1 #add_drive_disable, #controls1 #dt_net_disable, #controls1 #mount_n_drive_disable, #controls1 #unmount_all_disable, #controls1 #make_img_disable, #controls1 #dt_pro_disable, #controls1 #img_editor_disable {
+	display:none;
+}
+.disable_all_controls #controls1 #add_drive_disable, .disable_all_controls #controls1 #dt_pro_disable, .disable_all_controls #controls1 #img_editor_disable, .disable_all_controls #controls1 #mount_n_drive_disable, .disable_all_controls #controls1 #unmount_all_disable, .disable_all_controls #controls1 #make_img_disable, .disable_all_controls #controls1 #dt_net_disable {
+	display:block;
+}
+.disable_all_controls #add_drive, .disable_all_controls #dt_net, .disable_all_controls #dt_pro, .disable_all_controls #img_editor, .disable_all_controls #mount_n_drive, .disable_all_controls #unmount_all, .disable_all_controls #make_img {
+	display:none;
+}
+
+html .fullDrives #controls1 #add_drive{
+	display:none;
+}
+html .fullDrives #controls1 #add_drive_disable{
+	display:block;
+}
+#load_txt_conteiner {
+	display:none;
+	color:#333333;
+	width:109px;
+	position:absolute;
+	top:0px;
+	left:12px;
+	z-index:1500;
+}
+#loader_text {
+	padding:0 5px;
+	font-size:12px;
+}
+a {
+outline-style:none;
+}
+.errorImg {
+	background:url(../img/warning_48.png) no-repeat;
+	width:48px;
+	height:48px;
+	margin-top:34px;
+}
+.errorMessageTitle, .errorMessageText {
+	font-size:11px;
+}
+#error_message {
+	display:none;
+position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	padding:0 10px;
+	text-align:center;
+	cursor:pointer;
+	z-index:1500;
+	background: url(../img/1.gif);
+}
+.notInit .disable_all_controls #controls1 #dt_pro_disable, .notInit .disable_all_controls #controls1 #dt_net_disable, .notInit .disable_all_controls #controls1 #img_editor_disable {
+	display:none;
+}

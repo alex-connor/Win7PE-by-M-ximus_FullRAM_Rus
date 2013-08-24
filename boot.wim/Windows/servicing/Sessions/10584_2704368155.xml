@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Session version="1.0" id="10584_2704368155" client="DISM Package Manager Provider" options="0" currentPhase="1" lastSuccessfulState="Complete" pendingFollower="true" retry="false" Queued="2009/07/13/20:53:49" Started="2009/07/13/20:53:49" Complete="2009/07/13/20:53:52" status="0x0">
+    <Tasks>
+        <Phase seq="1">
+            <package id="WinPE-Scripting-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" name="WinPE-Scripting_ru-RU" targetState="Installed" options="4"/>
+        </Phase>
+    </Tasks>
+    <Actions>
+        <Phase seq="1" rebootRequired="true" Resolved="2009/07/13/20:53:49" Staged="2009/07/13/20:53:49" Installed="2009/07/13/20:53:51">
+            <Resolve package="WinPE-Scripting-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Scripting"/>
+            <Stage package="WinPE-Scripting-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Scripting"/>
+            <Install package="WinPE-Scripting-Package~31bf3856ad364e35~x86~ru-RU~6.1.7600.16385" update="WinPE-Scripting"/>
+        </Phase>
+    </Actions>
+</Session>

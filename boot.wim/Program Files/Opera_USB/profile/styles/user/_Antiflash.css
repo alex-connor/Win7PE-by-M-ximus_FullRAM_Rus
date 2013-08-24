@@ -1,0 +1,18 @@
+{display: none !important;}
+
+@charset "UTF-8";
+/*
+Name: Flash Blocker
+Version: 1 08.2005
+Beschreibung: Flash und Shockwave Blocker Version 12.06
+*/
+
+object[classid="clsid:D27CDB6E-aE6D-11cf-96B8-444553540000"],
+object[classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000"],
+object[type="application/x-shockwave-flash"],
+embed[type="application/x-shockwave-flash"],
+embed[type="application/x-director"],
+embed[quality]
+embed[src$=".swf"]
+{display: none !important;}
+
