@@ -1,0 +1,27 @@
+;Ads related domains list - for using in IECookiesView
+;You can freely add/remove domains to this list, according to your needs.
+;When you make a change in this list, it'll be loaded in the next time that you
+;run IECookiesView.
+
+valuead.com
+valueclick.com
+doubleclick.net
+fastclick.com
+fastclick.net
+advertising.com
+gator.com
+humanclick.com
+pro-market.net
+qksrv.net
+cj.com
+clixgalore.com
+linksynergy.com
+zedo.com
+adtech.de
+ad-flow.com
+gorillanation.com
+x10.com
+tradedoubler.com
+clickheretofind.com
+cybermonitor.com
+howstuffworks.com

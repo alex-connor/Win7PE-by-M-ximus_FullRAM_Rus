@@ -1,1 +1,0 @@
-This directory contains files used by Miranda Portable.  They do not normally need to be accessed directly.
