@@ -5,52 +5,5 @@ Version|0.15|$
 Arch|x86-msvc|$
 
 [PLUGINS]
-npdeployJava1.dll|$
-X:\Program Files\Mozilla Firefox\plugins\npdeployJava1.dll|$
-10.0.0.147|$
-1315833218298|0|1|$
-NPRuntime Script Plug-in Library for Java(TM) Deploy|$
-Java Deployment Toolkit 7.0.0.147|$
-1
-0|application/java-deployment-toolkit|||$
-nppdf32.dll|$
-X:\Program Files\Mozilla Firefox\plugins\nppdf32.dll|$
-9.1.0.163|$
-1235729622000|0|1|$
-Adobe PDF Plug-In For Firefox and Netscape|$
-Adobe Acrobat|$
-7
-0|application/pdf|Acrobat Portable Document Format|pdf|$
-1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
-2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
-3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
-4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
-5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
-6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
-np-mswmp.dll|$
-X:\Program Files\Mozilla Firefox\plugins\np-mswmp.dll|$
-1.0.0.8|$
-1176211268000|0|1|$
-np-mswmp|$
-Microsoft® Windows Media Player Firefox Plugin|$
-10
-0|application/x-ms-wmp|np-mswmp|*|$
-1|application/asx||*|$
-2|video/x-ms-asf-plugin||*|$
-3|application/x-mplayer2||*|$
-4|video/x-ms-asf||asf,asx,*|$
-5|video/x-ms-wm||wm,*|$
-6|audio/x-ms-wma||wma,*|$
-7|audio/x-ms-wax||wax,*|$
-8|video/x-ms-wmv||wmv,*|$
-9|video/x-ms-wvx||wvx,*|$
-NPOFF12.DLL|$
-X:\Program Files\Mozilla Firefox\plugins\NPOFF12.DLL|$
-12.0.4518.1014|$
-1161882736000|0|1|$
-Office Plugin for Netscape Navigator|$
-2007 Microsoft Office system|$
-1
-0|application/x-msoffice12|12.0.4518.1014|*|$
 
 [INVALID]
