@@ -1,0 +1,44 @@
+#pragma autorecover
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+//
+// WPP Generated File
+// PDB:  d:\0055.obj.x86fre\net\ndis\coinst\objfre\i386\nci.pdb
+// PDB:  Last Updated :2006-5-18:11:18:46:772 (UTC) [binplace]
+//
+
+//ModuleName = NCITraceGuid	 (Init called in Function DllProcessAttach)
+[Dynamic,
+ Description("NetCoInstaller Tracing"),
+ guid("{BC0A73A6-043E-432f-BDED-3D18C2DBE320}"),
+ locale("MS\\0x409")]
+class NCITraceGuid : EventTrace
+{
+    [Description ("Enable Flags"),
+        ValueDescriptions{
+             "NCI_ERROR Flag",
+             "NCI_WARNING Flag",
+             "NCI_SUCCESS Flag",
+             "NCI_FUNCTRACE Flag",
+             "NCI_INFORMATION Flag"},
+        DefineValues{
+             "NCI_ERROR",
+             "NCI_WARNING",
+             "NCI_SUCCESS",
+             "NCI_FUNCTRACE",
+             "NCI_INFORMATION"},
+        Values{
+             "NCI_ERROR",
+             "NCI_WARNING",
+             "NCI_SUCCESS",
+             "NCI_FUNCTRACE",
+             "NCI_INFORMATION"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008",
+             "0x00000010"}
+    ]
+    uint32 Flags;
+};

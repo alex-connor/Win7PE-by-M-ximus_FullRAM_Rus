@@ -1,11 +1,11 @@
-<html>
+<HTML>
     <head>
         <title>MBR Fix - Fix MBR problems</title>
     </head>
     <body>
         <P align="center">MbrFix.exe
         </P>
-        <P align="center">Copyright (C) 2004-2009 Systemintegrasjon AS
+        <P align="center">Copyright (C) 2004-2007 Systemintegrasjon AS
         </P>
         <P align="center"><A href="http://www.sysint.no">http://www.sysint.no</A></P>
         
@@ -15,7 +15,7 @@
 </PRE>
             <h3>Requirements:</h3>
         <P>The program is made for Windows NT, Windows 2000, Windows XP, Windows Server 
-            2003, Windows Vista, Windows Server 2008, Windows 7 and Windows PE. Both 32-bit and 64-bit x64 editions are supported.</P>
+            2003, Windows Vista and Windows PE. Both 32-bit and 64-bit x64 editions are supported.</P>
         <P>You need administrative privileges to make it work!</P>
         <H3>
             Purpose:</H3>
@@ -31,8 +31,8 @@
     MbrFix /drive &lt;num&gt; listpartitions         Display partition information
     MbrFix /drive &lt;num&gt; savembr &lt;file&gt;         Save MBR and partitions to file
     MbrFix /drive &lt;num&gt; restorembr &lt;file&gt;      Restore MBR and partitions from file
-    MbrFix /drive &lt;num&gt; fixmbr {/vista|/win7}  Update MBR code to W2K/XP/2003, Vista or Win7
-    MbrFix /drive &lt;num&gt; clean                  Delete all partitions on the selected disk
+    MbrFix /drive &lt;num&gt; fixmbr {/vista}        Update MBR code to W2K/XP/2003 or Vista
+    MbrFix /drive &lt;num&gt; clean                  Delete all partitions in MBR
     MbrFix /drive &lt;num&gt; readsignature {/byte}  Read disk signature from MBR
     MbrFix /drive &lt;num&gt; writesignature &lt;hex&gt;   Write disk signature to MBR
     MbrFix /drive &lt;num&gt; generatesignature      Generate disk signature in MBR
@@ -59,16 +59,14 @@
             Partition numbering &lt;part&gt; starts on 1.</p>
         <p>
             Commands restorembr, fixmbr, generatesignature, writestate, clean, setactivepartition and
-            fixbootsector will ask for confirmation unless /yes is included. 
-            All these commands may lead to data loss if used incorrectly or without intention.</p>
+            fixbootsector will ask for confirmation unless /yes is included.</p>
         <p>
             If the /byte option is given for the readsignature command, the signature is 
             returned as a byte array instead of as a DWORD.
             Writesignature requires the new signature to be specified as 8 hex digits.</p>
         <p>
-		    If /vista is used with the fixmbr command, a Windows Vista MBR is written,
-		    if /win7 is used, a Windows 7 MBR is written instead of the default
-		    Win2000/XP/2003 MBR.  The Vista or Win7 MBR should work with the other OS'es.</p>
+		    If /vista is used with the fixmbr command, a Windows Vista MBR is written
+		    instead of a Win2000/XP/2003 MBR. The Vista MBR should work with the other OS'es as well.</p>
         <p>
             When fixing boot sector of a chosen partition, the wanted OS version must be specified.
             For now, the only valid choices are WIN98, DOS5 and DOS6.<br />
@@ -110,8 +108,8 @@ Active: Yes
             it to boot up Windows Embedded XP.</P>
         <P>But not so! It just sat there with a nice black screen. No error message at all.</P>
         <P>Some investigation later on the Internet, I found this very informative page by 
-            Daniel B. Sedory: <A href="http://thestarman.narod.ru/asm/mbr/index.html#MBR">
-                http://thestarman.narod.ru/asm/mbr/index.html</A>, 
+            Daniel B. Sedory: <A href="http://www.geocities.com/thestarman3/asm/mbr/MBR_in_detail.htm">
+                http://www.geocities.com/thestarman3/asm/mbr/MBR_in_detail.htm</A>, 
             containing a wealth of MBR info. The info on one of the pages states that the 
             MBR code is installed on the drive when the Windows setup program runs and no 
             MBR code exists already. Hmm.., seemed to be&nbsp;right on the mark.</P>
@@ -166,8 +164,8 @@ C:\&gt; mbrfix writesignature 473d4f07
             Vista.&nbsp;</P>
         <p>
             <h3>Credits:</h3>
-        <P>Daniel B. Sedory, for his compilation of information on <A href="http://thestarman.narod.ru/asm/mbr/index.html#MBR">
-                http://thestarman.narod.ru/asm/mbr/index.html#MBR</A> and for 
+        <P>Daniel B. Sedory, for his compilation of information on <A href="http://www.geocities.com/thestarman3/asm/mbr/MBR_in_detail.htm">
+                http://www.geocities.com/thestarman3/asm/mbr/MBR_in_detail.htm</A> and for 
             his feedback on the program.</P>
         <H3>User License Agreement:</H3>
         <p>
@@ -178,18 +176,13 @@ C:\&gt; mbrfix writesignature 473d4f07
             If re-distributed (CD/DVD-compilations or similar, on Web-pages, or with other non-commercial
             products), credit should be given to Kåre Smith and Systemintegrasjon AS.</p>
         <P>Incorrect use of this program <STRONG>may</STRONG> cause <STRONG>loss of all data</STRONG>
-            on your disk-drives. The same applies to any bugs in the program. 
-            All use of this program is&nbsp;at the risk of the user. 
+            on your disk-drives. All use of this program is&nbsp;at the risk of the user. 
             Systemintegrasjon AS does not accept any liability for any damage the program 
             might cause.</P>
         <p><b>If you do not accept these terms, you must delete the 
                 program,&nbsp;MbrFix.exe
             and MbrFix64.exe,&nbsp;at once!</b></p>
-         <h3>Changes:</h3>
-        <h5>Version 1.3.0.0</h5>
-        <p>Fixed bug in the fixbootsector command, which always wrote to drive 0.</p>
-        <p>Added support for Windows 7 MBR.</p>
-        <P align="right"><EM>Updated by Kåre Smith, 5. august 2009</EM></P>
+        <P align="right"><EM>Updated by Kåre Smith, 10. september 2007</EM></P>
         <!-- Comment: Originally developed by Kåre Smith, 28. November 2004 -->
     </body>
-</html>
+</HTML>

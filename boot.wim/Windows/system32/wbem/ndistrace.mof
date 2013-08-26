@@ -1,0 +1,148 @@
+#pragma autorecover
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+//
+// WPP Generated File
+// PDB:  d:\0055.obj.x86fre\net\ndis\sys\mp\objfre\i386\ndis.pdb
+// PDB:  Last Updated :2006-5-11:7:48:19:380 (UTC) [binplace]
+//
+
+//ModuleName = NDISTraceGuid	 (Init called in Function DriverEntry)
+[Dynamic,
+ Description("NDIS Tracing"),
+ guid("{dd7a21e6-a651-46d4-b7c2-66543067b869}"),
+ locale("MS\\0x409")]
+class NDISTraceGuid : EventTrace
+{
+    [Description ("Enable Flags"),
+        ValueDescriptions{
+             "DBG_COMP_INIT Flag",
+             "DBG_COMP_CONFIG Flag",
+             "DBG_COMP_SEND Flag",
+             "DBG_COMP_RECV Flag",
+             "DBG_COMP_PROTOCOL Flag",
+             "DBG_COMP_BIND Flag",
+             "DBG_COMP_BUSINFO Flag",
+             "DBG_COMP_REG Flag",
+             "DBG_COMP_MEMORY Flag",
+             "DBG_COMP_FILTER Flag",
+             "DBG_COMP_REQUEST Flag",
+             "DBG_COMP_WORK_ITEM Flag",
+             "DBG_COMP_PNP Flag",
+             "DBG_COMP_PM Flag",
+             "DBG_COMP_OPENREF Flag",
+             "DBG_COMP_LOCKS Flag",
+             "DBG_COMP_RESET Flag",
+             "DBG_COMP_WMI Flag",
+             "DBG_COMP_CO Flag",
+             "DBG_COMP_REF Flag",
+             "DBG_COMP_ALLOC Flag",
+             "DBG_COMP_IF Flag",
+             "DBG_COMP_PORT Flag",
+             "DBG_COMP_INDICATION Flag"},
+        DefineValues{
+             "DBG_COMP_INIT",
+             "DBG_COMP_CONFIG",
+             "DBG_COMP_SEND",
+             "DBG_COMP_RECV",
+             "DBG_COMP_PROTOCOL",
+             "DBG_COMP_BIND",
+             "DBG_COMP_BUSINFO",
+             "DBG_COMP_REG",
+             "DBG_COMP_MEMORY",
+             "DBG_COMP_FILTER",
+             "DBG_COMP_REQUEST",
+             "DBG_COMP_WORK_ITEM",
+             "DBG_COMP_PNP",
+             "DBG_COMP_PM",
+             "DBG_COMP_OPENREF",
+             "DBG_COMP_LOCKS",
+             "DBG_COMP_RESET",
+             "DBG_COMP_WMI",
+             "DBG_COMP_CO",
+             "DBG_COMP_REF",
+             "DBG_COMP_ALLOC",
+             "DBG_COMP_IF",
+             "DBG_COMP_PORT",
+             "DBG_COMP_INDICATION"},
+        Values{
+             "DBG_COMP_INIT",
+             "DBG_COMP_CONFIG",
+             "DBG_COMP_SEND",
+             "DBG_COMP_RECV",
+             "DBG_COMP_PROTOCOL",
+             "DBG_COMP_BIND",
+             "DBG_COMP_BUSINFO",
+             "DBG_COMP_REG",
+             "DBG_COMP_MEMORY",
+             "DBG_COMP_FILTER",
+             "DBG_COMP_REQUEST",
+             "DBG_COMP_WORK_ITEM",
+             "DBG_COMP_PNP",
+             "DBG_COMP_PM",
+             "DBG_COMP_OPENREF",
+             "DBG_COMP_LOCKS",
+             "DBG_COMP_RESET",
+             "DBG_COMP_WMI",
+             "DBG_COMP_CO",
+             "DBG_COMP_REF",
+             "DBG_COMP_ALLOC",
+             "DBG_COMP_IF",
+             "DBG_COMP_PORT",
+             "DBG_COMP_INDICATION"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008",
+             "0x00000010",
+             "0x00000020",
+             "0x00000040",
+             "0x00000080",
+             "0x00000100",
+             "0x00000200",
+             "0x00000400",
+             "0x00000800",
+             "0x00001000",
+             "0x00002000",
+             "0x00004000",
+             "0x00008000",
+             "0x00010000",
+             "0x00020000",
+             "0x00040000",
+             "0x00080000",
+             "0x00100000",
+             "0x00200000",
+             "0x00400000",
+             "0x00800000"}
+    ]
+    uint32 Flags;
+    [Description ("Levels"),
+        ValueDescriptions{
+            "Abnormal exit or termination",
+            "Severe errors that need logging",
+            "Warnings such as allocation failure",
+            "Includes non-error cases",
+            "Detailed traces from intermediate steps" },
+         DefineValues{
+            "TRACE_LEVEL_FATAL",
+            "TRACE_LEVEL_ERROR",
+            "TRACE_LEVEL_WARNING"
+            "TRACE_LEVEL_INFORMATION",
+            "TRACE_LEVEL_VERBOSE" },
+        Values{
+            "Fatal",
+            "Error",
+            "Warning",
+            "Information",
+            "Verbose" },
+        ValueMap{
+            "0x1",
+            "0x2",
+            "0x3",
+            "0x4",
+            "0x5" },
+        ValueType("index")
+    ]
+    uint32 Level;
+};

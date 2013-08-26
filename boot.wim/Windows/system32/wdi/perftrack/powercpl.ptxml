@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?Copyright (c) Microsoft Corporation. All rights reserved.?>
+<instrumentationManifest>
+  <instrumentation>
+    <perftrack>
+      <scenario guid="{5b6b2bed-e9cd-4bd4-ae89-aefc8e575193}" interactionclass="Responsive" key="$ProcessId" name="Shell-PowerOptionControlPanelLaunch" sqmid="272" tags="Shell UIC">
+        <event provider="{B1F90B27-4551-49d6-B2BD-DFC6453762A6}" type="start" value="101" version="0"/>
+        <event provider="{B1F90B27-4551-49d6-B2BD-DFC6453762A6}" type="stop" value="102" version="0"/>
+      </scenario>
+    </perftrack>
+  </instrumentation>
+</instrumentationManifest>

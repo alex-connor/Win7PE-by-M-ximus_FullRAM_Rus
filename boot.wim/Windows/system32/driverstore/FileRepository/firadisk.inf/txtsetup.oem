@@ -1,0 +1,18 @@
+[Disks]
+d1 = "FiraDisk Installation Disk", \firadisk.sys, \
+d1 = "FiraDisk Installation Disk", \firadisk64.sys, \
+
+[Defaults]
+scsi = firadisk32
+
+[scsi]
+firadisk32 = "FiraDisk Virtual Disk Driver x86",firadisk
+firadisk64 = "FiraDisk Virtual Disk Driver x64",firadisk
+
+[Files.scsi.firadisk32]
+driver     = d1,firadisk.sys,firadisk
+inf        = d1,firadisk.inf
+
+[Files.scsi.firadisk64]
+driver     = d1,firadisk64.sys,firadisk
+inf        = d1,firadisk.inf

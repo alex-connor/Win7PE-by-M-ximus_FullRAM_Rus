@@ -1,0 +1,330 @@
+﻿;;***************************************************************************
+;Copyright (c) 1998-2005 Microsoft Corporation All rights Reserved
+;
+;Module Name:
+;   VirtualAudioDevice.INF
+;
+;Author:
+;	Stephen R. Shaw
+;
+;Abstract:
+;    INF file for installing The Microsoft Virtual Machine Audio Device Driver
+;;***************************************************************************
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+provider=%ProviderName%
+CatalogFile=VirtualAudio.cat			
+DriverVer= 04/24/2007,13.811.0.0
+
+;;***************************************************************************
+;You must specify which platform is supported by each SourceDisksNames section
+;Valid platform identifiers include .x86, .ia64, .alpha, .axp64
+[SourceDisksNames]
+222=%DiskDescription%,,,
+
+;;***************************************************************************
+;You must also specify which platform is supported by each SourceDisksFiles section
+;Valid platform identifiers include .x86, .ia64, .alpha, .axp64
+[SourceDisksFiles]
+VirtualAudio.sys=222			
+
+;;***************************************************************************
+;the entries below are used by the device migration dll, on Win95/98 to Win2K upgrades
+VirtualAudio.inf=222		
+
+[Manufacturer]
+%MfgName%=Microsoft
+
+;;***************************************************************************
+;; Excluding drivers from the "Add New Hardware" list.
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Microsoft]
+%VIRTUALAUDIO_AA.DeviceDesc%=VIRTUALAUDIO, PCI\VEN_1414&DEV_0007
+
+[DestinationDirs]
+VIRTUALAUDIO.CopyList=10,system32\drivers
+
+[VIRTUALAUDIO]
+;;***************************************************************************
+;; This inf is intended for use by IHV. So, it is going to be used as from OEM distributed disk
+;; This is why AlsoInstall got used instead if Needs & Include
+AlsoInstall=KS.Registration(ks.inf), WDMAUDIO.Registration(wdmaudio.inf)
+CopyFiles=VIRTUALAUDIO.CopyList, WDMDriver_Files
+AddReg=VIRTUALAUDIO.AddReg, VIRTUALAUDIO_NAMES.AddReg, VIRTUALAUDIO_OEM.AddReg
+KnownRegEntries=VIRTUALAUDIO.KnownRegEntries
+
+;; To prevent installation on win 98 gold which has wdm v1.0
+[VIRTUALAUDIO.KnownRegEntries]
+IsWin98Gold=keep
+
+[IsWin98Gold]
+1=HKLM,Software\Microsoft\Windows\CurrentVersion,VersionNumber,0,4.10.1998
+
+[VIRTUALAUDIO.CopyList]
+VIRTUALAUDIO.sys
+
+[WDMDriver_Files]
+VirtualAudio.inf    ; Name of your INF goes here
+VirtualAudio.sys    ; Name of your driver file(s) goes here
+
+[VIRTUALAUDIO.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,VIRTUALAUDIO.Interface.Topology
+
+[VIRTUALAUDIO.Interface.Wave]
+AddReg=VIRTUALAUDIO.I.Wave.AddReg
+
+[VIRTUALAUDIO.I.Wave.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%VIRTUALAUDIO.Wave.szPname%
+
+[VIRTUALAUDIO.Interface.Topology]
+AddReg=VIRTUALAUDIO.I.Topo.AddReg
+
+[VIRTUALAUDIO.I.Topo.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%VIRTUALAUDIO.Topology.szPname%
+
+[VIRTUALAUDIO.AddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,VIRTUALAUDIO.sys
+HKR,,NTMPDriver,,"VIRTUALAUDIO.sys,sbemul.sys"
+
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,,%VIRTUALAUDIO.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv, Description,,%VIRTUALAUDIO.DeviceDesc%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%VIRTUALAUDIO.DeviceDesc%
+
+[VIRTUALAUDIO.Services]
+AddService = VIRTUALAUDIO, 0x00000002, VIRTUALAUDIO_Service_Inst
+
+[VIRTUALAUDIO_Service_Inst]
+DisplayName   = %VIRTUALAUDIO.SvcDesc%
+ServiceType   = 1                  ; SERVICE_KERNEL_DRIVER
+StartType     = 3                  ; SERVICE_DEMAND_START
+ErrorControl  = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary = %10%\system32\drivers\VirtualAudio.sys
+
+[VIRTUALAUDIO_NAMES.AddReg]
+;; Nodes
+HKLM,%MediaCategories%\%VAUDIOGUID.PhoneVolume%,Name,,%VAudioNode.PhoneVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.PhoneVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.PhoneMute%,Name,,%VAudioNode.PhoneMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.PhoneMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.LineInMute%,Name,,%VAudioNode.LineInMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.LineInMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MainMix%,Name,,%VAudioNode.MainMix%
+HKLM,%MediaCategories%\%VAUDIOGUID.MainMix%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.3DBypass%,Name,,%VAudioNode.3DBypass%
+HKLM,%MediaCategories%\%VAUDIOGUID.3DBypass%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.3DEnable%,Name,,%VAudioNode.3DEnable%
+HKLM,%MediaCategories%\%VAUDIOGUID.3DEnable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.BeepMix%,Name,,%VAudioNode.BeepMix%
+HKLM,%MediaCategories%\%VAUDIOGUID.BeepMix%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.HPVolume%,Name,,%VAudioNode.HPVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.HPVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.HPMute%,Name,,%VAudioNode.HPMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.HPMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MonoOutSelect%,Name,,%VAudioNode.MonoOutSelect%
+HKLM,%MediaCategories%\%VAUDIOGUID.MonoOutSelect%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.WaveInSelect%,Name,,%VAudioNode.WaveInSelect%
+HKLM,%MediaCategories%\%VAUDIOGUID.WaveInSelect%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MasterInVolume%,Name,,%VAudioNode.MasterInVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.MasterInVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MasterInMute%,Name,,%VAudioNode.MasterInMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.MasterInMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MicInVolume%,Name,,%VAudioNode.MicInVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.MicInVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.MicInMute%,Name,,%VAudioNode.MicInMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.MicInMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.SimulStereo%,Name,,%VAudioNode.SimulStereo%
+HKLM,%MediaCategories%\%VAUDIOGUID.SimulStereo%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.SurroundVolume%,Name,,%VAudioNode.SurroundVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.SurroundVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.SurroundMute%,Name,,%VAudioNode.SurroundMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.SurroundMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.CenterVolume%,Name,,%VAudioNode.CenterVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.CenterVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.CenterMute%,Name,,%VAudioNode.CenterMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.CenterMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.LFEVolume%,Name,,%VAudioNode.LFEVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.LFEVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.LFEMute%,Name,,%VAudioNode.LFEMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.LFEMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.FrontVolume%,Name,,%VAudioNode.FrontVolume%
+HKLM,%MediaCategories%\%VAUDIOGUID.FrontVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.FrontMute%,Name,,%VAudioNode.FrontMute%
+HKLM,%MediaCategories%\%VAUDIOGUID.FrontMute%,Display,1,00,00,00,00
+;; Pins
+HKLM,%MediaCategories%\%VAUDIOGUID.Surround%,Name,,%VAudioPin.Surround%
+HKLM,%MediaCategories%\%VAUDIOGUID.Surround%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.Center%,Name,,%VAudioPin.Center%
+HKLM,%MediaCategories%\%VAUDIOGUID.Center%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.LFE%,Name,,%VAudioPin.LFE%
+HKLM,%MediaCategories%\%VAUDIOGUID.LFE%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VAUDIOGUID.Front%,Name,,%VAudioPin.Front%
+HKLM,%MediaCategories%\%VAUDIOGUID.Front%,Display,1,00,00,00,00
+
+[VIRTUALAUDIO_OEM.AddReg]
+;;Default register value at driver startup
+;;Uncomment some one of the lines if you want to overwrite the default setting
+;;The value in these outcommented lines is the driver default. You can change
+;;the register values (and uncomment the line) to overwrite the driver default.
+;;low byte comes first, values are hexadezimal.
+;HKR,Settings,MasterVolume,1,0,0        ;0dB
+;HKR,Settings,HeadphoneVolume,1,0,0     ;0dB
+;HKR,Settings,MonooutVolume,1,0,0       ;0dB
+;HKR,Settings,ToneControls,1,F,F        ;bypass
+;HKR,Settings,BeepVolume,1,0,0          ;0dB
+;HKR,Settings,PhoneVolume,1,8,80        ;muted
+;HKR,Settings,MicVolume,1,8,80          ;muted
+;HKR,Settings,LineInVolume,1,8,8        ;0dB
+;HKR,Settings,CDVolume,1,8,8            ;0dB
+;HKR,Settings,VideoVolume,1,8,8         ;0dB
+;HKR,Settings,AUXVolume,1,8,8           ;0dB
+;HKR,Settings,WaveOutVolume,1,8,8       ;0dB. This register is never touched by the system.
+;HKR,Settings,RecordSelect,1,4,4        ;select LiniIn
+;HKR,Settings,RecordGain,1,0,0          ;0dB
+;HKR,Settings,RecordGainMic,1,0,0       ;0dB
+;HKR,Settings,GeneralPurpose,1,0,0      ;pre 3D, 3D off, loudness off, mono=mix, mic1
+;HKR,Settings,3DControl,1,0,0           ;0%
+;HKR,Settings,PowerDown,1,0,0           ;no power down
+;HKR,Settings,ExtAudioCtrl,1,01,40      ;VRA, DACs on, MicIn off
+;HKR,Settings,CenterLFEVolume,1,0,0     ;0dB
+;HKR,Settings,SurroundVolume,1,0,0              ;0dB
+
+;;Configuration
+;;You can disable some of the input lines by outcommenting some of the lines
+;;below. 
+HKR,Settings,DisableMicIn,1,0
+HKR,Settings,DisableCenterLFE,1,1       ;6ch playback is not supported.
+;;for the user (no plug in).
+;HKR,Settings,DisablePCBeep,1,1
+;HKR,Settings,DisablePhone,1,1
+HKR,Settings,DisableMic2,1,0
+;HKR,Settings,DisableVideo,1,1
+;HKR,Settings,DisableAUX,1,1
+;HKR,Settings,DisableHeadphone,1,1
+HKR,Settings,DisableMonoOut,1,0
+HKR,Settings,DisableMic,1,0            ;disables all MIC lines, including MIC record.
+HKR,Settings,DisableLineIn,1,0
+;HKR,Settings,DisableCD,1,1
+;HKR,Settings,DisableSurround,1,1
+;HKR,Settings,ChannelConfig,1,3,0,0,0   ;ChannelConfig set to stereo speakers.
+
+;;***************************************************************************
+;;================= Windows NT ====================
+[VIRTUALAUDIO.NTX86]
+Include=ks.inf, wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration
+CopyFiles=VIRTUALAUDIO.CopyList
+AddReg=VIRTUALAUDIO.AddReg,VIRTUALAUDIO_NAMES.AddReg,VIRTUALAUDIO_OEM.AddReg
+
+[VIRTUALAUDIO.NTX86.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,VIRTUALAUDIO.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,VIRTUALAUDIO.Interface.Topology
+
+[VIRTUALAUDIO.NTX86.Services]
+AddService = VIRTUALAUDIO, 0x00000002, VIRTUALAUDIO_Service_Inst
+
+
+[Strings]
+ProviderName="Microsoft"
+MfgName="Microsoft"
+DiskDescription="Microsoft Virtual Machine Audio Device Driver Disk"
+VIRTUALAUDIO_AA.DeviceDesc="Microsoft Virtual Machine Audio Device Driver"
+VIRTUALAUDIO.DeviceDesc="Driver for Microsoft Virtual Machine Audio Device"
+
+VIRTUALAUDIO.Wave.szPname="Microsoft Virtual Machine Audio Card"
+VIRTUALAUDIO.Topology.szPname="Microsoft Virtual Machine Audio Device Mixer"
+
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSNAME_Wave="Wave"
+KSNAME_Topology="Topology"
+
+VIRTUALAUDIO.SvcDesc = "Service for Microsoft Virtual Machine Audio Device Driver (WDM)"
+
+;; Nodes (non-localizeable)
+VAUDIOGUID.PhoneVolume     ="{0A8C1A87-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.PhoneMute       ="{0A8C1A88-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.LineInMute      ="{0A8C1A91-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MainMix         ="{0A8C1A9B-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.3DBypass        ="{0A8C1A9E-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.3DEnable        ="{766DB5A4-6E94-11D2-9ADE-00C04F8EFB68}"
+VAUDIOGUID.BeepMix         ="{0A8C1A9F-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.HPVolume        ="{0A8C1AA5-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.HPMute          ="{0A8C1AA6-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MonoOutSelect   ="{0A8C1AA9-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.WaveInSelect    ="{0A8C1AAE-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MasterInVolume  ="{0A8C1AAF-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MasterInMute    ="{0A8C1AB0-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MicInVolume     ="{0A8C1AB2-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.MicInMute       ="{0A8C1AB3-42B0-11D2-95D2-00C04FB925D3}"
+VAUDIOGUID.SimulStereo     ="{B3AD50B5-3849-4983-ADD7-25E6268F912D}"
+VAUDIOGUID.SurroundVolume  ="{A4B68BA4-6958-4ab4-BB01-E23C6F027C88}"
+VAUDIOGUID.SurroundMute    ="{22654FBC-AC8F-4224-B19F-D858D2E10BDD}"
+VAUDIOGUID.CenterVolume    ="{9B0F1946-ABD2-47a8-A778-BB86CDE1A167}"
+VAUDIOGUID.CenterMute      ="{BEEF51ED-1041-43f8-9B96-5863D0A9342D}"
+VAUDIOGUID.LFEVolume       ="{455FA6F2-21EC-4df4-B1E4-3155209797F3}"
+VAUDIOGUID.LFEMute         ="{4A4D9210-C780-4768-BFD2-525FDBF4FCB4}"
+VAUDIOGUID.FrontVolume     ="{9F4801BD-F746-4c7a-8A9D-F6E99004CC98}"
+VAUDIOGUID.FrontMute       ="{C8E03B2A-EBD9-4554-A750-8E4472750A5B}"
+
+;; Pins (non-localizeable)
+VAUDIOGUID.Surround        ="{81FBB14B-1BEE-4bf5-92EE-FFC4F75F326D}"
+VAUDIOGUID.Center          ="{2D97372F-9CF6-4fd6-9E56-C68BACDF360D}"
+VAUDIOGUID.LFE             ="{B60C4274-3BFD-430b-8364-D947E7D304B1}"
+VAUDIOGUID.Front           ="{070395E2-BE7C-4b4d-B529-40CB9BFCF995}"
+
+;; Nodes (localizeable)
+VAudioNode.PhoneVolume     ="Phone Volume"
+VAudioNode.PhoneMute       ="Phone Mute"
+VAudioNode.LineInMute      ="Line In Mute"
+VAudioNode.MainMix         ="Main Mix"
+VAudioNode.3DBypass        ="3D Bypass"
+VAudioNode.3DEnable        ="3D Enable"
+VAudioNode.BeepMix         ="Beep Mix"
+VAudioNode.HPVolume        ="Headphone Volume"
+VAudioNode.HPMute          ="Headphone Mute"
+VAudioNode.MonoOutSelect   ="Mono Out Select"
+VAudioNode.WaveInSelect    ="Wave In Select"
+VAudioNode.MasterInVolume  ="Wave In Volume"
+VAudioNode.MasterInMute    ="Wave In Mute"
+VAudioNode.MicInVolume     ="Mic In Volume"
+VAudioNode.MicInMute       ="Mic In Mute"
+VAudioNode.SimulStereo     ="Simulated Stereo"
+VAudioNode.SurroundVolume  ="Rear Speaker Volume"
+VAudioNode.SurroundMute    ="Rear Speaker Mute"
+VAudioNode.CenterVolume    ="Center Volume"
+VAudioNode.CenterMute      ="Center Mute"
+VAudioNode.LFEVolume       ="Subwoofer Volume"
+VAudioNode.LFEMute         ="Subwoofer Mute"
+VAudioNode.FrontVolume     ="Front Volume"
+VAudioNode.FrontMute       ="Front Mute"
+
+;; Pins
+VAudioPin.Surround         ="Rear Speaker"
+VAudioPin.Center           ="Center"
+VAudioPin.LFE              ="Subwoofer"
+VAudioPin.Front            ="Front Speaker"
+
+

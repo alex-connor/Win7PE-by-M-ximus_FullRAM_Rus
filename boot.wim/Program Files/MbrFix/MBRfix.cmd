@@ -177,7 +177,7 @@ set waoutput=
 set wafile=
 set walistsep=;
 set waoutnum=
-set wainput=^&0. Display drive information;^&1. Save MBR and partitions to file;^&2. Restore MBR and partitions from file;^&3. Update MBR code to W2K/XP/2003;^&4. Update MBR code to Vista;^&5. Update MBR code to Windows 7;^&6. Delete partitions in MBR;^&7. Read disk signature from MBR;^&8. Write disk signature in MBR;^&9. Generate disk signature in MBR;^&10. Read state from byte 0x1b0 in MBR;^&11. Write state to byte 0x1b0 in MBR
+set wainput=^&0. Display drive information;^&1. Save MBR and partitions to file;^&2. Restore MBR and partitions from file;^&3. Update MBR code to W2K/XP/2003;^&4. Update MBR code to Vista;^&5. Delete partitions in MBR;^&6. Read disk signature from MBR;^&7. Write disk signature in MBR;^&8. Generate disk signature in MBR;^&9. Read state from byte 0x1b0 in MBR;^&10. Write state to byte 0x1b0 in MBR
 set wasig=%mysig% %page%
 start /w wizapp RB
 if errorlevel 2 goto :cancel
@@ -375,35 +375,9 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
+
 :p0.5
-set MBRFILE="%waoutput%"
-set watitle=%mytitle% Confirm
-set watext=WARNING, by clicking OK, you will
-set watext=%watext% Update MBR code on drive %drivenum% with
-set watext=%watext% the Windows 7 one
-start /w wizapp MB QUES
-if errorlevel 2 goto :p0
-
-:p0.5.0
 set page=:p0.5
-set NEXTCOMMAND=MBRfix.exe /drive %drivenum% fixmbr /win7
-call :confirm
-set watitle=%mytitle% Update MBR code to Windows 7
-set watext=%mytext%~~Windows 7 MBR Code
-set watext=%watext%~Has been saved on drive %drivenum%
-set watext=%watext%~Errors (if any) are shown below:
-echo Y | %NEXTCOMMAND% > %myout%
-if NOT errorlevel 2 ECHO Y >> %myout%
-:: wafile contains the output of the command.
-set wafile=%myout%
-set wasig=%mysig% %page%
-start /w wizapp FINISH FT
-if errorlevel 2 goto :cancel
-if errorlevel 1 goto :p0
-goto :exit
-
-:p0.6
-set page=:p0.6
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% clean
 call :confirm
 set watitle=%mytitle% Delete partitions in MBR
@@ -422,8 +396,8 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
-:p0.7
-set page=:p0.7
+:p0.6
+set page=:p0.6
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% readsignature
 set watitle=%mytitle% Drive Signature Info
 set watext=%mytext%~~This is the current Signature info on drive %drivenum%
@@ -437,8 +411,8 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
-:p0.8
-set page=:p0.8
+:p0.7
+set page=:p0.7
 MBRfix.exe /drive %drivenum% readsignature > %mytemp1%
 FOR /F "tokens=*" %%A IN (%mytemp1%) DO SET BYTE=%%A
 set watitle=%mytitle% Type a Signature value
@@ -456,7 +430,7 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 call %wabat%
 :: and store it
-If NOT DEFINED waoutput goto :p0.8
+If NOT DEFINED waoutput goto :p0.7
 
 set watitle=Overwrite warning!
 set watext=Signature value is currently %BYTE%!
@@ -466,8 +440,8 @@ start /w wizapp MB QUES
 if errorlevel 2 goto :p0.2
 
 
-:p0.8.0
-set page=:p0.8.0
+:p0.7.0
+set page=:p0.7.0
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% writesignature %waoutput%
 call :confirm
 set watitle=%mytitle% Write Signature
@@ -489,7 +463,7 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
-:p0.9
+:p0.8
 MBRfix.exe /drive %drivenum% readsignature > %mytemp1%
 FOR /F "tokens=*" %%A IN (%mytemp1%) DO SET BYTE=%%A
 set watitle=%mytitle% Confirm
@@ -499,8 +473,8 @@ set watext=%watext%~Current Signature is %BYTE%
 start /w wizapp MB QUES
 if errorlevel 2 goto :p0
 
-:p0.9.0
-set page=:p0.9.0
+:p0.8.0
+set page=:p0.8.0
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% generatesignature
 call :confirm
 set watitle=%mytitle% Generate disk signature in MBR
@@ -522,8 +496,8 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
-:p0.10
-set page=:p0.10
+:p0.9
+set page=:p0.9
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% readstate
 set watitle=%mytitle% State from byte 0x1b0
 set watext=%mytext%~~This is the current State of byte 0x1b0 on drive %drivenum%
@@ -537,8 +511,8 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 goto :exit
 
-:p0.11
-set page=:p0.11
+:p0.10
+set page=:p0.10
 MBRfix.exe /drive %drivenum% readstate > %mytemp1%
 FOR /F "tokens=*" %%A IN (%mytemp1%) DO SET BYTE=%%A
 set watitle=%mytitle% Type a State Byte value
@@ -556,7 +530,7 @@ if errorlevel 2 goto :cancel
 if errorlevel 1 goto :p0
 call %wabat%
 :: and store it
-If NOT DEFINED waoutput goto :p0.11
+If NOT DEFINED waoutput goto :p0.10
 
 set watitle=Overwrite warning!
 set watext=State byte value is currently %BYTE%!
@@ -566,8 +540,8 @@ start /w wizapp MB QUES
 if errorlevel 2 goto :p0.2
 
 
-:p0.11.0
-set page=:p0.11.0
+:p0.10.0
+set page=:p0.10.0
 set NEXTCOMMAND=MBRfix.exe /drive %drivenum% writestate %waoutput%
 call :confirm
 set watitle=%mytitle% Set State byte at address 0x1b0

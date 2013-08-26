@@ -1,0 +1,39 @@
+#pragma classflags("forceupdate")
+#pragma namespace("\\\\.\\root\\WMI")
+//
+// WPP Generated File
+// PDB:  z:\ntdmidev.obj.x86fre\base\pnp\pnpsetup\objfre\i386\pnpsetup.pdb
+// PDB:  Last Updated :2006-3-31:10:16:25:181 (UTC) [binplace]
+//
+
+//ModuleName = WcmSetup	 (Init called in Function DllMain)
+[Dynamic,
+ Description("PnP Setup Trace"),
+ guid("{efc154d7-91bc-4afd-a7ee-ed4c1e3048f1}"),
+ locale("MS\\0x409")]
+class WcmSetup : EventTrace
+{
+    [Description ("Enable Flags"),
+        ValueDescriptions{
+             "TL_ERROR Flag",
+             "TL_WARNING Flag",
+             "TL_INFO Flag",
+             "TL_TRACE Flag"},
+        DefineValues{
+             "TL_ERROR",
+             "TL_WARNING",
+             "TL_INFO",
+             "TL_TRACE"},
+        Values{
+             "TL_ERROR",
+             "TL_WARNING",
+             "TL_INFO",
+             "TL_TRACE"},
+        ValueMap{
+             "0x00000001",
+             "0x00000002",
+             "0x00000004",
+             "0x00000008"}
+    ]
+    uint32 Flags;
+};
