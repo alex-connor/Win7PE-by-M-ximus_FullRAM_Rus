@@ -1,4 +1,0 @@
-In Vista, rather than rebooting after applying the msv1_0.dll patch adn un-applying it, you can run:
-
-scanfile=c:\windows\system32\msv1_0.dll
-

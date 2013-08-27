@@ -1,6 +1,0 @@
-[InternetShortcut]
-URL=http://www.rarlab.com
-
-Исходные тексты UnRAR и библиотеку UnRAR.dll
-можно загрузить с сайта WinRAR по адресу
-http://www.rarlab.com (раздел "RAR > Extras").
