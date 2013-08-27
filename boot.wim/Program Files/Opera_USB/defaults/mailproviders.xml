@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- <port> needs to be before <auth> and <secure> -->
+<providers>
+  <provider>
+    <domains>
+      <domain>myopera.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.myopera.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.myopera.com</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.myopera.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>gmail.com</domain>
+      <domain>googlemail.com</domain>
+      <domain>gazeta.pl</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>imap.gmail.com</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>pop.gmail.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.gmail.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>myrealbox.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.myrealbox.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.myrealbox.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.myrealbox.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>123mail.org</domain>
+      <domain>150mail.com</domain>
+      <domain>150ml.com</domain>
+      <domain>16mail.com</domain>
+      <domain>2-mail.com</domain>
+      <domain>4email.net</domain>
+      <domain>50mail.com</domain>
+      <domain>airpost.net</domain>
+      <domain>allmail.net</domain>
+      <domain>bestmail.us</domain>
+      <domain>cluemail.com</domain>
+      <domain>elitemail.org</domain>
+      <domain>emailcorner.net</domain>
+      <domain>emailengine.net</domain>
+      <domain>emailengine.org</domain>
+      <domain>emailgroups.net</domain>
+      <domain>emailplus.org</domain>
+      <domain>emailuser.net</domain>
+      <domain>eml.cc</domain>
+      <domain>fastem.com</domain>
+      <domain>fast-email.com</domain>
+      <domain>fastemail.us</domain>
+      <domain>fastemailer.com</domain>
+      <domain>fastest.cc</domain>
+      <domain>fastimap.com</domain>
+      <domain>fastmail.cn</domain>
+      <domain>fastmail.com.au</domain>
+      <domain>fastmail.fm</domain>
+      <domain>fastmail.jp</domain>
+      <domain>fastmail.us</domain>
+      <domain>fastmail.co.uk</domain>
+      <domain>fastmail.to</domain>
+      <domain>fastmail.es</domain>
+      <domain>fastmail.in</domain>
+      <domain>fastmail.net</domain>
+      <domain>fmail.co.uk</domain>
+      <domain>fast-mail.org</domain>
+      <domain>fastmailbox.net</domain>
+      <domain>fastmessaging.com</domain>
+      <domain>fea.st</domain>
+      <domain>f-m.fm</domain>
+      <domain>fmailbox.com</domain>
+      <domain>fmgirl.com</domain>
+      <domain>fmguy.com</domain>
+      <domain>ftml.net</domain>
+      <domain>hailmail.net</domain>
+      <domain>h-mail.us</domain>
+      <domain>imap.cc</domain>
+      <domain>imap-mail.com</domain>
+      <domain>imapmail.org</domain>
+      <domain>inoutbox.com</domain>
+      <domain>internet-e-mail.com</domain>
+      <domain>internetemails.net</domain>
+      <domain>internet-mail.org</domain>
+      <domain>internetmailing.net</domain>
+      <domain>jetemail.net</domain>
+      <domain>justemail.net</domain>
+      <domain>letterboxes.org</domain>
+      <domain>mailandftp.com</domain>
+      <domain>mailas.com</domain>
+      <domain>mailbolt.com</domain>
+      <domain>mailc.net</domain>
+      <domain>mailcan.com</domain>
+      <domain>mail-central.com</domain>
+      <domain>mailforce.net</domain>
+      <domain>mailftp.com</domain>
+      <domain>mailhaven.com</domain>
+      <domain>mailingaddress.org</domain>
+      <domain>mailite.com</domain>
+      <domain>mailmight.com</domain>
+      <domain>mailnew.com</domain>
+      <domain>mail-page.com</domain>
+      <domain>mailsent.net</domain>
+      <domain>mailservice.ms</domain>
+      <domain>mailup.net</domain>
+      <domain>mailworks.org</domain>
+      <domain>ml1.net</domain>
+      <domain>mm.st</domain>
+      <domain>myfastmail.com</domain>
+      <domain>mymacmail.com</domain>
+      <domain>nospammail.net</domain>
+      <domain>ownmail.net</domain>
+      <domain>petml.com</domain>
+      <domain>postinbox.com</domain>
+      <domain>postpro.net</domain>
+      <domain>proinbox.com</domain>
+      <domain>promessage.com</domain>
+      <domain>realemail.net</domain>
+      <domain>reallyfast.biz</domain>
+      <domain>reallyfast.info</domain>
+      <domain>rushpost.com</domain>
+      <domain>sent.as</domain>
+      <domain>sent.at</domain>
+      <domain>sent.com</domain>
+      <domain>speedpost.net</domain>
+      <domain>speedymail.org</domain>
+      <domain>ssl-mail.com</domain>
+      <domain>swift-mail.com</domain>
+      <domain>the-fastest.net</domain>
+      <domain>theinternetemail.com</domain>
+      <domain>the-quickest.com</domain>
+      <domain>veryfast.biz</domain>
+      <domain>veryspeedy.net</domain>
+      <domain>warpmail.net</domain>
+      <domain>xsmail.com</domain>
+      <domain>yepmail.net</domain>
+      <domain>your-mail.com</domain>
+      <domain>operamail.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>mail.messagingengine.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>mail.messagingengine.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>mail.messagingengine.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>yahoo.com</domain>
+      <domain>ymail.com</domain>
+      <domain>rocketmail.com</domain>
+      <domain>yahoo.fr</domain>
+      <domain>yahoo.no</domain>
+      <domain>yahoo.co.uk</domain>
+      <domain>yahoo.de</domain>
+      <domain>yahoo.nl</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.mail.yahoo.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.yahoo.com</host>
+        <port>465</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>runbox.com</domain>
+      <domain>runbox.no</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>secure.runbox.com</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>secure.runbox.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>secure.runbox.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>mac.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>mail.mac.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>mail.mac.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mac.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>aim.com</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.aim.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.aim.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.aim.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>aol.com</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.aol.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.aol.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.aol.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>gmx.de</domain>
+      <domain>gmx.net</domain>
+      <domain>gmx.at</domain>
+      <domain>gmx.org</domain>
+      <domain>gmx.biz</domain>
+      <domain>gmx.info</domain>
+      <domain>gmx.tm</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.gmx.net</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.gmx.net</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>mail.gmx.net</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>gmx.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.gmx.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="imap">
+        <host>imap.gmx.com</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>mail.gmx.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>hushmail.com</domain>
+    </domains>
+    <username use="email"/>
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>imap.hushmail.com</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>pop.hushmail.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.hushmail.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+
+  <provider>
+    <domains>
+      <domain>lycos.com</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.mail.lycos.com</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.lycos.com</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>excite.com</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop3.excite.com</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.excite.com</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>mail.ru</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.mail.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="imap">
+        <host>imap.mail.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.ru</host>
+        <port>587</port>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>rediffmail.com</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.rediffmail.com</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.rediffmail.com</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>tuffmail.com</domain>
+      <domain>tuffmail.co.uk</domain>
+      <domain>tuffmail.cc</domain>
+      <domain>tuffbx.com</domain>
+      <domain>tmbox.com</domain>
+      <domain>tm20.com</domain>
+      <domain>tmbx.com</domain>
+      <domain>tmbx.us</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>mail.mxes.net</host>
+        <port>143</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>mail.mxes.net</host>
+        <port>110</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mxes.net</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>web.de</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>imap.web.de</host>
+        <port>993</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>pop3.web.de</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.web.de</host>
+        <port>587</port>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>opera.com</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="imap">
+        <host>imap.opera.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+        <imap>
+          <sent_folder>Sent</sent_folder>
+        </imap>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.opera.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>online.no</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.online.no</host>
+        <auth>plaintext</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.online.no</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>163.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.163.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.163.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>126.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.126.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.126.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>yeah.net</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.yeah.net</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.yeah.net</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>vip.sohu.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.vip.sohu.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.vip.sohu.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>sohu.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.sohu.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.sohu.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>sogou.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.mail.sogou.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.sogou.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>tom.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.tom.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.tom.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>vip.sina.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.sina.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.sina.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>sina.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.sina.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.sina.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>21cn.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>imap.21cn.com</host>
+        <port>143</port>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="pop">
+        <host>pop.21cn.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.21cn.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>21cn.net</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>imap.21cn.net</host>
+        <port>143</port>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="pop">
+        <host>pop.21cn.net</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.21cn.net</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>yahoo.com.cn</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.mail.yahoo.com.cn</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.yahoo.com.cn</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>yahoo.cn</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.mail.yahoo.cn</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.mail.yahoo.cn</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>qq.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.qq.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.qq.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>vip.qq.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.qq.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.qq.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>56.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop3.56.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.56.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>hexun.com</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.hexun.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.hexun.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>xinhuanet.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.xinhuanet.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.xinhuanet.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>139.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>mail.139.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>mail.139.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>188.com</domain>
+      <domain>vip.188.com</domain>
+    </domains>
+    <username use="user" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.188.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.188.com</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+  <!-- Configuration information: http://poczta.wp.pl/autoryzacja/ -->
+  <provider>
+    <domains>
+      <domain>wp.pl</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop3.wp.pl</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.wp.pl</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://poczta.onet.pl/pomoc/13281,0,31,4,0,37,1,10802,pomoc.html -->
+  <provider>
+    <domains>
+      <domain>poczta.onet.pl</domain>
+      <domain>poczta.onet.eu</domain>
+      <domain>onet.eu</domain>
+      <domain>op.pl</domain>
+      <domain>vp.pl</domain>
+      <domain>buziaczek.pl</domain>
+      <domain>autograf.pl</domain>
+      <domain>amorki.pl</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop3.poczta.onet.pl</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.poczta.onet.pl</host>
+        <auth>auto</auth>
+        <secure>no</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://pomoc.o2.pl/poczta/programy/ -->
+  <provider>
+    <domains>
+      <domain>o2.pl</domain>
+      <domain>tlen.pl</domain>
+      <domain>go2.pl</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>poczta.o2.pl</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>poczta.o2.pl</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://poczta.interia.pl/pomoc/?cat=194&inf=214 -->
+  <provider>
+    <domains>
+      <domain>1gb.pl</domain>
+      <domain>2gb.pl</domain>
+      <domain>vip.interia.pl</domain>
+      <domain>akcja.pl</domain>
+      <domain>serwus.pl</domain>
+      <domain>czateria.pl</domain>
+    </domains>
+    <username use="custom">$u+$d</username>
+    <servers>
+      <server protocol="pop">
+        <host>poczta.vip.interia.pl</host>
+        <port>995</port>
+        <auth>plaintext</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>poczta.vip.interia.pl</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>interia.pl</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>poczta.interia.pl</host>
+        <port>995</port>
+        <auth>plaintext</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>poczta.interia.pl</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>poczta.fm</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>www.poczta.fm</host>
+        <port>995</port>
+        <auth>plaintext</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>www.poczta.fm</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>interia.eu</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>poczta.interia.pl</host>
+        <port>995</port>
+        <auth>plaintext</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>poczta.interia.pl</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>hotmail.com</domain>
+      <domain>live.com</domain>
+      <domain>hotmail.co.uk</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop3.live.com</host>
+        <port>995</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.live.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://help.yandex.ru/mail/index.xml?id=286975 -->
+  <provider>
+    <domains>
+      <domain>yandex.ru</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.yandex.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.yandex.ru</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://help.yandex.ru/mail/index.xml?id=286975 -->
+  <provider>
+    <domains>
+      <domain>narod.ru</domain>
+    </domains>
+    <username use="user" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.narod.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.narod.ru</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://help.rambler.ru/article.html?s=141&id=33 -->
+  <provider>
+    <domains>
+      <domain>rambler.ru</domain>
+    </domains>
+    <username use="email" />
+    <preferred>pop</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>mail.rambler.ru</host>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+      <server protocol="imap">
+        <host>mail.rambler.ru</host>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>mail.rambler.ru</host>
+        <port>587</port>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://www.pochta.ru/support/faq.php -->
+  <provider>
+    <domains>
+      <domain>pochta.ru</domain>
+    </domains>
+    <username use="email" />
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="pop">
+        <host>pop.pochta.ru</host>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+      <server protocol="imap">
+        <host>imap.pochta.ru</host>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.pochta.ru</host>
+        <port>2525</port>
+        <secure>yes</secure>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://www.nextmail.ru/hlp/opera.phtml?t=2 -->
+  <provider>
+    <domains>
+      <domain>nextmail.ru</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.nextmail.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.nextmail.ru</host>
+        <port>2525</port>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <!-- Configuration information: http://email.ru/faq.wssp?language=english -->
+  <provider>
+    <domains>
+      <domain>email.ru</domain>
+      <domain>aport.ru</domain>
+      <domain>fax.ru</domain>
+      <domain>omen.ru</domain>
+      <domain>imail.ru</domain>
+      <domain>au.ru</domain>
+      <domain>atrus.ru</domain>
+      <domain>aport2000.ru</domain>
+    </domains>
+    <username use="email" />
+    <servers>
+      <server protocol="pop">
+        <host>pop.email.ru</host>
+        <auth>auto</auth>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.email.ru</host>
+        <auth>auto</auth>
+      </server>
+    </servers>
+  </provider>
+
+  <provider>
+    <domains>
+      <domain>me.com</domain>
+    </domains>
+    <username use="user"/>
+    <preferred>imap</preferred>
+    <servers>
+      <server protocol="imap">
+        <host>mail.me.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="pop">
+        <host>mail.me.com</host>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+      <server protocol="smtp">
+        <host>smtp.me.com</host>
+        <port>587</port>
+        <auth>auto</auth>
+        <secure>yes</secure>
+      </server>
+    </servers>
+  </provider>
+</providers>
+

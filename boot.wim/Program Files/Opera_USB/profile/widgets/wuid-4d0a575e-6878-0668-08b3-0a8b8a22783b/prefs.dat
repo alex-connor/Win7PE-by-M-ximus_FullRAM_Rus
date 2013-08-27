@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preferences>
+  <section id="ui">
+    <value id="name" xml:space="preserve">File Sharing</value>
+  </section>
+  <section id="wuid-4d0a575e-6878-0668-08b3-0a8b8a22783b">
+    <value id="network_access" xml:space="preserve">24</value>
+  </section>
+</preferences>

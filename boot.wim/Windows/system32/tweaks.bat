@@ -1,6 +1,12 @@
+monitor.exe
 regedit /s Y:\sources\reg\sys.reg
-regedit /s Y:\sources\reg\software.reg
-"X:\Program Files\7-Zip\7z.exe" -o "y:\sources\programs.wim" "x:\program files"
 regsvr32 /s Query.dll
 regsvr32 /s "X:\Program Files\HashTab\HashTab32.dll"
-exit
+regsvr32 /s "X:\Program Files\ExtremeCopy\XCShellExt.dll"
+regsvr32 /s ieproxy.dll
+regsvr32 /s "X:\Program Files\ImageX\gimagex_com.dll"
+regsvr32 /s "X:\Program Files\XNView\XnViewShellExt.dll"
+pnputil -i -a "X:\Program Files\ImageX\wimfltr.inf"
+imdisk -a -s 20%% -m B: -p "/fs:fat32 /q /y"
+mkdir "b:\temp"
+

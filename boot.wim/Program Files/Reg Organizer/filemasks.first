@@ -1,0 +1,348 @@
+[*.~*]
+Description=Backup files
+Disabled=1
+
+[~*.*]
+Description=Backup files
+Disabled=1
+
+[*~.*]
+Description=Backup files
+Disabled=1
+
+[*.*~]
+Description=Backup files
+Disabled=1
+
+[*.?~?]
+Description=Backup files
+Disabled=1
+
+[*.??$]
+Description=Backup files
+Disabled=1
+
+[*.?$?]
+Description=Backup files
+Disabled=1
+
+[*.$*]
+Description=Backup files
+Disabled=1
+
+[*.$$$]
+Description=Backup files
+Disabled=0
+
+[*.old]
+Description=Backup files
+Disabled=1
+
+[*.bak]
+Description=Backup files
+Disabled=0
+
+[*.prv]
+Description=Backup files
+Disabled=1
+
+[*.cpy]
+Description=Backup files
+Disabled=1
+
+[*.nav]
+Description=Backup files
+Disabled=1
+
+[*.syd]
+Description=Backup files
+Disabled=1
+
+[*.bk]
+Description=Backup files
+Disabled=1
+
+[*.MS]
+Description=Microsoft backup files
+Disabled=1
+
+[*.ftg]
+Description=Cache files
+Disabled=0
+
+[*.fts]
+Description=Cache files
+Disabled=0
+
+[*.fnd]
+Description=Cache files
+Disabled=1
+
+[pspbrwse.jbf]
+Description=Paint Shop cache file
+Disabled=1
+
+[*.chk]
+Description=Chkdsk files
+Disabled=0
+
+[file*.chk]
+Description=Chkdsk files
+Disabled=1
+
+[chklist.*]
+Description=Chkdsk files
+Disabled=0
+
+[mscreate.dir]
+Description=Description files
+Disabled=0
+
+[files.bbs]
+Description=Description files
+Disabled=1
+
+[*.sdi]
+Description=Description files
+Disabled=1
+
+[ffastun.*]
+Description=Index files
+Disabled=0
+
+[*_ofidx.*]
+Description=Index files
+Disabled=0
+
+[*.gid]
+Description=Index files
+Disabled=0
+
+[*.log]
+Description=Log files
+Disabled=1
+
+[*.err]
+Description=Error reports
+Disabled=1
+
+[bootlog.prv]
+Description=Reports
+Disabled=1
+
+[modemet.txt]
+Description=Reports
+Disabled=1
+
+[netlog.txt]
+Description=Reports
+Disabled=1
+
+[sfclog.txt]
+Description=Reports
+Disabled=1
+
+[bootlog.txt]
+Description=Reports
+Disabled=1
+
+[schedlogu.txt]
+Description=Reports
+Disabled=1
+
+[setuplog.txt]
+Description=Reports
+Disabled=1
+
+[oemlog.txt]
+Description=Reports
+Disabled=1
+
+[*.lo_]
+Description=Reports
+Disabled=1
+
+[*log.txt]
+Description=Reports
+Disabled=1
+
+[suhdlog.dat]
+Description=Windows reports
+Disabled=1
+
+[system.1st]
+Description=Windows reports
+Disabled=1
+
+[SchedLgU.txt]
+Description=Windows reports
+Disabled=1
+
+[SchedLgU.txt]
+Description=Windows reports
+Disabled=1
+
+[modemdet.txt]
+Description=Windows reports
+Disabled=1
+
+[*.wbk]
+Description=Microsoft Office backup files
+Disabled=1
+
+[*.xlk]
+Description=Microsoft Office backup files
+Disabled=1
+
+[file????._dd]
+Description=Recovery files
+Disabled=0
+
+[*.nu3]
+Description=Symantec backup files
+Disabled=1
+
+[*.nu4]
+Description=Symantec backup files
+Disabled=1
+
+[*.dmp]
+Description=Temporary files
+Disabled=0
+
+[*.tmp]
+Description=Temporary files
+Disabled=0
+
+[*.temp]
+Description=Temporary files
+Disabled=0
+
+[*._mp]
+Description=Temporary files
+Disabled=1
+
+[*.^*]
+Description=Temporary files
+Disabled=1
+
+[*._dump]
+Description=Temporary files
+Disabled=1
+
+[*.---]
+Description=Temporary files
+Disabled=0
+
+[*.___]
+Description=Temporary files
+Disabled=1
+
+[*.###]
+Description=Temporary files
+Disabled=1
+
+[*.@@@]
+Description=Temporary files
+Disabled=1
+
+[*.ilk]
+Description=Temporary files
+Disabled=1
+
+[vc?0.idb]
+Description=Temporary files
+Disabled=1
+
+[*.dao]
+Description=Temporary files
+Disabled=1
+
+[imagedb.aid]
+Description=Temporary files
+Disabled=1
+
+[*.mch]
+Description=Temporary files
+Disabled=1
+
+[*.sik]
+Description=Temporary files
+Disabled=1
+
+[*.$sa]
+Description=Temporary files
+Disabled=0
+
+[*.?$?]
+Description=Temporary files
+Disabled=0
+
+[*.bk?]
+Description=Temporary files
+Disabled=1
+
+[*.fic]
+Description=Temporary files
+Disabled=1
+
+[*.nhc]
+Description=Temporary files
+Disabled=0
+
+[*.^]
+Description=Temporary files
+Disabled=0
+
+[*._dd]
+Description=Temporary files
+Disabled=1
+
+[*._detmp]
+Description=Temporary files
+Disabled=1
+
+[twain???.mtx]
+Description=Temporary files
+Disabled=0
+
+[*.swr]
+Description=Temporary files
+Disabled=0
+
+[*.xlg]
+Description=Temporary files
+Disabled=0
+
+[*.$db]
+Description=dBASE temporary files
+Disabled=1
+
+[*.db$]
+Description=dBASE temporary files
+Disabled=1
+
+[anti-vir.dat]
+Description=F-Prot Anit-Virus temporary files
+Disabled=1
+
+[iebak.dat]
+Description=Internet Explorer temporary files
+Disabled=0
+
+[0???????.nch]
+Description=Outlook Express temporary files
+Disabled=1
+
+[*.spc]
+Description=WordPerfect для Windows temporary files
+Disabled=1
+
+[thumbs.db]
+Description=Image cache files
+Disabled=1
+
+[file_id.diz]
+Description=Description files
+Disabled=1
+

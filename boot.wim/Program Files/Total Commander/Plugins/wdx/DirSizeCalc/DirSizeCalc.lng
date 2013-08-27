@@ -1,0 +1,185 @@
+[eng]
+; Field names.
+Size=Size
+Compressed Size=Compressed Size
+Compression Ratio=Compression Ratio
+Directory Count=Directory Count
+File Count=File Count
+Empty=Empty
+Contains Files=Contains Files
+Contains Subdirectories=Contains Subdirectories
+
+; Prefixes.
+B|KiB|MiB|GiB|kB|MB|GB=B|KiB|MiB|GiB|kB|MB|GB
+
+; Possible values for the fields "Empty", "Contains Files" and "Contains Subdirectories"
+; AD=Access denied, U=Unreadale Unicode filename, E=Unknown error.
+Yes|No|AD|U|E=Yes|No|AD|U|E
+
+; Directory, junction- and mount points.
+0=Dir.
+1=Jnc. Pt.
+2=Mnt. Pt.
+
+; Tokens which are displayed before the calculation result to indicate that the result may be incomplete.
+; A=Access denied, U=Unreadale Unicode filename, E=Unknown error, F=Not followed a reparse point (junction- or mount point).
+40=AD|U|E|NF
+
+// Displayed in the size fields if no files have been found or it the directory is completely empty instead of just displaying 0.
+50=No files
+51=Empty
+
+; Main dialog and tab header captions.
+100=Fields
+101=Units
+102=Paths
+103=DirSizeCalc Settings
+
+; Manage fields and units dialogs. 
+202=&Add
+203=&Delete
+204=&Preview
+
+; Edit field settings dialog.
+300=Edit field settings
+301=&Name
+303=&Field
+305=Load automatically
+306=Load on &demand
+307=Follow &mount points
+308=but not in &subdirectories
+309=Follow &junction points
+310=but not in s&ubdirectories
+311=&Recursive
+312=&Cache value
+
+; Edit unit settings dialog.
+400=Edit unit
+401=&Name: 
+403=Prefixes and units
+404=Binar&y (1024 bytes = 1 kibibyte)
+405=De&cimal (1000 bytes = 1 kilobyte
+406=Use &KiB if file size >=|Use &kB if file size >=
+408=Use &MiB if file size >=|Use &MB if file size >=
+410=Use &GiB if file size >=|Use &GB if file size >=
+412=bytes
+415=Show &unit
+416=Formatting
+417=Num&ber of digits
+419=Decimal &separator
+421=&Thousand separator
+423=Enter S to use a space character.
+424=Display &digits if unit is byte
+425=Display Leading &Zero if value is < 1
+
+; Preview unit dialog.
+500=Unit preview
+501=Byte format
+502=Selected format
+
+; Path setings dialog.
+600=Same directory as Wincmd.ini|Directory \"DirSizeCalc\" in Wincmd.ini directory|Plug-in directory|Total Commander root directory
+601=&Settings file Location
+602=&Current path:
+604=The settings file exists and is writable.|The settings file exists but is not writable.|The settings file doesn't exist.
+
+; Messages.
+1000=Please run this application from within Total Commander (version 6.55 or higher). Please download and install the latest version at http://www.ghisler.com/.
+
+; Default custom field/unit names.
+1100=Custom field
+1101=Custom unit
+
+
+[deu]
+; Field names.
+Size=Größe
+Compressed Size=Komprimierte Größe
+Compression Ratio=Kompressionrate
+Directory Count=Unterverzeichnisanzahl
+File Count=Dateianzahl
+Empty=Leer
+Contains Files=Enthält Dateien
+Contains Subdirectories=Enthält Unterverzeichnisse
+
+; Prefixes.
+B|KiB|MiB|GiB|kB|MB|GB=B|KiB|MiB|GiB|kB|MB|GB
+
+; Possible values for the fields "Empty", "Contains Files" and "Contains Subdirectories"
+; AD=Access denied, U=Unreadale Unicode filename, E=Unknown error.
+Yes|No|AD|U|E=Ja|Nein|ZV|U|E
+
+; Directory, junction- and mount points.
+0=Verz.
+1=Abzw.-Punkt
+2=Bereitst.-Punkt
+
+; Tokens which are displayed before the calculation result to indicate that the result may be incomplete.
+; A=Access denied, U=Unreadale Unicode filename, E=Unknown error, F=Not followed a reparse point (junction- or mount point).
+40=ZV|U|F|NG
+
+: Displayed in the size fields if no files have been found or it the directory is completely empty instead of just displaying 0.
+50=Keine Dateien
+51=Leer
+
+; Main dialog and tab header captions. 
+100=Felder
+101=Einheiten
+102=Pfade
+103=DirSizeCalc Einstellungen
+
+; Manage fields and units dialogs. 
+202=&Hinzufügen
+203=&Löschen
+204=&Vorschau
+
+; Edit field settings dialog.
+300=Feldeinstellungen bearbeiten
+301=&Name
+303=&Feld
+305=Auto&matisch laden
+306=Bei &Bedarf laden
+307=Bereitste&llungspunkten folgen
+308=Aber nicht in &Unterverzeichnissen
+309=&Abzweigungspunkten folgen
+310=Aber nicht in Unter&verzeichnissen
+311=&Rekursiv
+312=&Werte zwischenspeichern
+
+; Edit unit settings dialog.
+400=Einheit bearbeiten
+401=&Name
+403=Präfixe und Einheiten
+404=&Binär (1024 bytes = 1 Kibibyte)
+405=&Dezimal (1000 bytes = 1 Kilobyte)
+406=Benutze &KiB falls Dateigröße >|Benutze &kB falls Dateigröße >
+408=Benutze &MiB falls Dateigröße >|Benutze &MB falls Dateigröße >
+410=Benutze &GiB falls Dateigröße >|Benutze &GB falls Dateigröße >
+412=bytes
+415=&Einheit anzeigen
+416=Formatierung
+417=Nachkomma&stellen
+419=De&zimaltrennzeichen
+421=&Tausendertrennzeichen
+423=S eingeben um ein Leerzeichen zu benutzen.
+424=Nachkommastellen bei Einheit b&ytes anzeigen
+425=&Führende Null anzeigen falls der Wert < 1 ist
+
+; Preview unit dialog.
+500=Einheitenvorschau
+501=Format in Bytes
+502=Gewähltes Format
+
+; Path setings dialog.
+600=Gleiches Verzeichnis wie Wincmd.ini|Verzeichnis "DirSizeCalc" im Wincmd.ini-Verzeichnis|Plugin-Verzeichnis|Total Commander-Stammverzeichnis  
+601=Ort der &Einstellungsdatei
+602=&Aktueller Pfad
+604=Die Einstellungsdatei existiert und ist beschreibbar.|Die Einstellungsdatei existiert aber ist nicht beschreibbar|Die Einstellungsdatei existiert nicht.
+
+; Messages.
+1000=Bitte starten Sie dieses Programm aus Total Commander (6.55 oder höher) heraus. Bitte lade die neueste Version unter http://www.ghisler.com/ herunter und installiere sie.
+1001=Um Änderungen zu übernehmen, muss Total Commander neugestartet werden.
+
+; Default custom field/unit names.
+1100=Eigenes Feld
+1101=Eigene Einheit

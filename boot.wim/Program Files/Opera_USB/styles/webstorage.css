@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* Stylesheet for the Opera history document */
+/* Copyright 2009 Opera Software */
+@media not print {
+html {
+	font-family: sans-serif;
+	color: hsl(0,0%,22%);
+	background-color: hsl(0,0%,93%);
+	margin: 0 auto 10px;
+	border-width: 0 1px;
+	border-color: hsl(0,0%,57%);
+	border-style: solid;
+	max-width: 600px;
+	voice-family: female;
+}
+body {
+	color: inherit;
+	background-color: hsl(0,0%,96%);
+	margin: 0;
+}
+h1 {
+	font-family: sans-serif;	
+	font-size: 120%;
+	font-weight: normal;
+	text-align: right;
+	letter-spacing: -1px;
+	color: hsl(0,0%,29%);
+	background-color: hsl(0,0%,94%);
+	background-image: url(images/top.svg);
+	padding: 15px 10px;
+	margin: 0;
+	border-top: 5px solid hsl(0,100%,35%);
+}
+html[dir="rtl"] h1 {
+	text-align: left;
+	letter-spacing: normal;
+}
+h2 {
+	font-family: sans-serif;
+	font-size: 100%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: hsl(0,0%,29%);
+	background-color: hsl(0,0%,89%);
+	background-image: url(images/bar.png);
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	padding: 5px 7px;
+	margin: 0;
+	border-top: 1px solid hsl(0,0%,57%);
+	border-bottom: 1px solid hsl(0,0%,57%);
+}
+html[dir="rtl"] h2 {letter-spacing: normal;}
+h3 {
+	font-family: sans-serif;
+	font-size: 75%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: hsl(0,0%,29%);
+	background-color: hsl(0,0%,89%);
+	background-image: url(images/bar.png);
+	background-repeat: repeat-x;
+	background-position: 0px -5px;
+	padding: 5px 7px;
+	margin: 0;
+	border-top: 1px solid hsl(0,0%,57%);
+	border-bottom: 1px solid hsl(0,0%,57%);
+}
+h3.show-hide-toggle{ cursor:pointer; }
+a {
+	color: hsl(0,0%,29%);
+	background-color: transparent;
+}
+
+address {
+	font-size: 70%;
+	font-style: normal;
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	padding: 4px 7px 7px;
+	margin: 0;
+	border-top: 1px solid hsl(0,0%,67%);
+	position: relative;
+}
+
+button { min-width: 6em }
+
+div.domain {
+    margin: 10px;
+}
+table {
+	font-size: 70%;
+	line-height: 130%;
+	padding: 0;
+	margin: 5px auto 10px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 95%;
+}
+th {
+  font-weight: bold;
+  text-align: left;
+}
+th[dir="rtl"] h2 { text-align: right; }
+
+td {
+	vertical-align: top;
+	padding: 2px 3px;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: hsl(0,0%,87%) hsl(0,0%,96%) hsl(0,0%,96%);
+}
+td:first-child {
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+	padding: 2px;
+	width: 20%;
+}
+html[dir="rtl"] td:first-child {text-align: right;}
+tr:first-child>* {border-top-color: hsl(0,0%,96%);}
+td+td a {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+}
+body::after {
+	content: "";
+	background-color: hsl(0,0%,98%);
+	background-image: url(images/center.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border-top: 1px solid hsl(0,0%,57%);
+	height: 20px;
+	width: 100%;
+	display: block;
+	speak: none;
+}}
+@media tv, handheld {html {font-size: 150%;}}
+@media screen and (max-width: 400px), projection and (max-width: 400px), tv and (max-width: 400px), handheld and (max-width: 400px) {
+	th {width: 100px;}
+}
+@media screen and (max-width: 245px), projection and (max-width: 245px), tv and (max-width: 245px), handheld and (max-width: 245px) {
+	html {margin: 0;}
+	h1 {
+		text-align: center;
+		padding: 10px 5px;
+	}
+	tr {border-top: 1px solid hsl(0,0%,87%);}
+	tr:first-child {border: none;}
+	td {
+		text-align: left !important;
+		border: none !important;
+		display: block;
+	}
+	html[dir="rtl"] td {text-align: right !important;}
+}
+@media all and (min-width: 1025px) {html {max-width: 700px;}}
+@media all and (min-width: 1281px) {html {max-width: 800px;}}
+@media all and (min-width: 1601px) {html {max-width: 900px;}}
+@media print {
+	* {border: none;}
+	th, td {
+		font-weight: normal;
+		text-align: left;
+		white-space: nowrap;
+		vertical-align: top;
+	}
+	h2 {
+		font-size: 13pt;
+		font-weight: bold;
+	}
+	h2, table {
+		page-break-before: avoid;
+		page-break-after: avoid;
+	}
+	table {font-size: 10pt;}
+	h1 {display: none;}
+}
+

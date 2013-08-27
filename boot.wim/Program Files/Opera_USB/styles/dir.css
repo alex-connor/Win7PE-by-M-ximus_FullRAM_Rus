@@ -1,0 +1,9 @@
+@import url(opera.css);
+
+table tr td {
+  word-wrap: break-word;
+}
+
+table tr td:first-child {
+  padding-right: 10px;
+}

@@ -1,0 +1,12 @@
+@import url(opera.css);
+
+td {
+	width: 6em;
+}
+
+td+td {
+	width: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap:break-word;
+}

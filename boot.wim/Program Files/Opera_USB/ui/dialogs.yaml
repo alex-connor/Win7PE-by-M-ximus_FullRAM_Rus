@@ -1,0 +1,285 @@
+########## DEFINITIONS ##########
+definitions:
+  widgets:
+    DoNotShowAgainCheckBox: &DoNotShowAgainCheckBox
+      type: CheckBox
+      name: do_not_show_again_checkbox
+      string: S_DO_NOT_SHOW_DIALOG_AGAIN
+
+  buttons:
+    # Ok button, typically used in a button strip using *OkButton
+    OkButton: &OkButton
+      type: Button
+      name: ok_button
+      string: DI_ID_OK
+      action-string: Ok
+      default: true
+
+    # Close button, typically used in a button strip using *CloseButton
+    CloseButton: &CloseButton
+      type: Button
+      name: close_button
+      string: DI_IDBTN_CLOSE
+      action-string: Ok
+      default: true
+
+    # Cancel button, typically used in a button strip using *CancelButton
+    CancelButton: &CancelButton
+      type: Button
+      name: cancel_button
+      string: DI_ID_CANCEL
+      action-string: Cancel
+
+    # Back button, typically used in a wizard button strip using *CancelButton
+    BackButton: &BackButton
+      type: Button
+      name: back_button
+      string: S_WIZARD_PREV_PAGE
+      action-string: Back
+
+    # Back button, typically used in a wizard button strip using *CancelButton
+    ForwardButton: &ForwardButton
+      type: Button
+      name: forward_button
+      string: S_WIZARD_NEXT_PAGE
+      action-string: Forward
+
+    # Help button, typically used in a button strip using *HelpButton
+    HelpButton: &HelpButton
+      type: Button
+      name: help_button
+      string: DI_IDHELP
+      action-string: Show help
+
+  button-strips:
+    # this is how button strips usually look:
+    GenericButtonStrip: &GenericButtonStrip
+      type: ButtonStrip
+      name: button-strip
+      help_anchor: index.html
+      dynamic_help_anchor: false
+      #special-content:
+      #buttons:
+
+    # a button strip that shows an 'Ok' and a 'Cancel' button. To be used like this:
+    # button-strip:
+    #   <<: *OkCancelButtonStrip
+    OkCancelButtonStrip: &OkCancelButtonStrip
+      <<: *GenericButtonStrip
+      buttons:
+        - *OkButton
+        - *CancelButton
+
+    # a button strip that shows 'Ok', 'Cancel' and 'Help' button. Typically used like this:
+    # button-strip:
+    #   <<: *OkCancelHelpButtonStrip
+    #   help_anchor: index.html
+    #
+    OkCancelHelpButtonStrip: &OkCancelHelpButtonStrip
+      <<: *GenericButtonStrip
+      buttons:
+        - *OkButton
+        - *CancelButton
+        - *HelpButton
+
+    # a button strip that shows 'Close' and 'Help' button. Typically used like this:
+    # button-strip:
+    #   <<: *CloseHelpButtonStrip
+    #   help_anchor: index.html
+    #
+    CloseHelpButtonStrip: &CloseHelpButtonStrip
+      <<: *GenericButtonStrip
+      buttons:
+        - *CloseButton
+        - *HelpButton
+
+    # The typical button strip for wizards. Typically used like this:
+    # button-strip:
+    #   <<: *WizardButtonStrip
+    #   help_anchor: index.html
+    WizardButtonStrip: &WizardButtonStrip
+      <<: *GenericButtonStrip
+      buttons:
+        - *BackButton
+        - *ForwardButton
+        - *CancelButton
+        - *HelpButton
+
+
+########## DIALOGS ##########
+dialogs:
+  - type: Dialog
+    name: Java Setup Dialog
+    title: D_NEW_PREFS_JAVA
+    content:                  # there is always only going to be one top-level widget, no?
+      type: StackLayout
+      elements:
+        - type: Label
+          name: label_for_Java_chooser
+          string: D_PREFERENCES_JAVA_PATH
+        - type: FolderChooser
+          name: Java_chooser
+        - type: Button
+          name: Validate_Java_button
+          string: D_PREFERENCES_VALIDATE_JAVA_PATH
+          action-string: Validate java path
+    button-strip:
+      <<: *OkCancelHelpButtonStrip
+      help_anchor: content.html#java
+  - type: Dialog
+    name: Label Properties Dialog
+    title: S_MY_FOLDERS
+    content:
+      type: StackLayout
+      orientation: horizontal
+      elements:
+        - type: StackLayout
+          orientation: vertical
+          name: LabelSelector
+          elements:
+            - type: Treeview
+              name: LabelTreeView
+              minimum-width: 25c
+              minimum-height: 10c
+            - type: Button
+              name: AddButton
+              string: M_INDEX_ITEM_POPUP_MENU_NEW_FILTER
+              action-string: "New folder"
+              preferred-width: fill
+            - type: Button
+              name: RemoveButton
+              string: D_MAIL_REMOVE_LABEL
+              action-string: "Remove folder"
+              preferred-width: fill
+
+        - type: StackLayout
+          orientation: vertical
+          name: MainView
+          elements:
+            - type: StackLayout
+              orientation: horizontal
+              elements:
+                - type: Label
+                  string: D_MAIL_LABEL_NAME
+                - type: Edit
+                  name: LabelName
+                - type: Label
+                  string: D_MAIL_LABEL_ICON
+                - type: Button
+                  name: IconButton
+                  action:
+                    name: "Show Popup Menu"
+                    data_string: "Label Image Menu"
+
+            - type: Tabs
+              minimum-width: 600
+              preferred-width: fill
+              preferred-height: fill
+              elements:
+                - title: D_MAIL_INDEX_PROPERTIES_RULES
+                  type: StackLayout
+                  orientation: vertical
+                  elements:
+                    - type: ScrollContainer
+                      preferred-height: infinity
+                      preferred-width: infinity
+                      content:
+                        type: StackLayout
+                        orientation: vertical
+                        elements:
+                          - type: StackLayout
+                            orientation: horizontal
+                            name: SpamInternalFilter
+                            elements:
+                              - type: Label
+                                string: D_M2_ACCOUNT_PROPERTIES_INTERN_FILTER
+                              - type: Dropdown
+                                name: SpamInternalFilterLevel
+                                elements:
+                                  - string: S_FILTER_OFF
+                                    data: 1000
+                                  - string: S_FILTER_MEDIUM
+                                    data: 30
+                                  - string: S_FILTER_STRONG
+                                    data: 0
+                          - type: DynamicGridLayout
+                            name: RulesGrid
+                            template:
+                              - type: Dropdown
+                                name: Operator
+                                elements:
+                                  - string: S_FILTER_OR
+                                    data: 0
+                                  - string: S_FILTER_AND
+                                    data: 1
+                              - type: Dropdown
+                                name: Field
+                                elements:
+                                  - string: S_FILTER_SUBJECT
+                                    data: 2
+                                  - string: S_FILTER_FROM_HEADER
+                                    data: 6
+                                  - string: S_FILTER_TO_HEADER
+                                    data: 7
+                                  - string: S_FILTER_CC_HEADER
+                                    data: 8
+                                  - string: S_FILTER_REPLYTO_HEADER
+                                    data: 9
+                                  - string: S_FILTER_NEWSGROUPS_HEADER
+                                    data: 10
+                                  - string: S_FILTER_ANY_HEADER
+                                    data: 3
+                                  - string: S_FILTER_BODY
+                                    data: 11
+                                  - string: S_FILTER_ENTIRE_MESSAGE
+                                    data: 4
+                              - type: Dropdown
+                                name: MatchType
+                                elements:
+                                  - string: S_FILTER_CONTAINS
+                                    data: 0
+                                  - string: S_FILTER_DOES_NOT_CONTAIN
+                                    data: 3
+                                  - string: S_FILTER_MATCHES_REGEXP
+                                    data: 2
+                              - type: Edit
+                                name: Match
+                                minimum-width: 8c
+                              - type: Button
+                                name: RemoveRuleButton
+                                string: D_MAIL_LABEL_REMOVE_RULE
+                                action-string: "Remove filter"
+                          - type: Button
+                            name: AddRuleButton
+                            string: D_MAIL_FILTER_ADD_RULE
+                            action-string: "New filter"
+
+                - title: D_MAIL_LABEL_OPTIONS
+                  type: StackLayout
+                  orientation: vertical
+                  elements:
+                    - type: Checkbox
+                      name: HideFromOtherViews
+                      string: D_MAIL_INDEX_PROPERTIES_MARK_AS_FILTERED
+                    - type: Checkbox
+                      name: MarkAsRead
+                      string: D_M2_ACCOUNT_PROPERTIES_MARK_MATCH_READ
+                    - type: Checkbox
+                      name: LearnFromMessages
+                      string: D_MAIL_INDEX_PROPERTIES_LEARN_FROM_MESSAGES_ADDED
+                    - type: Checkbox
+                      name: NewMessagesOnly
+                      string: D_MAIL_LABEL_APPLY_RULES_ONLY_TO_NEW
+
+                - title: D_MAIL_LABEL_IMAP_OPTIONS
+                  type: GridLayout
+                  elements:
+                    - elements: 
+                        - type: Label
+                          string: D_MAIL_LABEL_IMAP_SYNCHRONIZATION_KEYWORD
+                        - type: Edit
+                          name: IMAPKeyword
+
+    button-strip:
+      <<: *CloseHelpButtonStrip
+
