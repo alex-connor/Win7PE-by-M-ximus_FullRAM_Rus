@@ -1,0 +1,11 @@
+<Recovery>
+    <RecoveryTools>
+        <RelativeFilePath>MSDartTools.exe</RelativeFilePath>
+    </RecoveryTools>
+    <CustomFrontEnd>
+    </CustomFrontEnd>
+    <StartupRepair>
+        <NoAutoLaunchFromCD/>
+        <NoNetworking/>
+    </StartupRepair>
+</Recovery>
