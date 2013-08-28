@@ -1,0 +1,45 @@
+; Файл предназначен для снятия блокировки запуска exe/bat/cmd, разблокирования сис. утилит и настроек.
+; В случае блокировки запуска exe/bat/cmd, после исполнения данного файла рекомендуется запускать StartF.exe
+; Этот файл является частью дистрибутива uVS [http://dsrt.jino-net.ru | http://dsrt.dyndns.org]
+; Copyright (c) Кузнецов Д.М. 2010.
+; "Установить" файл (внести изменения в реестр) можно с помощью контекстного меню.
+;  Установка возможна и в случае блокировки regedit.exe.
+
+[Version]
+Signature=$CHICAGO$
+;                                     Версия файла: 3.33
+
+[DefaultInstall]
+AddReg=Add.Settings
+DelReg=Del.Settings
+
+[Add.Settings]
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,HideFileExt,0x10001,0x00000000
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,Hidden,0x10001,0x00000001
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced,ShowSuperHidden,0x10001,0x00000001
+HKCR,exefile\shell\open\command,"",0x0,"""%%1""" %%*"
+HKCR,batfile\shell\open\command,"",0x0,"""%%1""" %%*"
+HKCR,cmdfile\shell\open\command,"",0x0,"""%%1""" %%*"
+HKCU,Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,NoFolderOptions,0x10001,0x00000000
+HKCU,Software\Microsoft\Windows\CurrentVersion\Policies\System,DisableRegistryTools,0x10001,0x00000000
+HKCU,Software\Microsoft\Windows\CurrentVersion\Policies\System,DisableTaskMgr,0x10001,0x00000000
+
+[Del.Settings]
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\explorer.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\regedit32.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cmd.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\start.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\startf.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\msconfig.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\taskmgr.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\mmc.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sfc.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\svchost.exe
+HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wuauclt.exe
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.exe
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.bat
+HKCU,Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cmd
+HKU,.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2
+HKLM,SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore,DisableConfig

@@ -1,16 +1,23 @@
 #include <File.au3>
 #include <Array.au3>
 
-dim $i,$auto[1],$e[1],$key[1],$file[1]
+dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1]
 
 $key = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini', "registry")
 $file = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"directory")
-
+$run = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"startup")
 $auto = _RegAutorun($key)
 $e = _DirAutorun($file)
 _ArrayConcatenate($auto,$e)
+_ArrayConcatenate($auto,$run)
 for $i = 0 to UBound($auto)-1
-ShellExecute($auto[$i])
+   if FileExists($auto[$i]) then
+   if StringInStr($auto[$i],".exe") then 
+	  Run($auto[$i])
+   Else
+	  ShellExecute($auto[$i])
+   EndIf
+EndIf
 Next
 
 Func _DirAutorun($filedir)
@@ -21,7 +28,7 @@ if FileExists($filedir[$f]) then
    $reg = _FileListToArray($filedir[$f], '*', 1 )
    if @error <> 0 then exitloop
    for $i = 1 to $reg[0]
-   if not StringInStr($reg[$i],'desktop.ini') then
+   if not StringInStr($reg[$i],'.ini') then
 	  If $autofile[0]='' then 
 		 $autofile[0]=$filedir[$f] & '\' & $reg[$i]
 	  Else
@@ -42,7 +49,7 @@ for $i = 1 to 100
    if @error <> 0 then 
 	  exitloop
    EndIf
-   if not StringInStr(RegRead($regkey[$f],$reg),'desktop.ini') then
+   if not StringInStr(RegRead($regkey[$f],$reg),'.ini') then
 	  If $autoreg[0]='' then 
 		 $autoreg[0]=RegRead($regkey[$f],$reg)
 	  Else

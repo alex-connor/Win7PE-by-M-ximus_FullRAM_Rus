@@ -1,7 +1,5 @@
 imdisk -a -s 20%% -m B: -p "/fs:fat32 /q /y"
 mkdir "b:\temp"
-regedit /s Y:\sources\reg\sys.reg
-regedit /s Y:\sources\reg\sys1.reg
 regsvr32 /i /s Query.dll
 regsvr32 /i /s "%systemdrive%\Program Files\HashTab\HashTab32.dll"
 regsvr32 /i /s "%systemdrive%\Program Files\ExtremeCopy\XCShellExt.dll"

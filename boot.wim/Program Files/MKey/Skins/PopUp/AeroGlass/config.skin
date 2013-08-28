@@ -1,0 +1,22 @@
+[About]
+Name=AeroGlass
+Author=SerioSoft
+
+[Background]
+Image=Aeroglass.png
+Left = 40
+Top = 70
+Right = 40
+Bottom = 40
+MinHeight = 225
+MinWidth = 350
+
+[Labels]
+Title-Top=30
+Pos-top=50
+Pos-left=50
+Time-top=50
+Time-right=50
+Text-top=100
+Text-left=50
+
