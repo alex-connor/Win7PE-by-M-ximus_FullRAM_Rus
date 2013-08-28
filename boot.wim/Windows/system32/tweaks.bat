@@ -8,4 +8,5 @@ regsvr32 /i /s "%systemdrive%\Program Files\ExtremeCopy\XCShellExt.dll"
 regsvr32 /i /s ieproxy.dll
 regsvr32 /i /s "%systemdrive%\Program Files\XNView\XnViewShellExt.dll"
 pnputil -i -a "%systemdrive%\Program Files\ImageX\wimfltr.inf"
+if not EXIST "B:\Programs\" mkdir "B:\Programs\"
 if EXIST "b:\temp" regedit /s "%systemroot%\system32\temp.reg" 

@@ -1,0 +1,6 @@
+if not EXIST b:\ imdisk -a -s 20%% -m B: -p "/fs:fat32 /q /y"
+if not EXIST "B:\Programs\" mkdir "B:\Programs\"
+cd /d "B:\Programs\"
+"%systemdrive%\Program Files\7-Zip\7z.exe" x "y:\programs\autoit3.7z"
+regsvr32 /i /s ""B:\Programs\AutoIt3\autoit3.reg""
+mklink "X:\Windows\system32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Утилиты\Прочее" "B:\Programs\AutoIt3\AutoIt3.exe"
