@@ -4,45 +4,67 @@
     <value id="version" xml:space="preserve">1</value>
   </section>
   <section id="wuid-4d0a5c2c-45d0-0628-0bf6-75bfa78a4b31">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\home.ua</value>
     <value id="download_URL" null="yes"/>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/home.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a575e-6878-0668-08b3-0a8b8a22783b">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\fileSharing.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/bundled/fileSharing/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/fileSharing.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a5390-37c1-06a9-097e-1f58d59b29b7">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\mediaPlayer.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/bundled/mediaplayer/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/mediaPlayer.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a2ebd-27c6-06ea-063e-3425c59c5931">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\webserver.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/bundled/webserver/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/webserver.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a290c-07aa-072b-06fb-48f1e5f0179b">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\photoSharing.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/widget/download/82/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/photoSharing.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a25da-760a-076c-05a1-5dbe945026cf">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\fridge.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/bundled//fridge/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/fridge.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
   <section id="wuid-4d0a20a8-5853-07ad-0464-728aba0975db">
-    <value id="path to widget data" xml:space="preserve">{Resources}unite\messenger.ua</value>
     <value id="download_URL" xml:space="preserve">http://unite.opera.com/bundled/messenger/</value>
     <value id="content-type" xml:space="preserve">2</value>
     <value id="class state" xml:space="preserve">enabled</value>
+    <value id="path to widget data" xml:space="preserve">{Resources}unite/messenger.ua</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
+  </section>
+  <section id="wuid-50ceb67c-a755-0384-029d-0e1aa76b1cf4">
+    <value id="path to widget data" xml:space="preserve">{SmallPreferences}widgets/adblockforopera-1.0.6-1.oex</value>
+    <value id="download_URL" null="yes"/>
+    <value id="content-type" xml:space="preserve">3</value>
+    <value id="class state" xml:space="preserve">enabled</value>
+    <value id="update last modified" xml:space="preserve">0</value>
+    <value id="update expires" xml:space="preserve">0</value>
   </section>
 </preferences>

@@ -1,1 +1,0 @@
-copy %systemdrive%\Program Files\Total Commander\Plugins\exe\msvbvm60.dll %systemdrive%\Windows\System32\msvbvm60.dll /v /a /b
