@@ -1,0 +1,82 @@
+[Version]
+Signature=$CHICAGO$
+Provider=%Mfg%
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+Class=Mouse
+DriverVer=08/14/2005,5.1.2600.0
+
+;------------------------------------------------------------------------------
+[SourceDisksNames]
+51=%DISK_NAME%,,
+
+[SourceDisksFiles]
+Moufiltr.sys=51
+
+[DestinationDirs]
+DefaultDestDir=12
+Moufiltr.CopyFiles=12
+
+[ControlFlags]
+ExcludeFromSelect=HID\VID_046D&PID_C016,HID\VID_09DA&PID_020B
+
+
+; Manufacturer Section
+;------------------------------------------------------------------------------
+[Manufacturer]
+%Mfg%=Mfg
+
+[Mfg]
+;--------------------------------------------------------------Device ID strings
+
+
+
+%MouseMonitor.DeviceDesc%=USBHID_Mouse_Inst, HID\VID_09DA&PID_054F&MI_01
+%MouseMonitor.DeviceDesc%=USBHID_Mouse_Inst, HID\VID_046D&PID_C51A&MI_00
+%MouseMonitor.DeviceDesc%=USBHID_Mouse_Inst, HID\VID_046D&PID_C50E
+
+; A4Tech USB Port Mouse For Windows 2000/XP
+;------------------------------------------------------------------------------
+[USBHID_Mouse_Inst.NT]
+Include=msmouse.inf
+Needs=HID_Mouse_Inst.NT
+Copyfiles=Moufiltr.CopyFiles
+
+[USBHID_Mouse_Inst.NT.Services]
+AddService=Moufiltr,0x00000002,Moufiltr_Service_Inst,Moufiltr_EventLog_Inst ; Hid Driver
+Include=msmouse.inf
+Needs=HID_Mouse_Inst.NT.Services
+
+[USBHID_Mouse_Inst.NT.HW]
+AddReg=HID_Mouse_Inst.AddReg.NT
+Include=msmouse.inf
+Needs=HID_Mouse_Inst.NT.HW
+
+[Moufiltr.CopyFiles]
+Moufiltr.sys
+
+[Moufiltr_Service_Inst]
+DisplayName    = %HidMouse.SvcDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 0               ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Pointer Port
+ServiceBinary  = %12%\Moufiltr.sys
+
+[Moufiltr_EventLog_Inst]
+AddReg=Moufiltr_EventLog_AddReg
+
+[Moufiltr_EventLog_AddReg]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\Moufiltr.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[HID_Mouse_Inst.AddReg.NT]
+HKR,,"UpperFilters",0x00010000,"Moufiltr"
+
+
+; User Visible Strings
+;------------------------------------------------------------------------------
+[Strings]
+Mfg="A4Tech"
+MouseMonitor.DeviceDesc="USB_MOUSE_Quality_Test"
+HidMouse.SvcDesc="Mouse Test Driver"
+DISK_NAME="A4Tech Mouse Test Install Disk"
