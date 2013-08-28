@@ -1,0 +1,6 @@
+resource savefrom modules/
+content savefrom chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://savefrom/content/panel.xul
+
+locale savefrom en-US chrome/locale/en-US/
+locale savefrom ru-RU chrome/locale/ru-RU/

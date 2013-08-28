@@ -1,0 +1,6 @@
+[plugininstall]
+description=NTLinks 1.5.3 (32/64): Hardlinks/reparse points info support (http://ghisler.ch/board/viewtopic.php?t=23681)
+descriptionrus=NTLinks 1.5.3 (32/64): Информация о точках переподключения (http://forum.wincmd.ru/viewtopic.php?t=13191)
+type=wdx
+file=NTLinks.wdx
+defaultdir=NTLinks

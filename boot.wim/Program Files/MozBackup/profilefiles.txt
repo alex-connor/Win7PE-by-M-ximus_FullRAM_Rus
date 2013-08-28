@@ -21,7 +21,7 @@ metrics.xml
 metrics-config.xml
 content-prefs.sqlite
 microsummary-generators\*.*
-*.mab
+.\*.mab
 bookmarks.html
 bookmarks.bak
 bookmarks_history.sqlite
@@ -41,13 +41,13 @@ signons3.txt
 signons4.txt
 signons5.txt7
 key3.db
-*.s
+.\*.s
 cookies.txt
 cookies.sqlite
 formhistory.dat
 URL.tbl
 formhistory.sqlite
-*.w
+.\*.w
 downloads.sqlite
 downloads.rdf
 cert7.db
@@ -104,3 +104,10 @@ lightweighttheme-header
 session.json
 junklog.html
 calendar-data\*.*
+extensions.sqlite
+OfflineCache\*.*
+addons.sqlite
+localstore-safe.rdf
+chromeappsstore.sqlite
+sessionstore.json
+weave\*.*

@@ -1,0 +1,563 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{1e9a63ef-84ec-49a4-8d6f-2dd9524e90d0}</em:id>
+    <em:version>1.4.2</em:version>
+    <em:name>Adblock Lite</em:name>
+    <em:description>Ads were yesterday!</em:description>
+    <em:creator>Wladimir Palant</em:creator>
+    <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+    <em:type>2</em:type>
+    <em:optionsURL>chrome://adblocklite/content/ui/settings.xul</em:optionsURL>
+    <em:contributor>Claude Lespagnol aka Efdur</em:contributor>
+    <em:contributor>Nickolay Ponomarev</em:contributor>
+    <em:contributor>Kevin Keller</em:contributor>
+    <em:contributor>Fabrice Desré</em:contributor>
+    <em:contributor>Günther Beyer (opoloo.de)</em:contributor>
+    <em:translator>Ahmet Serkan Tıratacı</em:translator>
+    <em:translator>Aivo Kuhlberg</em:translator>
+    <em:translator>AlleyKat</em:translator>
+    <em:translator>Dagobert_78</em:translator>
+    <em:translator>Genti Ereqi</em:translator>
+    <em:translator>Hrvoje Majer</em:translator>
+    <em:translator>Jakub Tománek</em:translator>
+    <em:translator>Joni Heinonen</em:translator>
+    <em:translator>Jose Sun</em:translator>
+    <em:translator>Ján Kendi (Jacen)</em:translator>
+    <em:translator>KNTRO</em:translator>
+    <em:translator>Ken</em:translator>
+    <em:translator>Kristján Bjarni Guðmundsson</em:translator>
+    <em:translator>Leonid</em:translator>
+    <em:translator>Leszek(teo)Życzkowski</em:translator>
+    <em:translator>Luana Di Muzio</em:translator>
+    <em:translator>Manuel Meixide</em:translator>
+    <em:translator>Mark Tyndall</em:translator>
+    <em:translator>Martin Srebotnjak</em:translator>
+    <em:translator>Mauro José da Silva</em:translator>
+    <em:translator>Maybee</em:translator>
+    <em:translator>Mikael Hiort af Ornäs</em:translator>
+    <em:translator>Mikes Kaszmán István</em:translator>
+    <em:translator>Milupo</em:translator>
+    <em:translator>Nguyễn Mạnh Hùng</em:translator>
+    <em:translator>Ninnetyer</em:translator>
+    <em:translator>Premier</em:translator>
+    <em:translator>Raul Pimentel</em:translator>
+    <em:translator>Regmos</em:translator>
+    <em:translator>Reza_NA</em:translator>
+    <em:translator>Schuzak</em:translator>
+    <em:translator>SiiiE</em:translator>
+    <em:translator>Stefan Lewitas</em:translator>
+    <em:translator>Teboga</em:translator>
+    <em:translator>Toni Barrera</em:translator>
+    <em:translator>Urko</em:translator>
+    <em:translator>Wim Benes</em:translator>
+    <em:translator>Wladimir Palant</em:translator>
+    <em:translator>anonymous74100</em:translator>
+    <em:translator>bahramm</em:translator>
+    <em:translator>blackdire</em:translator>
+    <em:translator>catcat</em:translator>
+    <em:translator>el_libre</em:translator>
+    <em:translator>jojaba</em:translator>
+    <em:translator>k2jp</em:translator>
+    <em:translator>kapetance</em:translator>
+    <em:translator>knight00931</em:translator>
+    <em:translator>markh</em:translator>
+    <em:translator>pirlouy</em:translator>
+    <em:translator>pitdicker</em:translator>
+    <em:translator>rookie</em:translator>
+    <em:translator>sushizang</em:translator>
+    <em:translator>temperror</em:translator>
+    <em:translator>ultravioletu</em:translator>
+    <em:translator>Бауржан Муфтахидинов</em:translator>
+    <em:translator>Баярсайхан Энхтайван</em:translator>
+    <em:translator>ДакСРБИЈА</em:translator>
+    <em:translator>Ивайло Йовчев (s0urce)</em:translator>
+    <em:translator>Тимофій Бабич</em:translator>
+    <em:translator>Էդուարդ Բաբայան (edo248)</em:translator>
+    <em:translator>مؤيد مارديني</em:translator>
+    <em:localized>
+      <Description>
+        <em:locale>ar</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>الإعلانات أصبحت من الأمس!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/ar/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>bg</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Рекламите бяха вчера!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ca</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Els anuncis eren ahir</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>cs</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>A reklamy jsou minulostí!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>da</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklamer er fortid!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>de</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Werbung war gestern!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/de/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>el</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Αφήστε τις διαφημίσεις στο χθες!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>en-GB</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Ads were yesterday!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/en/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Ads were yesterday!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/en/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>eo</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Anoncoj estis hieraŭ!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-AR</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>¡La publicidad es cosa del pasado!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/es/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-ES</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>La publicidad es cosa del ayer</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/es/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>es-MX</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Los Anuncios son cosa del Ayer!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/es/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>et</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklaamid on nüüd eilne päev!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fa</em:locale>
+        <em:name>فوق تبلیغ شکن</em:name>
+        <em:description>تبلیغت متعلق به دیروز بود!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fi</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Mainokset ovat menneisyyttä!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fr</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Les publicités, c&#39;est du passé !</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/fr/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>fy-NL</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Fan no ôf gjin reklames mear!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>gl</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Os anuncios son cousa do pasado!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>he</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>הפרסומות שייכות לעבר!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/he/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hr</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Oglasi su prošlost!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hsb-DE</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklama bě wčera!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hu</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>A reklám a múlté!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>hy-AM</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Գովազդները երեկ էին!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>is</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Auglýsingar eru hluti af fortíðinni!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>it</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Permette di dire &#39;no&#39; alla pubblicità presente nelle pagine web!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ja</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>広告があったのは過去の話です！</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>kk-KZ</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Жарнамаға жол жоқ!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ko</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>콘텐츠 이용을 방해하고 불건전한 광고, 이제 안녕!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/ko/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>lv</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklāmas bija vakardiena!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>mn</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Сурталчилгаа бол өчигдөр байлаа!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ms-MY</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Iklan hanyalah zaman dulu!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>nl</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reclames behoren tot het verleden!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pl</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Powiedz NIE! reklamom</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pt-BR</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Propaganda indesejada é coisa do passado!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>pt-PT</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Publicidade... já era!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ro</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Elimină publicitatea din paginile web.</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>ru</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Скажи &#34;нет&#34; рекламе!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/ru/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sk</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklamy sú minulosťou!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sl</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Oglasi so preteklost!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sq</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklamat jane e kaluara!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sr</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Рекламе су прошлост!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>sv-SE</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Säg farväl till all reklam!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>th</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>ลาก่อนพวกโฆษณา!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>tr</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Reklamlar geçmişte kaldı!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>uk</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Скажи «НІ» рекламі!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>vi</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>Quảng cáo đã là dĩ vãng!</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>http://adblockplus.org/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>广告已成往事！</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>https://adblockplus.org/zh_CN/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-TW</em:locale>
+        <em:name>Adblock Lite</em:name>
+        <em:description>廣告已成過去式！</em:description>
+        <em:creator>Wladimir Palant</em:creator>
+        <em:homepageURL>https://adblockplus.org/zh_TW/</em:homepageURL>
+      </Description>
+    </em:localized>
+    <em:targetApplication>
+      <Description>
+        <!-- conkeror -->
+        <em:id>{a79fe89b-6662-4ff4-8e88-09950ad4dfde}</em:id>
+        <em:minVersion>0.1</em:minVersion>
+        <em:maxVersion>100.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- fennec -->
+        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>11.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- firefox -->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.6.13</em:minVersion>
+        <em:maxVersion>14.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- seamonkey -->
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.1</em:minVersion>
+        <em:maxVersion>2.9a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication>
+      <Description>
+        <!-- thunderbird -->
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>3.1.7</em:minVersion>
+        <em:maxVersion>12.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

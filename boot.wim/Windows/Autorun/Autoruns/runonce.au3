@@ -1,7 +1,7 @@
 #include <File.au3>
 #include <Array.au3>
 
-dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1]
+dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1],$m[3]
 
 $key = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini', "registry")
 $file = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"directory")
@@ -12,10 +12,11 @@ _ArrayConcatenate($auto,$e)
 _ArrayConcatenate($auto,$run)
 for $i = 0 to UBound($auto)-1
    if FileExists($auto[$i]) then
-   if StringInStr($auto[$i],".exe") then 
+	 $m=_PathSplitByRegExp($auto[$i])
+   if StringInStr($m[4],".exe") then 
 	  Run($auto[$i])
    Else
-	  ShellExecute($auto[$i])
+	  ShellExecute($auto[$i],'', $m[1]+$m[2])
    EndIf
 EndIf
 Next
@@ -78,3 +79,22 @@ Else
  EndIf
  return $key
  EndFunc
+ 
+ Func _PathSplitByRegExp($sPath)
+    If StringStripWS($sPath, 8) = '' Then
+        Return SetError(1, 0, 0)
+    EndIf
+   
+    $sPath = StringReplace($sPath, '/', '\')
+   
+    Local $aRet = StringRegExp($sPath, '^(?i)([a-z]:|\\\\(?:\?\\)?[a-z0-9_.$]+\\[a-z0-9_.]+\$?)?(\\(?:[^\\/:*?"<>|\r\n]+\\)*)?([^\\/:*?"<>|\r\n.]*)\.?((?:[^.\\/:*?"<>|\r\n]+)?)$', 2)
+   
+    Switch @error
+        Case 1
+            Return SetError(2, 0, 0) ;Array is invalid. No matches.
+        Case 2
+            Return SetError(3, @extended, 0) ;Bad pattern, array is invalid. @Extended = offset of error in pattern.
+    EndSwitch
+   
+    Return $aRet
+EndFunc

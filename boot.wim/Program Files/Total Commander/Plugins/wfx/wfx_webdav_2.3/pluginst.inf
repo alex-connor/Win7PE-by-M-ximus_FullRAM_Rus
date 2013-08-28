@@ -1,0 +1,6 @@
+[plugininstall]
+description=WebDAV plugin v2.3 (32bit+64bit)
+type=wfx
+file=davplug.wfx
+defaultdir=webdav
+

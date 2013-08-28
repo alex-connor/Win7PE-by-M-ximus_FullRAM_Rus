@@ -1,0 +1,5 @@
+[plugininstall]
+description=BitChaos plugin v0.1
+type=wdx
+file=bitchaos.wdx
+defaultdir=bitchaos

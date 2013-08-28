@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mozapps/skin/extensions/about.css" type="text/css"?> 
+
+<!DOCTYPE dialog SYSTEM "chrome://savefrom/locale/about.dtd">
+
+<dialog
+  id="savefrom-about" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  title="&about_window_title;"
+  buttons="accept"
+  onload="onLoad()">
+  
+  <script>
+    function onLoad()
+    {
+      try
+      {
+        Components.utils.import("resource://gre/modules/AddonManager.jsm");
+        if(AddonManager)
+        {
+          AddonManager.getAddonByID("helper@savefrom.net", function(addon){
+            document.getElementById("savefrom-version").value = addon.version;
+          });
+        }
+      }
+      catch(err)
+      {
+        var em = Components.classes["@mozilla.org/extensions/manager;1"].getService(Components.interfaces.nsIExtensionManager);
+        if(em)
+          document.getElementById("savefrom-version").value = em.getItemForID("helper@savefrom.net").version;
+      }
+    }
+  </script>
+
+   <vbox id="clientBox" flex="1" maxwidth="360">
+    <label id="extensionName" value="&about_title.label;"/>
+    
+    <description id="extensionVersion" crop="right">
+      &about_version.label;: <label id="savefrom-version"/>
+    </description>
+    
+    <description id="extensionDescription" crop="right">&about_description.label;</description>
+
+    <spacer height="20"/>
+    
+    <label href="http://savefrom.net/faq.php#supported_resourses" class="text-link" value="&about_resources_link.label;"/>
+    <label href="http://savefrom.net/user.php?helper=ff" id="extensionHomepage" class="text-link" value="&about_homepage_link.label;"/>
+    
+    
+    <spacer height="10"/>
+
+    <description>&#169; SaveFrom.net</description>
+  </vbox>
+</dialog>

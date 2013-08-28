@@ -1,5 +1,5 @@
 [Buttonbar]
-Buttoncount=4
+Buttoncount=5
 button1=wcmicons.dll,33
 cmd1=%COMMANDER_PATH%\Default.bar
 iconic1=1
@@ -10,4 +10,8 @@ menu2=Системная панель
 button3=wcmicons.dll,4
 cmd3=%COMMANDER_PATH%\UserBar.bar
 menu3=Пользовательская панель
-button4=
+button4=X:\Program Files\Total Commander\Icons\X-Qute.dll,26
+cmd4=X:\Program Files\Total Commander\X-Qute.bar
+path4=X:\Program Files\Total Commander\
+menu4=X-bar
+button5=

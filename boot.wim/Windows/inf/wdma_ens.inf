@@ -396,12 +396,8 @@ ES1371.CopyList         = 10,system32\drivers ; %SystemRoot%\system32\drivers
 ES1370.CopyList         = 10,system32\drivers ; %SystemRoot%\system32\drivers
 
 [ES1371.CopyList]
-es1371mp.sys
 
 [ES1370.CopyList]
-es1370mp.sys
-
-;;**************** NT Install ****************
 
 [STUB_DEVICE.NTX86]
 [STUB_DEVICE.NTX86.SERVICES]

@@ -1,0 +1,4 @@
+.sf_module {margin-bottom: 0.75em;}
+.sf_module:last-child {margin-bottom: 0;}
+.sf_module > checkbox {font-weight: bold;}
+.sf_module_options {margin-left: 2em;}

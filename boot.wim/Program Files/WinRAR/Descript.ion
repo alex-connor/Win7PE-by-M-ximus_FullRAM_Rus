@@ -1,0 +1,28 @@
+Descript.ion         Описания файлов
+Formats              Папка с модулями поддержки дополнительных форматов архивов
+Order.htm            Информация о покупке лицензии
+License.txt          Лицензия на использование и распространение RAR
+Rar.txt              Руководство по консольной версии RAR
+ReadMe.txt           Краткое описание WinRAR
+ReadMe.rus.txt       Информация для пользователей русской версии WinRAR
+WhatsNew.txt         История изменений версий
+Rar.exe              Консольная версия RAR
+Uninstall.exe        Программа удаления
+UnRAR.exe            Бесплатная программа для распаковки архивов RAR
+WinRAR.exe           Версия RAR с графическим интерфейсом
+RarExt.dll           Библиотека встраивания WinRAR в оболочку Windows
+RarExt64.dll         Библиотека встраивания WinRAR в оболочку Windows x64
+RarLng.dll           Языковые ресурсы
+RarFiles.lst         Порядок сортировки файлов для непрерывных архивов
+Uninstall.lst        Список файлов для программы удаления
+WinRAR.chm           Файл справки WinRAR
+Default.SFX          SFX-модуль RAR с графическим интерфейсом для Windows (русский)
+WinCon.SFX           Консольный SFX-модуль RAR для Windows (русский)
+Zip.SFX              SFX-модуль ZIP с графическим интерфейсом для Windows (русский)
+Zip64.SFX            SFX-модуль ZIP с графическим интерфейсом для Windows x64 (русский)
+ZipEn64.SFX          SFX-модуль ZIP с графическим интерфейсом для Windows x64 (английский)
+Zip_US.SFX           SFX-модуль ZIP с графическим интерфейсом для Windows (английский, до версии WinRAR 3.80)
+DOS.SFX              SFX-модуль RAR для DOS
+"DefaultEn.SFX" GUI RAR SFX module
+"WinConEn.SFX" Console RAR SFX module
+"ZipEn.SFX" GUI ZIP SFX module

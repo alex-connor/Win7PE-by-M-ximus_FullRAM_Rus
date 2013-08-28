@@ -1,0 +1,17 @@
+<!ENTITY options_window_title "SaveFrom.net Helper Preferences">
+<!ENTITY options_enabled.label "disable extension">
+<!ENTITY options_showButton.label "Show the button on the addon bar">
+
+<!ENTITY options_lm.label "Handle links">
+<!ENTITY options_lmFileHosting.label "To filehostings">
+<!ENTITY options_lmMediaHosting.label "To mediahostings">
+
+<!ENTITY options_modules.label "Modules">
+<!ENTITY options_moduleYoutube.label "YouTube">
+<!ENTITY options_moduleDailymotion.label "Dailymotion">
+<!ENTITY options_moduleVimeo.label "Vimeo">
+<!ENTITY options_moduleVkontakte.label "VK">
+<!ENTITY options_moduleOdnoklassniki.label "Odnoklassniki">
+
+<!ENTITY options_ytHideLinks.label "Hide links">
+<!ENTITY options_vkShowBitrate.label "Show bitrate instantly">

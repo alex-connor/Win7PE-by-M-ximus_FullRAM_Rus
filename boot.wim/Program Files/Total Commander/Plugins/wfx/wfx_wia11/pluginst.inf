@@ -1,0 +1,5 @@
+[plugininstall]
+description=wiacam 1.12 - plugin for PTP (WIA) enabled digital cameras
+type=wfx
+file=wiacam.wfx
+defaultdir=wiacam

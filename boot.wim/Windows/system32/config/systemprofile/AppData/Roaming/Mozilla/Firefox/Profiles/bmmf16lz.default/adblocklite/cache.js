@@ -1,0 +1,1 @@
+{"version":1,"patternsTimestamp":1375719220494,"matcher":{"whitelist":{"filterByKeyword":{}},"blacklist":{"filterByKeyword":{}}},"elemhide":{"filterByKey":{}}}

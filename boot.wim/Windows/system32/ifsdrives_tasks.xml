@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<applications xmlns="http://schemas.microsoft.com/windows/cpltasks/v1" 
+              xmlns:sh="http://schemas.microsoft.com/windows/tasks/v1">
+    <application id="{D922157A-F663-4c8b-83C3-B9C2895B79DF}"> 
+        <sh:task id="{8302FF18-DD0C-4a2b-94B7-5EF398AD1259}" needsElevation="true"> 
+            <sh:name>Create or delete IFS drive letters</sh:name>
+            <sh:keywords>drive;volume;partition;IFS;Linux;disk;hard disk</sh:keywords>
+            <sh:command>%SystemRoot%\System32\ifsdrives.exe</sh:command>
+        </sh:task>
+        <category id="5"> 
+            <sh:task idref="{8302FF18-DD0C-4a2b-94B7-5EF398AD1259}"/>
+       </category>
+   </application>
+</applications>

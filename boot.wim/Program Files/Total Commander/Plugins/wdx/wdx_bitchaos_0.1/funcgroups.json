@@ -1,0 +1,74 @@
+// function groups to display in "imports" column
+{
+	"file" : {
+		"kernel32.dll!CreateFileA" : "cf",
+		"kernel32.dll!CreateFileW" : "cf",
+		"kernel32.dll!WriteFile" : "wf",
+		"kernel32.dll!ReadFile" : "rf",
+		"kernel32.dll!DeleteFileA" : "df",
+		"kernel32.dll!DeleteFileW" : "df",
+		"kernel32.dll!CopyFileA" : "cp",
+		"kernel32.dll!CopyFileW" : "cp"
+	},
+	
+	"proc" : {
+		"kernel32.dll!CreateProcessA" : "cp",
+		"kernel32.dll!CreateProcessW" : "cp",
+		"kernel32.dll!TerminateProcess" : "tp",
+		"kernel32.dll!WinExecA" : "cp",
+		"kernel32.dll!WinExecW" : "cp",
+		"shell32.dll!ShellExecuteA" : "cp",
+		"shell32.dll!ShellExecuteW" : "cp"
+	},
+	
+	"reg" : {
+		"advapi32.dll!RegCreateKeyA" : "ck",
+		"advapi32.dll!RegCreateKeyExA" : "ck",
+		"advapi32.dll!RegCreateKeyW" : "ck",
+		"advapi32.dll!RegCreateKeyExW" : "ck",
+		"advapi32.dll!RegOpenKeyA" : "ok",
+		"advapi32.dll!RegOpenKeyExA" : "ok",
+		"advapi32.dll!RegOpenKeyW" : "ok",
+		"advapi32.dll!RegOpenKeyExW" : "ok",
+		"advapi32.dll!RegDeleteKeyA" : "dk",
+		"advapi32.dll!RegDeleteKeyExA" : "dk",
+		"advapi32.dll!RegDeleteKeyW" : "dk",
+		"advapi32.dll!RegDeleteKeyExW" : "dk",
+		"advapi32.dll!RegSetValueA" : "sv",
+		"advapi32.dll!RegSetValueExA" : "sv",
+		"advapi32.dll!RegSetValueW" : "sv",
+		"advapi32.dll!RegSetValueExW" : "sv",
+		"advapi32.dll!RegQueryValueExA" : "qv",
+		"advapi32.dll!RegQueryValueA" : "qv",
+		"advapi32.dll!RegQueryValueExW" : "qv",
+		"advapi32.dll!RegQueryValueW" : "qv",
+		"advapi32.dll!RegEnumKeyA" : "ek",
+		"advapi32.dll!RegEnumKeyExA" : "ek",
+		"advapi32.dll!RegEnumKeyW" : "ek",
+		"advapi32.dll!RegEnumKeyExW" : "ek",
+		"advapi32.dll!RegEnumValueA" : "ev",
+		"advapi32.dll!RegEnumValueW" : "ev"
+	},
+	
+	"mem" : {
+		"kernel32.dll!ReadProcessMemory" : "rm",
+		"kernel32.dll!WriteProcessMemory" : "wm"
+	},
+	
+	"thrd" : {
+		"kernel32.dll!CreateRemoteThread" : "crt",
+		"kernel32.dll!CreateThread" : "ct",
+		"kernel32.dll!TerminateThread" : "tt"
+	},
+	
+	"svc" : {
+		"advapi32.dll!CreateServiceA" : "cs",
+		"advapi32.dll!StopServiceA" : "stp",
+		"advapi32.dll!DeleteServiceA" : "ds",
+		"advapi32.dll!StartServiceA" : "strt",
+		"advapi32.dll!CreateServiceW" : "cs",
+		"advapi32.dll!StopServiceW" : "stp",
+		"advapi32.dll!DeleteServiceW" : "ds",
+		"advapi32.dll!StartServiceW" : "strt"
+	}
+}

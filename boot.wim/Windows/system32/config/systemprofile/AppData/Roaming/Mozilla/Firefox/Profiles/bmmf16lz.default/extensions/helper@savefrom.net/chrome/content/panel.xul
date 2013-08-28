@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://savefrom/locale/panel.dtd">
+<overlay id="savefrom-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://savefrom/content/main.js"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="savefrom-string-bundle" src="chrome://savefrom/locale/main.properties"/>
+  </stringbundleset>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton
+      id="savefrom_toolbar_button"
+      class="toolbarbutton-1"
+      type="menu-button"
+      label="SaveFrom"
+      tooltiptext="SaveFrom"
+      oncommand="if(!event.button){SaveFrom.bookmarklet(event);}"
+      image="chrome://savefrom/content/icon.png">
+      <menupopup>
+        <menuitem label="&menu_option.label;"  default="false" oncommand="SaveFrom.optionMenu(); event.stopPropagation();"/>
+        <menuitem label="&menu_about.label;"  default="false" oncommand="SaveFrom.aboutMenu(); event.stopPropagation();"/>
+        <menuseparator/>
+        <menuitem label="&menu_disable.label;" id="savefrom_toolbar_menu_disable" default="true" oncommand="SaveFrom.disable(); event.stopPropagation();"/>
+      </menupopup>
+    </toolbarbutton>
+	</toolbarpalette>
+
+  <statusbar id="status-bar">
+    <popupset id="savefrom_statusbar_popupset">
+      <popup id="SaveFrom_menu" position="after_start">
+        <menuitem label="&menu_option.label;"  default="false" oncommand="SaveFrom.optionMenu();"/>
+        <menuitem label="&menu_about.label;"  default="false" oncommand="SaveFrom.aboutMenu();"/>
+        <menuseparator/>
+        <menuitem label="&menu_disable.label;" id="savefrom_statusbar_menu_disable" default="true" oncommand="SaveFrom.disable();"/>
+      </popup>
+    </popupset>
+
+    <statusbarpanel
+      id="savefrom_statusbar_button"
+      class="statusbarpanel-menu-iconic"
+      label=""
+      tooltiptext="SaveFrom"
+      context="SaveFrom_menu"
+      onclick="if(!event.button){SaveFrom.bookmarklet(event);}"
+      image="chrome://savefrom/content/icon.png"
+      collapsed="true"
+    />
+  </statusbar>
+
+  <toolbar id="addon-bar">
+    <toolbarbutton
+      id="savefrom_statusbar_button"
+      class="toolbarbutton-1"
+      type="menu-button"
+      label="SaveFrom"
+      tooltiptext="SaveFrom"
+      oncommand="if(!event.button){SaveFrom.bookmarklet(event);}"
+      image="chrome://savefrom/content/icon.png"
+      collapsed="true">
+      <menupopup>
+        <menuitem label="&menu_option.label;"  default="false" oncommand="SaveFrom.optionMenu(); event.stopPropagation();"/>
+        <menuitem label="&menu_about.label;"  default="false" oncommand="SaveFrom.aboutMenu(); event.stopPropagation();"/>
+        <menuseparator/>
+        <menuitem label="&menu_disable.label;" id="savefrom_statusbar_menu_disable" default="true" oncommand="SaveFrom.disable(); event.stopPropagation();"/>
+      </menupopup>
+    </toolbarbutton>
+  </toolbar>
+</overlay>

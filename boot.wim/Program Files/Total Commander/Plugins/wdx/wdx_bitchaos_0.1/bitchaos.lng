@@ -1,0 +1,15 @@
+[rus]
+Packed=Упакован
+Signature=Подпись
+Entrypoint=Точка входа
+Sections entropy=Энтропия секций
+Version info=Информация о версии
+Trusted=Действительна
+Untrusted=Недействительна
+Unsigned=Неподписан
+Error=Ошибка
+Yes=Да
+No=Нет
+Imports=Импорты
+AV detect=АВ детект
+Unavailable=Нет данных

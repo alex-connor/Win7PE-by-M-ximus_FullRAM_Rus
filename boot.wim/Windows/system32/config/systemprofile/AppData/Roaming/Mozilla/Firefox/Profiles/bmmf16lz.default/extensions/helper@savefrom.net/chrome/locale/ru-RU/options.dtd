@@ -1,0 +1,20 @@
+<!ENTITY options_window_title "Настройки SaveFrom.net помощника">
+<!ENTITY options_enabled.label "выключить расширение">
+<!ENTITY options_showButton.label "Показывать кнопку на панели дополнений">
+
+<!ENTITY options_lm.label "Обрабатывать ссылки">
+<!ENTITY options_lmFileHosting.label "На файлообменники">
+<!ENTITY options_lmMediaHosting.label "На медиахостинги">
+
+<!ENTITY options_modules.label "Модули">
+<!ENTITY options_moduleYoutube.label "YouTube">
+<!ENTITY options_moduleDailymotion.label "Dailymotion">
+<!ENTITY options_moduleVimeo.label "Vimeo">
+<!ENTITY options_moduleVkontakte.label "Вконтакте">
+<!ENTITY options_moduleOdnoklassniki.label "Одноклассники">
+
+<!ENTITY options_ytHideLinks.label "Скрывать ссылки">
+<!ENTITY options_vkShowBitrate.label "Показывать битрейт сразу">
+
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PuntoSwitcherSettings version="7">
+    <PuntoHotkeys>19,2338,3106,1169,0,0,0,0,0,0,0,0,0,0,1604,0,0,0,0,4179,0,0,0,0,4694,0</PuntoHotkeys>
+    <LayoutSwitchKey>0</LayoutSwitchKey>
+    <SeparateLangCombination>0</SeparateLangCombination>
+    <TransparentFormsFiller>0</TransparentFormsFiller>
+    <CheckForUpdate>Yes</CheckForUpdate>
+    <RunAtStartup>No</RunAtStartup>
+    <DontConvertCapitals>No</DontConvertCapitals>
+    <DontShowTrayIcon>No</DontShowTrayIcon>
+    <ChangeIconClrOnMisprint>Yes</ChangeIconClrOnMisprint>
+    <ShowCurLayoutInWndIcon>No</ShowCurLayoutInWndIcon>
+    <ShowPopupOnException>Yes</ShowPopupOnException>
+    <ExceptionCount>2</ExceptionCount>
+    <FixTwoUpperLetters>Yes</FixTwoUpperLetters>
+    <FixInvertedCase>Yes</FixInvertedCase>
+    <ShowLayoutFlags>Yes</ShowLayoutFlags>
+    <OneKeySwitchLayoutEnabled>No</OneKeySwitchLayoutEnabled>
+    <BinarySwitchLayout>No</BinarySwitchLayout>
+    <DisablePreHandle>No</DisablePreHandle>
+    <AllSoundsEnabled>Yes</AllSoundsEnabled>
+    <FirstLaunch>No</FirstLaunch>
+    <SeparateLangKeysEnabled>No</SeparateLangKeysEnabled>
+    <ShowQuickWordsListInLeftBtnMenu>Yes</ShowQuickWordsListInLeftBtnMenu>
+    <DontReactOnOtherLangs>No</DontReactOnOtherLangs>
+    <SingleLayout>No</SingleLayout>
+    <ShowTooltips>No</ShowTooltips>
+    <EnableDiary>No</EnableDiary>
+    <DiarySkipSepWords>Yes</DiarySkipSepWords>
+    <ScrollAsCaps>No</ScrollAsCaps>
+    <HidePopIndicAfterLayoutChange>No</HidePopIndicAfterLayoutChange>
+    <PSWorks>Yes</PSWorks>
+    <DisableHotKeysWhenTurnedOff>Yes</DisableHotKeysWhenTurnedOff>
+    <FixPopupIndicator>No</FixPopupIndicator>
+    <ShowUsefulTips>No</ShowUsefulTips>
+    <EnableIntelliMenus>No</EnableIntelliMenus>
+    <AutoReplaceAlways>Yes</AutoReplaceAlways>
+    <TurnOffDiaryInProgExceptions>No</TurnOffDiaryInProgExceptions>
+    <ShowFormsFiller>No</ShowFormsFiller>
+    <ReplaceOnEnterAndTab>Yes</ReplaceOnEnterAndTab>
+    <ReplaceOnSpace>No</ReplaceOnSpace>
+    <DontShowTranslitWin>No</DontShowTranslitWin>
+    <FullUnhookWhenDisabled>No</FullUnhookWhenDisabled>
+    <EnableClipboardHistory>No</EnableClipboardHistory>
+    <PersistentClipboardHistory>No</PersistentClipboardHistory>
+    <AutoSaveClipboardToDiary>Yes</AutoSaveClipboardToDiary>
+    <EnableMouseEmulation>No</EnableMouseEmulation>
+    <DisableCapsLock>No</DisableCapsLock>
+    <PopupIndicatorPos>CPoint(300, 300)</PopupIndicatorPos>
+    <FormsFillerRect>CRect(100, 100, 350, 500)</FormsFillerRect>
+    <RestrictKeysEnabled>No,No,No,No,No,No,No</RestrictKeysEnabled>
+    <MinDiaryRecordWords>1</MinDiaryRecordWords>
+    <CurrentAdviceNum>0</CurrentAdviceNum>
+    <DontSwitchOnOtherLangs>No</DontSwitchOnOtherLangs>
+    <Sounds>C:\Program Files\Yandex\Punto Switcher\Sounds\typerus.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\typeeng.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\misprint.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\ru.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\en.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\reverse.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\switch.wav,C:\Program Files\Yandex\Punto Switcher\Sounds\replace.wav</Sounds>
+    <SoundsStates>98304003,131072003,163840002,45875202,65536003,131072003,131072002,131072002,131072002,131072002,131072002,98304002,111411203,124518403,32768003,26214402</SoundsStates>
+    <AskF12Support>No</AskF12Support>
+    <ShowLayoutFlagsAlwaysInColor>Yes</ShowLayoutFlagsAlwaysInColor>
+    <DoubleBackSpaceAction>0</DoubleBackSpaceAction>
+    <ShareHotKeyForUndoConvertAndSelectionConvert>No</ShareHotKeyForUndoConvertAndSelectionConvert>
+    <DiarySaveDays>0</DiarySaveDays>
+    <FolderExceptions />
+    <ProgramsExceptions />
+    <TitlesExceptions />
+</PuntoSwitcherSettings>
