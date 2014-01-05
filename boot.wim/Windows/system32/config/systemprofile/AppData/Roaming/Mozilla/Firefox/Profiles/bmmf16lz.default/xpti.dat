@@ -4,14 +4,19 @@
 0,Version,2,0
 1,AppDir,X:\Program Files\Mozilla Firefox
 
-[Directories,4]
+[Directories,9]
 0,X:\Program Files\Mozilla Firefox\components
 1,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\{E173B749-DB5B-4fd2-BA0E-94ECEA0CA55B}\components
 2,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\{D4DD63FA-01E4-46a7-B6B1-EDAB7D6AD389}\components
 3,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\{1e9a63ef-84ec-49a4-8d6f-2dd9524e90d0}\components
+4,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\uacontrol@qz.tsugumi.org\components
+5,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\https-everywhere@eff.org\components
+6,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\omnibar@ajitk.com\components
+7,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\{73a6fe31-595d-460b-a920-fcc0f8843232}\components
+8,X:\Windows\system32\config\systemprofile\AppData\Roaming\Mozilla\Firefox\Profiles\bmmf16lz.default\extensions\foxyproxy@eric.h.jung\components
 
 [Files,1]
-0,browser.xpt,0,370453,1331051597000
+0,browser.xpt,0,370453,1331051598000
 
 [ArchiveItems,0]
 

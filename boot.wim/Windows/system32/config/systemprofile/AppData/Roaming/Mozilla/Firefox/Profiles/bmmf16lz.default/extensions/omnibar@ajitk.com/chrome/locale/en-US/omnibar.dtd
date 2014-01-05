@@ -1,0 +1,32 @@
+<!--  Options Panel  -->
+<!ENTITY omnibar.PrefsTitle "Omnibar preferences">
+<!ENTITY omnibar.DefaultSearchDesc "Enable search for queries without search keyword or operator">
+<!ENTITY omnibar.DefaultSearchDescContext "(Disable in case other urlbar related addons don&apos;t work)">
+<!ENTITY omnibar.DisplayOptions "Display options">
+<!ENTITY omnibar.OptDefaultSearchShow "Show default search option when &apos;@&apos; operator or keyword is not used [results in increased flickr](*)">
+<!ENTITY omnibar.OptGotoShow "Show &apos;go to&apos; hint for probable urls">
+<!ENTITY omnibar.OptSuggestShow "Show suggestions for queries and URLs">
+<!ENTITY omnibar.OptNumSuggest "Maximum number of suggestions shown">
+<!ENTITY omnibar.OptBarStyle "Select a style for suggestion list(*):">
+<!ENTITY omnibar.OptNumVisibleResult "Maximum number of visible results">
+<!ENTITY omnibar.HideName "Hide engine name">
+<!ENTITY omnibar.HideIcon "Hide engine icon">
+<!ENTITY omnibar.AutohideEngine "Autohide search engine">
+<!ENTITY omnibar.ShowInUrlbar "Show search engine in urlbar">
+<!ENTITY omnibar.ffrestart "Requires Firefox to be restarted to apply the change">
+<!ENTITY omnibar.STYLE.RICH "Rich (Default)">
+<!ENTITY omnibar.STYLE.RICHSLIM "Rich &amp; Slim">
+<!ENTITY omnibar.STYLE.SIMPLE "Slim">
+<!ENTITY omnibar.LONG.DESC.STYLE.RICH "Firefox&apos;s default style to display suggestions, with highlights.">
+<!ENTITY omnibar.LONG.DESC.STYLE.RICHSLIM "Same as &apos;Rich&apos;, but uses slimmer display and is more compact.">
+<!ENTITY omnibar.LONG.DESC.STYLE.SIMPLE "The results are shown in a very simple and fast list with no search highlights.">
+<!ENTITY omnibar.prefmsg "Right-click on the search engine icon in the urlbar to view Omnibar preferences.">
+<!ENTITY omnibar.HideSearchBar "Hide search box (use it if search box is not hidden manually)">
+<!ENTITY omnibar.OptNumHistory "Maximum number of history results">
+<!ENTITY omnibar.SelectSearchOp "Select search operator">
+<!--  common  -->
+<!ENTITY omnibar.Manage "Manage Search Engines...">
+<!ENTITY omnibar.ShowSuggestions "Show suggestions">
+<!ENTITY omnibar.Done "Done">
+<!--  Context Menu  -->
+<!--  Autocomplete popup  -->

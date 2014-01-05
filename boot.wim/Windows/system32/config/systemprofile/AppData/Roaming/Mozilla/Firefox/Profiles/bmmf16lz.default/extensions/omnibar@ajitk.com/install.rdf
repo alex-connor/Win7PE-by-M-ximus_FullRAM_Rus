@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>omnibar@ajitk.com</em:id>
+    <em:version>0.7.2.20110110</em:version>
+    <!-- type of resource -->
+    <em:type>2</em:type>
+
+    <!-- Target Application this extension can install into,
+         with minimum and maximum supported versions. -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>3.5</em:minVersion>
+        <em:maxVersion>4.0b9pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:localized>
+      <Description>
+        <em:locale>de-DE</em:locale>
+        <em:name>Omnibar</em:name>
+        <em:description>Integriert die Suchleiste in die Adressleiste.</em:description>
+        <em:developer>Ajit K</em:developer>
+        <em:contributor>Amit - Ursprüngliche Idee und Kritik</em:contributor>
+        <em:contributor>Alle Nutzer, die konstruktive Kritik gegeben haben.</em:contributor>
+        <em:translator>Sven-Erik Neve</em:translator>
+      </Description>
+    </em:localized>
+    <em:name>Omnibar</em:name>
+    <em:description>Integrates search bar to the location bar.</em:description>
+    <em:developer>Ajit (aka ajitk)</em:developer>
+    <em:contributor>Amit - Original Idea(s) and reviews</em:contributor>
+    <em:contributor>All user who have given contructive feedbacks</em:contributor>
+    <em:optionsURL>chrome://omnibar/content/options.xul</em:optionsURL>
+    <em:iconURL>chrome://omnibar/skin/classic/magnifier_20.png</em:iconURL>
+    
+    <em:translator>Sven-Erik Neve (de-DE)</em:translator>
+    <em:translator>myahoo at babelzilla (fr-FR)</em:translator>
+    <em:translator>Ajit K (hi-IN)</em:translator>
+    <em:translator>markh van BabelZilla.org (nl-NL)</em:translator>
+    <em:translator>Marcelo Ghelman (ghelman.net) (pt-BR)</em:translator>
+    <em:translator>banthaz (sv-SE)</em:translator>
+    <em:translator>yfdyh000 at babelzilla (zh-CN)</em:translator>
+    <em:targetPlatform/>
+  </Description>
+</RDF>

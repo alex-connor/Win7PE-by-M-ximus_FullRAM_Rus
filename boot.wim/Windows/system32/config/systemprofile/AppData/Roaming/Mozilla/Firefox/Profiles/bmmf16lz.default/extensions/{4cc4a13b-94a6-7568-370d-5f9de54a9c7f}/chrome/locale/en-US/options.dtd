@@ -1,0 +1,14 @@
+<!ENTITY preferences.title "Options - Empty Cache Button">
+<!ENTITY preferences.cachetype "Cache type">
+<!ENTITY preferences.memory "Memory Cache">
+<!ENTITY preferences.disk "Disk Cache">
+<!ENTITY preferences.offline "Offline Cache">
+<!ENTITY preferences.favicon "Favicon Cache">
+<!ENTITY preferences.notifications "Notification">
+<!ENTITY preferences.success "Show on success">
+<!ENTITY preferences.reloadafter "Reload on success:">
+<!ENTITY preferences.disable "Nothing">
+<!ENTITY preferences.activetab "Active tab">
+<!ENTITY preferences.alltabs "All tabs">
+<!ENTITY preferences.options "Options">
+<!ENTITY preferences.growl "Mac users need Growl to see notifications.">

@@ -1,0 +1,16 @@
+; wdf.inf
+; PE Builder v3 plug-in INF file
+; Created by Yurkesha
+; http://www.winpe.ru
+
+[Version]
+Signature= "$Windows NT$"
+
+[PEBuilder]
+Name="Drivers - Windows Driver Foundation 1.9 support for WinXP"
+Enable=1
+Version=2011_10_16
+
+[SourceDisksFiles]
+FILES\wdf01000.sys=4,,1
+FILES\wdfldr.sys=4,,1

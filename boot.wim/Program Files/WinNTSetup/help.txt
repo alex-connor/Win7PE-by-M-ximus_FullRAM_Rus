@@ -1,0 +1,64 @@
+
+HotKeys:
+
+F1		- Shows this help
+Ctrl + L 		- Loading a Setting file
+Ctrl + S 		- Saving a Setting file
+Ctrl + Shift + V 	- Show VHD helper GUI (only for Windows 7)
+
+Commandline Options:
+
+/configfile:{file}		- Loading this Setting file on start up
+/HiveFix:{file}		- Adding a specific inf file to the end of Inf processing from TXT MODE Setup
+/CopyLS:{dir} 		- Copy the content of {dir} in the root of $WINNT.LS$
+/VHDHelper		- Show VHD helper GUI (only for Windows 7)
+/DisableVHDChecks	- Disables all checks for VHD partitions
+
+
+
+- /nt6, /nt5 or -vhd have to be the first parameter all other don't require any order
+
+ /nt6 or /nt5  - will let winntsetup know which os to install (nt6: for vista and later, nt5 for XP/2003)
+
+ - /source:(path)		- defines the installation sources (for nt5 the root of the windows CD, for nt6 the install.wim file)
+ - /syspart:(X:) 		- defines the driveletter you want as boot drive
+ - /tempdrive:(X:) 		- defines the driveletter you want as installation drive
+
+ - /unattend:(file) 		- defines the path of the unattend file (winnt.sif or unattend.xml)
+ - /drivers:(path) 		- defines the path to a drivers folder you want to use
+ - /wimindex:n 		- defines the edition inside install.wim which should be installed beginning with 1 (like in the combo box Edition)
+
+ - /setupwait 		- will push the setup button and show you the proceed page
+ - /setup 			- will start the setup
+ - /reboot 			- will automaticly reboot 30 seconds after setup finished
+
+ - /forceunsigned 		- (only for installing Windows 7) will let the driver integration accept unsigned drives
+ - /testsigning 		- will set testsigning flag for the new Windows installation
+ - /disableuac 		- will disable User Account Control
+
+ - /Sysletter:{X:} 		- will define the systemdrive letter the new windows installation will have
+ - /SaveDriveLetters	- will save the current driveletter assaignment for the new windows installation
+ - /Uxtheme 		- will patch the uxtheme related dlls to enable the use of custom msstyles files
+ - /NoBootSect 		- will not update BootSector and Master Boot Record
+
+ - /RunAfter:{command}	- will run a command before reboot
+
+- /vhd
+
+ - /create
+ -  /VHDFile:{path}		- defines the full path for the new VHD file
+ -  /VHDSize:{size}		- defines the size in MB or GB (ex. 25600MB or 25GB)
+ -  /VHDType:{type}		- defines the type of VHD: fixed, expandable or fixedfast
+ 
+    ---- optional ----
+
+ -  /VHDLabel:{Label}	- label for the vhd partition
+ -  /VHDAlig:{Alig}		- Allignment (32|64|128|256|512|1024|2048) of the partition
+ -  /VHDAllo:{Allo}		- Allocation unit (512|1024|2048|4096|8192|16K|32K|64K) of the partition
+
+ - /mount			- attach a VHD to system
+ -  /VHDFile:{path}
+
+ - /unmount		- detach a VHD from system
+ -  /VHDFile:{path}
+

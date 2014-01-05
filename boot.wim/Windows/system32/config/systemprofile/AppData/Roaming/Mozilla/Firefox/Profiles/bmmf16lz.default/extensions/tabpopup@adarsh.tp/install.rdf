@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>tabpopup@adarsh.tp</em:id>
+    <em:name>Tab Popup</em:name>
+    <em:version>1.2.3</em:version>
+    <em:creator>Adarsh TP</em:creator>
+    <em:description>Mouse over the tabs to see the page contents inside them</em:description>
+    <em:homepageURL>http://adarshtp.googlepages.com/</em:homepageURL>
+    <em:optionsURL>chrome://tabpopup/content/options.xul</em:optionsURL>
+    <em:iconURL>chrome://tabpopup/content/tabpopup.png</em:iconURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
+        <em:minVersion>1.5</em:minVersion>
+        <em:maxVersion>4.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

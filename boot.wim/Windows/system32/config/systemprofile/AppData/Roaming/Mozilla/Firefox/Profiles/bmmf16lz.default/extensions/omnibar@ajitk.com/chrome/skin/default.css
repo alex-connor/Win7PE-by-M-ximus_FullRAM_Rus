@@ -1,0 +1,67 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.window {
+    background-color: white;
+}
+
+
+/*omnibar icons in urlbar CSS*/
+
+#omnibar-defaultEngine {
+    padding-right: 2px;
+}
+#omnibar-defaultEngineName {
+    color: gray;
+    margin-bottom: 0;
+    margin-left: 1px;
+}
+
+#omnibar-in-urlbar {
+    display: none;
+    visibility: hidden;
+    overflow: hidden !important;
+    padding: .10em .25em;
+}
+
+#omnibar-in-urlbar[addengines="true"] {
+    -moz-box-shadow: 0 0 1em highlight;
+    -moz-border-radius: .25em;
+}
+
+#omnibar-in-urlbar[addengines="true"] {
+    -moz-box-shadow: none !important;
+}
+
+#urlbar[pageproxystate="valid"] #omnibar-in-urlbar[autohide="yes"] {
+    display: none;
+    visibility: hidden !important;
+}
+
+#omnibar-in-urlbar[showinurlbar="yes"] {
+    display: inherit;
+    visibility: visible !important;
+}
+
+#omnibar-defaultEngineName[hide="yes"], #omnibar-defaultEngine[hide="yes"] {
+    display: none;
+    visibility: hidden !important;
+}
+
+/*Option panel CSS*/
+#editOmnisearchOptionsLabel {
+    font-size: small;
+    font-weight: bold;
+    width: 200px;
+}
+
+.description-checkoption {
+    padding-left: 20px;
+}
+
+#omnibar-preferences description {
+    width: 250px;
+}
+
+menuitem.omnibar-engine-menuitem[selected="true"] {
+    font-weight: bold;
+}

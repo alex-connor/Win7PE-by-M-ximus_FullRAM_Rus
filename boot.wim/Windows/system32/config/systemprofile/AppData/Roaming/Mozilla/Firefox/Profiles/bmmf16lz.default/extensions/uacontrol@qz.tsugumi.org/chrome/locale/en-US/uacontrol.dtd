@@ -1,0 +1,51 @@
+<!ENTITY	toolsmenu.options.label					"UAControl Options...">
+<!ENTITY	toolsmenu.options.accesskey				"U">
+<!ENTITY	contextmenu.options.label				"UAControl Options for This Site...">
+<!ENTITY	contextmenu.options.accesskey			"C">
+<!ENTITY	contextmenu.optionslink.label			"UAControl Options for Link's Site...">
+<!ENTITY	contextmenu.optionslink.accesskey		"f">
+<!ENTITY	contextmenu.optionsimage.label			"UAControl Options for Image's Site...">
+<!ENTITY	contextmenu.optionsimage.accesskey		"R">
+
+<!ENTITY	options.title							"UAControl Options">
+<!ENTITY	options.file.label						"File">
+<!ENTITY	options.file.accesskey					"F">
+<!ENTITY	options.import.label					"Import...">
+<!ENTITY	options.import.accesskey				"I">
+<!ENTITY	options.export.label					"Export...">
+<!ENTITY	options.export.accesskey				"E">
+<!ENTITY	options.close.label						"Close">
+<!ENTITY	options.close.accesskey					"C">
+<!ENTITY	options.options.label					"Options">
+<!ENTITY	options.options.accesskey				"O">
+<!ENTITY	options.enable.label					"Enable UAControl">
+<!ENTITY	options.enable.accesskey				"E">
+<!ENTITY	options.statusbar.label					"Show Icon in Statusbar">
+<!ENTITY	options.statusbar.accesskey				"S">
+<!ENTITY	options.contextmenu.label				"Show in Context Menu">
+<!ENTITY	options.contextmenu.accesskey			"C">
+<!ENTITY	options.instructions.label				"You can specify the User-Agent that will be used for each site.">
+<!ENTITY	options.sitecolumn.label				"Site">
+<!ENTITY	options.actioncolumn.label				"Action">
+<!ENTITY	options.add.label						"Add Site">
+<!ENTITY	options.add.accesskey					"A">
+<!ENTITY	options.edit.label						"Edit Site">
+<!ENTITY	options.edit.accesskey					"E">
+<!ENTITY	options.remove.label					"Remove Site">
+<!ENTITY	options.remove.accesskey				"R">
+<!ENTITY	options.removeall.label					"Remove All Sites">
+<!ENTITY	options.removeall.accesskey				"l">
+<!ENTITY	options.default.label					"Default for sites not listed:">
+<!ENTITY	options.editdefault.label				"Edit">
+<!ENTITY	options.editdefault.accesskey			"d">
+
+<!ENTITY	edit.title								"UAControl Site Properties">
+<!ENTITY	edit.site.label							"Site:">
+<!ENTITY	edit.site.accesskey						"S">
+<!ENTITY	edit.action.label						"Action:">
+<!ENTITY	edit.action.normal.label				"Normal - send the actual UA">
+<!ENTITY	edit.action.normal.accesskey			"N">
+<!ENTITY	edit.action.block.label					"Block - send no UA">
+<!ENTITY	edit.action.block.accesskey				"B">
+<!ENTITY	edit.action.custom.label				"Custom:">
+<!ENTITY	edit.action.custom.accesskey			"C">

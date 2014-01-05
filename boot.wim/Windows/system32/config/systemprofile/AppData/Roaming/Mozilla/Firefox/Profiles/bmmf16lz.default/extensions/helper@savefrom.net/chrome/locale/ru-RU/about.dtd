@@ -1,8 +1,0 @@
-<!ENTITY about_window_title "О SaveFrom.net помощнике">
-
-<!ENTITY about_title.label "SaveFrom.net помощник">
-<!ENTITY about_version.label "Версия">
-<!ENTITY about_description.label "Позволяет получать прямые ссылки для скачивания с более чем 40 сайтов, среди которых  Vkontakte.ru, RapidShare.com, YouTube.com, RuTube.ru и другие.">
-<!ENTITY about_capabilities_link.label "Описание возможностей">
-<!ENTITY about_resources_link.label "Полный список поддерживаемых ресурсов">
-<!ENTITY about_homepage_link.label "Домашняя страница">

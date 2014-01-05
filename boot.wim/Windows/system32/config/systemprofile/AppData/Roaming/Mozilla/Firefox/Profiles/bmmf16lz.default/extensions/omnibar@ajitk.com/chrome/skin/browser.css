@@ -1,0 +1,33 @@
+.autocomplete-richlistitem[type="omnibar-search"] .ac-url-text{
+    color:#000088;
+}
+
+.autocomplete-richlistitem[type="omnibar-suggestion-phrase"] .ac-url-text{
+    color:#000088;
+}
+
+.autocomplete-richlistitem[type="omnibar-suggestion-url"] .ac-url-text{
+    color:#008800;
+}
+
+.autocomplete-richlistitem[type="omnibar-filepath"] .ac-url-text{
+    color:#008800;
+}
+
+.autocomplete-richlistitem .ac-url-text{
+}
+
+/*Binding stuff*/
+#PopupAutoCompleteRichResult.omnibar-style-slim .autocomplete-richlistitem {
+  -moz-binding: url("chrome://omnibar/content/bindings.xml#autocomplete-richlistitem");
+  -moz-box-orient: horizontal;
+}
+
+#PopupAutoCompleteRichResult {
+  -moz-binding: url("chrome://omnibar/content/bindings.xml#urlbar-rich-result-popup");
+}
+
+.om-hidden {
+    visibility: hidden;
+    display: none !important;
+}

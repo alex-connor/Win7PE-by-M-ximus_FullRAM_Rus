@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://uacontrol/locale/uacontrol.dtd">
+
+<dialog id="UAControlEdit"
+		title="&edit.title;"
+		buttons="accept, cancel"
+		style="width: 40em"
+		onload="uaEditManager.onLoad();"
+		ondialogaccept="return uaEditManager.onOK();"
+		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<stringbundle id="uacontrol-strings"
+		src="chrome://uacontrol/locale/uacontrol.properties"/>
+	<script type="application/x-javascript"
+		src="chrome://uacontrol/content/uacontrolEdit.js"/>
+
+	<groupbox>
+		<grid flex="1">
+			<columns>
+				<column/>
+				<column flex="1"/>
+			</columns>
+		
+			<rows>
+				<row>
+					<label value="&edit.site.label;" accesskey="&edit.site.accesskey;" control="fldSite"/>
+					<textbox id="fldSite"/>
+				</row>
+
+				<row>
+					<label value="&edit.action.label;"/>
+					<vbox>
+						<radiogroup id="fldActionGroup" oncommand="uaEditManager.onActionChange(event);">
+							<radio id="fldActionNormal" label="&edit.action.normal.label;" accesskey="&edit.action.normal.accesskey;"/>
+							<radio id="fldActionBlock" label="&edit.action.block.label;" accesskey="&edit.action.block.accesskey;"/>
+							<hbox>
+								<radio id="fldActionCustom" label="&edit.action.custom.label;" accesskey="&edit.action.custom.accesskey;"/>
+								<textbox id="fldAction" flex="1"/>
+							</hbox>
+						</radiogroup>
+					</vbox>
+				</row>
+			</rows>
+		</grid>
+	</groupbox>
+
+</dialog>

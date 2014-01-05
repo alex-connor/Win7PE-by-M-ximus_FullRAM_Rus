@@ -1,0 +1,4 @@
+content	tabpopup	content/
+locale	tabpopup	en-US	locale/en-US/
+skin	tabpopup	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://tabpopup/content/firefoxOverlay.xul

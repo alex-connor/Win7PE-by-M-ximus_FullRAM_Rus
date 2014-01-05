@@ -1,0 +1,26 @@
+content     omnibar             chrome/omnibar/content/
+skin        omnibar   classic   chrome/skin/classic
+
+locale      omnibar     de-DE   chrome/locale/de-DE/
+locale      omnibar     en-US   chrome/locale/en-US/
+locale      omnibar     fr-FR   chrome/locale/fr-FR/
+locale      omnibar     hi-IN   chrome/locale/hi-IN/
+locale      omnibar     nl-NL   chrome/locale/nl-NL/
+locale      omnibar     pt-BR   chrome/locale/pt-BR/
+locale      omnibar     sv-SE   chrome/locale/sv-SE/
+locale      omnibar     zh-CN   chrome/locale/zh-CN/
+
+overlay chrome://browser/content/browser.xul chrome://omnibar/content/browserOverlay.xul
+style chrome://browser/content/browser.xul chrome://omnibar/skin/browser.css
+
+component {629F60A2-7C31-11DD-9566-E35956D89593} components/omni-search.js
+contract @mozilla.org/autocomplete/search;1?name=omnibar-search {629F60A2-7C31-11DD-9566-E35956D89593}
+
+component {AA5CDC32-8148-11DD-99E5-B6AA56D89593} components/omni-search.js
+contract @mozilla.org/autocomplete/search;1?name=omnibar-search-suggestions {AA5CDC32-8148-11DD-99E5-B6AA56D89593}
+
+component {4087d5ad-ab64-4314-8899-fb9ccd7afe41} components/omni-search.js
+contract @mozilla.org/autocomplete/search;1?name=omnibar-allinone {4087d5ad-ab64-4314-8899-fb9ccd7afe41}
+
+component {0cca1b29-1489-4826-ba0c-21fee771afbd} components/omni-search.js
+contract @ajitk.com/omnibar/queryparser;1 {0cca1b29-1489-4826-ba0c-21fee771afbd}

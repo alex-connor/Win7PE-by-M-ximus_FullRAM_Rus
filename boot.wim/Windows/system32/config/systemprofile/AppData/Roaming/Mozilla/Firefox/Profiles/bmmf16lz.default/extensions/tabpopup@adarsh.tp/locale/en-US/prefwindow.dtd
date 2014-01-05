@@ -1,0 +1,14 @@
+<!ENTITY TabPopup "Tab Popup">
+<!ENTITY TabPopupOptions "Tab Popup Options">
+<!ENTITY PopupSize "Popup Size">
+<!ENTITY MatchTabs "Size popup width to match tabs">
+<!ENTITY SizeTo "Size popup width to">
+<!ENTITY PercentOfScreen "percent of browser screen">
+<!ENTITY SizeToExactly "Size popup width to exactly">
+<!ENTITY Pixels "pixels">
+<!ENTITY PopupDelay "Popup Delay">
+<!ENTITY BeforeDisplaying "Before displaying Popup, wait">
+<!ENTITY Milliseconds "milliseconds (1s = 1000ms)">
+<!ENTITY PreviewColorHeader "Set Color">
+<!ENTITY PreviewColorVal "Header and Footer Color (HTML COLOR VALUE)">
+<!ENTITY PopupScrolled "Popup Scrolled View">

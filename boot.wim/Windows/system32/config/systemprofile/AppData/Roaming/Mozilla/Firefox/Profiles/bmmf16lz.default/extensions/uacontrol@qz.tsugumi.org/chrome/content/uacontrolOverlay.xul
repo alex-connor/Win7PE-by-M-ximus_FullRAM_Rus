@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://uacontrol/locale/uacontrol.dtd">
+
+<overlay id="UAControlOverlay"
+		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript"
+		src="chrome://uacontrol/content/uacontrolOverlay.js"/>
+	<script type="application/x-javascript"
+		src="chrome://uacontrol/content/uacontrolPrefs.js"/>
+	<script type="application/x-javascript"
+		src="chrome://uacontrol/content/uacontrolMisc.js"/>
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem id="uacontrol_tools_options"
+				label="&toolsmenu.options.label;"
+				accesskey="&toolsmenu.options.accesskey;"
+				oncommand="uaOverlayManager.toolsOptions();"
+				insertbefore="prefSep"/>
+	</menupopup>
+
+	<popup id="contentAreaContextMenu">
+		<menuitem id="uacontrol_options"
+				label="&contextmenu.options.label;"
+				accesskey="&contextmenu.options.accesskey;"
+				oncommand="uaOverlayManager.contextOptions();"/>
+		<menuitem id="uacontrol_options_link"
+				hidden="true"
+				label="&contextmenu.optionslink.label;"
+				accesskey="&contextmenu.optionslink.accesskey;"
+				oncommand="uaOverlayManager.contextOptionsLink();"/>
+		<menuitem id="uacontrol_options_image"
+				hidden="true"
+				label="&contextmenu.optionsimage.label;"
+				accesskey="&contextmenu.optionsimage.accesskey;"
+				oncommand="uaOverlayManager.contextOptionsImage();"/>
+	</popup>
+
+	<statusbar id="status-bar">
+		<stringbundle id="uacontrol-strings" src="chrome://uacontrol/locale/uacontrol.properties"/>
+		<statusbarpanel id="uacontrol-status"
+					ondblclick="if (event.button == 0) uaOverlayManager.toolsOptions();"
+					context="_child"
+					insertafter="security-button"
+					maxwidth="250">
+			<image id="uacontrol-status-icon" class="statusbarpanel-icon" src=""/>
+			<menupopup id="uacontrol-popupOptions" onpopupshowing="return uaPrefs.onPopupShowing(event)">
+				<menuitem id="uacontrol-mnuOptions"
+						label="&toolsmenu.options.label;"
+						accesskey="&toolsmenu.options.accesskey;"
+						style="font-weight: bold;"
+						oncommand="uaOverlayManager.toolsOptions();"/>
+				<menuitem id="uacontrol-mnuSiteOptions"
+						label="&contextmenu.options.label;"
+						accesskey="&contextmenu.options.accesskey;"
+						oncommand="uaOverlayManager.contextOptions();"/>
+
+				<menuseparator/>
+
+				<menuitem type="checkbox"
+						value="statusbar"
+						id="uacontrol-mnuStatusbar"
+						label="&options.statusbar.label;"
+						accesskey="&options.statusbar.accesskey;"
+						oncommand="uaPrefs.onChangeCheckboxPref(event)"/>
+				<menuitem type="checkbox"
+						value="contextMenu"
+						id="uacontrol-mnuContextMenu" 
+						label="&options.contextmenu.label;"
+						accesskey="&options.contextmenu.accesskey;"
+						oncommand="uaPrefs.onChangeCheckboxPref(event)"/>
+				<menuitem type="checkbox"
+						value="enabled"
+						id="uacontrol-mnuEnabled" 
+						label="&options.enable.label;"
+						accesskey="&options.enable.accesskey;"
+						oncommand="uaPrefs.onChangeCheckboxPref(event)"/>
+			</menupopup>
+		</statusbarpanel>
+	</statusbar>
+
+</overlay>

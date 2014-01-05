@@ -1,0 +1,32 @@
+<!--  Options Panel  -->
+<!ENTITY omnibar.PrefsTitle "ओम्निबार वरीयताएँ">
+<!ENTITY omnibar.DefaultSearchDesc "सीधे खोज करें">
+<!ENTITY omnibar.DefaultSearchDescContext "जब यह ठीक से काम नहीं कर रहा है इसे अक्षम करें">
+<!ENTITY omnibar.DisplayOptions "प्रदर्शन के विकल्प">
+<!ENTITY omnibar.OptDefaultSearchShow "डिफ़ॉल्ट खोज विकल्प दिखाएँ जब &apos;@&apos; या खोज keyword इस्तेमाल हो">
+<!ENTITY omnibar.OptGotoShow "URL के लिए हिंट्स दिखाएँ">
+<!ENTITY omnibar.OptSuggestShow "प्रश्नों और URL के लिए सुझाव दिखाएँ">
+<!ENTITY omnibar.OptNumSuggest "सुझावों की अधिकतम संख्या">
+<!ENTITY omnibar.OptBarStyle "सुझाव सूची के लिए एक शैली चुनें">
+<!ENTITY omnibar.OptNumVisibleResult "दृश्य परिणामों की अधिकतम संख्या">
+<!ENTITY omnibar.HideName "इंजन नाम ना दिखाएँ">
+<!ENTITY omnibar.HideIcon "इंजन आइकन ना दिखाएँ">
+<!ENTITY omnibar.AutohideEngine "स्वतः छिपायें खोज इंजन को">
+<!ENTITY omnibar.ShowInUrlbar "खोज इंजन को urlbar में दिखाएँ">
+<!ENTITY omnibar.ffrestart "परिवर्तन लागू करने के लिए फ़ायरफ़ॉक्स पुनर्प्रारंभ करें">
+<!ENTITY omnibar.STYLE.RICH "Rich">
+<!ENTITY omnibar.STYLE.RICHSLIM "Rich &amp; Slim">
+<!ENTITY omnibar.STYLE.SIMPLE "Slim">
+<!ENTITY omnibar.LONG.DESC.STYLE.RICH "फायरफाक्स का स्वाभाविक विकल्प">
+<!ENTITY omnibar.LONG.DESC.STYLE.RICHSLIM "हरहरा विकल्प जो ज्यादा सुगठित है">
+<!ENTITY omnibar.LONG.DESC.STYLE.SIMPLE "सरल और तेज प्रदर्शन">
+<!ENTITY omnibar.prefmsg "ओम्निबार वरीयताओं को देखने के लिए urlbar में खोज इंजन आइकन पर राइट क्लिक करें">
+<!ENTITY omnibar.HideSearchBar "सर्च बॉक्स को छिपायें (जब सर्च बॉक्स को स्वयं ना छिपाया हो)">
+<!ENTITY omnibar.OptNumHistory "Maximum number of history results">
+<!ENTITY omnibar.SelectSearchOp "Select search operator">
+<!--  common  -->
+<!ENTITY omnibar.Manage "खोज इंजन प्रबंधन">
+<!ENTITY omnibar.ShowSuggestions "सुझाव दिखाएँ">
+<!ENTITY omnibar.Done "हो गया">
+<!--  Context Menu  -->
+<!--  Autocomplete popup  -->
