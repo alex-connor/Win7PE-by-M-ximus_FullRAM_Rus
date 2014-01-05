@@ -8,4 +8,3 @@ NET START Audiosrv
 drvload %SystemRoot%\Inf\hdaudio.inf
 drvload %SystemRoot%\Inf\hdaudbus.inf
 drvload %SystemRoot%\Inf\hdaudss.inf
-exit

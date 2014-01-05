@@ -190,7 +190,6 @@ user_pref("lightweightThemes.isThemeSelected", true);
 user_pref("lightweightThemes.persisted.footerURL", true);
 user_pref("lightweightThemes.persisted.headerURL", true);
 user_pref("lightweightThemes.usedThemes", "[{\"id\":\"150573\",\"name\":\"Firefox VX 01\",\"headerURL\":\"https://addons.mozilla.org/_files/114317/firefox_vexelweb_firefox_01_topo.jpg?1270160635\",\"footerURL\":\"https://addons.mozilla.org/_files/114317/firefox_vexelweb_footer_geral.jpg?1270160635\",\"textcolor\":\"#ffffff\",\"iconURL\":\"https://addons.mozilla.org/_files/114317/preview_small.jpg?1270160635\",\"previewURL\":\"https://addons.mozilla.org/_files/114317/preview.jpg?1270160635\",\"author\":\"Vexelweb\",\"updateURL\":\"https://versioncheck.addons.mozilla.org/en-US/themes/update-check/150573?src=gp\",\"version\":\"0\",\"updateDate\":1375718531607,\"installDate\":1375718531607}]");
-user_pref("middlemouse.paste", true);
 user_pref("network.cookie.cookieBehavior", 2);
 user_pref("network.cookie.prefsMigrated", true);
 user_pref("network.dns.disableIPv6", true);

