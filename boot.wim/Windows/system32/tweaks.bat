@@ -1,6 +1,6 @@
+reg import "x:\windows\system32\explorer.reg" 
 imdisk -a -s 20%% -m B: -p "/fs:fat32 /q /y"
 mkdir "b:\temp"
-regedit /s "%systemroot%\system32\explorer.reg" 
 sc create AoE binPath= "x:\windows\system32\drivers\aoe32.sys" type= kernel start= boot group= "SCSI Class"
 sc create HTTPDisk binPath= "x:\windows\system32\drivers\wvhttp32.sys" type= kernel start= boot group= "SCSI Class"
 sc create AppleHFS binPath= "x:\windows\system32\drivers\AppleHFS.sys" type= filesys start= auto group= "File System"
