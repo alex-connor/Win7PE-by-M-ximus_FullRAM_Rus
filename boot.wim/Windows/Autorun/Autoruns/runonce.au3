@@ -4,10 +4,19 @@
 
 dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1],$m[3],$ram,$hdd,$pagefile,$n,$g
 
+if $CmdLine[1]="/first" then
+$first = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"first")
+for $i = 0 to UBound($first)-1
+   if FileExists($first[$i]) then
+		 ShellExecuteWait($first[$i])
+   EndIf
+Next
+endif
 $key = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini', "registry")
 $file = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"directory")
 $run = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"startup")
 $run512=_ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"less512Mb")
+$explorer=_ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"explorer")
 $auto = _RegAutorun($key)
 $e = _DirAutorun($file)
 _ArrayConcatenate($auto,$e)
@@ -54,6 +63,19 @@ for $i = 0 to UBound($auto)-1
    EndIf
 Next
 EndIf
+while 1
+   if ProcessExists("explorer.exe") and ($auto<>$run512) Then
+	  sleep(2000)
+	  for $i = 0 to UBound($explorer)-1
+		 if FileExists($explorer[$i]) then
+			ShellExecute($explorer[$i],'')
+		 EndIf
+	  Next
+	  ExitLoop
+	  Exit
+   EndIf
+   sleep(1000)
+WEND
 
 Func _DirAutorun($filedir)
    local $i,$autofile[1],$f,$reg[1]

@@ -1,3 +1,7 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 <ShortName>Яндекс</ShortName>
 <Description>Воспользуйтесь Яндексом для поиска в Интернете.</Description>
@@ -9,7 +13,12 @@
 <Url type="text/html" method="GET" template="http://yandex.ru/yandsearch">
   <Param name="text" value="{searchTerms}"/>
   <Param name="from" value="fx3"/>
-  <Param name="clid" value="46510"/>
+  <Param name="clid" value="1909644"/>
+</Url>
+<Url type="application/x-moz-keywordsearch" method="GET" template="http://yandex.ru/yandsearch">
+  <Param name="stype" value="first"/>
+  <Param name="clid" value="1909644"/>
+  <Param name="text" value="{searchTerms}"/>
 </Url>
 <SearchForm>http://www.yandex.ru/</SearchForm>
 </SearchPlugin>

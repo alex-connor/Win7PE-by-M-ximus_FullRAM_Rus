@@ -1,0 +1,1 @@
+CMDOW /RUN "x:\windows\autorun\autoruns\runonce.exe" /first

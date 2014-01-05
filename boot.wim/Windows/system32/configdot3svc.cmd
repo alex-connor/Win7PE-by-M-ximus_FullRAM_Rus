@@ -1,3 +1,9 @@
 netcfg -e -c p -i MS_NDISUIO
-reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WinPE" /t REG_DWORD /v SkipWaitForNetwork /d 1 /f
+netcfg -e -c p -i MS_NDISWAN
+netcfg -e -c s -i MS_RASMAN
+netcfg -e -c p -i MS_PPPOE
+netcfg -c s -i ms_vwifi
+netcfg -c s -i ms_nativewifip
+netcfg -c s -i MS_Server
+sc start Wlansvc
 exit

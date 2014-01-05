@@ -1,2 +1,1 @@
-NET STOP Audiosrv
-NET START Audiosrv
+CMDOW /RUN /min x:\windows\system32\start_audio.bat
