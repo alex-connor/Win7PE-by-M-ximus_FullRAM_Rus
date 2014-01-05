@@ -1,1 +1,1 @@
-start /min configdot3svc.cmd
+start.exe /min configdot3svc.cmd
