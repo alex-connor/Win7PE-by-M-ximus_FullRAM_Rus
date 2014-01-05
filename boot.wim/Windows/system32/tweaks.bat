@@ -3,10 +3,9 @@ imdisk -a -s 20%% -m B: -p "/fs:fat32 /q /y"
 mkdir "b:\temp"
 sc create AoE binPath= "x:\windows\system32\drivers\aoe32.sys" type= kernel start= boot group= "SCSI Class"
 sc create HTTPDisk binPath= "x:\windows\system32\drivers\wvhttp32.sys" type= kernel start= boot group= "SCSI Class"
-sc create AppleHFS binPath= "x:\windows\system32\drivers\AppleHFS.sys" type= filesys start= auto group= "File System"
-sc create AppleMnt binPath= "x:\windows\system32\drivers\AppleMNT.sys" type= filesys start= auto group= "File System"
-sc create Rfsd binPath= "x:\windows\system32\drivers\RFSD.sys" type= filesys start= auto group= "File System"
-reg import "x:\windows\system32\services.reg"
 if not EXIST "B:\Programs\" mkdir "B:\Programs\"
 if EXIST "b:\temp" regedit /s "%systemroot%\system32\temp.reg" 
+if not EXIST "b:\temp" imdisk -D -m B:
+
+
 

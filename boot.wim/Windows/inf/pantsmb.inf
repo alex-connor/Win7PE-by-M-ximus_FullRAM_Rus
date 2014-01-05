@@ -1,0 +1,110 @@
+; ****************************************************************************
+; ****************************************************************************
+; **    Filename:  PantSMB.INF                                                 
+; **    Abstract:  Windows* 2K, XP, 2003 Server INF, Vista File for 
+; **               Intel(R) SMB devices
+; **    Last Update: August 26, 2011 (Version 9.3.0 Build 1011)
+; ****************************************************************************
+; ****************************************************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=PantSMB.cat
+DriverVer=08/26/2011, 9.3.0.1011
+
+[SourceDisksNames] 
+[SourceDisksFiles] 
+
+[PackageInfo]
+Name=Chipset
+Condition=Provider(Microsoft)||InstallDriverName(Chipset)
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL_SYS,NTamd64
+
+[INTEL_SYS]
+;SMBus
+%PCI\VEN_8086&DEV_1E22.DeviceDesc%=NO_DRV,PCI\VEN_8086&DEV_1E22
+
+
+[INTEL_SYS.NTamd64]
+;SMBus
+%PCI\VEN_8086&DEV_1E22.DeviceDesc%=NO_DRV,PCI\VEN_8086&DEV_1E22
+
+[PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+;**************************************************************************
+; Do-nothing section used to avoid "Unknown hardware" installation prompts.
+
+[NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+;****************************************************
+; Generic ISA Root Bus / PCI-ISA Bridge / PCI-EISA Bridge
+
+[ISAPNP_DRV]
+Include=machine.inf
+Needs=ISAPNP_DRV
+
+[ISAPNP_DRV.Services]
+Include=machine.inf
+Needs=ISAPNP_DRV.Services
+
+[Strings]
+INTEL="Intel"
+;SMBus
+PCI\VEN_8086&DEV_1E22.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family SMBus Host Controller - 1E22"
+
+
+; Copyright (c) 2006-2010 Intel Corporation
+
+; ************************************************************
+; Intel is making no claims of usability, efficacy or 
+; warranty.  
+; ************************************************************
+; Information in this document is provided in connection with 
+; Intel products.  No license, express or implied, by estoppel 
+; or otherwise, to any intellectual property rights is granted 
+; by this document.  Intel assumes no liability whatsoever, 
+; and Intel disclaims any express or implied warranty, 
+; relating to sale and/or use of Intel products including 
+; liability or warranties relating to fitness for a particular 
+; purpose, merchantability, or infringement of any patent, 
+; copyright or other intellectual property right.  Intel 
+; products are not intended for use in medical, life saving, 
+; or life sustaining applications.
+
+; ************************************************************
+; Intel Corporation disclaims all warranties and liabilities 
+; for the use of this document and the information contained 
+; herein, and assumes no responsibility for any errors which 
+; may appear in this document, nor does Intel make a 
+; commitment to update the information contained herein. Intel 
+; reserves the right to make changes to this document at any 
+; time, without notice.
+; ************************************************************
+; ************************************************************
+
+; * Third-party brands and names are the property of their 
+; respective owners.

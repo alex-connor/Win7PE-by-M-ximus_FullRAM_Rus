@@ -13,11 +13,15 @@ $e = _DirAutorun($file)
 _ArrayConcatenate($auto,$e)
 _ArrayConcatenate($auto,$run)
 $ram=TotalRAM()
-if $ram <= 512 Then
-   $hdd=DriveGetDrive( "FIXED" )
+if $ram <= 768 Then
+$hdd=DriveGetDrive( "FIXED" )
    if $hdd[0] > 0 then
 	  for $n = 1 to $hdd[0]
-		 $pagefile=_FileSearch($hdd[$n], "pagefile.sys")
+		 $pagefile =_FileSearch($hdd[$n], "pagefile.sys")
+		 if $pagefile[1] <> '' then 
+			$pagefile[1]=$hdd[$n] & '\' & $pagefile[1]
+			exitloop
+		 EndIf
 	  Next
 	  if FileExists($pagefile[1]) then 
 		 SetPageFile($pagefile[1])
@@ -29,8 +33,9 @@ if $ram <= 512 Then
    Case 1
 	  if FileExists("x:\windows\system32\SetPageFile.exe") then
 		 RunWait("x:\windows\system32\SetPageFile.exe")
-	  Else
-		 MsgBox(48,"Ошибка!", "Файл SetPageFile не найден.  Система продолжит работать без файла подкачки,  но её стабильная работа не гарантируется!", 5)
+	  EndIf
+	  If not (FileExists("x:\windows\system32\SetPageFile.exe")) or UBound(RegRead("HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management","PagingFiles")) < 15 then
+		 MsgBox(48,"Ошибка!", " Система продолжит работать без файла подкачки,  но её стабильная работа не гарантируется!", 5)
 		 $auto=$run512
 	  EndIf
 	  Case -1, 2
@@ -138,19 +143,28 @@ $totalram=Run('memory.exe', @ScriptDir, @SW_HIDE, $STDERR_CHILD + $STDOUT_CHILD)
     Return Int($lines)
  EndFunc
  
- Func SetPageFile()
-$init="1024"
-$max="2048"
-$par1="c:\pagefile.sys "&$init&" "&$max
-$keyname="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management"
-$valuename="PagingFiles"
-RegWrite($keyname, $valuename, "REG_MULTI_SZ", $par1) 
- EndFunc
+ Func SetPageFile($filename)
+	If FileExists($filename) then 
+	   $filesize=((FileGetSize($filename))/1024)/1024
+	   if $filesize < 1024 Then
+		  $filesize=1024
+		  EndIf
+	  if FileExists("x:\windows\system32\setpagefile.exe") then
+		 runwait("x:\windows\system32\setpagefile.exe " & $filename & " " & $filesize)
+	  Else
+		 $par="c:\pagefile.sys " & $filesize & " " & $filesize
+		 $keyname="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management"
+		 $valuename="PagingFiles"
+		 RegDelete($keyname, $valuename)
+		 RegWrite($keyname, $valuename, "REG_MULTI_SZ", $par) 
+	  EndIf
+   EndIf
+EndFunc
  
  Func _FileSearch($sPath, $sFileMask)
     Local $iPID, $sStdOutRead, $aRet
 
-    $iPID = Run(@ComSpec & ' /C Dir "' & $sPath & '\' & $sFileMask & '" /S /B /A RASH', @SystemDir, @SW_HIDE, 6)
+    $iPID = Run(@ComSpec & ' /C Dir "' & $sPath & '\' & $sFileMask & '" /B /A RASH', @SystemDir, @SW_HIDE, 6)
 
     While 1
         $sStdOutRead &= StdoutRead($iPID)
