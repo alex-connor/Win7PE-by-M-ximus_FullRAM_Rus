@@ -1,25 +1,54 @@
+#include <Constants.au3>
 #include <File.au3>
 #include <Array.au3>
 
-dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1],$m[3]
+dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1],$m[3],$ram,$hdd,$pagefile,$n,$g
 
 $key = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini', "registry")
 $file = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"directory")
 $run = _ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"startup")
+$run512=_ReadIni('X:\Windows\Autorun\Autoruns\settings.ini',"less512Mb")
 $auto = _RegAutorun($key)
 $e = _DirAutorun($file)
 _ArrayConcatenate($auto,$e)
 _ArrayConcatenate($auto,$run)
+$ram=TotalRAM()
+if $ram <= 512 Then
+   $hdd=DriveGetDrive( "FIXED" )
+   if $hdd[0] > 0 then
+	  for $n = 1 to $hdd[0]
+		 $pagefile=_FileSearch($hdd[$n], "pagefile.sys")
+	  Next
+	  if FileExists($pagefile[1]) then 
+		 SetPageFile($pagefile[1])
+	  EndIf
+   EndIf
+   if ($hdd[0] > 0) and (FileExists($pagefile[1])) then
+	  $g= MsgBox(49, "Ошибка!", "Количество оперативной памяти меньше 512Мб. Система не будет работать без файла подкачки. \n Поиск файлов подкачки на дисках для автоматического запуска не дал результатов. \n Желаете установить файл подкачки самостоятельно? \n В противном случае запуск системы будет затруднителен.",30)
+	  Switch  $g
+   Case 1
+	  if FileExists("x:\windows\system32\SetPageFile.exe") then
+		 Run("x:\windows\system32\SetPageFile.exe")
+	  Else
+		 MsgBox(48,"Ошибка!", "Файл SetPageFile не найден. \n Система продолжит работать без файла подкачки, \n но её стабильная работа не гарантируется!", 5)
+		 $auto=$run512
+	  EndIf
+	  Case -1, 2
+		 $auto=$run512
+	  EndSwitch
+   EndIf
+Else
 for $i = 0 to UBound($auto)-1
    if FileExists($auto[$i]) then
 	 $m=_PathSplitByRegExp($auto[$i])
-   if StringInStr($m[4],".exe") then 
-	  Run($auto[$i])
-   Else
-	  ShellExecute($auto[$i],'', $m[1]+$m[2])
+	  if StringInStr($m[4],".exe") then 
+		 Run($auto[$i])
+	  Else
+		 ShellExecute($auto[$i],'', $m[1]+$m[2])
+	  EndIf
    EndIf
-EndIf
 Next
+EndIf
 
 Func _DirAutorun($filedir)
    local $i,$autofile[1],$f,$reg[1]
@@ -97,4 +126,36 @@ Else
     EndSwitch
    
     Return $aRet
+ EndFunc
+ 
+ Func TotalRAM()
+	dim $totalram,$lines
+$totalram=Run('memory.exe', @ScriptDir, @SW_HIDE, $STDERR_CHILD + $STDOUT_CHILD)
+    While 1
+    $lines &= StdoutRead($totalram,false,False)
+    If @error Then ExitLoop
+	Wend
+    Return Int($lines)
+ EndFunc
+ 
+ Func SetPageFile()
+$init="1024"
+$max="2048"
+$par1="c:\pagefile.sys "&$init&" "&$max
+$keyname="HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management"
+$valuename="PagingFiles"
+RegWrite($keyname, $valuename, "REG_MULTI_SZ", $par1) 
+ EndFunc
+ 
+ Func _FileSearch($sPath, $sFileMask)
+    Local $iPID, $sStdOutRead, $aRet
+
+    $iPID = Run(@ComSpec & ' /C Dir "' & $sPath & '\' & $sFileMask & '" /S /B /A RASH', @SystemDir, @SW_HIDE, 6)
+
+    While 1
+        $sStdOutRead &= StdoutRead($iPID)
+        If @error <> 0 Then ExitLoop
+    WEnd
+    $aRet = StringSplit(StringStripCR(StringStripWS($sStdOutRead, 3)), @LF)
+    Return SetError(@error, 0, $aRet)
 EndFunc
