@@ -1,3 +1,0 @@
-info_ru=Этот плагин позволяет работать с мышкой (а так же совместно использовать комбинаций клавиатуры и мышки (к примеру: Ctrl + клик мышки))
-
-info_en=This plugin allows you to work with a mouse (also it allow to use keyboard and mouse combinations (for example: Ctrl + mouse click))

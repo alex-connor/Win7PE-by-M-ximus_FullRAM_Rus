@@ -1,3 +1,0 @@
-info_ru=Этот плагин позволяет работать с пультами управления через WinLirc
-
-info_en=This plugins allow MKey work with IR devices throught WinLirc
