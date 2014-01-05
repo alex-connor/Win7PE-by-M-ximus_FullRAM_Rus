@@ -45,7 +45,7 @@ DelService = WimFltr,0x200                      ;Flags not to stop service first
 [WimFltr.Service]
 DisplayName      = %WimFltrServiceName%
 Description      = %WimFltrServiceDescription%
-ServiceBinary    = %12%\wimfltr.sys             ;%windir%\system32\drivers\wimfltr.sys
+ServiceBinary    = wimfltr.sys             ;%windir%\system32\drivers\wimfltr.sys
 Dependencies     = %WimFltrFilterManagerName%   ;FltMgr
 ServiceType      = 2                            ;SERVICE_FILE_SYSTEM_DRIVER
 StartType        = 3                            ;SERVICE_DEMAND_START
