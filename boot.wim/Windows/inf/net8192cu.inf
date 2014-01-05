@@ -1,0 +1,436 @@
+;; net8192cu.inf 
+;;
+;; Realtek RTL8192C Wireless 802.11b/g/n USB 2.0 Network Adapter
+;;
+;; Copyright (C) 2009 Realtek Semiconductor Corp.
+;;
+;; This release is primarily for WHQL test.
+;;
+
+;FOR WIN 7
+
+[Version]
+Signature	= "$Windows NT$"
+Class		= Net
+ClassGUID	= {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider	= %Realtek%
+CatalogFile.NT	= net8192cu.cat		;; for WHQL certified
+DriverVer = 08/10/2010,1006.2.0810.2010
+
+[Manufacturer]
+%Realtek% = Realtek,NTx86.6.1
+%PCI% = PCI,NTx86.6.1
+%Sitecom% = Sitecom,NTx86.6.1
+%EDIMAX150% = EDIMAX150,NTx86.6.1
+%Abocom% = Abocom,NTx86.6.1
+%Amigo% = Amigo,NTx86.6.1
+%Hercules% = Hercules,NTx86.6.1
+%DLink% = DLink,NTx86.6.1
+%Belkin% = Belkin,NTx86.6.1
+%Zyxel% = Zyxel,NTx86.6.1
+%EDIMAX300% = EDIMAX300,NTx86.6.1
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;;****************************************************************************
+;; IDs for X86
+;;****************************************************************************
+[Realtek.NTx86.6.1]
+%RTL8188cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8176
+%RTL8188cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_103C&PID_1629	; HP/Liteon
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8192
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8177
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8178
+
+[PCI.NTx86.6.1]
+%PCI.DeviceDesc% = RTL8192cu.ndi, USB\VID_2019&PID_ED17
+
+[Sitecom.NTx86.6.1]
+%Sitecom.DeviceDesc% = RTL8192cu.ndi, USB\VID_0DF6&PID_0052
+
+[EDIMAX150.NTx86.6.1]
+%EDIMAX150.DeviceDesc% = RTL8192cu.ndi, USB\VID_7392&PID_7811
+
+[Abocom.NTx86.6.1]
+%Abocom.DeviceDesc% = RTL8192cu.ndi, USB\VID_07B8&PID_8188
+
+[Amigo.NTx86.6.1]
+%Amigo.DeviceDesc% = RTL8192cu.ndi, USB\VID_0EB0&PID_9071
+
+[Hercules.NTx86.6.1]
+%Hercules.DeviceDesc% = RTL8192cu.ndi, USB\VID_06F8&PID_E033
+
+[DLink.NTx86.6.1]
+%DLink-1.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_330A
+%DLink-2.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_3309
+%DLink-3.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_3308
+
+[Belkin.NTx86.6.1]
+%Belkin.DeviceDesc% = Belkin.ndi, USB\VID_050D&PID_1102
+
+[Zyxel.NTx86.6.1]
+%Zyxel.DeviceDesc% = RTL8192cu.ndi, USB\VID_0586&PID_341F
+
+[EDIMAX300.NTx86.6.1]
+%EDIMAX300.DeviceDesc% = RTL8192cu.ndi, USB\VID_7392&PID_7822
+
+;;****************************************************************************
+;; IDs for X64
+;;****************************************************************************
+[Realtek.NTamd64.6.1]
+%RTL8188cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8176
+%RTL8188cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_103C&PID_1629	; HP/Liteon
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8192
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8177
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0BDA&PID_8178
+%RTL8192cu.DeviceDesc% = RTL8192cu.ndi, USB\VID_0586&PID_341F	; Zyxel/Abocom
+
+[PCI.NTamd64.6.1]
+%PCI.DeviceDesc% = RTL8192cu.ndi, USB\VID_2019&PID_ED17
+
+[Sitecom.NTamd64.6.1]
+%Sitecom.DeviceDesc% = RTL8192cu.ndi, USB\VID_0DF6&PID_0052
+
+[EDIMAX150.NTamd64.6.1]
+%EDIMAX150.DeviceDesc% = RTL8192cu.ndi, USB\VID_7392&PID_7811
+
+[Abocom.NTamd64.6.1]
+%Abocom.DeviceDesc% = RTL8192cu.ndi, USB\VID_07B8&PID_8188
+
+[Amigo.NTamd64.6.1]
+%Amigo.DeviceDesc% = RTL8192cu.ndi, USB\VID_0EB0&PID_9071
+
+[Hercules.NTamd64.6.1]
+%Hercules.DeviceDesc% = RTL8192cu.ndi, USB\VID_06F8&PID_E033
+
+[DLink.NTamd64.6.1]
+%DLink-1.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_330A
+%DLink-2.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_3309
+%DLink-3.DeviceDesc% = RTL8192cu.ndi, USB\VID_2001&PID_3308
+
+[Belkin.NTamd64.6.1]
+%Belkin.DeviceDesc% = Belkin.ndi, USB\VID_050D&PID_1102
+
+[Zyxel.NTamd64.6.1]
+%Zyxel.DeviceDesc% = RTL8192cu.ndi, USB\VID_0586&PID_341F
+
+[EDIMAX300.NTx64.6.1]
+%EDIMAX300.DeviceDesc% = RTL8192cu.ndi, USB\VID_7392&PID_7822
+
+;;****************************************************************************
+;; Windows 2000/XP
+;;****************************************************************************
+;;----------------------------------------------------------------------------
+;; Realtek default installation
+;;----------------------------------------------------------------------------
+[RTL8192cu.ndi.NT]
+AddReg			= RTL8192cu.os61.reg, RTL8192cu.common.reg, RTLWLAN.reg
+Include         = netvwifibus.inf
+Needs		= VWiFiBus.CopyFiles
+Characteristics	= 0x84
+BusType			= 15 
+CopyFiles		= RTL8192cu.CopyFiles
+*IfType			= 71            ; IF_TYPE_IEEE80211
+*MediaType		= 16            ; NdisMediumNative802_11
+*PhysicalMediaType	= 9          ; NdisPhysicalMediumNative802_11
+
+[RTL8192cu.ndi.NT.Services]
+AddService		= RTL8192cu, 2, RTL8192cu.nt61.Service, RTL8192cu.nt61.EventLog
+Include = netvwifibus.inf
+Needs = VWiFiBus.Services
+
+[RTL8192cu.ndi.NT.HW]
+Include = netvwifibus.inf
+Needs 	= VWiFiBus.PnPFilterRegistration
+
+
+;;----------------------------------------------------------------------------
+;; Belkin customized installation
+;;----------------------------------------------------------------------------
+[Belkin.ndi.NT]
+AddReg			= RTL8192cu.os61.reg, RTL8192cu.common.reg, RTLWLAN.reg, Belkin.reg
+Include         = netvwifibus.inf
+Needs		= VWiFiBus.CopyFiles
+Characteristics	= 0x84
+BusType			= 15 
+CopyFiles		= RTL8192cu.CopyFiles
+*IfType			= 71            ; IF_TYPE_IEEE80211
+*MediaType		= 16            ; NdisMediumNative802_11
+*PhysicalMediaType	= 9          	; NdisPhysicalMediumNative802_11
+
+[Belkin.ndi.NT.Services]
+AddService		= RTL8192cu, 2, RTL8192cu.nt61.Service, RTL8192cu.nt61.EventLog
+Include = netvwifibus.inf
+Needs = VWiFiBus.Services
+
+[Belkin.ndi.NT.HW]
+Include = netvwifibus.inf
+Needs 	= VWiFiBus.PnPFilterRegistration
+
+;;****************************************************************************
+;; Windows 2000/XP parameters
+;;****************************************************************************
+[RTL8192cu.os61.reg]
+HKR, Ndi\Interfaces,	UpperRange, 0, "ndis5,mdcwifi"
+HKR, Ndi\Interfaces,	LowerRange, 0, "wlan, ethernet, vwifi"
+HKR, Ndi,				Service,    0, "RTL8192cu"
+
+[RTL8192cu.nt61.Service]
+DisplayName    = %RTL8192cu.DeviceDesc.DispName%
+ServiceType    = 1		; %SERVICE_KERNEL_DRIVER%
+StartType      = 3		; %SERRVICE_DEMAND_START%
+ErrorControl   = 1		; %SERRVICE_ERROR_NORMAL%
+ServiceBinary  = %12%\RTL8192cu.sys
+LoadOrderGroup = NDIS
+
+[RTL8192cu.nt61.EventLog]
+AddReg = RTL8192cu.nt61.AddEventLog.reg
+
+[RTL8192cu.nt61.AddEventLog.reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported  , 0x00010001, 7
+
+;*******************************************************************************
+; RTL8192cu common paramters
+;*******************************************************************************
+[RTL8192cu.common.reg]
+HKR,defaults,LedCtrl,0,"1"
+HKR,,LedCtrl,0,"1"
+
+HKR,defaults,WiFi11bIbss,0,"0"
+HKR,,WiFi11bIbss,0,"0"
+
+HKR,defaults,bRateAdaptive,0,"1"
+HKR,,bRateAdaptive,0,"1"
+
+HKR,defaults,QoS,0,"1"
+HKR,,QoS,0,"1"
+
+HKR,defaults,WiFiConfg,0,"0"
+HKR,,WiFiConfg,0,"0"
+
+HKR,defaults,CcxRm,0,"1"
+HKR,,CcxRm,0,"1"
+
+HKR,defaults,CcxOffLineDurUpLimit,0,"0"
+HKR,,CcxOffLineDurUpLimit,0,"0"
+
+;;----------------------------------------------------------------------------
+;; Realtek WLAN NIC parameters
+;;----------------------------------------------------------------------------
+[RTLWLAN.reg]
+HKR,defaults,SSID,0,"ANY"
+HKR,,SSID,0,"ANY"
+
+HKR,defaults,Channel,0,"1"
+HKR,,Channel,0,"1"
+
+HKR,Ndi\params\NetworkType,			ParamDesc,  0, %NETWORK_TYPE_STR%
+HKR,Ndi\params\NetworkType,			type,       0, "enum"
+HKR,Ndi\params\NetworkType,			default,    0, "1"
+HKR,Ndi\params\NetworkType\enum,		"0",        0, %AD_HOC_STR%
+HKR,Ndi\params\NetworkType\enum,		"1",        0, %INFRASTRUCTURE_STR%
+HKR,Ndi\params\NetworkType\enum,		"2",        0, %AUTO_SELECT%
+HKR,defaults,NetworkType,0,"1"
+HKR,,NetworkType,0,"1"
+
+HKR,defaults,StaUapsd,0,"0"
+HKR,,StaUapsd,0,"0"
+
+HKR,Ndi\params\WirelessMode, 			ParamDesc, 	0, %WL_MODE_STR%
+HKR,Ndi\params\WirelessMode, 			type, 		0, "enum"
+HKR,Ndi\params\WirelessMode, 			default, 	0, "8"
+HKR,Ndi\params\WirelessMode\enum, 		"2", 		0, %IEEE_802_11B_STR%
+HKR,Ndi\params\WirelessMode\enum, 		"4", 		0, %IEEE_802_11BG_STR%
+HKR,Ndi\params\WirelessMode\enum, 		"8", 		0, %IEEE_802_11BGN_STR%
+HKR,defaults,WirelessMode, 0, "8"
+HKR,,WirelessMode, 0, "8"
+
+HKR,defaults,RxReorder,0,"1"
+HKR,,RxReorder,0,"1"
+
+HKR,,DefaultKeyID,,"0"
+HKR,,DefaultKey0,,""
+HKR,,DefaultKey1,,""
+HKR,,DefaultKey2,,""
+HKR,,DefaultKey3,,""
+
+;Inactive Power Save
+HKR,defaults,InactivePs,0,"0"
+HKR,,InactivePs,0,"0"
+
+;Leisure Power Save
+HKR,defaults,bLeisurePs,0,"0"
+HKR,,bLeisurePs,0,"0"
+
+;Fw Control LPS
+HKR,defaults,bFwCtrlLPS,0,"3"
+HKR,,bFwCtrlLPS,0,"3"
+
+;; LPS Interval
+;HKR,defaults,LPSIntvl,0,"5"
+HKR,,LPSIntvl,0,"5"
+
+; Reset Tx Hang
+HKR,defaults,USBResetTxHang,0,"1"
+HKR,,USBResetTxHang,0,"1"
+
+HKR,,WEPinNmode,0,"0"
+
+;-------------------------------------------------------------------------------
+;	USB Tx/Rx aggregation
+;-------------------------------------------------------------------------------
+
+HKR,defaults,UsbRxAggMode,0,"3"
+HKR,,UsbRxAggMode,0,"3"
+
+HKR,defaults,UsbRxAggBlockCount,0,"8"
+HKR,,UsbRxAggBlockCount,0,"8"
+
+HKR,defaults,UsbRxAggBlockTimeout,0,"6"
+HKR,,UsbRxAggBlockTimeout,0,"6"
+
+HKR,defaults,UsbRxAggPageCount,0,"16"
+HKR,,UsbRxAggPageCount,0,"16"
+
+HKR,defaults,UsbRxAggPageTimeout,0,"6"
+HKR,,UsbRxAggPageTimeout,0,"6"
+
+HKR,defaults,UsbTxAggMode,0,"1"
+HKR,,UsbTxAggMode,0,"1"
+
+HKR,defaults,UsbTxAggDescNum,0,"6"
+HKR,,UsbTxAggDescNum,0,"6"
+
+;;----------------------------------------------------------------------------
+;; Belkin WLAN NIC parameters
+;;----------------------------------------------------------------------------
+[Belkin.reg]
+HKR,Ndi\params\RFOff,			ParamDesc,  0, "Radio"
+HKR,Ndi\params\RFOff,			type,       0, "enum"
+HKR,Ndi\params\RFOff,			default,    0, "0"
+HKR,Ndi\params\RFOff\enum,		"0",        0, "On"
+HKR,Ndi\params\RFOff\enum,		"1",        0, "Off"
+HKR,defaults,RFOff,0,"0"
+HKR,,RFOff,0,"0"
+
+;*******************************************************************************
+; Destination Directory
+;*******************************************************************************
+[RTL8192cu.CopyFiles]
+RTL8192cu.sys,,,2
+
+[DestinationDirs]
+DefaultDestDir     = 11
+RTL8192cu.CopyFiles		= 12
+
+;;****************************************************************************
+;; Source Files
+;;****************************************************************************
+[SourceDisksFiles]
+RTL8192cu.sys = 1
+
+[SourceDisksNames]
+1=%DISKNAME%,,,
+
+;*******************************************************************************
+; Strings
+;*******************************************************************************
+[Strings]
+SSID_STR				= "SSID"
+CHANNEL_STR				= "Channel"
+NETWORK_TYPE_STR			= "Network Type"
+LED_CONTROL_STR				= "LED Control" 
+POWER_SAVE_STR				= "Power Save Mode"
+WIFI_IBSS_STR				= "IBSS Default 11b Mode"
+RATE_ADAPTIVE_STR			= "Rate Adaptive"
+QOS_STR					= "QoS"
+WiFiConfg_STR	  			= "WiFiConfg"
+WMM_APSD				= "WMM APSD"
+CCX_RM_STR				= "CCX Radio Measurement"
+CCX_OFF_LINE_DUR_UP_LIMIT_STR		= "CCX Max Off-Line Measurement (0: unlimited)"
+FORCE_PRIORITY_STR			= "Forced Priority"
+HW_PARA_STR				= "Init from HwParaFile"
+THREE_WIRE_MODE_STR			= "Three Wire Programming Mode"
+BOARD_TYPE_STR				= "Board Type"
+PROTECTION_MODE_STR			= "Protection Mode"
+TPC_STR					= "Transmit Power Control"
+TPC_POLARITY_STR			= "TPC Polarity Select"
+HIGH_POWER_STR				= "High Power Mechanism"
+INIT_GAIN_STR				= "Initial Gain State"
+CW_MAX_MIN_STR				= "Contention Window"
+PSP_XLINK_STR				= "PSP XLink Mode"
+DISABLE_STR				= "Disable"
+ENABLE_STR				= "Enable"
+AD_HOC_STR				= "Ad Hoc"
+INFRASTRUCTURE_STR			= "Infrastructure"
+AUTO_SELECT				= "Auto select"
+WL_MODE_STR				= "Wireless Mode"
+RX_REORDER_STR				= "Rx Reorder"
+CAM_STR					= "CAM"
+MAX_PSP_STR				= "MAX_PSP"
+Fast_PSP_STR				= "Fast_PSP"
+NO_AC_STR				= "No AC (Disable)"
+ALL_AC_STR				= "ALL AC"
+IEEE_802_11B_STR 			= "IEEE 802.11b"
+IEEE_802_11BG_STR 			= "IEEE 802.11b/g"
+IEEE_802_11BGN_STR 			= "IEEE 802.11b/g/n"
+
+;-------------------------------------------------------------------------------
+;	USB Tx/Rx aggregation strings
+;-------------------------------------------------------------------------------
+RX_AGG_MODE_STR				= "Rx Aggregation Mode"
+RX_AGG_MODE_BLOCK_STR			= "Rx Agg USB Block Mode"
+RX_AGG_MODE_PAGE_STR			= "Rx Agg DMA Page Mode"
+RX_AGG_MODE_MIXED_STR			= "Rx Agg USB and Page Mixed Mode"
+RX_AGG_USB_BLOCK_STR			= "Rx Agg USB Block Threshold"
+RX_AGG_USB_TIMEOUT_STR			= "Rx Agg USB Timeout"
+RX_AGG_DMA_PAGE_STR			= "Rx Agg DMA Page Threshold"
+RX_AGG_DMA_TIMEOUT_STR			= "Rx Agg DMA Timeout"
+TX_AGG_MODE_STR				= "Tx Aggregation Mode"
+TX_AGG_DESC_PER_OUT_STR			= "Tx Agg Number of descriptor per bulk out"
+
+;*******************************************************************************
+; manufacture description
+;*******************************************************************************
+Realtek					= "Realtek Semiconductor Corp."
+PCI             			= "PLANEX COMMUNICATIONS INC"
+Sitecom        				= "Sitecom Europe B.V."
+EDIMAX150      				= "EDIMAX"
+Abocom					= "AboCom System, Inc."
+Amigo					= "Amigo Technology Inc"
+Hercules				= "Guillemot Corporation S.A"
+DLink					= "D-Link Corporation"
+Belkin					= "Belkin International, Inc."
+Zyxel					= "ZyXEL"
+EDIMAX300         			= "EDIMAX "
+
+;*******************************************************************************
+;	Source disk name
+;*******************************************************************************
+DISKNAME				= "Realtek RTL8192CU Wireless LAN 802.11n USB 2.0 Network Adapter Driver Disk"
+RTL8192cu.DeviceDesc 			= "Realtek RTL8192CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+RTL8192cu.DeviceDesc.DispName		= "Realtek RTL8192CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+RTL8188cu.DeviceDesc 			= "Realtek RTL8188CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+RTL8188cu.DeviceDesc.DispName		= "Realtek RTL8188CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+PCI.DeviceDesc 				= "GW-USValue-EZ"
+PCI.DeviceDesc.DispName			= "GW-USValue-EZ"
+Sitecom.DeviceDesc 			= "Sitecom Wireless Ultra Nano USB Adapter 150N X1 WL-365"
+Sitecom.DeviceDesc.DispName		= "Sitecom Wireless Ultra Nano USB Adapter 150N X1 WL-365"
+EDIMAX150.DeviceDesc 			= "150Mbps Wireless 802.11b/g/n Nano USB Adapter"
+EDIMAX150.DeviceDesc.DispName		= "150Mbps Wireless 802.11b/g/n Nano USB Adapter"
+Abocom.DeviceDesc 			= "Realtek RTL8192CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+Abocom.DeviceDesc.DispName		= "Realtek RTL8192CU Wireless LAN 802.11n USB 2.0 Network Adapter"
+Amigo.DeviceDesc 			= "Wireless USB Card"
+Amigo.DeviceDesc.DispName		= "Wireless USB Card"
+Hercules.DeviceDesc 			= "Hercules Wireless N Pico USB "
+Hercules.DeviceDesc.DispName		= "Hercules Wireless N Pico USB "
+DLink-1.DeviceDesc 			= "D-Link DWA-133 Wireless N USB Adapter"
+DLink-1.DeviceDesc.DispName		= "D-Link DWA-133 Wireless N USB Adapter"
+DLink-2.DeviceDesc 			= "D-Link DWA-135 Wireless N USB Adapter"
+DLink-2.DeviceDesc.DispName		= "D-Link DWA-135 Wireless N USB Adapter"
+DLink-3.DeviceDesc 			= "D-Link DWA-121 Wireless N USB Adapter"
+DLink-3.DeviceDesc.DispName		= "D-Link DWA-121 Wireless N USB Adapter"
+Belkin.DeviceDesc 			= "Surf Wireless Micro USB Adapter"
+Belkin.DeviceDesc.DispName		= "Surf Wireless Micro USB Adapter"

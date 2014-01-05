@@ -1,0 +1,112 @@
+; ****************************************************************************
+; ****************************************************************************
+; **    Filename:  PantUSB.INF                                              
+; **    Abstract:  Windows* 2K, XP, 2003 Server INF, Vista, Win7 File for   
+; **               Intel(R) USB devices
+; **    Last Update: August 26, 2011 (Version 9.3.0 Build 1011)
+; ****************************************************************************
+; ****************************************************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%INTEL%
+CatalogFile=PantsUSB.cat
+DriverVer=08/26/2011, 9.3.0.1011
+
+[SourceDisksNames] 
+[SourceDisksFiles] 
+
+[PackageInfo]
+Name=Chipset
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+; =================== Table of content =========================
+
+[Manufacturer]
+%INTEL%=Intel,NT.5.1,NTamd64
+
+; =================== Intel ====================================
+
+[Intel]
+%PCI\VEN_8086&DEV_1D26.DeviceDesc%=INTEL_USB_2K,PCI\VEN_8086&DEV_1E26
+%PCI\VEN_8086&DEV_1D2D.DeviceDesc%=INTEL_USB_2K,PCI\VEN_8086&DEV_1E2D
+
+[Intel.NT.5.1]
+%PCI\VEN_8086&DEV_1E26.DeviceDesc%=INTEL_USB2,PCI\VEN_8086&DEV_1E26
+%PCI\VEN_8086&DEV_1E2D.DeviceDesc%=INTEL_USB2,PCI\VEN_8086&DEV_1E2D
+
+[Intel.NTamd64]
+%PCI\VEN_8086&DEV_1E26.DeviceDesc%=INTEL_USB2,PCI\VEN_8086&DEV_1E26
+%PCI\VEN_8086&DEV_1E2D.DeviceDesc%=INTEL_USB2,PCI\VEN_8086&DEV_1E2D
+
+; For Windows 2000 Only
+; For USB2 Support
+[INTEL_USB2_2K.NT]
+Include=usb.inf
+Needs=EHCI.NT
+
+[INTEL_USB2_2K.NT.Services]
+Include=usb.inf
+Needs=EHCI.NT.Services
+
+; For Windowns XP and greater
+; For USB2 Support
+[INTEL_USB2.NT]
+Include=usbport.inf
+Needs=EHCI.Dev.NT
+
+[INTEL_USB2.NT.Services]
+Include=usbport.inf
+Needs=EHCI.Dev.NT.Services
+
+[INTEL_USB2.NT.CoInstallers]
+Include=usbport.inf
+Needs=EHCI.Dev.NT.CoInstallers
+
+
+[Strings]
+INTEL="Intel"
+;  Panther Point
+PCI\VEN_8086&DEV_1E26.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26"
+PCI\VEN_8086&DEV_1E2D.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D"
+
+
+;*******************************************
+;Handy macro substitutions (non-localizable)
+REG_DWORD              = 0x00010001
+
+; Copyright (c) 2006-2010 Intel Corporation
+
+; ************************************************************
+; Intel is making no claims of usability, efficacy or 
+; warranty.  
+; ************************************************************
+; Information in this document is provided in connection with 
+; Intel products.  No license, express or implied, by estoppel 
+; or otherwise, to any intellectual property rights is granted 
+; by this document.  Intel assumes no liability whatsoever, 
+; and Intel disclaims any express or implied warranty, 
+; relating to sale and/or use of Intel products including 
+; liability or warranties relating to fitness for a particular 
+; purpose, merchantability, or infringement of any patent, 
+; copyright or other intellectual property right.  Intel 
+; products are not intended for use in medical, life saving, 
+; or life sustaining applications.
+
+; ************************************************************
+; Intel Corporation disclaims all warranties and liabilities 
+; for the use of this document and the information contained 
+; herein, and assumes no responsibility for any errors which 
+; may appear in this document, nor does Intel make a 
+; commitment to update the information contained herein. Intel 
+; reserves the right to make changes to this document at any 
+; time, without notice.
+; ************************************************************
+; ************************************************************
+
+; * Third-party brands and names are the property of their 
+; respective owners.

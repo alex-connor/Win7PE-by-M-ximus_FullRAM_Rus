@@ -1,0 +1,161 @@
+;*****************************************************************************
+;
+; Name:  ss_bser2.inf
+;
+; Function:
+;	Install the SAMSUNG USB Mobile Logging Drivers on Win2000
+;
+; Copyright (c) 1997-2009 MCCI Corporation 
+;
+; MCCI is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation
+;
+;*****************************************************************************
+
+[Version]
+signature="$WINDOWS NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%Provider%
+DriverVer=09/19/2009,5.00.0.0
+CatalogFile=ss_bserd.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[SourceDisksNames.x86]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"ss_bserd.sys",,\i386
+
+[SourceDisksNames.amd64]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"ss_bserd.sys",,\amd64
+
+
+[SourceDisksFiles]
+; filename = diskid[,[ subdir][, size]]
+ss_bserd.sys = 1
+ss_bcmnt.sys = 1
+
+;-----------------------------------------------------------------------------
+; Specify target paths...
+;-----------------------------------------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 12                    ; system32\drivers
+
+;-----------------------------------------------------------------------------
+; Table of Contents
+;-----------------------------------------------------------------------------
+[Manufacturer]
+%Samsung%=Samsung, NTamd64
+
+;-----------------------------------------------------------------------------
+; Device-by-device entries
+;-----------------------------------------------------------------------------
+[Samsung]
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_6795&MI_02&OS_NT
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_6849&MI_03&OS_NT
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_684A&MI_03&OS_NT
+
+[Samsung.NTamd64]
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_6795&MI_02&OS_NT
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_6849&MI_03&OS_NT
+%Samsung.Comm.Desc% = Samsung.Install, USB\VID_04E8&PID_684A&MI_03&OS_NT
+
+;-----------------------------------------------------------------------------
+; Installation instructions
+;-----------------------------------------------------------------------------
+
+[Samsung.Install.nt]
+AddReg		= Samsung.AddReg,Samsung.NT.AddReg
+CopyFiles	= CopyFiles, CopyFiles.Win2K
+
+
+;-----------------------------------------------------------------------------
+;  Registry
+;-----------------------------------------------------------------------------
+
+; common registry entries 
+[Samsung.AddReg]
+HKR,,NTMPDriver,,ss_bserd.sys
+HKR,,EnableSetClearFeatureIdle, 0x10001, 01,00,00,00
+HKR,,OverrideDefaultPortSettings, 0x10001, 01,00,00,00
+HKR,,InitialBaudRate, 0x10001, 00,C2,01,00			;115200 initial baud rate
+HKR,,InitialLineControl,, "8N1"					;8-bits, No parity, 1 stop bit
+
+; only for NT...
+[Samsung.NT.AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+;-----------------------------------------------------------------------------
+;  Copy lists
+;-----------------------------------------------------------------------------
+[CopyFiles]
+
+[CopyFiles.Win2K]
+ss_bserd.sys
+ss_bcm.sys,ss_bcmnt.sys
+ss_bcmnt.sys
+
+
+
+;-----------------------------------------------------------------------------
+;  NT Services installation
+;-----------------------------------------------------------------------------
+
+
+
+[Samsung.Install.NT.Services]
+AddService = ss_bserd, 0x00000002, Samsung.Install.AddService
+
+
+
+
+[Samsung.Install.AddService]
+DisplayName	= %Samsung.Service.Name%
+Description	= %Samsung.Service.Desc%
+ServiceType	= 1			;%SERVICE_KERNEL_DRIVER%
+StartType	= 3			;%SERVICE_DEMAND_START%
+ErrorControl	= 1			;%SERVICE_ERROR_NORMAL%	
+ServiceBinary	= %12%\ss_bserd.sys
+
+
+
+;-----------------------------------------------------------------------------
+; STRINGS
+;-----------------------------------------------------------------------------
+[Strings]
+
+;<<localize the following>>
+
+;BEGIN ENG - US English Strings
+
+Provider = "Samsung Electronics Co., LTD"
+Samsung = "Samsung Electronics Co., LTD"
+DiskString = "SAMSUNG USB Mobile Logging Drivers installation disk"
+
+Samsung.Comm.Desc = "SAMSUNG USB Mobile Logging"
+Samsung.Service.Name = "SAMSUNG USB Mobile Logging Driver"
+Samsung.Service.Desc = "SAMSUNG USB Mobile Logging Driver"
+
+
+CustomerDataPath = "SAMSUNG USB Mobile Device"
+DriverSet = "SAMSUNG USB Mobile Device Software"
+UninstallFile = "SS_BUninstall.exe"
+McciOptions = "Uninstallable"
+
+
+;END ENG - US English Strings
+
+;-----------------------------------------------------------------------------
+; The following are symbolic constants which don't change per locale.
+;-----------------------------------------------------------------------------
+
+
+;*** end of file ***

@@ -1,0 +1,392 @@
+; ESA9.INF  -- Windows Still Image Setup File for Windows
+; Copyright (c) 2009 Seiko Epson Corporation
+; Manufacturer: Seiko Epson Corporation
+
+;--------------------------------------------------------------------------------
+
+[Version]
+Signature="$Windows NT$"
+LayoutFile=Layout.inf, Layout1.inf, Layout2.inf
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Mfg%
+CatalogFile.nt=esa9.cat
+DriverVer=08/12/2011,3.7.7.2
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[DestinationDirs]
+DefaultDestDir=11							; LDID_SYS
+DS.Files=10,TWAIN_32\ESCNDV
+TBL.Files=10,TWAIN_32\ESCNDV\ESSYS			; LDID_WIN\TWAIN_32\ESCNDV\ESSYS
+DRV.Files=10,TWAIN_32\ESCNDV\ES00A9
+EPSON.Color.Files=23						; LDID_SYS\COLOR
+ESA9.Color.Files=23							; LDID_SYS\COLOR
+USB.Scan.CopySys32Files=10,system32\drivers	; LDID_WIN\system32\drivers
+
+;--------------------------------------------------------------------------------
+
+[Strings]
+Mfg					= "EPSON"
+ESA9.DeviceDesc		= "EPSON NX120/SX125/TX120/ME 320"
+DSName				= "EPSON NX120/SX125/TX120/ME 320"
+StartButton			= "Scan to PDF Button"
+RegSection			= "SOFTWARE\EPSON\EPSON Scan\ES00A9"
+RegSection.x64		= "SOFTWARE\WoW6432Node\EPSON\EPSON Scan\ES00A9"
+ScanApp				= "Epson Event Manager"
+DiskName			= "EPSON Scanners Driver Disk"
+ICCName				= "NX120_R.ICC"
+
+;--------------------------------------------------------------------------------
+
+[Manufacturer]
+%Mfg%=Models,NTx86.5.1,NTx86.6.0,NTamd64.5.2,NTamd64.6.0
+
+[Models]
+%ESA9.DeviceDesc%  = USB.ESA9,USB\VID_04B8&PID_085C&MI_00
+
+[Models.NTx86.5.1]
+%ESA9.DeviceDesc%  = USB.ESA9NT51,USB\VID_04B8&PID_085C&MI_00
+
+[Models.NTx86.6.0]
+%ESA9.DeviceDesc%  = USB.ESA9NT60,USB\VID_04B8&PID_085C&MI_00
+
+[Models.NTamd64.5.2]
+%ESA9.DeviceDesc%  = USB.ESA9NT51.x64,USB\VID_04B8&PID_085C&MI_00
+
+[Models.NTamd64.6.0]
+%ESA9.DeviceDesc%  = USB.ESA9NT60.x64,USB\VID_04B8&PID_085C&MI_00
+
+;--------------------------------------------------------------------------------
+
+[USB.ESA9]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x03
+Events=ESA9.Events
+DeviceData=ESA9.DeviceData
+AddReg=ESCANB.AddReg,USB.Driver.AddReg,USB.IF.AddReg,ESA9.AddReg
+CopyFiles=ESCANB.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files,USB.Scan.CopySys32Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9.ntx86]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x03
+Events=ESA9STI.Events
+DeviceData=ESA9STI.DeviceData
+AddReg=ESCANB.AddReg,USB.IF.AddReg,ESA9.AddReg
+CopyFiles=ESCANB.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9.ntx86.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[ESA9STI.DeviceData]
+TwainDS=%DSName%
+Model=%ESA9.DeviceDesc%
+
+[ESA9STI.Events]
+Button0=%StartButton%,{7D245E24-56C0-11d1-BED9-00AA002F3325},%ScanApp%
+
+;--------------------------------------------------------------------------------
+
+[USB.ESA9NT51]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x13
+Events=ESWIA.Events
+DeviceData=ESWIA.DeviceData
+AddReg=ESWIAUD.AddReg,USB.IF.AddReg,ESA9.AddReg
+CopyFiles=ESWIAUD.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9NT51.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[USB.ESA9NT51.CoInstallers]
+AddReg=ESExtendXP.AddReg
+CopyFiles=ESExtendXP.CopyFiles
+
+[USB.ESA9NT60]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x13
+Events=ESWIA.Events
+DeviceData=ESWIA.DeviceData
+AddReg=ESWIA2UD.AddReg,USB.IF.AddReg,ESA9.AddReg
+CopyFiles=ESWIA2UD.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9NT60.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[USB.ESA9NT60.CoInstallers]
+AddReg=ESExtendXP.AddReg
+CopyFiles=ESExtendXP.CopyFiles
+
+[ESExtendXP.AddReg]
+HKR,,CoInstallers32,0x10000,"escdev.dll,RegDeviceEvent"
+
+[ESExtendXP.CopyFiles]
+escdev.dll,,,32
+esdevapp.exe,,,32
+
+;--------------------------------------------------------------------------------
+
+[USB.ESA9NT51.x64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x13
+Events=ESWIA.Events
+DeviceData=ESWIA.DeviceData
+AddReg=ESWIAUD.x64.AddReg,USB.IF.AddReg,ESA9.x64.AddReg
+CopyFiles=ESWIAUD.x64.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9NT51.x64.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[USB.ESA9NT51.x64.CoInstallers]
+AddReg=ESExtendXP.x64.AddReg
+CopyFiles=ESExtendXP.x64.CopyFiles
+
+[USB.ESA9NT60.x64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x01
+Capabilities=0x13
+Events=ESWIA.Events
+DeviceData=ESWIA.DeviceData
+AddReg=ESWIA2UD.x64.AddReg,USB.IF.AddReg,ESA9.x64.AddReg
+CopyFiles=ESWIA2UD.x64.USD.Files,DS.Files,DRV.Files,TBL.Files,EPSON.Color.Files,ESA9.Color.Files
+ICMProfiles=%ICCName%
+
+[USB.ESA9NT60.x64.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[USB.ESA9NT60.x64.CoInstallers]
+AddReg=ESExtendXP.x64.AddReg
+CopyFiles=ESExtendXP.x64.CopyFiles
+
+[ESExtendXP.x64.AddReg]
+HKR,,CoInstallers32,0x10000,"esxcdev.dll,RegDeviceEvent"
+
+[ESExtendXP.x64.CopyFiles]
+esxcdev.dll,,,32
+esdevapp.exe,,,32
+
+[ESWIA.DeviceData]
+TwainDS=%DSName%
+Model=%ESA9.DeviceDesc%
+NumButtons=1,1
+HOptRes=600,1
+VOptRes=1200,1
+ModelCode="ES00A9"
+
+[ESWIA.Events]
+Button0=%StartButton%,{A6C5A715-8C6E-11D2-977A-0000F87A926F},%ScanApp%
+
+[ESExtendXP.Info]
+EventModel=ES00A9
+
+;--------------------------------------------------------------------------------
+
+[ESCANB.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,USDClass,,"{4E470040-B4E9-11D0-8BC4-00AA0059897B}"
+HKCR,CLSID\{4E470040-B4E9-11D0-8BC4-00AA0059897B},,,"EPSON USD"
+HKCR,CLSID\{4E470040-B4E9-11D0-8BC4-00AA0059897B}\InProcServer32,,,%11%\essiscsi.dll
+HKCR,CLSID\{4E470040-B4E9-11D0-8BC4-00AA0059897B}\InProcServer32,ThreadingModel,,"Apartment"
+
+[ESWIAUD.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,USDClass,,"{580A2401-9E98-4a8a-BEC5-94173FEE8968}"
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968},,,"EPSON USD"
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968}\InProcServer32,,,%11%\eswiaud.dll
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968}\InProcServer32,ThreadingModel,,"Both"
+
+[ESWIAUD.x64.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,USDClass,,"{580A2401-9E98-4a8a-BEC5-94173FEE8968}"
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968},,,"EPSON USD"
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968}\InProcServer32,,,%11%\esxwiaud.dll
+HKCR,CLSID\{580A2401-9E98-4a8a-BEC5-94173FEE8968}\InProcServer32,ThreadingModel,,"Both"
+
+[ESWIA2UD.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,USDClass,,"{511F3F20-732C-41f3-B413-07DA0EC825C5}"
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5},,,"EPSON USD"
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5}\InProcServer32,,,%11%\esw2ud.dll
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5}\InProcServer32,ThreadingModel,,"Both"
+
+[ESWIA2UD.x64.AddReg]
+HKR,,DevLoader,,*NTKERN
+HKR,,USDClass,,"{511F3F20-732C-41f3-B413-07DA0EC825C5}"
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5},,,"EPSON USD"
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5}\InProcServer32,,,%11%\esxw2ud.dll
+HKCR,CLSID\{511F3F20-732C-41f3-B413-07DA0EC825C5}\InProcServer32,ThreadingModel,,"Both"
+
+[USB.Driver.AddReg]
+HKR,,NTMPDriver,,"usbscan.sys"
+
+[USB.IF.AddReg]
+HKR,,HardwareConfig,1,4
+
+[ESA9.AddReg] ; Model dependent
+HKLM,%RegSection%,"Version",0x00010001 ,0x00010000
+HKLM,%RegSection%,"Hardware File",,"ES00A9.HRD"
+HKLM,%RegSection%,"Supported",,"EPSON NX120/SX125/TX120/ME 320,EPSON ME 320/ME 330"
+HKLM,%RegSection%,"EventNum",0x00010001 ,0x00000001
+HKLM,%RegSection%,"EventAppName",,"Epson Event Manager"
+HKLM,%RegSection%,"EventAppPath",,"0,Epson Software\Event Manager\EEventManager.exe"
+
+[ESA9.x64.AddReg] ; Model dependent
+HKLM,%RegSection.x64%,"Version",0x00010001 ,0x00010000
+HKLM,%RegSection.x64%,"Hardware File",,"ES00A9.HRD"
+HKLM,%RegSection.x64%,"Supported",,"EPSON NX120/SX125/TX120/ME 320,EPSON ME 320/ME 330"
+HKLM,%RegSection.x64%,"EventNum",0x00010001 ,0x00000001
+HKLM,%RegSection.x64%,"EventAppName",,"Epson Event Manager"
+HKLM,%RegSection.x64%,"EventAppPath",,"0,Epson Software\Event Manager\EEventManager.exe"
+
+;--------------------------------------------------------------------------------
+
+[USB.Scan.CopySys32Files]
+usbscan.sys,,,16
+
+[ESCANB.USD.Files]
+essiscsi.dll,,,32
+
+[ESWIAUD.USD.Files]
+eswiaud.dll,,,32
+
+[ESWIAUD.x64.USD.Files]
+esxwiaud.dll,,,32
+
+[ESWIA2UD.USD.Files]
+esw2ud.dll,,,32
+
+[ESWIA2UD.x64.USD.Files]
+esxw2ud.dll,,,32
+
+[DS.Files]
+nx120.ds,,,32
+
+[DRV.Files]
+es00a9.hrd,,,32
+es00a9.dti,,,32
+esicm.dll,,,32
+esdevif.dll,,,32
+esdevcl.dll,,,32
+esscncl.dll,,,32
+esui.dll,,,32
+esutwb.dll,,,32
+esdscl.dll,,,32
+estwpmg.dll,,,32
+esfit.dll,,,32
+esimgctl.dll,,,32
+estwm.exe,,,32
+esimfl.dll,,,32
+esres.dll,,,32
+esdtr.dll,,,32
+esdtr2.dll,,,32
+version.dat,,,32
+esimgdet.dll,,,32
+esddc.dll,,,32
+esddc.prm,,,32
+escires.dll,,,32
+esdde.dll,,,32
+esdde.prm,,,32
+escndv.chm,,,32
+
+[TBL.Files]
+es00a9.idx,,,32
+
+[EPSON.Color.Files]
+ewsrgb.icm,,,32
+ewrgb18.icm,,,32
+ewgray22.icm,,,32
+ewgray18.icm,,,32
+
+[ESA9.Color.Files]
+nx120_r.icc,,,32
+
+;--------------------------------------------------------------------------------
+
+[SourceDisksNames]
+2000=%DiskName%,EsCore.cab,,
+2001=%DiskName%,ModUsd.cab,,
+2003=%DiskName%,ResLang.cab,,
+2004=%DiskName%,ModExt.cab,,
+2169=%DiskName%,nx120.cab,,
+8000=%DiskName%,Escdev.cab,,
+
+[SourceDisksFiles]
+esicm.dll=2000
+esfit.dll=2000
+esimfl.dll=2000
+esdevif.dll=2000
+esdevcl.dll=2000
+esscncl.dll=2000
+esui.dll=2000
+esutwb.dll=2000
+esdscl.dll=2000
+estwpmg.dll=2000
+esimgctl.dll=2000
+estwm.exe=2000
+version.dat=2000
+esimgdet.dll=2000
+esddc.dll=2000
+esddc.prm=2000
+esdde.dll=2000
+esdde.prm=2000
+escires.dll=2000
+ewsrgb.icm=2000
+ewrgb18.icm=2000
+ewgray22.icm=2000
+ewgray18.icm=2000
+esdde.dll=2000
+esdde.prm=2000
+
+essiscsi.dll=2001
+eswiaud.dll=2001
+esxwiaud.dll=2001
+esw2ud.dll=2001
+esxw2ud.dll=2001
+
+esres.dll=2003
+escndv.chm=2003
+
+esdtr.dll=2004
+esdtr2.dll=2004
+
+es00a9.idx=2169
+es00a9.hrd=2169
+es00a9.dti=2169
+nx120.ds=2169
+nx120_r.icc=2169
+
+escdev.dll=8000
+esxcdev.dll=8000
+esdevapp.exe=8000

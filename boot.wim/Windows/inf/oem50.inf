@@ -1,0 +1,190 @@
+;*****************************************************************************
+;
+; ss_bbus.inf   -- Install the SAMSUNG USB Mobile Device
+;
+; Copyright (c) 1997-2009 by MCCI Corporation 
+;
+; MCCI is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation.
+;
+;*****************************************************************************
+
+[version]
+signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-c465-11cf-8056-444553540000}
+Provider=%Provider%
+DriverVer=09/19/2009,5.00.0.0
+CatalogFile=ss_bbus.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+;-----------------------------------------------------------------------------
+; Specify target paths...
+;-----------------------------------------------------------------------------
+[DestinationDirs]
+DefaultDestDir                  = 11                    ; LDID_SYS
+SamsungWdm.NT.CopyFiles        = 12                    ; system32\drivers
+PropPages.CopyFiles             = 11                    ; system
+
+;-----------------------------------------------------------------------------
+; Specify the install disks.  A bit unwieldy during development.
+;-----------------------------------------------------------------------------
+[SourceDisksNames.x86]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"ss_bbus.sys",,\i386
+
+
+[SourceDisksNames.amd64]
+; diskid = description[, [tagfile] [, <unused>, subdir]]
+1=%DiskString%,"ss_bbus.sys",,\amd64
+
+
+
+[SourceDisksFiles]
+; filename = diskid[, [subdir] [, size]]
+ss_bbus.sys = 1
+ss_bwhnt.sys = 1
+
+;-----------------------------------------------------------------------------
+; Table of Contents:  manufacturer, then devices.
+;-----------------------------------------------------------------------------
+[Manufacturer]
+%Samsung%=Samsung, NTamd64
+
+;-----------------------------------------------------------------------------
+; The devices
+;-----------------------------------------------------------------------------
+[Samsung]
+%Samsung.CdcBus.Desc% = SamsungWdm.Install, USB\VID_04E8&PID_6795
+%Samsung.CdcBus.Desc% = SamsungWdm.Install, USB\VID_04E8&PID_6849
+%Samsung.CdcBus.Desc% = SamsungWdm.Install.2, USB\VID_04E8&PID_684A
+
+[Samsung.NTamd64]
+%Samsung.CdcBus.Desc% = SamsungWdm.Install, USB\VID_04E8&PID_6795
+%Samsung.CdcBus.Desc% = SamsungWdm.Install, USB\VID_04E8&PID_6849
+%Samsung.CdcBus.Desc% = SamsungWdm.Install.2, USB\VID_04E8&PID_684A
+
+;-----------------------------------------------------------------------------
+; How to install them:  On W9x, the [section] name is used directly.
+; On NT, the system first tries [section.NT], then [section].
+;-----------------------------------------------------------------------------
+
+;-----------------------------------------------------------------------------
+; Diagnostics Files CopyFiles List Section
+;-----------------------------------------------------------------------------
+[Samsung.CopyFiles]
+
+;-----------------------------------------------------------------------------
+; XXX when we have a property page DLL, add it to the following section.
+;-----------------------------------------------------------------------------
+[PropPages.CopyFiles]
+
+
+;-----------------------------------------------------------------------------
+;       How to install the WDM driver on NT
+;-----------------------------------------------------------------------------
+[SamsungWdm.Install.NT]
+CopyFiles       = SamsungWdm.NT.CopyFiles
+AddReg          = SamsungWdm.AddReg, SamsungWdm.NT.AddReg
+
+;-----------------------------------------------------------------------------
+;       How to start the WDM driver on NT
+;-----------------------------------------------------------------------------
+[SamsungWdm.Install.NT.Services]
+AddService      = ss_bbus, 2, SamsungWdm.AddService, SamsungWdm.Install.EventLog
+
+[SamsungWdm.AddService]
+DisplayName             = %Samsung.Service.Desc%
+ServiceType             = 1     ; SERVICE_KERNEL_DRIVER
+StartType               = 3     ; SERVICE_DEMAND_START
+ErrorControl            = 1     ; SERVICE_ERROR_NORMAL
+ServiceBinary           = %12%\ss_bbus.sys
+LoadOrderGroup          = Base
+
+;-----------------------------------------------------------------------------
+;       Setup event logging, if driver supports it
+;-----------------------------------------------------------------------------
+
+[SamsungWdm.Install.EventLog]
+Addreg = SamsungWdm.EventLog.AddReg
+
+[SamsungWdm.EventLog.AddReg]
+HKR,,EventMessageFile, 0x20000, "%%SystemRoot%%\System32\drivers\ss_bbus.sys"
+HKR,,TypesSupported, 0x10001, 7
+
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (all platforms)
+;-----------------------------------------------------------------------------
+[SamsungWdm.AddReg]
+
+
+
+;-----------------------------------------------------------------------------
+;       WDM registry entries (NT only)
+;-----------------------------------------------------------------------------
+[SamsungWdm.NT.AddReg]
+
+
+;-----------------------------------------------------------------------------
+;       The WDM copy list for NT -- different because things go in
+;       different places.
+;-----------------------------------------------------------------------------
+[SamsungWdm.NT.CopyFiles]
+ss_bbus.sys
+ss_bwh.sys,ss_bwhnt.sys
+ss_bwhnt.sys
+
+;-----------------------------------------------------------------------------
+; MTP on Interface #2 for Composite Device				      
+;-----------------------------------------------------------------------------
+[SamsungWdm.Install.2.NT]
+CopyFiles       = SamsungWdm.NT.CopyFiles
+AddReg          = SamsungWdm.AddReg.2, SamsungWdm.NT.AddReg
+
+[SamsungWdm.Install.2.NT.Services]
+AddService      = ss_bbus, 2, SamsungWdm.AddService, SamsungWdm.Install.EventLog
+
+[SamsungWdm.AddReg.2]
+; set the second configuration
+HKR,Scenarios,Scenario,0x10001, 01,00,00,00
+HKR,Scenarios\Scenario_1\ifc_02\Description, default,, "MTP function"
+HKR,Scenarios\Scenario_1\ifc_02,HardwareId,, "USB\Vid_$VID&Pid_$PID&Mi_$IFC$,"
+HKR,Scenarios\Scenario_1\ifc_02,HardwareIdList,, "USB\MS_COMP_MTP$,USB\Vid_$VID&Pid_$PID&Class_$CLASS&SubClass_$SUBCLASS&Prot_$PROT&Os_$OS$,USB\Vid_$VID&Pid_$PID&Class_$CLASS&SubClass_$SUBCLASS&Prot_$PROT$,USB\Vid_$VID&Pid_$PID&Mi_$IFC&Os_$OS$,USB\Vid_$VID&Pid_$PID&MI_$IFC$,$,"
+HKR,Scenarios\Scenario_1\ifc_02,CompatibleIdList,, "USB\MS_COMP_MTP$,USB\Vid_$VID&Pid_$PID&Mi_$IFC&Os_$OS$,USB\Vid_$VID&Pid_$PID&Mi_$IFC$,$,"
+
+;-----------------------------------------------------------------------------
+
+
+;****************************************************************************
+; Localizable Strings
+;****************************************************************************
+[strings]
+
+;BEGIN ENG - US English Strings
+Provider = "Samsung Electronics Co., LTD"
+Samsung = "Samsung Electronics Co., LTD"
+DiskString = "SAMSUNG USB Mobile Device Installation Disk"
+
+Samsung.CdcBus.Desc = "SAMSUNG USB Mobile Device"
+Samsung.Service.Desc = "SAMSUNG USB Mobile Device (WDM)"
+
+CustomerDataPath = "SAMSUNG USB Mobile Device"
+DriverSet = "SAMSUNG USB Mobile Device Software"
+UninstallFile = "SS_BUninstall.exe"
+McciOptions = "Uninstallable"
+
+
+;END ENG - US English Strings
+
+;-----------------------------------------------------------------------------
+; Following are symbolic constants which don't change per locale.
+;-----------------------------------------------------------------------------
+
+;*** end of file ***

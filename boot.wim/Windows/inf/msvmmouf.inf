@@ -1,0 +1,92 @@
+﻿; Copyright (c) 2005 Microsoft Corporation.  All Rights Reserved.
+;
+; Module:	msvmmouf.inf
+;
+; Contains:	This inf should should be used to install the microsoft
+;		virtual machine mouse filter driver.
+;	
+; THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+; ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+; THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+; PARTICULAR PURPOSE.
+;
+; Copyright (c) 2005 Microsoft Corporation.  All Rights Reserved.
+
+[Version]
+signature				= "$Windows NT$"
+Class					= Mouse
+ClassGUID				= {4d36e96f-e325-11ce-bfc1-08002be10318}
+Provider				= %Microsoft%
+CatalogFile				= msvmmouf.cat
+DriverVer				= 04/27/2007,13.812.0.0
+
+[SourceDisksNames]
+1 = %msvmmouf.MediaDesc%
+
+[SourceDisksFiles]
+msvmmouf.sys			= 1
+
+[DestinationDirs]
+DefaultDestDir			= 12 ; system32\drivers
+
+[Manufacturer]
+%Microsoft% = MsftMouseFilter
+
+[MsftMouseFilter]
+%msvmmouf.SvcDesc% = MouseClassFilter, *PNP0FAKE
+
+
+; ----------------------------------------------------------------------
+; Installation
+; ----------------------------------------------------------------------
+
+[MouseClassFilter.NT]
+CopyFiles = @msvmmouf.sys
+
+[MouseClassFilter.NT.Services]
+AddService = msvmmouf, , MouseClassFilter_Service_Inst, MouseClassFilter_EventLog_Inst
+
+[MouseClassFilter_Service_Inst]
+DisplayName				= %msvmmouf.SvcDesc%
+ServiceType				= %SERVICE_KERNEL_DRIVER%
+StartType				= %SERVICE_SYSTEM_START%
+ErrorControl			= %SERVICE_ERROR_NORMAL%
+ServiceBinary			= %12%\msvmmouf.sys
+
+[MouseClassFilter_EventLog_Inst]
+AddReg = MouseClassFilter_EventLog_AddReg
+
+[MouseClassFilter_EventLog_AddReg]
+HKR,,EventMessageFile, %REG_EXPAND_SZ%,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\msvmmouf.sys"
+HKR,,TypesSupported, %REG_DWORD%, 7
+
+
+; ----------------------------------------------------------------------
+; Removal
+; ----------------------------------------------------------------------
+
+[MouseClassFilter_DelFiles]
+msvmmouf.sys
+
+[MouseClassFilter.NT.Remove]
+DelFiles = MouseClassFilter_DelFiles
+
+[MouseClassFilter.NT.Remove.Services]
+DelService = msvmmouf, 0x00000204
+
+
+; ----------------------------------------------------------------------
+; Common
+; ----------------------------------------------------------------------
+
+[Strings]
+Microsoft				= "Microsoft"
+msvmmouf.SvcDesc		= "Virtual Machine Additions Mouse Integration Filter Driver"
+msvmmouf.MediaDesc		= "Virtual Machine Additions"
+
+; Useful constants
+SERVICE_KERNEL_DRIVER	= 1
+SERVICE_SYSTEM_START	= 1
+SERVICE_ERROR_NORMAL	= 1
+REG_EXPAND_SZ			= 0x00020000
+REG_DWORD				= 0x00010001

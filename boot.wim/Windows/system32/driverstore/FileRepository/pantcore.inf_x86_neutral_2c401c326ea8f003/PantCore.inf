@@ -1,0 +1,202 @@
+; ****************************************************************************
+; ****************************************************************************
+; **    Filename:  PantCORE.INF                                                 
+; **    Abstract:  Intel(R) core devices
+; **    Last Update: January 11, 2012 (Version 9.3.0 Build 1020)
+; ****************************************************************************
+; ****************************************************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=PantCore.cat
+DriverVer=01/11/2012, 9.3.0.1020
+
+[SourceDisksNames] 
+[SourceDisksFiles]
+
+[PackageInfo]
+Name=Chipset
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL_SYS,NTamd64
+
+[INTEL_SYS]
+;Core
+;  Thermal
+%PCI\VEN_8086&DEV_1E24.DeviceDesc%=NO_DRV,PCI\VEN_8086&DEV_1E24
+;  PCI Device
+%PCI\VEN_8086&DEV_1E10.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E10
+%PCI\VEN_8086&DEV_1E12.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E12
+%PCI\VEN_8086&DEV_1E14.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E14
+%PCI\VEN_8086&DEV_1E16.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E16
+%PCI\VEN_8086&DEV_1E18.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E18
+%PCI\VEN_8086&DEV_1E1A.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1A
+%PCI\VEN_8086&DEV_1E1C.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1C
+%PCI\VEN_8086&DEV_1E1E.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1E
+%PCI\VEN_8086&DEV_1E25.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E25
+;  LPC Controller
+%PCI\VEN_8086&DEV_1E41.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E41
+%PCI\VEN_8086&DEV_1E42.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E42
+%PCI\VEN_8086&DEV_1E43.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E43
+%PCI\VEN_8086&DEV_1E44.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E44
+%PCI\VEN_8086&DEV_1E46.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E46
+%PCI\VEN_8086&DEV_1E47.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E47
+%PCI\VEN_8086&DEV_1E48.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E48
+%PCI\VEN_8086&DEV_1E49.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E49
+%PCI\VEN_8086&DEV_1E4A.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E4A
+%PCI\VEN_8086&DEV_1E53.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E53
+%PCI\VEN_8086&DEV_1E55.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E55
+%PCI\VEN_8086&DEV_1E56.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E56
+%PCI\VEN_8086&DEV_1E57.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E57
+%PCI\VEN_8086&DEV_1E58.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E58
+%PCI\VEN_8086&DEV_1E59.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E59
+%PCI\VEN_8086&DEV_1E5B.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5B
+%PCI\VEN_8086&DEV_1E5D.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5D
+%PCI\VEN_8086&DEV_1E5E.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5E
+%PCI\VEN_8086&DEV_1E5F.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5F
+
+
+
+[INTEL_SYS.NTamd64]
+;Core
+;  Thermal
+%PCI\VEN_8086&DEV_1E24.DeviceDesc%=NO_DRV,PCI\VEN_8086&DEV_1E24
+;  PCI Device
+%PCI\VEN_8086&DEV_1E10.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E10
+%PCI\VEN_8086&DEV_1E12.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E12
+%PCI\VEN_8086&DEV_1E14.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E14
+%PCI\VEN_8086&DEV_1E16.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E16
+%PCI\VEN_8086&DEV_1E18.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E18
+%PCI\VEN_8086&DEV_1E1A.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1A
+%PCI\VEN_8086&DEV_1E1C.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1C
+%PCI\VEN_8086&DEV_1E1E.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E1E
+%PCI\VEN_8086&DEV_1E25.DeviceDesc%=PCI_DRV,PCI\VEN_8086&DEV_1E25
+;  LPC Controller
+%PCI\VEN_8086&DEV_1E41.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E41
+%PCI\VEN_8086&DEV_1E42.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E42
+%PCI\VEN_8086&DEV_1E43.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E43
+%PCI\VEN_8086&DEV_1E44.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E44
+%PCI\VEN_8086&DEV_1E46.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E46
+%PCI\VEN_8086&DEV_1E47.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E47
+%PCI\VEN_8086&DEV_1E48.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E48
+%PCI\VEN_8086&DEV_1E49.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E49
+%PCI\VEN_8086&DEV_1E4A.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E4A
+%PCI\VEN_8086&DEV_1E53.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E53
+%PCI\VEN_8086&DEV_1E55.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E55
+%PCI\VEN_8086&DEV_1E56.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E56
+%PCI\VEN_8086&DEV_1E57.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E57
+%PCI\VEN_8086&DEV_1E58.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E58
+%PCI\VEN_8086&DEV_1E59.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E59
+%PCI\VEN_8086&DEV_1E5B.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5B
+%PCI\VEN_8086&DEV_1E5D.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5D
+%PCI\VEN_8086&DEV_1E5E.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5E
+%PCI\VEN_8086&DEV_1E5F.DeviceDesc%=ISAPNP_DRV,PCI\VEN_8086&DEV_1E5F
+
+
+[PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+;**************************************************************************
+; Do-nothing section used to avoid "Unknown hardware" installation prompts.
+
+[NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+;****************************************************
+; Generic ISA Root Bus / PCI-ISA Bridge / PCI-EISA Bridge
+
+[ISAPNP_DRV]
+Include=machine.inf
+Needs=ISAPNP_DRV
+
+[ISAPNP_DRV.Services]
+Include=machine.inf
+Needs=ISAPNP_DRV.Services
+
+[Strings]
+INTEL="Intel"
+;Core
+;  Thermal
+PCI\VEN_8086&DEV_1E24.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family Thermal Control - 1E24"
+;  PCI Device
+PCI\VEN_8086&DEV_1E10.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 1 - 1E10"
+PCI\VEN_8086&DEV_1E12.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 2 - 1E12"
+PCI\VEN_8086&DEV_1E14.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 3 - 1E14"
+PCI\VEN_8086&DEV_1E16.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 4 - 1E16"
+PCI\VEN_8086&DEV_1E18.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 5 - 1E18"
+PCI\VEN_8086&DEV_1E1A.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 6 - 1E1A"
+PCI\VEN_8086&DEV_1E1C.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 7 - 1E1C"
+PCI\VEN_8086&DEV_1E1E.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family PCI Express Root Port 8 - 1E1E"
+PCI\VEN_8086&DEV_1E25.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family DMI to PCI Bridge - 1E25"
+;  LPC Controller
+PCI\VEN_8086&DEV_1E41.DeviceDesc="Intel(R) 7 Series/C216 Chipset Family Desktop LPC Controller - 1E41"
+PCI\VEN_8086&DEV_1E42.DeviceDesc="Intel(R) 7 Series Chipset Family Mobile LPC Controller - 1E42"
+PCI\VEN_8086&DEV_1E43.DeviceDesc="Intel(R) 7 Series Chipset Family Mobile SFF LPC Controller - 1E43"
+PCI\VEN_8086&DEV_1E44.DeviceDesc="Intel(R) Z77 Express Chipset LPC Controller - 1E44"
+PCI\VEN_8086&DEV_1E46.DeviceDesc="Intel(R) Z75 Express Chipset LPC Controller - 1E46"
+PCI\VEN_8086&DEV_1E47.DeviceDesc="Intel(R) Q77 Express Chipset LPC Controller - 1E47"
+PCI\VEN_8086&DEV_1E48.DeviceDesc="Intel(R) Q75 Express Chipset LPC Controller - 1E48"
+PCI\VEN_8086&DEV_1E49.DeviceDesc="Intel(R) B75 Express Chipset LPC Controller - 1E49"
+PCI\VEN_8086&DEV_1E4A.DeviceDesc="Intel(R) H77 Express Chipset LPC Controller - 1E4A"
+PCI\VEN_8086&DEV_1E53.DeviceDesc="Intel(R) C216 Chipset LPC Controller - 1E53"
+PCI\VEN_8086&DEV_1E55.DeviceDesc="Intel(R) QM77 Express Chipset LPC Controller - 1E55"
+PCI\VEN_8086&DEV_1E56.DeviceDesc="Intel(R) QS77 Express Chipset LPC Controller - 1E56"
+PCI\VEN_8086&DEV_1E57.DeviceDesc="Intel(R) HM77 Express Chipset LPC Controller - 1E57"
+PCI\VEN_8086&DEV_1E58.DeviceDesc="Intel(R) UM77 Express Chipset LPC Controller - 1E58"
+PCI\VEN_8086&DEV_1E59.DeviceDesc="Intel(R) HM76 Express Chipset LPC Controller - 1E59"
+PCI\VEN_8086&DEV_1E5B.DeviceDesc="Intel(R) UM77 Express Chipset with Intel(R) Smart Response Technology LPC Controller - 1E5B"
+PCI\VEN_8086&DEV_1E5D.DeviceDesc="Intel(R) HM75 Express Chipset LPC Controller - 1E5D"
+PCI\VEN_8086&DEV_1E5E.DeviceDesc="Intel(R) HM70 Express Chipset LPC Controller - 1E5E"
+PCI\VEN_8086&DEV_1E5F.DeviceDesc="Intel(R) LPC Controller - 1E5F"
+
+; Copyright (c) 2006-2012 Intel Corporation
+
+; ************************************************************
+; Intel is making no claims of usability, efficacy or 
+; warranty.  
+; ************************************************************
+; Information in this document is provided in connection with 
+; Intel products.  No license, express or implied, by estoppel 
+; or otherwise, to any intellectual property rights is granted 
+; by this document.  Intel assumes no liability whatsoever, 
+; and Intel disclaims any express or implied warranty, 
+; relating to sale and/or use of Intel products including 
+; liability or warranties relating to fitness for a particular 
+; purpose, merchantability, or infringement of any patent, 
+; copyright or other intellectual property right.  Intel 
+; products are not intended for use in medical, life saving, 
+; or life sustaining applications.
+
+; ************************************************************
+; Intel Corporation disclaims all warranties and liabilities 
+; for the use of this document and the information contained 
+; herein, and assumes no responsibility for any errors which 
+; may appear in this document, nor does Intel make a 
+; commitment to update the information contained herein. Intel 
+; reserves the right to make changes to this document at any 
+; time, without notice.
+; ************************************************************
+; ************************************************************
+
+; * Third-party brands and names are the property of their 
+; respective owners.
