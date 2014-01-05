@@ -6,6 +6,5 @@
     </CustomFrontEnd>
     <StartupRepair>
         <NoAutoLaunchFromCD/>
-        <NoNetworking/>
     </StartupRepair>
 </Recovery>

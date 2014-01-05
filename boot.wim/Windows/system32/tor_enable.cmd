@@ -1,3 +1,5 @@
+taskkill /f /im polipo.exe
+taskkill /f /im tor.exe
 tor -service install -f "%systemroot%\system32\drivers\etc\torrc"
 tor -service start
 reg add "HKEY_LOCAL_MACHINE\software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable  /t REG_DWORD /d 1 /f

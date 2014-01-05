@@ -1,0 +1,195 @@
+; Usbfilter.inf
+;
+; Copyright (c) 2010 Advanced Micro Devices Inc.
+;
+
+[Version]
+Signature = "$Windows NT$"
+Class     = USB
+ClassGUID = {36FC9E60-C465-11CF-8056-444553540000}
+Provider  = %AMD%
+DriverPackageType=ClassFilter
+DriverPackageDisplayName="AMD USB Filter Driver"
+CatalogFile=usbfilter.cat
+DriverVer = 12/17/2010,1.0.20.122
+
+;
+; General installation section
+;
+
+[DefaultInstall]
+CopyFiles = usbfilter.Files
+CopyInf = usbfilter.inf
+Addreg    = usbfilter.AddReg
+
+[DefaultUnInstall]
+DelFiles = usbfilter.DelFiles
+Delreg    = usbfilter.DelReg
+
+
+;;
+;;x86 install Section
+;;
+[DefaultInstall.NT]
+CopyFiles = usbfilter.Files
+CopyInf = usbfilter.inf
+Addreg    = usbfilter.AddReg
+
+
+[DefaultUnInstall.NT]
+DelFiles = usbfilter.DelFiles
+Delreg    = usbfilter.DelReg
+
+
+
+;;
+;;AMD64 install Section
+;;
+[DefaultInstall.NTAMD64]
+CopyFiles = usbfilter.Files
+CopyInf = usbfilter.inf
+Addreg    = usbfilter.AddReg
+
+[DefaultUnInstall.NTAMD64]
+DelFiles = usbfilter.DelFiles
+Delreg    = usbfilter.DelReg
+
+
+
+[DestinationDirs]
+DefaultDestDir = 12
+usbfilter.Files = 12
+
+[Manufacturer]
+%AMD%=AMD, NTamd64
+
+;=======================================================================
+;                 32-Bit NT Driver
+;=======================================================================
+
+[AMD]
+%usbfilter.DrvDesc%=usbfilter,{36FC9E60-C465-11CF-8056-444553540000}\usbfilter
+
+
+[usbfilter]
+CopyFiles=usbfilter.Files
+
+[usbfilter.HW]
+Addreg    = usbfilter.AddReg
+
+[usbfilter.Files]
+usbfilter.sys
+
+[usbfilter.Services]
+AddService = usbfilter, , usbfilter.Service.Install 
+
+;========================================================================
+;                64-Bit NT Driver
+;========================================================================
+
+[AMD.NTamd64]
+%usbfilter.DrvDesc%=usbfilter,{36FC9E60-C465-11CF-8056-444553540000}\usbfilter
+
+;[usbfilter64]
+;CopyFiles=usbfilter64.Files
+
+;[usbfilter64.HW]
+;Addreg    = usbfilter64.AddReg
+
+;[usbfilter64.Files]
+;usbfilter.sys
+
+;[usbfilter64.Services]
+;AddService = usbfilter, , usbfilter64.Service.NTAMD64.Install 
+;========================================================================
+
+
+
+
+[usbfilter.AddReg]
+HKLM, System\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}, UpperFilters, 0x00010008, usbfilter
+
+
+
+
+[usbfilter.DelFiles]
+usbfilter.sys,,,1
+
+[usbfilter.DelReg]
+HKLM, System\CurrentControlSet\Control\Class\{36FC9E60-C465-11CF-8056-444553540000}, UpperFilters, 0x00010008, usbfilter
+
+
+;
+; Service installation section
+;
+
+[DefaultInstall.Services]
+AddService = usbfilter, , usbfilter.Service.Install
+
+[DefaultInstall.NT.Services]
+AddService = usbfilter, , usbfilter.Service.Install
+
+[DefaultInstall.NTAMD64.Services]
+AddService = usbfilter, , usbfilter.Service.Install
+
+[usbfilter.Service.Install]
+DisplayName    = %UsbFilter.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\usbfilter.sys
+LoadOrderGroup = PNP Filter
+AddReg         = Other_Reg_Entries
+
+[Other_Reg_Entries]
+HKR, Parameters, NB, 0x00000001, 22, 10, 00, 96, 00, 00, 01, 00, 02, 10, 00, 96, 00, 00, 01, 00, 22, 10, 01, 96, 00, 00, 01, 01, 02, 10, 01, 96, 00, 00, 01, 01,22, 10, 05, 17, 00, 00, 01, 00, 22, 10, 10, 15, 00, 00, 01, 00
+HKR, Parameters, SB, 0x00000001, 02, 10, 85, 43, 39, 3F, 01, 03, 02, 10, 85, 43, 40, 4F, 01, 03, 22, 10, 0B, 78, 11, 18, 01, 07
+HKR, Parameters, DisOhciPrefetch, 0x00000001, 02, 10, 85, 43, 40, 4F, 01, 00
+HKR, Parameters, DisAlinkL1PState, 0x00000001, 02, 10, 85, 43, 40, 4F, 00, 03, 22, 10, 0B, 78, 11, 18, 00, 07
+HKR, Parameters, OhciDevIdList, 0x00000001, 02, 10, 97, 43, 00, 12, 00, 01, 02, 10, 97, 43, 00, 13, 00, 01,02, 10, 97, 43, 00, 16, 00, 01, 02, 10, 99, 43, 00, 14, 05, 01
+
+;;
+;;Uninstall service section
+;;
+[DefaultUnInstall.Services] 
+DelService=usbfilter,0x00000200,,
+
+
+[DefaultUnInstall.NT.Services]
+DelService=usbfilter,0x00000200,,
+
+
+[DefaultUnInstall.NTAMD64.Services]
+DelService=usbfilter,0x00000200,,
+
+;[usbfilter64.Service.NTAMD64.Install]
+;DisplayName    = %UsbFilter.SVCDESC%
+;ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+;StartType      = 3               ; SERVICE_DEMAND_START 
+;ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+;ServiceBinary  = %12%\usbfilter.sys
+;LoadOrderGroup = PNP Filter
+
+
+[SourceDisksNames]
+1=%DiskId%
+
+[SourceDisksFiles.x86]
+usbfilter.sys = 1,\x86
+
+[SourceDisksFiles.amd64]
+usbfilter.sys = 1,\amd64
+
+;
+; Localizable Strings
+;
+
+[Strings]
+
+AMD         = "Advanced Micro Devices Inc."
+service_desc = "AMD USB Filter Driver"
+UsbFilter.SVCDESC = "AMD USB Filter Driver"
+DiskId = "AMD USB Filter Driver Install disk (1)"
+usbfilter.DrvDesc = "AMD USB Filter Driver"
+
+REG_DWORD              = 0x00010001
