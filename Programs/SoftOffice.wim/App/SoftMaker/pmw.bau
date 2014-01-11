@@ -1,0 +1,287 @@
+' PlanMaker constant definitions
+' Version 3.01 (24.11.2011)
+
+' Definitions for document save types
+const pmFormatDocument 				= 0
+const pmFormatTemplate 				= 1
+const pmFormatExcel97				= 2
+const pmFormatExcel5				= 3
+const pmFormatExcelTemplate			= 4
+const pmFormatSYLK 				= 6
+const pmFormatRTF				= 7
+const pmFormatTextMaker				= 7
+const pmFormatHTML				= 8
+const pmFormatdBaseDOS				= 9
+const pmFormatdBaseAnsi				= 10
+const pmFormatDIF				= 11
+const pmFormatPlainTextAnsi			= 12
+const pmFormatPlainTextDOS 			= 13
+const pmFormatPlainTextUnix 	        	= 14
+const pmFormatPlainTextUnicode 		        = 15
+const pmFormatdBaseUnicode			= 18
+const pmFormatPlainTextUTF8                     = 21
+const pmFormatMSXML                             = 23
+const pmFormatPM2008                            = 26
+const pmFormatPM2010                            = 27
+
+' Window states
+const pmWindowStateNormal   		= smoWindowStateNormal
+const pmWindowStateMinimize 		= smoWindowStateMinimize
+const pmWindowStateMaximize 		= smoWindowStateMaximize
+
+' Flags
+const pmUndefined 					= smoUndefined
+const pmToggle    					= smoToggle
+
+' Underline styles
+const pmUnderlineNone        		= 0
+const pmUnderlineSingle      		= 1
+const pmUnderlineDouble      		= 2
+const pmUnderlineWords       		= 3
+const pmUnderlineWordsDouble 		= 4
+
+' Character sets
+const pmAnsiCharset 				= smoAnsiCharset
+const pmSymbolCharset 				= smoSymbolCharset
+
+' save options
+const pmDoNotSaveChanges 			= smoDoNotSaveChanges
+const pmPromptToSaveChanges 		= smoPromptToSaveChanges
+const pmSaveChanges 				= smoSaveChanges
+	
+' Document Properties
+const pmTitle 						= smoPropertyTitle 	
+const pmSubject 					= smoPropertySubject 
+const pmAuthor 						= smoPropertyAuthor 	
+const pmKeywords 					= smoPropertyKeywords
+const pmComments 					= smoPropertyComments
+
+' value format types
+const pmNumberGeneral				= 0
+const pmNumberDecimal				= 1
+const pmNumberScientific			= 2
+const pmNumberFraction				= 3
+const pmNumberDate					= 4
+const pmNumberPercentage			= 5
+const pmNumberCurrency				= 6
+const pmNumberBoolean				= 7
+const pmNumberCustom				= 8
+const pmNumberText				= 9
+const pmNumberAccounting			= 10
+
+' Colors by index
+const pmColorIndexBlack				= smoColorIndexBlack
+const pmColorIndexBlue				= smoColorIndexBlue
+const pmColorIndexCyan				= smoColorIndexCyan
+const pmColorIndexGreen				= smoColorIndexGreen
+const pmColorIndexMagenta			= smoColorIndexMagenta
+const pmColorIndexRed				= smoColorIndexRed
+const pmColorIndexYellow			= smoColorIndexYellow
+const pmColorIndexWhite				= smoColorIndexWhite
+const pmColorIndexDarkBlue			= smoColorIndexDarkBlue
+const pmColorIndexDarkCyan			= smoColorIndexDarkCyan
+const pmColorIndexDarkGreen			= smoColorIndexDarkGreen
+const pmColorIndexDarkMagenta		= smoColorIndexDarkMagenta
+const pmColorIndexDarkRed			= smoColorIndexDarkRed
+const pmColorIndexBrown				= smoColorIndexBrown
+const pmColorIndexDarkGray			= smoColorIndexDarkGray
+const pmColorIndexLightGray			= smoColorIndexLightGray
+
+' Colors
+const pmColorBlack					= smoColorBlack
+const pmColorBlue					= smoColorBlue
+const pmColorCyan					= smoColorTurquoise
+const pmColorGreen					= smoColorBrightGreen
+const pmColorMagenta				= smoColorPink
+const pmColorRed					= smoColorRed
+const pmColorYellow					= smoColorYellow
+const pmColorWhite					= smoColorWhite
+const pmColorDarkBlue				= &h7F0000&
+const pmColorDarkCyan				= &h7F7F00&
+const pmColorDarkGreen				= &h7F00&
+const pmColorDarkMagenta			= &h7F007F&
+const pmColorDarkRed				= &h7F&
+const pmColorBrown					= &h7F7F&
+const pmColorDarkGray				= &h7F7F7F&
+const pmColorLightGray				= smoColorGray25
+
+' constants for selection.Format.HAlign
+const pmHAlignGeneral 				= 0
+const pmHAlignLeft	   				= 1
+const pmHAlignRight    				= 2
+const pmHAlignCenter   				= 3
+const pmHAlignJustify    			= 4
+const pmHAlignCenterAcrossSelection = 5
+
+' constants for selection.format.VAlign
+const pmVAlignTop	  				= 0
+const pmVAlignCenter  				= 1
+const pmVAlignBottom  				= 2
+const pmVAlignJustify   			= 3
+
+' constants for selection.format.shade.pattern
+const pmPatternNone	   				= smoPatternNone
+const pmPatternHalftone 			= smoPatternHalftone
+const pmPatternRightDiagCoarse 		= smoPatternRightDiagCoarse
+const pmPatternLeftDiagCoarse  		= smoPatternLeftDiagCoarse
+const pmPatternHashDiagCoarse  		= smoPatternHashDiagCoarse
+const pmPatternVertCoarse      		= smoPatternVertCoarse
+const pmPatternHorzCoarse      		= smoPatternHorzCoarse
+const pmPatternHashCoarse      		= smoPatternHashCoarse
+const pmPatternRightDiagFine   		= smoPatternRightDiagFine
+const pmPatternLeftDiagFine    		= smoPatternLeftDiagFine
+const pmPatternHashDiagFine   		= smoPatternHashDiagFine
+const pmPatternVertFine				= smoPatternVertFine
+const pmPatternHorzFine       		= smoPatternHorzFine
+const pmPatternHashFine				= smoPatternHashFine
+
+' constants for selection.format.line.type
+const pmLineStyleNone						= 0
+const pmLineStyleSingle						= 1
+const pmLineStyleDouble 					= 2
+
+' constants for Borders(x)
+const pmBorderLeft 						= -2
+const pmBorderTop						= -1
+const pmBorderRight						= -4
+const pmBorderBottom						= -3
+const pmBorderHorizontal					= -5
+const pmBorderVertical						= -6
+
+' Import options
+const pmSeparateByCommas					= 0
+const pmSeparateBySpaces					= 1
+const pmSeparateByTabs						= 2
+const pmSeparateBySemicolons				= 3
+
+const pmImportTextMarkerNone				= 0
+const pmImportTextMarkerApostrophe			= 1
+const pmImportTextMarkerQmark				= 2
+
+' Calculation options
+const pmCalculationAutomatic				= 0
+const pmCalculationManual					= 1
+
+' Move options
+const pmNone								= 0
+const pmDown								= 1
+const pmUp									= 2
+const pmToRight								= 3
+const pmToLeft								= 4
+
+' AutoFilter
+const pmAll 								= 0
+const pmAnd 								= 1
+const pmBottom10Items 						= 2
+const pmBottom10Percent 	 	 			= 3
+const pmOr 									= 4
+const pmTop10Items 							= 5
+const pmTop10Percent 						= 6
+const pmBlank 								= 7
+const pmNonblank 							= 8
+
+' Validation
+const pmValidAlertStop						= 0
+const pmValidAlertWarning					= 1
+const pmValidAlertInformation				= 2
+
+const pmValidateInputOnly 					= 0
+const pmValidateWholeNumber					= 1
+const pmValidateDecimal 					= 2
+const pmValidateList 						= 3
+const pmValidateDate 						= 4
+const pmValidateTime 						= 5
+const pmValidateTextLength 					= 6
+const pmValidateCustom 						= 7
+
+const pmDVBetween							= 0
+const pmDVNotBetween						= 1
+const pmDVEqual								= 2
+const pmDVNotEqual							= 3
+const pmDVGreater							= 4
+const pmDVLess								= 5
+const pmDVGreaterEqual						= 6
+const pmDVLessEqual							= 7
+
+' Conditions
+const pmBetween								= 0
+const pmNotBetween							= 1
+const pmEqual								= 2
+const pmNotEqual							= 3
+const pmGreater								= 4
+const pmLess								= 5
+const pmGreaterEqual						= 6
+const pmLessEqual							= 7
+
+' Conditional formatting
+const pmCellValue							= 0
+const pmExpression							= 1
+
+' Page order
+const pmOverThenDown						= 0
+const pmDownThenOver						= 1
+
+' Display mode
+const pmNoIndicator							= 0
+const pmCommentIndicatorOnly 				= 1
+const pmCommentOnly 						= 2
+const pmCommentAndIndicator					= 3
+
+' Range.Insert
+const pmShiftDown							= 0
+const pmShiftToRight						= 1 
+
+' Range.Delete
+const pmShiftUp								= 0
+const pmShiftToLeft 						= 1
+
+' PageSetup.PrintComments
+const pmPrintNoComments 					= 0
+const pmPrintInPlace						= 1 
+
+' PageSetup.FirstPageNumber
+const pmAutomatic							= -1
+
+' CommandBar names
+const pmBarStatusShort						= 1
+const pmBarStandardShort					= 2
+const pmBarStatus							= 3
+const pmBarStandard							= 4
+const pmBarFormatting						= 5
+const pmBarObjects							= 6
+const pmBarEdit								= 7
+const pmBarOutliner							= 8
+const pmBarChart							= 9
+const pmBarFormsEditing						= 10
+const pmBarPicture							= 11
+const pmBarFullscreen						= 12
+
+' old PlanMaker2002
+const pmLineLeft 							= 1
+const pmLineAbove							= 2
+const pmLineRight							= 3
+const pmLineBelow							= 4
+const pmLineHorz							= 5
+const pmLineVert							= 6
+
+'Zoom level
+const pmZoomFitToSelection					= -1
+
+' Default file format
+const pmDefaultFileFormatPlanMaker			= 0
+const pmDefaultFileFormatExcelXP			= 1		
+const pmDefaultFileFormatExcel5				= 2
+
+' constants for Borders
+const pmLineTypeNone   		= 0
+const pmLineTypeSingle 		= 1
+const pmLineTypeDouble 		= 2
+
+' constants for Cell Type
+const pmCellTypeAmbiguous				= -1
+const pmCellTypeEmpty					= 0
+const pmCellTypeString					= 1
+const pmCellTypeNumber					= 2
+const pmCellTypeBoolean			        	= 3
+const pmCellTypeError					= 4
+

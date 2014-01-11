@@ -1,0 +1,19 @@
+[Shortcut]
+exe=\copyram.bat
+Desktop=
+QuickLaunch=
+StartMenu=Программы (Ext)
+Programs=
+lnk=Копировать программы в RAM
+workdir=\ 
+args= 
+icon=
+hotkey= 
+[AutoRun]
+hide=yes
+bat=\WMount.cmd
+reg= 
+[autoexit]
+hide=yes
+bat=%Temp%\UnMount.cmd
+reg=

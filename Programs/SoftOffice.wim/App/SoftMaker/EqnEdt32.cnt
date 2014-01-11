@@ -1,0 +1,33 @@
+:Base EQNEDT32.HLP>REF
+:Title Equation Editor
+:Index Equation Editor Help=EQNEDT32.HLP
+0 Equation Editor
+1 Upgrading Equation Editor to MathType=mt_attrib@EQNEDT32.HLP>REF
+1 Keyboard
+2 Keyboard basics=kbd_basics@EQNEDT32.HLP>REF
+2 Keyboard shortcuts=kbd_shrtct@EQNEDT32.HLP>REF
+2 Moving the insertion point=kbd_insert@EQNEDT32.HLP>REF 
+2 Selecting all or part of an equation=kbd_select@EQNEDT32.HLP>REF 
+1 Menu commands
+2 Window menu=cmd_ctrl@EQNEDT32.HLP>REF 
+2 File menu=cmd_file@EQNEDT32.HLP>REF 
+2 Edit menu=cmd_edit@EQNEDT32.HLP>REF 
+2 View menu=cmd_view@EQNEDT32.HLP>REF 
+2 Format menu=cmd_format@EQNEDT32.HLP>REF 
+2 Style menu=cmd_style@EQNEDT32.HLP>REF 
+2 Size menu=cmd_size@EQNEDT32.HLP>REF 
+2 Help menu=cmd_help@EQNEDT32.HLP>REF 
+1 Procedures
+2 Inserting symbols and templates=proc_insert@EQNEDT32.HLP>REF 
+2 Choosing fonts=proc_fonts@EQNEDT32.HLP>REF 
+2 Choosing font sizes=proc_sizes@EQNEDT32.HLP>REF 
+2 Importing an equation into a document=proc_import@EQNEDT32.HLP>REF 
+2 Typing an English phrase=proc_phrase@EQNEDT32.HLP>REF 
+2 Adjusting an item's position=proc_nudge@EQNEDT32.HLP>REF 
+2 Aligning parts of an equation=proc_align@EQNEDT32.HLP>REF 
+1 Troubleshooting
+2 Overview of printing equations=tr_print@EQNEDT32.HLP>REF 
+2 Equation Editor's screen fonts not available=tr_scrfonts@EQNEDT32.HLP>REF 
+2 Font & Style X not available on default printer=tr_fs@EQNEDT32.HLP>REF 
+2 Equations display incorrectly in a document=tr_eqn_disp@EQNEDT32.HLP>REF 
+

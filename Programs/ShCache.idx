@@ -1,0 +1,52 @@
+<link.shl>
+[Shortcut]
+exe=.
+Desktop=No
+QuickLaunch=
+StartMenu=
+Programs=
+lnk=
+workdir=\ 
+args= 
+icon=
+hotkey= 
+[AutoRun]
+hide=yes
+bat=
+reg= 
+[autoexit]
+hide=yes
+bat=
+reg=
+<UNMount.shl>
+[Shortcut]
+exe=%Temp%\UnMount.cmd
+Desktop=
+QuickLaunch=
+StartMenu=Программы (Ext)
+Programs=
+lnk=Размонтировать все программы
+workdir=\ 
+args= 
+icon=
+hotkey= 
+<WMount.shl>
+[Shortcut]
+exe=\copyram.bat
+Desktop=
+QuickLaunch=
+StartMenu=Программы (Ext)
+Programs=
+lnk=Копировать программы в RAM
+workdir=\ 
+args= 
+icon=
+hotkey= 
+[AutoRun]
+hide=yes
+bat=\WMount.cmd
+reg= 
+[autoexit]
+hide=yes
+bat=%Temp%\UnMount.cmd
+reg=

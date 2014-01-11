@@ -116,14 +116,17 @@ AuthPromptProvider.prototype = {
     // See: https://mxr.mozilla.org/mozilla-central/source/netwerk/protocol/
     // http/nsHttpChannelAuthProvider.cpp (PromptForIdentiy() and
     // GetCredentialsForChallenge()) for details.
+    // Checking whether the counter is < 3 and firing up the dialog if the
+    // counter === 2 turns out to be error-prone due to background requests
+    // (safebrowsing et.al.).
     // TODO: We have per channel notification callbacks but just one general
     // authCounter?? Hrmm...
     this.fp.authCounter++;
-    if (this.fp.authCounter < 3) {
-      // If we recognize that the credentials are wrong (i.e. the counter is
-      // > 1) we contact the user and ask her whether she wants to change them
+    if (this.fp.authCounter < 10) {
+      // Once we recognize that the credentials are wrong (i.e. the counter is
+      // > 8) we contact the user and ask her whether she wants to change them
       // now.
-      if (this.fp.authCounter === 2) {
+      if (this.fp.authCounter === 9) {
         try {
           let win = this.fpc.getMostRecentWindow(null);
           if (proxyInUse && !this.fp.warnings.showWarningIfDesired(win,
@@ -149,6 +152,10 @@ AuthPromptProvider.prototype = {
     }
   },
 
+  // Looking for credentials. Even if we find any, we don't reset the auth
+  // counter as we can't be sure that these credentials are still valid/the
+  // correct ones. If we would reset the counter we would get caught in an
+  // indefinite loop (again).
   _getCredentials : function(channel, level, authInfo, proxy) {
     if (!proxy || !proxy.manualconf.username || !proxy.manualconf.password) {
       let ps = CC["@mozilla.org/embedcomp/prompt-service;1"].

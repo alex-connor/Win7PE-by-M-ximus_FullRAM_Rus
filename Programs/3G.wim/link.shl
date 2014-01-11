@@ -1,0 +1,19 @@
+[Shortcut]
+exe=\3G_Connect.exe
+Desktop=No
+QuickLaunch=
+StartMenu=Программы (Ext)\Интернет
+Programs=
+lnk=3G
+workdir=\ 
+args= 
+icon=
+hotkey= 
+[AutoRun]
+hide=yes
+bat=
+reg= 
+[autoexit]
+hide=yes
+bat=
+reg=

@@ -1,0 +1,12 @@
+[Shortcut]
+exe=%Temp%\UnMount.cmd
+Desktop=
+QuickLaunch=
+StartMenu=Программы (Ext)
+Programs=
+lnk=Размонтировать все программы
+workdir=\ 
+args= 
+icon=
+hotkey= 
+

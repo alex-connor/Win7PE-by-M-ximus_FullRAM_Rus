@@ -1,0 +1,244 @@
+' TextMaker constant definitions
+' Version 3.00 (08.12.2009)
+
+' Border line styles
+const	tmLineStyleNone						= 0
+const	tmLineStyleSingle					= 1
+const	tmLineStyleDouble 					= 2
+
+' Border line types
+const	tmBorderLeft  						= -2
+const	tmBorderTop 						= -1
+const	tmBorderRight 						= -4
+const	tmBorderBottom 						= -3
+const	tmBorderBetween 					= -7
+const	tmBorderHorizontal  					= -5
+const	tmBorderVertical  					= -6
+
+' Cell alignment
+const	tmCellVerticalAlignmentTop 			= 0
+const	tmCellVerticalAlignmentCenter 		= 1
+const	tmCellVerticalAlignmentBottom 		= 2
+const	tmCellVerticalAlignmentJustify 		= 3 	
+
+' Field shading
+const	tmFieldShadingNever 				= 0
+const	tmFieldShadingAlways				= 1
+
+' Definitions for document save types
+const	tmFormatDocument     				= 0
+const	tmFormatTemplate     				= 1
+const	tmFormatWinWord97				= 2
+const	tmFormatOpenDocument 				= 3
+const	tmFormatRTF       				= 4
+const	tmFormatPocketWordPPC				= 5
+const	tmFormatPocketWordHPC				= 6
+const	tmFormatPlainTextAnsi   			= 7
+const	tmFormatPlainTextDOS    			= 8
+const	tmFormatPlainTextUnicode			= 9
+const	tmFormatPlainTextUTF8   			= 10
+const	tmFormatHTML      				= 12
+const	tmFormatWinWord6 				= 13
+const	tmFormatPlainTextUnix   			= 14
+const	tmFormatWinWordXP				= 15
+const   tmFormatTM2006                                  = 16
+const   tmFormatOpenXML                                 = 17
+const   tmFormatTM2008                                  = 18
+
+	
+' Default file format
+const	tmDefaultFileFormatTextMaker		= 0
+const	tmDefaultFileFormatWinWordXP		= 1
+const	tmDefaultFileFormatWinWord97		= 2
+const	tmDefaultFileFormatWinWord6			= 3
+const	tmDefaultFileFormatOpenDoc			= 4
+const	tmDefaultFileFormatRtf 				= 5
+
+	
+' Break type
+const	tmLineBreak      					= 0
+const	tmColumnBreak    					= 1
+const	tmSectionBreak   					= 2
+const	tmPageBreak      					= 3
+const	tmChapterBreak   					= 4
+	
+' Window states
+const	tmWindowStateNormal   				= smoWindowStateNormal
+const	tmWindowStateMinimize 				= smoWindowStateMinimize
+const	tmWindowStateMaximize 				= smoWindowStateMaximize
+	
+' Flags
+const	tmUndefined							= smoUndefined
+const	tmToggle    						= smoToggle
+	
+' Underline styles
+const	tmUnderlineNone        				= 0 		
+const	tmUnderlineSingle      				= 1 	
+const	tmUnderlineDouble      				= 2 	
+const	tmUnderlineWords       				= 3 	
+const	tmUnderlineWordsDouble 				= 4
+	
+' Character sets
+const	tmAnsiCharset 						= smoAnsiCharset 
+const	tmSymbolCharset 					= smoSymbolCharset
+	
+' Save options
+const	tmDoNotSaveChanges 					= smoDoNotSaveChanges 	
+const	tmPromptToSaveChanges 				= smoPromptToSaveChanges
+const	tmSaveChanges 						= smoSaveChanges 		
+
+' Document Properties
+const	tmTitle 							= smoPropertyTitle
+const	tmSubject 							= smoPropertySubject 
+const	tmAuthor 							= smoPropertyAuthor 
+const	tmKeywords 							= smoPropertyKeywords
+const	tmComments 							= smoPropertyComments
+	
+' MailMerge Options
+const	tmSingleFax 						= 1
+const	tmSingleAddress 					= 2
+const	tmMultipleFax 						= 3
+const	tmMultipleAddress					= 4
+	
+' Merge Type
+const	tmMergeCSVAnsi 						= 3
+const	tmMergeDBaseAnsi 					= 5
+const	tmMergeCSVDOS 						= 64
+const	tmMergeDBaseDOS 					= 66
+const	tmMergeDBaseUnicode 				= 69
+	
+' Object Types
+const	tmFieldFormTextInput				= 1
+const	tmFieldFormCheckbox 				= 10
+const	tmFieldFormDropdown					= 11
+	
+' View Mode Types (ActiveWindow.View.Type)
+const	tmPrintView							= 0
+const	tmMasterView						= 1
+const	tmNormalView						= 2
+const	tmOutlineView						= 3
+	
+' View Modes (ActiveWindow.View.Mode)
+const	tmViewModeText						= 0
+const	tmViewModeObject					= 1
+
+' View PageFit (ActiveWindow.View.PageFit)
+const	tmPageFitTextFit					= 0
+const	tmPageFitFullPage					= 1
+
+' Revisions balloon
+const	tmRightMargin						= 0
+const	tmLeftMargin						= 1
+const	tmOuterMargin						= 2
+const	tmInnerMargin						= 3
+	
+' Goto options
+const	tmGoToParagraph 					= 1
+const	tmGoToTable 						= 2
+
+const	tmGoToAbsolute 						= 1
+const	tmGoToRelative 						= 2
+
+' Move options
+const	tmMoveLine 							= 1
+const	tmMoveParagraph						= 2
+const	tmMoveCharacter						= 6
+const	tmMoveWord							= 7 
+const	tmMoveSentence						= 8
+
+const	tmMovePosition						= 1
+const	tmMoveExtend						= 2
+
+' Information options
+const	tmFirstCharacterColumnNumber			= 1 
+const	tmActiveEndPageNumber 				= 2			
+const	tmActiveEndSectionNumber 				= 4
+const	tmNumberOfPagesInDocument 			= 5
+const	tmWithInTable							= 6
+const	tmOverType 							= 12
+const	tmFirstCharacterLineNumber 			= 15
+
+' Find/Replace options
+const	tmReplaceNone  						= 0
+const	tmReplaceOne   						= 1 
+const	tmReplaceAll   						= 2 
+
+' Table field separator
+const 	tmSeparateByCommas					= 0
+const	tmSeparateByParagraphs				= 1
+const	tmSeparateByTabs					= 2
+const	tmSeparateBySemicolons				= 3
+
+' Paragraph borders
+const	tmBoundsPage						= 0
+const	tmBoundsIndents						= 1
+const	tmBoundsText						= 2
+	
+' Row format options
+const	tmRowHeightAtLeast					= 0
+const	tmRowHeightExact					= 1
+const	tmRowHeightAuto						= 2
+	
+' Cell format options
+const	tmPreferredWidthPoints				= 0
+const	tmPreferredWidthPercent				= 1
+const	tmPreferredWidthAuto				= 2
+	
+' Paragraph
+const	tmLineSpaceAuto						= 0
+const	tmLineSpaceExactly					= 1
+const	tmLineSpaceAtLeast					= 2
+	
+const	tmAlignParagraphLeft				= 0
+const	tmAlignParagraphRight				= 1
+const	tmAlignParagraphCenter				= 2
+const	tmAlignParagraphJustify				= 3
+
+' Hyphenation	
+const	tmHyphenationNone					= 0
+const	tmHyphenationAlways					= 1
+const	tmHyphenationEvery2Lines			= 2
+const	tmHyphenationEvery3Lines			= 3
+	
+const	tmBorderClearanceLeft 				= 1
+const	tmBorderClearanceRight				= 2
+const	tmBorderClearanceTop				= 3
+const	tmBorderClearanceBottom				= 4
+	
+' Drop caps
+const	tmDropNone							= 0
+const	tmDropNormal						= 1
+const	tmDropBorder						= 2
+const	tmDropBaseLine						= 3
+	
+' Outline level
+const	tmOutlineLevelBodyText 				= 0
+const	tmOutlineLevel1 					= 1
+const	tmOutlineLevel2 					= 2
+const	tmOutlineLevel3 					= 3
+const	tmOutlineLevel4 					= 4
+const	tmOutlineLevel5 					= 5
+const	tmOutlineLevel6 					= 6
+const	tmOutlineLevel7 					= 7
+const	tmOutlineLevel8 					= 8
+const	tmOutlineLevel9 					= 9
+
+' CommandBar names
+const	tmBarStatusShort					= 1
+const	tmBarStandardShort					= 2
+const	tmBarStatus							= 3
+const	tmBarStandard						= 4
+const	tmBarFormatting						= 5
+const	tmBarOutliner						= 6
+const	tmBarObjects						= 7
+const	tmBarFormsEditing					= 8
+const	tmBarMailMerge						= 9
+const	tmBarDatabase						= 10
+const	tmBarDatabaseStatus					= 11
+const	tmBarTable							= 12
+const	tmBarStatistics						= 13
+const	tmBarPicture						= 14
+const	tmBarReviewing						= 16
+const	tmBarHeaderAndFooter				= 17
+const	tmBarFullscreen						= 19
+

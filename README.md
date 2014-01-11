@@ -1,5 +1,5 @@
 Win7PE by M@ximus
-=================
+=======================================================================================================================
 
 My own live cd distribution based on Windows 7 Ultimate x86.
 
@@ -29,3 +29,9 @@ Keyboard tools: PuntoSwitcher, FreeVirtualKeyboard, SpecChar, MKey,
 Advanced: GImageX, MemoryCleaner, Resolution, ShellExView, DesktopOK, DependencyWalker, ASPack, ResHacker, CCleaner, AutoIt3 (wim - pack), Linux-partitions drivers and programms.
 
 Most of .exe and .dll files are compressed with ASPack to reduce their size. Patched kernel to use 4 Gb RAM.
+
+=======================================================================================================================
+
+In /boot.wim folder located all system files. They should be packed in boot.wim file with Bootable flag (via Imagex) and placed in Sources folder in LiveCD drive
+In /Programs folder located folders with programms which will be mounted after loading. This folder should be located in root of LiveCD drive, also content of subfolders (/program_name.wim/) should be packed into .wim files with the same name (program_name.wim)
+Also there are a pattern of .iso file which contains full structure of LiveCD as example

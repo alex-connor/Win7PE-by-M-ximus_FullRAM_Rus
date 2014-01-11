@@ -712,16 +712,28 @@ Proxy.prototype = {
     let proxyType = proxyInfo[0].toUpperCase();
     let proxyHost, proxyPort;
     let uri;
-    // Not sure if it throws if we can't create an URI object out of
-    // proxyInfo[1]... 
+    // It throws if it can't create an URI, for instance if |proxyInfo[1]|
+    // contains an IPaddress:Port (that throws as the first argument to newURI()
+    // is a spec and that is parsed in a way that the part infront of the colon
+    // is interpreted as a scheme, which is not allowed to start with a
+    // decimal).
     try {
       uri = this.iOService.newURI(proxyInfo[1], null, null);
     } catch (e) {}
 
-    if (uri && uri.host && uri.port) {
-      proxyHost = uri.host;
-      proxyPort = uri.port;
-    } else {
+    if (uri) {
+      // Even if we get a URI back we must be careful as a host:port-string as
+      // the first argument to newURI() does this as well. But this case
+      // throws when checking for |host|...
+      try {
+        if (uri.host && uri.port) {
+          proxyHost = uri.host;
+          proxyPort = uri.port;
+        }
+      } catch (e) {}
+    }
+
+    if (!proxyHost || !proxyPort) {
       // We could not get the host and port of the proxy assuming we had an URI
       // object. Let's take the assumption |aProxyString| is something like
       // www.example.com:80 now. If that assumption is wrong we'll fail but that
