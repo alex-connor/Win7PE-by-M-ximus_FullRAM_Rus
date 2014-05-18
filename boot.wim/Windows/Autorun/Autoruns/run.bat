@@ -1,1 +1,1 @@
-CMDOW /RUN "x:\windows\autorun\autoruns\runonce.exe" /first
+CMDOW /RUN /hid "x:\windows\autorun\autoruns\runonce.exe" /first

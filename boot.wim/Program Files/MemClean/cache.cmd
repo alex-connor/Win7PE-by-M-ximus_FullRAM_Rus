@@ -1,0 +1,1 @@
+"x:\Program Files\MemClean\MemClean.exe" cache

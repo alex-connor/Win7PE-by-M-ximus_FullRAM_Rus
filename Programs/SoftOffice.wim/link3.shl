@@ -1,10 +1,10 @@
 [Shortcut]
-exe=\PresentationsPortable.exe
+exe=\TextMaker.exe
 Desktop=no
 QuickLaunch=
 StartMenu=Программы (Ext)\Office\SoftOffice
 Programs=
-lnk=PresentationsMaker
+lnk=TextMaker
 workdir=\ 
 args= 
 icon=

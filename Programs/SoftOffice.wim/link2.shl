@@ -1,10 +1,10 @@
 [Shortcut]
-exe=\PlanMakerPortable.exe
+exe=\Presentations.exe
 Desktop=no
 QuickLaunch=
 StartMenu=Программы (Ext)\Office\SoftOffice
 Programs=
-lnk=PlanMaker
+lnk=PresentationsMaker
 workdir=\ 
 args= 
 icon=

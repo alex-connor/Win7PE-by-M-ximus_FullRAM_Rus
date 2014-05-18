@@ -15,7 +15,6 @@ DefaultDestDir=12
 1=%DiskName1%,,,""
 
 [SourceDisksFiles]
-firadisk64.sys=1,,
 firadisk.sys=1,,
 firadisk.inf=1,,
 

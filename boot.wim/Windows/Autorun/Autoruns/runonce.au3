@@ -24,7 +24,7 @@ $e = _DirAutorun($file)
 _ArrayConcatenate($auto,$e)
 _ArrayConcatenate($auto,$run)
 $ram=TotalRAM()
-if $ram <= 768 Then
+if $ram <= 512 Then
 $hdd=DriveGetDrive( "FIXED" )
    if $hdd[0] > 0 then
 	  for $n = 1 to $hdd[0]
@@ -39,7 +39,7 @@ $hdd=DriveGetDrive( "FIXED" )
 	  EndIf
    EndIf
    if ($hdd[0] = 0) or not (FileExists($pagefile[1])) then
-	  $g= MsgBox(49, "Ошибка!", "Количество оперативной памяти меньше 512Мб. Система не будет работать без файла подкачки.  Поиск файлов подкачки на дисках для автоматического запуска не дал результатов.  Желаете установить файл подкачки самостоятельно?  В противном случае запуск системы будет затруднителен.",30)
+	  $g= MsgBox(49, "Ошибка!", "Количества оперативной памяти не достаточно для работы системы. Большинство компонентов не будет работать без файла подкачки.  Поиск файлов подкачки на дисках для автоматического запуска не дал результатов.  Желаете установить файл подкачки самостоятельно?  В противном случае запуск системы будет затруднителен.",30)
 	  Switch  $g
    Case 1
 	  if FileExists("x:\windows\system32\SetPageFile.exe") then
@@ -53,22 +53,17 @@ $hdd=DriveGetDrive( "FIXED" )
 		 $auto=$run512
 	  EndSwitch
    EndIf
-Else
+EndIf
 for $i = 0 to UBound($auto)-1
    if FileExists($auto[$i]) then
-	 $m=_PathSplitByRegExp($auto[$i])
-	  if StringInStr($m[4],".exe") then 
-		 Run($auto[$i])
-	  Else
-		 ShellExecute($auto[$i],'', $m[1]+$m[2])
-	  EndIf
+		 ShellExecute($auto[$i],'')
    EndIf
 Next
-EndIf
+
 Local $begin = TimerInit()
 while 1
-if (TimerDiff($begin)<=60000) then
-   if ProcessExists("explorer.exe") and ($ram >= 512) Then
+if ($ram > 512) and (TimerDiff($begin)<=60000) then
+   if ProcessExists("explorer.exe")  Then
 	  sleep(5000)
 	  for $i = 0 to UBound($explorer)-1
 		 if FileExists($explorer[$i]) then
