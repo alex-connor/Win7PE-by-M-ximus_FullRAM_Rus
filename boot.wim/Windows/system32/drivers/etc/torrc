@@ -1,5 +1,5 @@
 ControlPort 9051
-ControlPortWriteToFile x:\windows\system32\tor\port.conf
-DataDirectory %temp%\
+ControlPortWriteToFile x:\windows\system32\drivers\etc\port.conf
+DataDirectory %temp%
 DirReqStatistics 0
 SocksPort 9050

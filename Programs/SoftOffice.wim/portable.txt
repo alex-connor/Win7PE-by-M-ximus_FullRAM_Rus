@@ -1,0 +1,2 @@
+[en] Do not delete this file.
+[de] Diese Datei bitte nicht löschen.

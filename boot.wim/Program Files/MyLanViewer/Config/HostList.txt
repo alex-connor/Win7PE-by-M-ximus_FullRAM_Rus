@@ -1,2 +1,0 @@
-# To enable/disable scanning, you must toggle the switch to on/off position.
-# To skip the line you need to put a symbol # in front of the line.

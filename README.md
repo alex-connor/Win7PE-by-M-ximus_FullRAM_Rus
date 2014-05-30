@@ -1,37 +1,77 @@
-Win7PE by M@ximus
+Win7PE by M@ximus FullRAM Rus
 =======================================================================================================================
 
-My own live cd distribution based on Windows 7 Ultimate x86.
+LiveCD-сборка, основанная на Windows 7 SP1 Ultimate x86.
 
-Small size (~300 Mb), using RAM ~400-450 Mb (system and programms with RAM loading) or ~250 Mb (in RAM loads only system, programms are located in disk and mounts after boot).
-Loading at 1-2 minute (USB 3.0), 2-3 minutes (USB 2.0) or 7-10 minutes (old computer with USB 1.1).
+Малый размер образа(~300 Mb), использование RAM ~400-450 Mb (система и программы загружаются в память целиком).
+Загрузка в течение 1-2 минут (USB 3.0), 2-3 минут (USB 2.0) или 7-10 минут (старые компьютеры с USB 1.1).
 
-List of progs:
+=======================================================================================================================
 
-Archives: 7zip, WinRAR.
-System info: AdapterWatch, CPUid, DeviceMonitor, S&M, SIW, SpaceSniffer.
-Drivers and computer eqipment: DoubleDriver, DriverInjection, ServiWin, HWPnP, USBDeviceView.
-Data recovery: O&O DiskRecovery, Recuva, Restoration, TestDisk, WinHex, MBR-Fix.
-Virused deleting: AVZ, HijackThis!, UniversalVirusScaner, AntiSMS.
-Passwords: MultiPasswordRecovery, NTPEdit, PasswordRenew, Pass-wordScan, ProduKey, SAMInside, WindowsGate.
-Registry: AdvancedRegistryTool, RawReg, RegWorkshop, RegOrganizer, Runscanner.
-Autostart: AutoRuns, RegOrganizer.
-File Managers: Windows Explorer, ERDExplorer, XPlorer2, Total-Commander. Advanced: ExtremeCopy
-Processes: ProcessMonitor, ProcessExplorer, SystemExplorer
-Remote access: RAdmin, Ammy Admin, VNC-Viewer, TightVNC, UltraVNC, TeamViewer (wim - pack), Skype (wim - pack).
-Burning CD/DVD + ISO mounting: ImgBurn, UltraISO, UUDiscStudio, ImDisk.
+
+Установленные программы:
+
+Архивы: 7zip, WinRAR.
+
+Информация о системе: AdapterWatch, CPUid, DeviceMonitor, S&M, SIW, SpaceSniffer.
+
+Устройства и оборудование: DoubleDriver, DriverInjection, ServiWin, HWPnP, USBDeviceView.
+
+Восстановление данных: R-Studio, R.Saver, O&O DiskRecovery, TestDisk, WinHex, VictoriaHDD (загружаемый образ дискеты).
+
+Удаление вирусов: AVZ, HijackThis!, UniversalVirusScaner, AntiSMS, AntiWinLocker.
+
+Восстановление паролей:  NTPEdit, PasswordRenew, PasswordScan, ProduKey, SAMInside, WindowsGate.
+
+Безопасность: TrueCrypt, DiskCryptor, Tor.
+
+Диски: Acronis DiskDirector (загружаемый linux-образ), Paragon HomeExpert, HP Disk FormatTool, ATTO Disk Benchmark, Defraggler, HDTune, драйвера и программы для работы с Linux и Mac-разделами (ext2/3/4,ReiserFS,UFS,XFS,HFS).
+
+Реестр: RegWorkshop, Runscanner.
+
+Автозагрузка: AutoRuns, ServiWin.
+
+Файловые менеджеры: Проводник Windows, Total-Commander. Дополнительно: ExtremeCopy.
+
+Процессы: ProcessMonitor, ProcessHacker.
+
+Удаленное управление: Ammy Admin, UltraVNC.
+
+Запись CD/DVD + монтирование ISO-образов: ImgBurn, UltraISO, ImDisk.
+
 Wi-Fi: WirelessNetView, WNetWatcher, PENetwork.
-Browsers: Mozilla Firefox, Opera (old versions of LiveCD, in new versions do not works, so I deleted it)
-Internet utilities: uTorrent, Putty, HyperTerminal, Nirsoft utilities for scaning history, downloads, cookies, passwords and cache of  Mozilla Firefox, Opera, Safari, Chrome and Internet Explorer browsers.
-Office programms: DJVU-Reader, SumatraPDF, xCHM, Shtirlitz4, Notepad++, AkelPad, SoftMakerOffice (wim - pack).
-Pictures: FastStoneMaxView, PicPick, XNView.
-Keyboard tools: PuntoSwitcher, FreeVirtualKeyboard, SpecChar, MKey, 
-Advanced: GImageX, MemoryCleaner, Resolution, ShellExView, DesktopOK, DependencyWalker, ASPack, ResHacker, CCleaner, AutoIt3 (wim - pack), Linux-partitions drivers and programms.
 
-Most of .exe and .dll files are compressed with ASPack to reduce their size. Patched kernel to use 4 Gb RAM.
+Браузеры: Mozilla Firefox.
+
+Интернет-приложения: uTorrent, Putty, HyperTerminal, Tor, IP-Tools, утилиты от Nirsoft для просмотра истории, кэша, паролей и куков в браузерах Mozilla Firefox, Opera, Safari, Chrome и Internet Explorer.
+
+Офис: DJVU-Reader, SumatraPDF, xCHM, Shtirlitz4, AkelPad, SoftMakerOffice (внешний wim-пакет).
+
+Изображения: FastStoneMaxView, PicPick, XNView.
+
+Мультимедиа: MediaPlayerClassic (видео кодеки расположены во внешнем wim-пакете).
+
+Клавиатура: PuntoSwitcher, FreeVirtualKeyboard.
+
+Дополнительно: GImageX, WinNTSetup, MemoryCleaner, Resolution, ShellExView, DependencyWalker, ASPack, UPX, ResHacker, DesktopLocker, CloneSpy, AutoIt3 (внешний wim-пакет).
+
 
 =======================================================================================================================
 
-In /boot.wim folder located all system files. They should be packed in boot.wim file with Bootable flag (via Imagex) and placed in Sources folder in LiveCD drive
-In /Programs folder located folders with programms which will be mounted after loading. This folder should be located in root of LiveCD drive, also content of subfolders (/program_name.wim/) should be packed into .wim files with the same name (program_name.wim)
-Also there are a pattern of .iso file which contains full structure of LiveCD as example
+Большинство .exe и .dll файлов сжато с помощью ASPack и UPX для уменьшения их размера. 
+
+Установлен патч ядра для использования более 4 Gb RAM.
+
+Hабота на системах с 512Мб RAM возможна только с файлом подкачки.
+
+=======================================================================================================================
+
+Примечания:
+
+В папке /boot.wim расположены системные файлы и внутренние программы. Её содержимое запаковывается в файл boot.wim с аттрибутом Загрузочный (скрипт делает все сам, но можно сделать вручную с помощью Imagex или GImagex) и поместить в папку Sources в корне LiveCD-диска.
+
+В папке /Programs расположены папки с внешними программами, которые будут подключены после загрузки. Содержимое каждой подпапки (/название_программы_.wim/) должно быть упаковано в wim-файл с тем же названием (название_программы_.wim).
+
+Пример структуры, а также необходимые файлы загрузчика приведены в файле LiveCD.iso.
+
+Чтобы собрать LiveCD, нужно запустить файл make_iso.bat. Готовый образ имеет название Win7Pe.iso. Для сборки наличие установленного в системе драйвера wimfltr обязательно!

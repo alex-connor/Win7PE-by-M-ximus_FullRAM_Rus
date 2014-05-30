@@ -20,8 +20,8 @@ bat=
 reg=
 <AutoIt3\Link.shl>
 [Shortcut]
-exe=.
-Desktop=yes
+exe=
+Desktop=no
 QuickLaunch=
 StartMenu=
 Programs=
@@ -41,7 +41,7 @@ reg=
 <MPC\link.shl>
 [Shortcut]
 exe=
-desktop=
+desktop=no
 quicklaunch=
 startmenu=
 programs=
@@ -62,27 +62,7 @@ exe=
 reg=
 <SoftOffice\link1.shl>
 [Shortcut]
-exe=\BasicMakerPortable.exe
-Desktop=no
-QuickLaunch=
-StartMenu=Программы (Ext)\Office\SoftOffice
-Programs=
-lnk=BasicMaker
-workdir=\ 
-args= 
-icon=
-hotkey= 
-[AutoRun]
-hide=yes
-bat=
-reg=\softoffice.reg 
-[autoexit]
-hide=yes
-bat=
-reg=
-<SoftOffice\link2.shl>
-[Shortcut]
-exe=\PlanMakerPortable.exe
+exe=\PlanMaker.exe
 Desktop=no
 QuickLaunch=
 StartMenu=Программы (Ext)\Office\SoftOffice
@@ -100,9 +80,9 @@ reg=\softoffice.reg
 hide=yes
 bat=
 reg=
-<SoftOffice\link3.shl>
+<SoftOffice\link2.shl>
 [Shortcut]
-exe=\PresentationsPortable.exe
+exe=\Presentations.exe
 Desktop=no
 QuickLaunch=
 StartMenu=Программы (Ext)\Office\SoftOffice
@@ -120,9 +100,9 @@ reg=\softoffice.reg
 hide=yes
 bat=
 reg=
-<SoftOffice\link4.shl>
+<SoftOffice\link3.shl>
 [Shortcut]
-exe=\TextMakerPortable.exe
+exe=\TextMaker.exe
 Desktop=no
 QuickLaunch=
 StartMenu=Программы (Ext)\Office\SoftOffice

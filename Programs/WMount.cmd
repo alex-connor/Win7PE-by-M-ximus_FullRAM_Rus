@@ -18,7 +18,6 @@ GoTo _1
 echo imagex /unmount "b:\%~n1\%~n1" >>"%Temp%\UnMount.cmd"
 Echo rd /s /q "b:\%~n1" >>"%Temp%\UnMount.cmd"
 :_3
-del /s /f /q "X:\windows\system32\config\systemprofile\Desktop\*(*)*"
 echo rd /s /q "X:\Windows\system32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Программы (Ext)" >>"%Temp%\UnMount.cmd"
 Echo del /s /q "%Temp%\UnMount.cmd" >>"%Temp%\UnMount.cmd"
 GoTo :Eof

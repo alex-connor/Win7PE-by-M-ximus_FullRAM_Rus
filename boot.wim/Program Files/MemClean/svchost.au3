@@ -2,6 +2,7 @@
 #NoTrayIcon
 global $ram
 $ram=TotalRam()
+$file=FileExists("X:\Program Files\MemClean\MemClean.exe")
 Switch $ram 
 case 0 To 768
 AdlibRegister("Process",7000)
@@ -17,17 +18,17 @@ exit
 EndSwitch
 
 While 1
-   sleep(100)
+   sleep(200)
 WEnd
 
 func Process()
-   If FileExists("X:\Program Files\MemClean\MemClean.exe") then
+   If $file and not(ProcessExists("MemClean.exe")) then
    ShellExecute("X:\Program Files\MemClean\MemClean.exe","process")
    EndIf
 EndFunc
 
 func Cache()
-   If FileExists("X:\Program Files\MemClean\MemClean.exe") then
+   If $file and not(ProcessExists("MemClean.exe")) then
    ShellExecute("X:\Program Files\MemClean\MemClean.exe","cache")
    EndIf
 EndFunc

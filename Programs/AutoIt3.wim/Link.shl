@@ -1,6 +1,6 @@
 [Shortcut]
-exe=.
-Desktop=yes
+exe=
+Desktop=no
 QuickLaunch=
 StartMenu=
 Programs=
