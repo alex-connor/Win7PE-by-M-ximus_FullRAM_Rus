@@ -2,6 +2,10 @@
 #include <File.au3>
 #include <Array.au3>
 
+local $caps = DllCall("user32.dll","long","GetKeyState","long",0x14); if Capslock pressed, then program exits
+
+if $caps[0]="0" then
+
 dim $i,$auto[1],$e[1],$key[1],$file[1],$run[1],$m[3],$ram,$hdd,$pagefile,$n,$g
 
 if (UBound($Cmdline)-1)>0 then
@@ -60,6 +64,7 @@ for $i = 0 to UBound($auto)-1
    EndIf
 Next
 
+
 Local $begin = TimerInit()
 while 1
 if ($ram > 512) and (TimerDiff($begin)<=60000) then
@@ -79,6 +84,8 @@ Else
    Exit
    EndIf
 WEND
+
+endif
 
 Func _DirAutorun($filedir)
    local $i,$autofile[1],$f,$reg[1]
