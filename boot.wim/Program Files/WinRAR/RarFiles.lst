@@ -53,6 +53,7 @@ readme.*
 *.hpp
 *.c
 *.cpp
+*.java
 *.asm
 *.bas
 *.bak

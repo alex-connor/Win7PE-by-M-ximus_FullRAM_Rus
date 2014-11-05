@@ -17,7 +17,7 @@ LiveCD-сборка, основанная на Windows 7 SP1 Ultimate x86.
 
 Устройства и оборудование: DoubleDriver, DriverInjection, ServiWin, HWPnP, USBDeviceView.
 
-Восстановление данных: R-Studio, R.Saver, O&O DiskRecovery, TestDisk, WinHex, VictoriaHDD (загружаемый образ дискеты).
+Восстановление данных: R-Studio, UFS Explorer, TestDisk, VictoriaHDD (загружаемый образ дискеты).
 
 Удаление вирусов: AVZ, HijackThis!, UniversalVirusScaner, AntiSMS, AntiWinLocker.
 
@@ -33,7 +33,7 @@ LiveCD-сборка, основанная на Windows 7 SP1 Ultimate x86.
 
 Файловые менеджеры: Проводник Windows, Total-Commander. Дополнительно: ExtremeCopy.
 
-Процессы: ProcessMonitor, ProcessHacker.
+Процессы: ProcessMonitor, ProcessHacker (заменяет Диспетчер задач).
 
 Удаленное управление: Ammy Admin, UltraVNC.
 
@@ -53,7 +53,7 @@ Wi-Fi: WirelessNetView, WNetWatcher, PENetwork.
 
 Клавиатура: PuntoSwitcher, FreeVirtualKeyboard.
 
-Дополнительно: GImageX, WinNTSetup, MemoryCleaner, Resolution, ShellExView, DependencyWalker, ASPack, UPX, ResHacker, DesktopLocker, CloneSpy, AutoIt3 (внешний wim-пакет).
+Дополнительно: GImageX, WinNTSetup, MemoryCleaner, Resolution, ShellExView, DependencyWalker, UPX, Restorator, DesktopLocker, CloneSpy, AutoIt3 (внешний wim-пакет).
 
 
 =======================================================================================================================
@@ -63,6 +63,8 @@ Wi-Fi: WirelessNetView, WNetWatcher, PENetwork.
 Установлен патч ядра для использования более 4 Gb RAM.
 
 Hабота на системах с 512Мб RAM возможна только с файлом подкачки.
+
+Глобальные горячие клавиши на вызов программ (список расположен в windows\system32\hotkeys.ini)
 
 =======================================================================================================================
 
@@ -75,3 +77,6 @@ Hабота на системах с 512Мб RAM возможна только с файлом подкачки.
 Пример структуры, а также необходимые файлы загрузчика приведены в файле LiveCD.iso.
 
 Чтобы собрать LiveCD, нужно запустить файл make_iso.bat. Готовый образ имеет название Win7Pe.iso. Для сборки наличие установленного в системе драйвера wimfltr обязательно!
+
+
+Все версии можно найти здесь (нумерация не совпадает): https://mega.co.nz/#F!XURxhCqS!3uPK6-wYgpJn5qCUAG5VqA
