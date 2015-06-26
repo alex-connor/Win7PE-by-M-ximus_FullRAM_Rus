@@ -1,9 +1,0 @@
-<!ENTITY memfx.label.open "Activate Memory Fox - Browser Only">
-<!ENTITY memfx.label.close "Deactivate Memory Fox - Browser Only">
-<!ENTITY memfx.label.options "Options">
-<!ENTITY memfx.label2.open "Activate Memory Fox - All Processes">
-<!ENTITY memfx.label2.close "Deactivate Memory Fox -  All Processes">
-<!ENTITY memfx.label2.blacklist "Blacklist">
-<!ENTITY memfx.label.tray "Send Memory Fox To System Tray">
-<!ENTITY memfx.mfxToolbar.label "Your Toolbar Button">
-<!ENTITY memfx.mfxToolbar.tooltip "Toolbar button for Memory Fox!">

@@ -41,7 +41,7 @@ LiveCD-сборка, основанная на Windows 7 SP1 Ultimate x86.
 
 Wi-Fi: WirelessNetView, WNetWatcher, PENetwork.
 
-Браузеры: Mozilla Firefox.
+Браузеры: K-Meleon.
 
 Интернет-приложения: uTorrent, Putty, HyperTerminal, Tor, IP-Tools, утилиты от Nirsoft для просмотра истории, кэша, паролей и куков в браузерах Mozilla Firefox, Opera, Safari, Chrome и Internet Explorer.
 

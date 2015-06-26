@@ -1,7 +1,0 @@
-#emptycachebutton-button {
-	list-style-image: url("chrome://emptycachebutton/skin/icon_24x24.png");
-}
-
-[iconsize="small"] #emptycachebutton-button {
-	list-style-image: url("chrome://emptycachebutton/skin/icon_16x16.png");
-}

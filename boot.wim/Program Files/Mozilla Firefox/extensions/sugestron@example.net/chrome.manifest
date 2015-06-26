@@ -1,6 +1,0 @@
-content     sugestron    jar:chrome/sugestron.jar!/content/
-overlay chrome://browser/content/browser.xul chrome://sugestron/content/overlay.xul
-skin	sugestron	classic/1.0	jar:chrome/sugestron.jar!/skin/
-resource	sugestron	modules/
-
-locale sugestron en-US jar:chrome/sugestron.jar!/locale/en-US/
